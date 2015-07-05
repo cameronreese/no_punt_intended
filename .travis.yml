@@ -1,0 +1,39 @@
+# travis config file for final project, phase 1 (project3)
+# http://docs.travis-ci.com/user/build-configuration/
+
+sudo: required
+
+language: python
+
+python:
+    - "3.4"
+
+before_install:
+    - sudo apt-get update
+
+install:
+    - pip install --upgrade pip
+    - pip install coverage
+    - sudo apt-get install python-numpy
+
+before_script:
+    - uname -a
+    - printenv
+    - pip3 --version
+    - pip3 freeze
+    - python3 --version
+    - coverage3 --version
+    - python3 -c "import numpy; print(numpy.__version__)"
+
+script:
+    - date
+    - git clone https://github.com/
+    - ls -al
+    - touch Neflix.log
+    - ls -al
+    - make Netflix.html
+    - ls -al
+    - make -B test
+    - cat TestNetflix.out
+    - ls -al
+    - make check
