@@ -10,3 +10,8 @@ try:
 	print kittens[559:1000]
 except URLError, e:
 	print 'No kittez. Got error code:', e
+
+	kittens = urlopen('http://placekitten.com/200/300')
+	f = open('kittens.jpg', 'wb')
+	f.write(kittens.read())
+	f.close()

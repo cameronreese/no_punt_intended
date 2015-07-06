@@ -1,0 +1,321 @@
+['/2014/player/140/1039068/index.html', '1', 'Abernathy IV, Ralph David', 'RB', 'SR', '5-7', '161', 'Atlanta, GA', 'Westminster School']
+
+
+['91', 'Allonce, Hakeem', 'DT', 'JR', '6-5', '290', 'Brooklyn, NY', 'Eleanor Roosevelt/Pierce CC']
+
+
+['88', 'Alonzo, Shai', 'TE', 'SO', '6-4', '218', 'Duquesne, PA', 'Woodland Hills']
+
+
+['38', 'Antoun, Mason', 'LB', 'JR', '6-1', '225', 'Cincinnati, OH', 'Reading']
+
+
+['/2014/player/140/1062700/index.html', '30', 'Banschbach, Chad', 'WR', 'FR', '5-9', '185', 'Lawrenceburg, IN', 'Lawrenceburg']
+
+
+['/2014/player/140/1031540/index.html', '90', 'Beard, Camaron', 'DE', 'SR', '6-5', '290', 'Indianapolis, IN', 'Cathedral']
+
+
+['59', 'Bond, Deyshawn', 'OL', 'SO', '6-2', '298', 'Indianapolis, IN', 'Warren Central']
+
+
+['/2014/player/140/1062699/index.html', '27', 'Boone, Mike', 'RB', 'FR', '5-10', '205', 'Macclenny, FL', 'Baker County']
+
+
+['54', "Bowen, Ja'Merez", 'DT', 'FR', '6-4', '270', 'Cleveland, OH', 'Shaker Hts.']
+
+
+['47', 'Brazile, Landon', 'DE', 'FR', '6-6', '230', 'Dayton, OH', 'Thurgood Marshall']
+
+
+['96', 'Broughton, Cortez', 'DT', 'FR', '6-3', '280', 'Warner Robins, GA', 'Veterans']
+
+
+['/2014/player/140/1054791/index.html', '7', 'Brown, Aaron', 'CB', 'FR', '5-11', '172', 'Miami, FL', 'Northwestern']
+
+
+['/2014/player/140/1062698/index.html', '26', 'Brown, Bobby', 'RB', 'FR', '6-0', '200', 'Cincinnati, OH', 'Lakota East']
+
+
+['/2014/player/140/1046811/index.html', '40', 'Brown, Kevin', 'LB', 'JR', '6-1', '206', 'Indianapolis, IN', 'Lawrence Central']
+
+
+['53', 'Bruscianelli, Franklin', 'LB', 'SO', '6-0', '221', 'Woodridge, IL', 'Montini Catholic']
+
+
+['/2014/player/140/1054802/index.html', '94', 'Burton, Chris', 'DT', 'FR', '6-3', '272', 'Danville, VA', 'George Washington']
+
+
+['65', 'Burwell, Tyreek', 'OL', 'SR', '6-5', '295', 'Huntington Station, NY', 'Walt Whitman/SUNY Cortland']
+
+
+['54', 'Callahan, Luke', 'OL', 'FR', '6-5', '278', 'Powell, OH', 'Olentangy Liberty']
+
+
+['72', 'Campbell, Garrett', 'OL', 'FR', '6-5', '308', 'Cincinnati, OH', 'St. Xavier']
+
+
+['/2014/player/140/1044266/index.html', '6', 'Casseus, Clemente', 'LB', 'SR', '6-1', '227', 'Miami, FL', 'Everglades']
+
+
+['/2014/player/140/1039090/index.html', '80', 'Chisum, Alex', 'WR', 'JR', '6-3', '195', 'Fayetteville, GA', 'Sandy Creek']
+
+
+['/2014/player/140/1054777/index.html', '18', 'Cogswell, Tyler', 'TE', 'FR', '6-4', '248', 'Coral Springs, FL', 'American Heritage']
+
+
+['/2014/player/140/1046824/index.html', '84', 'Cole, Nate', 'WR', 'SO', '6-1', '193', 'Memphis, TN', 'Mitchell']
+
+
+['/2014/player/140/1054776/index.html', '13', 'Coleman, Grant', 'CB', 'SO', '6-0', '176', 'Columbus, OH', 'Reynoldsburg']
+
+
+['/2014/player/140/1054778/index.html', '16', 'Colosimo, Michael', 'QB', 'JR', '6-2', '216', 'Fort Mitchell, KY', 'Beechwood']
+
+
+['38', 'Crook, Lindsay', 'FB', 'FR', '6-2', '222', 'Gold Coast, Australia', 'Southport School']
+
+
+['76', 'Cunningham, Korey', 'OL', 'FR', '6-5', '254', 'Montevallo, AL', 'Montevallo']
+
+
+['85', 'Dollin, Jeremy', 'TE', 'SR', '6-4', '245', 'Cincinnati, OH', 'Indian Hill/Virginia']
+
+
+['10', 'Doston, Darren', 'S', 'SR', '6-2', '195', 'Daytona Beach, FL', 'Seabreeze/College of the Sequoias']
+
+
+['/2014/player/140/1046823/index.html', '81', 'Dowdy, DJ', 'TE', 'SO', '6-4', '241', 'Akron, OH', 'North']
+
+
+['68', 'Duncan, Jeff', 'OL', 'FR', '6-6', '270', 'Kettering, OH', 'Fairmount']
+
+
+['/2014/player/140/1054781/index.html', '22', 'Edwards, Zach', 'S', 'SO', '5-11', '186', 'Middletown, OH', 'Middletown']
+
+
+['78', 'Ehinger, Parker', 'OL', 'JR', '6-7', '315', 'Rockford, MI', 'Rockford']
+
+
+['/2014/player/140/1062683/index.html', '12', 'Evans, Jarred', 'QB', 'JR', '6-2', '190', 'Queens, NY', 'West High/Santa Barbara CC']
+
+
+['63', 'Ferguson, Chris', 'OL', 'FR', '6-4', '275', 'Nassau, Bahamas', 'Lake Nona']
+
+
+['51', 'Fitz, Kimoni', 'DE', 'FR', '6-4', '230', 'Ringgold, VA', 'Dan River']
+
+
+['/2014/player/140/1054792/index.html', '16', 'Gantz, Andrew', 'K', 'FR', '5-9', '158', 'Dayton, OH', 'Centerville']
+
+
+['/2014/player/140/1054794/index.html', '26', 'Geraci, Sam', 'P', 'FR', '6-4', '217', 'Cincinnati, OH', 'Moeller']
+
+
+['2', 'Gilbert, Tyrell', 'S', 'FR', '6-1', '200', 'Cincinnati, OH', 'Princeton']
+
+
+['/2014/player/140/1062682/index.html', '8', 'Gladney, Casey', 'WR', 'JR', '6-2', '185', 'Columbia, SC', 'Columbia/Copiah Lincoln CC']
+
+
+['/2014/player/140/1025454/index.html', '10', 'Golic, Jake', 'TE', 'SR', '6-4', '245', 'W. Hartford, CT', 'Northwest Catholic/Notre Dame']
+
+
+['69', 'Gordon, Brendan', 'OL', 'JR', '6-4', '295', 'Cincinnati, OH', 'Winton Woods/Georgetown College']
+
+
+['17', 'Graves, Jeremy', 'S', 'JR', '6-2', '190', 'Cleveland, OH', 'Maple Heights']
+
+
+['/2014/player/140/1046800/index.html', '7', 'Green, Tion', 'RB', 'JR', '6-0', '220', 'Sanford, FL', 'Lake Brantley']
+
+
+['/2014/player/140/1031541/index.html', '93', 'Harrah, Brad', 'DE', 'SR', '6-5', '258', 'Marion, OH', 'Marion Pleasant']
+
+
+['/2014/player/140/1054806/index.html', '95', 'Hartsfield, Terrell', 'DE', 'SR', '6-3', '246', 'Raleigh, NC', 'Rolesville/Copiah-Lincoln CC']
+
+
+['34', 'Hill, Tyler', 'LS', 'FR', '6-3', '255', 'Buffalo, NY', 'St. Joseph Collegiate']
+
+
+['83', 'Holden, Tyshon', 'WR', 'FR', '5-10', '160', 'Gahanna, OH', 'Lincoln']
+
+
+['/2014/player/140/1062681/index.html', '3', 'Holton, Johnny', 'WR', 'JR', '6-3', '190', 'Miami, FL', 'Coconut Grove/College of Dupage']
+
+
+['/2014/player/140/1039075/index.html', '41', 'Hyland, Kevin', 'LB', 'JR', '6-2', '230', 'Cincinnati, OH', 'Elder']
+
+
+['/2014/player/140/1062696/index.html', '20', 'Jacobs, Carter', 'S', 'FR', '6-1', '193', 'Fort Lauderdale, FL', 'American Heritage']
+
+
+['11', 'James, John', 'CB', 'JR', '5-11', '175', 'Cleveland, OH', 'John Adams/Butler County CC']
+
+
+['20', 'Johnson, Tshumbi', 'WR', 'FR', '5-11', '175', 'Immokalee, FL', 'Immokalee']
+
+
+['/2014/player/140/1046803/index.html', '29', 'Jones, Andre', 'S', 'SO', '6-1', '197', 'Cincinnati, OH', 'Colerain']
+
+
+['/2014/player/140/1054807/index.html', '99', 'Jordan, Jerrell', 'DE', 'SR', '6-3', '250', 'Alta Vista, VA', 'Alta Vista/Copiah-Lincoln CC']
+
+
+['/2014/player/140/1054788/index.html', '39', 'Junior IV, EJ', 'FB', 'SO', '6-0', '222', 'Middletown, OH', 'Middletown']
+
+
+['62', 'Keebler, Cory', 'OL', 'SR', '6-7', '300', 'Liberty Township, OH', 'Lakota East']
+
+
+['/2014/player/140/1048667/index.html', '11', 'Kiel, Gunner', 'QB', 'SO', '6-4', '208', 'Columbus, IN', 'East/Notre Dame']
+
+
+['77', 'Kurtz, John', 'OL', 'FR', '6-5', '258', 'Louisville, KY', 'St. Xavier']
+
+
+['73', 'Leahy, Ryan', 'OL', 'SO', '6-6', '295', 'Cincinnati, OH', 'LaSalle']
+
+
+['71', 'Lefeld, Eric', 'OL', 'SR', '6-6', '310', 'Coldwater, OH', 'Coldwater']
+
+
+['/2014/player/140/1031529/index.html', '4', 'Legaux, Munchie', 'QB', 'SR', '6-5', '200', 'New Orleans, LA', 'Edna Karr']
+
+
+['31', 'Little, Issac', 'LB', 'FR', '6-3', '205', 'Bluffton, OH', 'Bluffton']
+
+
+['/2014/player/140/1031516/index.html', '24', 'Lloyd, John', 'P', 'SR', '6-2', '237', 'Cincinnati, OH', 'CHCA']
+
+
+['/2014/player/140/1031873/index.html', '1', 'Luc, Jeff', 'LB', 'SR', '6-1', '256', 'Port St. Lucie, FL', 'Treasure Coast/Florida State']
+
+
+['56', 'Mainello, Dominic', 'OL', 'SR', '6-3', '293', 'Fort Mitchell, KY', 'Beechwood']
+
+
+['45', "McClain, Ey'Shawn", 'LB', 'SO', '6-1', '234', 'Jacksonville, FL', 'Raines']
+
+
+['/2014/player/140/1046358/index.html', '2', 'McKay, Mekale', 'WR', 'JR', '6-6', '195', 'Louisville, KY', 'Moore/Arkansas']
+
+
+['/2014/player/140/1031513/index.html', '14', 'Miliano, Tony', 'K', 'SR', '6-2', '195', 'North Bend, OH', 'Elder']
+
+
+['52', 'Minor, Keith', 'DT', 'FR', '6-5', '250', 'Tyler, TX', 'Chapel Hill']
+
+
+['/2014/player/140/1039087/index.html', '70', 'Mitchell, Brandon', 'DT', 'JR', '6-2', '290', 'Cincinnati, OH', 'Withrow']
+
+
+['/2014/player/140/1039065/index.html', '15', 'Moore, Chris', 'WR', 'JR', '6-1', '190', 'Tampa, FL', 'Thomas Jefferson']
+
+
+['9', 'Moore, Hayden', 'QB', 'FR', '6-3', '193', 'Clay, AL', 'Clay-Chalkville']
+
+
+['/2014/player/140/1054780/index.html', '21', 'Moore, Rod', 'RB', 'SR', '5-10', '176', 'Bastrop, LA', 'Bastrop/East Mississippi CC']
+
+
+['/2014/player/140/1039091/index.html', '82', 'Morrison, Max', 'WR', 'JR', '6-1', '173', 'Kenton, OH', 'Kenton']
+
+
+['48', 'Mouhon, Kevin', 'LB', 'FR', '6-2', '225', 'Norcross, GA', 'Norcross']
+
+
+['/2014/player/140/1039093/index.html', '92', 'Mouhon, Silverberry', 'DL', 'JR', '6-4', '252', 'Norcross, GA', 'Norcross']
+
+
+['30', 'Murphy, Chris', 'CB', 'FR', '5-10', '180', 'Marietta, GA', 'Lassiter/Arkansas']
+
+
+['/2014/player/140/1039088/index.html', '74', 'Murray, Justin', 'OL', 'JR', '6-5', '295', 'Cincinnati, OH', 'Sycamore']
+
+
+['66', 'Niehaus, David', 'OL', 'FR', '6-1', '288', 'Cincinnati, OH', 'Colerain']
+
+
+['/2014/player/140/1046817/index.html', '50', 'Pace, Alex', 'DT', 'SO', '6-2', '295', 'Cleveland, OH', 'Ginn Academy']
+
+
+['/2014/player/140/1046799/index.html', '9', 'Payne, Leviticus', 'CB', 'JR', '5-10', '192', 'Southfield, MI', 'Southfield']
+
+
+['14', 'Pinckney, JJ', 'CB', 'FR', '6-3', '185', 'Sylvania, OH', 'Southview']
+
+
+['25', 'Rice, Rob', 'RB', 'JR', '5-10', '182', 'Cincinnati, OH', 'McNicholas']
+
+
+['87', 'Sawmiller, Justin', 'WR', 'FR', '6-1', '185', 'Kenton, OH', 'Kenton']
+
+
+['75', 'Schloemer, Kevin', 'OL', 'SR', '6-7', '315', 'Liberty Township, OH', 'Lakota West']
+
+
+['/2014/player/140/1062702/index.html', '32', 'Stephens, Linden', 'CB', 'FR', '6-0', '185', 'Euclid, OH', 'Euclid/Fork Union Military']
+
+
+['64', 'Steur, Will', 'OL', 'FR', '6-4', '303', 'Cincinnati, OH', 'Madeira']
+
+
+['79', 'Stout, Ryan', 'OL', 'FR', '6-5', '265', 'Sylvania, OH', 'Southview']
+
+
+['55', 'Tappan, Marcus', 'LB', 'SO', '6-2', '235', 'Pasadena, CA', 'La Salle/Glendale College']
+
+
+['/2014/player/140/1039077/index.html', '43', 'Temple, Nick', 'LB', 'SR', '5-10', '224', 'Indianapolis, IN', 'Warren Central']
+
+
+['/2014/player/140/1031526/index.html', '33', 'Tentman, Solomon', 'LB', 'SR', '6-2', '237', 'Cincinnati, OH', 'Roger Bacon']
+
+
+['25', 'Thomas, Alex', 'CB', 'FR', '6-1', '185', 'Hollywood, FL', 'Chaminade Madonna']
+
+
+['97', 'Tongamoa, Sione', 'DT', 'JR', '6-1', '290', 'N. Hollywood, CA', 'Polytechnic/Merced College']
+
+
+['/2014/player/140/1054800/index.html', '5', 'Tyson, Mike', 'S', 'SO', '6-2', '200', 'Norfolk, VA', 'Lake Taylor/Hargrave Military']
+
+
+['47', 'Vincent, Jon', 'LS', 'FR', '6-2', '210', 'Loveland, OH', 'Loveland']
+
+
+['/2014/player/140/1039086/index.html', '19', 'Washington, Shaq', 'WR', 'JR', '5-9', '174', 'Maple Hts., OH', 'Maple Hts.']
+
+
+['58', 'West, Chad', 'OL', 'JR', '6-6', '262', 'Perry, OH', 'Perry']
+
+
+['/2014/player/140/1054783/index.html', '3', 'Wilder, Howard', 'CB', 'SR', '5-11', '180', 'Sea Pleasant, MD', 'Eleanor Roosevelt/Pierce College']
+
+
+['/2014/player/140/1054782/index.html', '23', 'Williams, Hosey', 'RB', 'SR', '5-9', '199', 'Miami, FL', 'Southridge/ASA College']
+
+
+['67', 'Williamson, Kyle', 'OL', 'SO', '6-5', '281', 'Madeira, OH', 'Madeira']
+
+
+['61', 'Willis, Kirk', 'LS', 'JR', '6-2', '235', 'Granville, OH', 'Granville']
+
+
+['/2014/player/140/1048646/index.html', '23', 'Wilson, Eric', 'LB', 'SO', '6-2', '225', 'Redford, MI', 'Thurston/Northwestern']
+
+
+['/2014/player/140/1054793/index.html', '56', 'Wilson, Mark', 'DE', 'FR', '6-3', '225', 'Hampton, VA', 'Phoebus']
+
+
+['21', 'Witherspoon, Davon', 'CB', 'FR', '6-3', '200', 'Miami, FL', 'McArthur']
+
+
+['/2014/player/140/1031537/index.html', '8', 'Witty, Adrian', 'CB', 'SR', '5-10', '187', 'Deerfield Beach, FL', 'Deerfield Beach']
+
+
+['13', 'Wright, Luke', 'QB', 'FR', '6-4', '210', 'Atlanta, GA', "Holy Innocents' Episcopal"]
+
+
