@@ -8,6 +8,8 @@ from numpy import mean, sqrt, square, subtract
 import json
 
 from flask import Flask
+from flask import jsonify
+from flask import abort
 
 punt = Flask(__name__)
 
@@ -49,35 +51,44 @@ teams = [
         'name': 'Texas Longhorns',
         'location': 'Austin, TX',
         'roster': (), # tuple of player links
-        'schedule': {}, # a dict of {date : opponent}
+        'schedule': [[]], # a dict of {date : opponent} or some custom list of data
+        'head_coach': 'Brown'
     },
-        {
+    {
         'name': 'Baylor Bears',
         'location': 'Waco, TX',
         'roster': (), # tuple of player links
-        'schedule': {}, # a dict of {date : opponent}
+        'schedule': [[]], # a dict of {date : opponent} or some custom list of data
+        'head_coach': 'Unknown'
     },
         {
         'name': 'TCU Horned Frogs',
         'location': 'Fort Worth, TX',
         'roster': (), # tuple of player links
-        'schedule': {}, # a dict of {date : opponent}
+        'schedule': [[]], # a dict of {date : opponent} or some custom list of data
+        'head_coach': 'Unknown'
     }
 ]
 
-''' leaving coaches out for now since I can not seem to find any info on them easily '''
-# coaches = [
-#     {
-#
-#     }
-# ]
+@punt.route('/punt/players/<string:player_name>', methods=['GET'])
+def get_players(player_name):
+    if player_name == 'players':
+        return jsonify({'players': players})
 
-@punt.route('/api')
-def get_players():
-    return jsonify({'players': players})
+    player = [player for player in players if player['name'] == player_name]
+    if len(player) == 0:
+        abort(404)
+    return jsonify({'players': player[0]})
 
-def get_teams():
-    return jsonify({'teams': teams})
+@punt.route('/punt/teams/<string:team_name>', methods=['GET'])
+def get_teams(team_name):
+    if team_name == 'teams':
+        return jsonify({'teams': teams})
+
+    team = [team for team in teams if team['name'] == team_name]
+    if len(team) == 0:
+        abort(404)
+    return jsonify({'teams': team[0]})
 
 if __name__ == '__main__':
     punt.run(debug=True)
