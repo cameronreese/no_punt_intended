@@ -26,8 +26,8 @@ h6 {
 }
 
 p {
-    font-size: 1.25em;
-    line-height: 1.6;
+    font-size: 1.2em;
+    line-height: 1.2;
     color: #000;
 }
 
@@ -55,6 +55,16 @@ hr {
 
 .img-full {
     min-width: 100%;
+}
+
+.img-med {
+    min-width: 75%;
+    max-width: 75%;
+}
+.img-center {
+    margin: auto;
+    width: 90%;
+    padding: 10px;
 }
 
 .brand-before,
@@ -87,6 +97,19 @@ hr {
 .intro-text {
     text-transform: uppercase;
     font-size: 1.25em;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.conf-text {
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+.team-text {
+    text-transform: uppercase;
+    font-size: 1em;
     font-weight: 400;
     letter-spacing: 1px;
 }
@@ -167,7 +190,7 @@ footer p {
     }
 
     .nav>li>a {
-        padding: 35px;
+        padding: 15px;
     }
 
     .navbar-nav>li>a {
