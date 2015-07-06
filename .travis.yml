@@ -15,6 +15,7 @@ install:
     - pip install --upgrade pip
     - pip install coverage
     - sudo apt-get install python-numpy
+    - pip install Flask
 
 before_script:
     - uname -a
