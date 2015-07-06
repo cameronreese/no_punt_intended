@@ -52,7 +52,7 @@ teams = [
         'location': 'Austin, TX',
         'roster': (), # tuple of player links
         'schedule': [[]], # a dict of {date : opponent} or some custom list of data
-        'head_coach': 'Brown',
+        'head_coach': 'Strong',
         'conf': 'Big 12'
     },
     {
@@ -62,7 +62,6 @@ teams = [
         'schedule': [[]], # a dict of {date : opponent} or some custom list of data
         'head_coach': 'Unknown',
         'conf': 'Big 12'
-
     },
     {
         'name': 'TCU Horned Frogs',
@@ -104,5 +103,16 @@ def get_teams(team_name):
         abort(404)
     return jsonify({'teams': team[0]})
 
+@punt.route('/punt/conf/<string:conf_name>', methods=['GET'])
+def get_conf(conf_name):
+    if conf_name == 'conf':
+        return jsonify({'conf': conf})
+
+    c = [c for c in conf if c['name'] == conf_name]
+    if len(c) == 0:
+        abort(404)
+    return jsonify({'conf': c[0]})
+
 if __name__ == '__main__':
     punt.run(debug=True)
+    punt.config.update(SERVER_NAME='104.239.228.32')
