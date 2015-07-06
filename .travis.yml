@@ -27,13 +27,13 @@ before_script:
 
 script:
     - date
-    - git clone https://github.com/
+    - git clone https://github.com/cameronreese/no_punt_intended.git
     - ls -al
-    - touch Neflix.log
+    - touch IDB.log
     - ls -al
-    - make Netflix.html
+    - make models.html
     - ls -al
     - make -B test
-    - cat TestNetflix.out
+    - cat tests.out
     - ls -al
     - make check
