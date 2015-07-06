@@ -114,5 +114,4 @@ def get_conf(conf_name):
     return jsonify({'conf': c[0]})
 
 if __name__ == '__main__':
-    punt.config.update(SERVER_NAME='104.239.228.32')
     punt.run(debug=True, host='0.0.0.0')
