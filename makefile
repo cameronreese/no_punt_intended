@@ -29,7 +29,7 @@ config:
 
 test: RunTests.out
 
-models.html: models.py
+models.html: RunModels.py
 	pydoc3 -w models
 
 IDB.log: 
