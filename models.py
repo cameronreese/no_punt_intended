@@ -87,7 +87,6 @@ conf = [
 def get_players(player_name):
     if player_name == 'players':
         return jsonify({'players': players})
-
     player = [player for player in players if player['name'] == player_name]
     if len(player) == 0:
         abort(404)

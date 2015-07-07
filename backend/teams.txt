@@ -1,0 +1,3302 @@
+Colleges: west_virginia
+
+School: 
+West Virginia University
+
+
+Location: 
+Morgantown, WV
+
+
+Stadium: 
+Mountaineer Field (1980)
+
+
+First
+Year of Football:  1891
+
+
+First
+Year at WVU:  2011
+
+
+WVU
+Record:  28-23-0
+
+
+Colleges: notre_dame
+
+School: 
+University of Notre Dame
+
+
+Location: 
+South Bend, IN
+
+
+Stadium: 
+Notre Dame (1930)
+
+
+First
+Year of Football:  1887
+
+
+First
+Year at ND:  2010
+
+
+ND
+Record:  45-20-0
+
+
+Colleges: western_kentucky
+
+School: 
+Western Kentucky University
+
+
+Location: 
+Bowling Green, KY
+
+
+Stadium: 
+L.T. Smith (1968)
+
+
+First
+Year of Football:  1908
+
+
+First
+Year at WKU:  2014
+
+
+WKU
+Record:  8-5-0
+
+
+Colleges: akron
+
+School: 
+University of Akron
+
+
+Location: 
+Akron, OH
+
+
+Stadium: 
+InfoCision Stadium-Summa Field (2009)
+
+
+First
+Year of Football:  1891
+
+
+First
+Year at UA:  2012
+
+
+UA
+Record:  11-25-0
+
+
+Colleges: ohio_state
+
+School: 
+Ohio State University: Columbus Campus
+
+
+Location: 
+Columbus, OH
+
+
+Stadium: 
+Ohio (1922)
+
+
+First
+Year of Football:  1889
+
+
+First
+Year at OSU:  2012
+
+
+OSU
+Record:  38-3-0
+
+
+Colleges: ohio
+
+School: 
+Ohio University
+
+
+Location: 
+Athens, OH
+
+
+Stadium: 
+Peden (1929)
+
+
+First
+Year of Football:  1894
+
+
+First
+Year at Ohio:  2005
+
+
+Ohio
+Record:  72-56-0
+
+
+Colleges: alabama
+
+School: 
+The University of Alabama
+
+
+Location: 
+Tuscaloosa, AL
+
+
+Stadium: 
+Bryant-Denny (1929)
+
+
+First
+Year of Football:  1892
+
+
+First
+Year at UA:  2007
+
+
+UA
+Record:  86-17-0
+
+
+Colleges: oklahoma_state
+
+School: 
+Oklahoma State University
+
+
+Location: 
+Stillwater, OK
+
+
+Stadium: 
+Boone Pickens Stadium (1920)
+
+
+First
+Year of Football:  1899
+
+
+First
+Year at OSU:  2005
+
+
+OSU
+Record:  84-44-0
+
+
+Colleges: oklahoma
+
+School: 
+University of Oklahoma
+
+
+Location: 
+Norman, OK
+
+
+Stadium: 
+Gaylord Family Oklahoma Memorial Stadium (1923)
+
+
+First
+Year of Football:  1895
+
+
+First
+Year at OU:  1999
+
+
+OU
+Record:  168-44-0
+
+
+Colleges: old_dominion
+
+School: 
+Old Dominion University
+
+
+Location: 
+Norfolk, VA
+
+
+Stadium: 
+Foreman Field
+
+
+First
+Year of Football:  1930
+
+
+First
+Year at ODU:  2009
+
+
+ODU
+Record:  52-20-0
+
+
+Colleges: oregon_state
+
+School: 
+Oregon State University
+
+
+Location: 
+Corvallis, OR
+
+
+Stadium: 
+Reser (1953)
+
+
+First
+Year of Football:  1893
+
+
+
+First Year at OSU:  2015
+
+
+OSU
+Record:  0-0-0
+
+
+Colleges: oregon
+
+School: 
+University of Oregon
+
+
+Location: 
+Eugene, OR
+
+
+Stadium: 
+Autzen (1967)
+
+
+First
+Year of Football:  1893
+
+
+First
+Year at UO:  2013
+
+
+UO
+Record:  24-4-0
+
+
+Colleges: alabama_birmingham
+
+School: 
+The University of Alabama at Birmingham
+
+
+Location: 
+Birmingham, AL
+
+
+Stadium: 
+Legion Field (1927)
+
+
+First
+Year of Football:  1989
+
+
+First
+Year at UAB:  2014
+
+
+UAB
+Record:  6-6-0
+
+
+Colleges: hawaii
+
+School: 
+University of Hawaii at Manoa
+
+
+Location: 
+Honolulu, HI
+
+
+Stadium: 
+Aloha (1975)
+
+
+First
+Year of Football:  1909
+
+
+First
+Year at UHM:  2012
+
+
+UHM
+Record:  8-29-0
+
+
+Colleges: penn_state
+
+School: 
+The Pennsylvania State University
+
+
+Location: 
+State College, PA
+
+
+Stadium: 
+Beaver (1960)
+
+
+First
+Year of Football:  1881
+
+
+First
+Year at PSU:  2014
+
+
+PSU
+Record:  7-6-0
+
+
+Colleges: wisconsin
+
+School: 
+University of Wisconsin-Madison
+
+
+Location: 
+Madison, WI
+
+
+Stadium: 
+Camp Randall (1917)
+
+
+First
+Year of Football:  1889
+
+
+
+First Year at UW:  2015
+
+
+UW
+Record:  0-0-0
+
+
+Colleges: arizona
+
+School: 
+University of Arizona
+
+
+Location: 
+Tucson, AZ
+
+
+Stadium: 
+Arizona (1928)
+
+
+First
+Year of Football:  1899
+
+
+First
+Year at UA:  2012
+
+
+UA
+Record:  26-14-0
+
+
+Colleges: arkansas_state
+
+School: 
+Arkansas State University
+
+
+Location: 
+Jonesboro, AR
+
+
+Stadium: 
+Indian (1974)
+
+
+First
+Year of Football:  1911
+
+
+First
+Year at ASU:  2014
+
+
+ASU
+Record:  7-6-0
+
+
+Colleges: arkansas
+
+School: 
+University of Arkansas
+
+
+Location: 
+Fayetteville, AR
+
+
+Stadium: 
+Donald W. Reynolds Razorback Stadium (1938)
+
+
+First
+Year of Football:  1894
+
+
+First
+Year at UA:  2013
+
+
+UA
+Record:  10-15-0
+
+
+Colleges: houston
+
+School: 
+University of Houston
+
+
+Location: 
+Houston, TX
+
+
+Stadium: 
+TDECU Stadium. (2014)
+
+
+First
+Year of Football:  1946
+
+
+
+First Year at UH:  2015
+
+
+UH
+Record:  0-0-0
+
+
+Colleges: pittsburgh
+
+School: 
+University of Pittsburgh
+
+
+Location: 
+Pittsburgh, PA
+
+
+Stadium: 
+Heinz Field
+
+
+First
+Year of Football:  1890
+
+
+
+First Year at Pitt:  2015
+
+
+Pitt
+Record:  0-0-0
+
+
+Colleges: utah_state
+
+School: 
+Utah State University
+
+
+Location: 
+Logan, UT
+
+
+Stadium: 
+E.L. Romney (1968)
+
+
+First
+Year of Football:  1892
+
+
+First
+Year at USU:  2013
+
+
+USU
+Record:  19-9-0
+
+
+Colleges: south_alabama
+
+School: 
+University of South Alabama
+
+
+Location: 
+Mobile, AL
+
+
+Stadium: 
+Ladd-Peebles Stadium (1948)
+
+
+First
+Year of Football:  2001
+
+
+First
+Year at USA:  2009
+
+
+USA
+Record:  37-28-0
+
+
+Colleges: western_michigan
+
+School: 
+Western Michigan University
+
+
+Location: 
+Kalamazoo, MI
+
+
+Stadium: 
+Waldo (1939)
+
+
+First
+Year of Football:  1905
+
+
+First
+Year at WMU:  2013
+
+
+WMU
+Record:  9-16-0
+
+
+Colleges: idaho
+
+School: 
+University of Idaho
+
+
+Location: 
+Moscow, ID
+
+
+Stadium: 
+Kibbie Dome (1975)
+
+
+First
+Year of Football:  1893
+
+
+First
+Year at Idaho:  2013
+
+
+Idaho
+Record:  2-21-0
+
+
+Colleges: wyoming
+
+School: 
+University of Wyoming
+
+
+Location: 
+Laramie, WY
+
+
+Stadium: 
+War Memorial (1950)
+
+
+First
+Year of Football:  1893
+
+
+First
+Year at UW:  2014
+
+
+UW
+Record:  4-8-0
+
+
+Colleges: georgia
+
+School: 
+University of Georgia
+
+
+Location: 
+Athens, GA
+
+
+Stadium: 
+Sanford (1929)
+
+
+First
+Year of Football:  1891
+
+
+First
+Year at UGA:  2001
+
+
+UGA
+Record:  136-48-0
+
+
+Colleges: illinois
+
+School: 
+University of Illinois at Urbana-Champaign
+
+
+Location: 
+Champaign, IL
+
+
+Stadium: 
+Memorial (1923)
+
+
+First
+Year of Football:  1890
+
+
+First
+Year at UI:  2012
+
+
+UI
+Record:  12-25-0
+
+
+Colleges: ball_state
+
+School: 
+Ball State University
+
+
+Location: 
+Muncie, IN
+
+
+Stadium: 
+Ball State (1967)
+
+
+First
+Year of Football:  1924
+
+
+First
+Year at BSU:  2011
+
+
+BSU
+Record:  30-20-0
+
+
+Colleges: appalachian_state
+
+School: 
+Appalachian State University
+
+
+Location: 
+Boone, NC
+
+
+Stadium: 
+Kidd Brewer (1962)
+
+
+First
+Year of Football:  1928
+
+
+First
+Year at ASU:  2013
+
+
+ASU
+Record:  11-13-0
+
+
+Colleges: south_carolina
+
+School: 
+University of South Carolina-Columbia
+
+
+Location: 
+Columbia, SC
+
+
+Stadium: 
+Williams-Brice (1934)
+
+
+First
+Year of Football:  1892
+
+
+First
+Year at USC:  2005
+
+
+USC
+Record:  84-45-0
+
+
+Colleges: indiana
+
+School: 
+Indiana University Bloomington
+
+
+Location: 
+Bloomington, IN
+
+
+Stadium: 
+Memorial (1960)
+
+
+First
+Year of Football:  1887
+
+
+First
+Year at IU:  2011
+
+
+IU
+Record:  14-34-0
+
+
+Colleges: baylor
+
+School: 
+Baylor University
+
+
+Location: 
+Waco, TX
+
+
+Stadium: 
+Floyd Casey (1950)
+
+
+First
+Year of Football:  1899
+
+
+First
+Year at BU:  2008
+
+
+BU
+Record:  55-34-0
+
+
+Colleges: iowa_state
+
+School: 
+Iowa State University
+
+
+Location: 
+Ames, IA
+
+
+Stadium: 
+Cyclone-Jack Trice (1975)
+
+
+First
+Year of Football:  1892
+
+
+First
+Year at ISU:  2009
+
+
+ISU
+Record:  29-46-0
+
+
+Colleges: iowa
+
+School: 
+University of Iowa
+
+
+Location: 
+Iowa City, IA
+
+
+Stadium: 
+Kinnick (1929)
+
+
+First
+Year of Football:  1889
+
+
+First
+Year at Iowa:  1999
+
+
+Iowa
+Record:  115-85-0
+
+
+Colleges: rice
+
+School: 
+Rice University
+
+
+Location: 
+Houston, TX
+
+
+Stadium: 
+Rice (1950)
+
+
+First
+Year of Football:  1912
+
+
+First
+Year at RU:  2007
+
+
+RU
+Record:  48-53-0
+
+
+Colleges: boise_state
+
+School: 
+Boise State University
+
+
+Location: 
+Boise, ID
+
+
+Stadium: 
+Bronco (1970)
+
+
+First
+Year of Football:  1968
+
+
+First
+Year at BSU:  2014
+
+
+BSU
+Record:  12-2-0
+
+
+Colleges: boston_college
+
+School: 
+Boston College
+
+
+Location: 
+Chestnut Hill, MA
+
+
+Stadium: 
+Alumni (1957)
+
+
+First
+Year of Football:  1893
+
+
+First
+Year at BC:  2013
+
+
+BC
+Record:  14-12-0
+
+
+Colleges: bowling_green
+
+School: 
+Bowling Green State University
+
+
+Location: 
+Bowling Green, OH
+
+
+Stadium: 
+Doyt Perry (1966)
+
+
+First
+Year of Football:  1919
+
+
+First
+Year at BGSU:  2014
+
+
+BGSU
+Record:  8-6-0
+
+
+Colleges: kansas_state
+
+School: 
+Kansas State University
+
+
+Location: 
+Manhattan, KS
+
+
+Stadium: 
+Bill Snyder Family Stadium  (1968)
+
+
+First
+Year of Football:  1896
+
+
+First
+Year at KSU:  1989
+
+
+KSU
+Record:  187-94-1
+
+
+Colleges: rutgers
+
+School: 
+Rutgers, State University of New Jersey: Rutgers College
+
+
+Location: 
+New Brunswick, NJ
+
+
+Stadium: 
+Rutgers (1994)
+
+
+First
+Year of Football:  1869
+
+
+First
+Year at RU:  2012
+
+
+RU
+Record:  23-16-0
+
+
+Colleges: brigham_young
+
+School: 
+Brigham Young University
+
+
+Location: 
+Provo, UT
+
+
+Stadium: 
+Cougar (1964)
+
+
+First
+Year of Football:  1921
+
+
+First
+Year at BYU:  2005
+
+
+BYU
+Record:  90-39-0
+
+
+Colleges: kentucky
+
+School: 
+University of Kentucky
+
+
+Location: 
+Lexington, KY
+
+
+Stadium: 
+Commonwealth (1973)
+
+
+First
+Year of Football:  1881
+
+
+First
+Year at UK:  2013
+
+
+UK
+Record:  7-17-0
+
+
+Colleges: buffalo
+
+School: 
+State University of New York at Buffalo
+
+
+Location: 
+Buffalo, NY
+
+
+Stadium: 
+UB Stadium (1993)
+
+
+First
+Year of Football:  1894
+
+
+
+First Year at UB:  2015
+
+
+UB
+Record:  0-0-0
+
+
+Colleges: fresno_state
+
+School: 
+California State University: Fresno
+
+
+Location: 
+Fresno, CA
+
+
+Stadium: 
+Bulldog (1980)
+
+
+First
+Year of Football:  1921
+
+
+First
+Year at FS:  2012
+
+
+FS
+Record:  26-14-0
+
+
+Colleges: troy_state
+
+School: 
+Troy University
+
+
+Location: 
+Troy, AL
+
+
+Stadium: 
+Movie Gallery Veterans Stadium
+
+
+First
+Year of Football:  1909
+
+
+
+First Year at TU:  2015
+
+
+TU
+Record:  0-0-0
+
+
+Colleges: california
+
+School: 
+University of California: Berkeley
+
+
+Location: 
+Berkeley, CA
+
+
+Stadium: 
+Memorial (1923)
+
+
+First
+Year of Football:  1882
+
+
+First
+Year at Cal:  2013
+
+
+Cal
+Record:  6-18-0
+
+
+Colleges: louisiana_state
+
+School: 
+Louisiana State University and Agricultural and Mechanical College
+
+
+Location: 
+Baton Rouge, LA
+
+
+Stadium: 
+Tiger (1924)
+
+
+First
+Year of Football:  1893
+
+
+First
+Year at LSU:  2005
+
+
+LSU
+Record:  103-29-0
+
+
+Colleges: louisiana_tech
+
+School: 
+Louisiana Tech University
+
+
+Location: 
+Ruston, LA
+
+
+Stadium: 
+Joe Aillet (1968)
+
+
+First
+Year of Football:  1901
+
+
+First
+Year at Tech:  2013
+
+
+Tech
+Record:  13-13-0
+
+
+Colleges: louisville
+
+School: 
+University of Louisville
+
+
+Location: 
+Louisville, KY
+
+
+Stadium: 
+Papa John's Cardinal (1998)
+
+
+First
+Year of Football:  1910
+
+
+First
+Year at UL:  2003
+
+
+UL
+Record:  50-13-0
+
+
+Colleges: san_diego_state
+
+School: 
+San Diego State University
+
+
+Location: 
+San Diego, CA
+
+
+Stadium: 
+Qualcomm (1967)
+
+
+First
+Year of Football:  1921
+
+
+First
+Year at SDSU:  2011
+
+
+SDSU
+Record:  32-20-0
+
+
+Colleges: san_jose_state
+
+School: 
+San Jose State University
+
+
+Location: 
+San Jose, CA
+
+
+Stadium: 
+Spartan (1933)
+
+
+First
+Year of Football:  1892
+
+
+First
+Year at SJSU:  2013
+
+
+SJSU
+Record:  9-15-0
+
+
+Colleges: florida_state
+
+School: 
+Florida State University
+
+
+Location: 
+Tallahassee, FL
+
+
+Stadium: 
+Doak Campbell (1950)
+
+
+First
+Year of Football:  1947
+
+
+First
+Year at FSU:  2010
+
+
+FSU
+Record:  58-11-0
+
+
+Colleges: central_florida
+
+School: 
+University of Central Florida
+
+
+Location: 
+Orlando, FL
+
+
+Stadium: 
+Bright House Networks (2007)
+
+
+First
+Year of Football:  1979
+
+
+First
+Year at UCF:  2004
+
+
+UCF
+Record:  81-60-0
+
+
+Colleges: central_michigan
+
+School: 
+Central Michigan University
+
+
+Location: 
+Mount Pleasant, MI
+
+
+Stadium: 
+Kelly-Shorts (1972)
+
+
+First
+Year of Football:  1896
+
+
+
+First Year at CMU:  2015
+
+
+CMU
+Record:  0-0-0
+
+
+Colleges: marshall
+
+School: 
+Marshall University
+
+
+Location: 
+Huntington, WV
+
+
+Stadium: 
+Marshall University (1991)
+
+
+First
+Year of Football:  1895
+
+
+First
+Year at MU:  2010
+
+
+MU
+Record:  40-25-0
+
+
+Colleges: north_carolina_state
+
+School: 
+North Carolina State University
+
+
+Location: 
+Raleigh, NC
+
+
+Stadium: 
+Carter-Finley (1966)
+
+
+First
+Year of Football:  1892
+
+
+First
+Year at NCSU:  2013
+
+
+NCSU
+Record:  11-14-0
+
+
+Colleges: maryland
+
+School: 
+University of Maryland: College Park
+
+
+Location: 
+College Park, MD
+
+
+Stadium: 
+Byrd (1950)
+
+
+First
+Year of Football:  1892
+
+
+First
+Year at UM:  2011
+
+
+UM
+Record:  20-30-0
+
+
+Colleges: south_florida
+
+School: 
+University of South Florida
+
+
+Location: 
+Tampa, FL
+
+
+Stadium: 
+Raymond James (1998)
+
+
+First
+Year of Football:  1997
+
+
+First
+Year at USF:  2013
+
+
+USF
+Record:  6-18-0
+
+
+Colleges: cincinnati
+
+School: 
+University of Cincinnati
+
+
+Location: 
+Cincinnati, OH
+
+
+Stadium: 
+Nippert (1916)
+
+
+First
+Year of Football:  1885
+
+
+First
+Year at UC:  2013
+
+
+UC
+Record:  18-8-0
+
+
+Colleges: massachusetts
+
+School: 
+University of Massachusetts Amherst
+
+
+Location: 
+Amherst, MA
+
+
+Stadium: 
+Gillette Stadium (2002)
+
+
+First
+Year of Football:  1879
+
+
+First
+Year at UMass:  1998
+
+
+UMass
+Record:  52-35-0
+
+
+Colleges: south_carolina
+
+School: 
+University of South Carolina-Columbia
+
+
+Location: 
+Columbia, SC
+
+
+Stadium: 
+Williams-Brice (1934)
+
+
+First
+Year of Football:  1892
+
+
+First
+Year at USC:  2005
+
+
+USC
+Record:  84-45-0
+
+
+Colleges: nevada_las_vegas
+
+School: 
+University of Nevada: Las Vegas
+
+
+Location: 
+Las Vegas, NV
+
+
+Stadium: 
+Sam Boyd (1971)
+
+
+First
+Year of Football:  1968
+
+
+
+First Year at UNLV:  2015
+
+
+UNLV
+Record:  0-0-0
+
+
+Colleges: clemson
+
+School: 
+Clemson University
+
+
+Location: 
+Clemson, SC
+
+
+Stadium: 
+Clemson Memorial (1942)
+
+
+First
+Year of Football:  1896
+
+
+First
+Year at CU:  2008
+
+
+CU
+Record:  61-26-0
+
+
+Colleges: memphis
+
+School: 
+University of Memphis
+
+
+Location: 
+Memphis, TN
+
+
+Stadium: 
+Liberty Bowl (1965)
+
+
+First
+Year of Football:  1912
+
+
+First
+Year at UofM:  2012
+
+
+UofM
+Record:  17-20-0
+
+
+Colleges: ucla
+
+School: 
+University of California: Los Angeles
+
+
+Location: 
+Los Angeles, CA
+
+
+Stadium: 
+Rose Bowl (1922)
+
+
+First
+Year of Football:  1919
+
+
+First
+Year at UCLA:  2012
+
+
+UCLA
+Record:  29-11-0
+
+
+Colleges: southern_mississippi
+
+School: 
+University of Southern Mississippi
+
+
+Location: 
+Hattiesburg, MS
+
+
+Stadium: 
+Roberts (1976)
+
+
+First
+Year of Football:  1912
+
+
+First
+Year at USM:  2013
+
+
+USM
+Record:  4-20-0
+
+
+Colleges: southern_mississippi
+
+School: 
+University of Southern Mississippi
+
+
+Location: 
+Hattiesburg, MS
+
+
+Stadium: 
+Roberts (1976)
+
+
+First
+Year of Football:  1912
+
+
+First
+Year at USM:  2013
+
+
+USM
+Record:  4-20-0
+
+
+Colleges: purdue
+
+School: 
+Purdue University
+
+
+Location: 
+West Lafayette, IN
+
+
+Stadium: 
+Ross-Ade (1924)
+
+
+First
+Year of Football:  1887
+
+
+First
+Year at PU:  2013
+
+
+PU
+Record:  4-20-0
+
+
+Colleges: colorado_state
+
+School: 
+Colorado State University
+
+
+Location: 
+Fort Collins, CO
+
+
+Stadium: 
+Sonny Lubick Field at Hughes Stadium (1968)
+
+
+First
+Year of Football:  1890
+
+
+
+First Year at CSU:  2015
+
+
+CSU
+Record:  0-0-0
+
+
+Colleges: colorado
+
+School: 
+University of Colorado at Boulder
+
+
+Location: 
+Boulder, CO
+
+
+Stadium: 
+Folsom (1924)
+
+
+First
+Year of Football:  1890
+
+
+First
+Year at CU:  2013
+
+
+CU
+Record:  6-18-0
+
+
+Colleges: miami_oh
+
+School: 
+Miami University: Oxford Campus
+
+
+Location: 
+Oxford, OH
+
+
+Stadium: 
+Fred C. Yager (1983)
+
+
+First
+Year of Football:  1888
+
+
+First
+Year at MU:  2014
+
+
+MU
+Record:  2-10-0
+
+
+Colleges: miami_fl
+
+School: 
+University of Miami
+
+
+Location: 
+Coral Gables, FL
+
+
+Stadium: 
+Dolphin Stadium
+
+
+First
+Year of Football:  1927
+
+
+First
+Year at UM:  2011
+
+
+UM
+Record:  28-22-0
+
+
+Colleges: michigan_state
+
+School: 
+Michigan State University
+
+
+Location: 
+East Lansing, MI
+
+
+Stadium: 
+Spartan (1923)
+
+
+First
+Year of Football:  1885
+
+
+First
+Year at MSU:  2007
+
+
+MSU
+Record:  75-31-0
+
+
+Colleges: michigan
+
+School: 
+University of Michigan
+
+
+Location: 
+Ann Arbor, MI
+
+
+Stadium: 
+Michigan (1927)
+
+
+First
+Year of Football:  1878
+
+
+
+First Year at UM:  2015
+
+
+UM
+Record:  0-0-0
+
+
+Colleges: middle_tennessee_state
+
+School: 
+Middle Tennessee State University
+
+
+Location: 
+Murfreesboro, TN
+
+
+Stadium: 
+Floyd/Jones Field (1998)
+
+
+First
+Year of Football:  1911
+
+
+First
+Year at MTSU:  2006
+
+
+MTSU
+Record:  57-55-0
+
+
+Colleges: connecticut
+
+School: 
+University of Connecticut
+
+
+Location: 
+Storrs, CT
+
+
+Stadium: 
+Rentschler Field (2003)
+
+
+First
+Year of Football:  1893
+
+
+First
+Year at UConn:  2014
+
+
+UConn
+Record:  2-10-0
+
+
+Colleges: arizona_state
+
+School: 
+Arizona State University
+
+
+Location: 
+Tempe, AZ
+
+
+Stadium: 
+Sun Devil (1959)
+
+
+First
+Year of Football:  1896
+
+
+First
+Year at ASU:  2012
+
+
+ASU
+Record:  28-12-0
+
+
+Colleges: minnesota
+
+School: 
+University of Minnesota: Twin Cities
+
+
+Location: 
+Minneapolis, MN
+
+
+Stadium: 
+TCF Bank Stadium (2009)
+
+
+First
+Year of Football:  1882
+
+
+First
+Year at TheU:  2011
+
+
+TheU
+Record:  21-23-0
+
+
+Colleges: louisiana_monroe
+
+School: 
+University of Louisiana at Monroe
+
+
+Location: 
+Monroe, LA
+
+
+Stadium: 
+Malone (1978)
+
+
+First
+Year of Football:  1951
+
+
+First
+Year at ULM:  2010
+
+
+ULM
+Record:  27-34-0
+
+
+Colleges: mississippi_state
+
+School: 
+Mississippi State University
+
+
+Location: 
+Starkville, MS
+
+
+Stadium: 
+Scott Field (1914)
+
+
+First
+Year of Football:  1895
+
+
+First
+Year at MSU:  2009
+
+
+MSU
+Record:  46-31-0
+
+
+Colleges: syracuse
+
+School: 
+Syracuse University
+
+
+Location: 
+Syracuse, NY
+
+
+Stadium: 
+Carrier Dome (1980)
+
+
+First
+Year of Football:  1889
+
+
+First
+Year at SU:  2013
+
+
+SU
+Record:  10-15-0
+
+
+Colleges: mississippi
+
+School: 
+University of Mississippi
+
+
+Location: 
+Oxford, MS
+
+
+Stadium: 
+Vaught-Hemingway (1941)
+
+
+First
+Year of Football:  1893
+
+
+First
+Year at UM:  2012
+
+
+UM
+Record:  24-15-0
+
+
+Colleges: temple
+
+School: 
+Temple University
+
+
+Location: 
+Philadelphia, PA
+
+
+Stadium: 
+Lincoln Financial Field (2003)
+
+
+First
+Year of Football:  1894
+
+
+First
+Year at TU:  2013
+
+
+TU
+Record:  8-16-0
+
+
+Colleges: georgia_southern
+
+School: 
+Georgia Southern University
+
+
+Location: 
+Statesboro, GA
+
+
+Stadium: 
+Paulson (1984)
+
+
+First
+Year of Football:  1923
+
+
+First
+Year at GSU:  2014
+
+
+GSU
+Record:  9-3-0
+
+
+Colleges: texas_state
+
+School: 
+Texas State University
+
+
+Location: 
+San Marcos, TX
+
+
+Stadium: 
+Bobcat (1981)
+
+
+First
+Year of Football:  1904
+
+
+First
+Year at TXST:  1990
+
+
+TXST
+Record:  36-34-0
+
+
+Colleges: tennessee
+
+School: 
+University of Tennessee: Knoxville
+
+
+Location: 
+Knoxville, TN
+
+
+Stadium: 
+Neyland (1921)
+
+
+First
+Year of Football:  1891
+
+
+First
+Year at UT:  2013
+
+
+UT
+Record:  12-13-0
+
+
+Colleges: texas_a&m
+
+School: 
+Texas A&M; University
+
+
+Location: 
+College Station, TX
+
+
+Stadium: 
+Kyle Field (1925)
+
+
+First
+Year of Football:  1894
+
+
+First
+Year at A&M;:  2012
+
+
+A&M;
+Record:  28-11-0
+
+
+Colleges: texas_christian
+
+School: 
+Texas Christian University
+
+
+Location: 
+Fort Worth, TX
+
+
+Stadium: 
+Amon G. Carter (1929)
+
+
+First
+Year of Football:  1896
+
+
+First
+Year at TCU:  2000
+
+
+TCU
+Record:  132-45-0
+
+
+Colleges: louisiana_lafayette
+
+School: 
+University of Louisiana at Lafayette
+
+
+Location: 
+Lafayette, LA
+
+
+Stadium: 
+Cajun Field (1971)
+
+
+First
+Year of Football:  1901
+
+
+First
+Year at ULL:  2011
+
+
+ULL
+Record:  36-16-0
+
+
+Colleges: texas_tech
+
+School: 
+Texas Tech University
+
+
+Location: 
+Lubbock, TX
+
+
+Stadium: 
+Jones AT&T; Stadium (1947)
+
+
+First
+Year of Football:  1925
+
+
+First
+Year at TT:  2013
+
+
+TT
+Record:  12-13-0
+
+
+Colleges: texas
+
+School: 
+The University of Texas at Austin
+
+
+Location: 
+Austin, TX
+
+
+Stadium: 
+Royal-Memorial (1924)
+
+
+First
+Year of Football:  1893
+
+
+First
+Year at UT:  2014
+
+
+UT
+Record:  6-7-0
+
+
+Colleges: texas_el_paso
+
+School: 
+University of Texas-El Paso
+
+
+Location: 
+El Paso, TX
+
+
+Stadium: 
+Sun Bowl (1963)
+
+
+First
+Year of Football:  1914
+
+
+First
+Year at UTEP:  2013
+
+
+UTEP
+Record:  9-16-0
+
+
+Colleges: duke
+
+School: 
+Duke University
+
+
+Location: 
+Durham, NC
+
+
+Stadium: 
+Wallace Wade (1929)
+
+
+First
+Year of Football:  1888
+
+
+First
+Year at Duke:  2008
+
+
+Duke
+Record:  40-48-0
+
+
+Colleges: texas_san_antonio
+
+School: 
+University of Texas at San Antonio
+
+
+Location: 
+San Antonio, TX
+
+
+Stadium: 
+Alamodome (1993)
+
+
+First
+Year of Football:  2011
+
+
+First
+Year at UTSA:  2011
+
+
+UTSA
+Record:  23-23-0
+
+
+Colleges: kent_state
+
+School: 
+Kent State University
+
+
+Location: 
+Kent, OH
+
+
+Stadium: 
+Dix (1969)
+
+
+First
+Year of Football:  1920
+
+
+First
+Year at KSU:  2013
+
+
+KSU
+Record:  6-17-0
+
+
+Colleges: east_carolina
+
+School: 
+East Carolina University
+
+
+Location: 
+Greenville, NC
+
+
+Stadium: 
+Dowdy-Ficklen (1963)
+
+
+First
+Year of Football:  1932
+
+
+First
+Year at ECU:  2010
+
+
+ECU
+Record:  37-27-0
+
+
+Colleges: toledo
+
+School: 
+University of Toledo
+
+
+Location: 
+Toledo, OH
+
+
+Stadium: 
+Glass Bowl (1937)
+
+
+First
+Year of Football:  1917
+
+
+First
+Year at UT:  2011
+
+
+UT
+Record:  26-13-0
+
+
+Colleges: north_carolina
+
+School: 
+University of North Carolina at Chapel Hill
+
+
+Location: 
+Chapel Hill, NC
+
+
+Stadium: 
+Kenan Memorial (1927)
+
+
+First
+Year of Football:  1888
+
+
+First
+Year at UNC:  2012
+
+
+UNC
+Record:  21-17-0
+
+
+Colleges: eastern_michigan
+
+School: 
+Eastern Michigan University
+
+
+Location: 
+Ypsilanti, MI
+
+
+Stadium: 
+Rynearson (1969)
+
+
+First
+Year of Football:  1891
+
+
+First
+Year at EMU:  2014
+
+
+EMU
+Record:  2-10-0
+
+
+Colleges: stanford
+
+School: 
+Stanford University
+
+
+Location: 
+Stanford, CA
+
+
+Stadium: 
+Stanford (1921)
+
+
+First
+Year of Football:  1891
+
+
+First
+Year at SU:  2011
+
+
+SU
+Record:  42-12-0
+
+
+Colleges: tulane
+
+School: 
+Tulane University
+
+
+Location: 
+New Orleans, LA
+
+
+Stadium: 
+Superdome (1975)
+
+
+First
+Year of Football:  1893
+
+
+First
+Year at TU:  2012
+
+
+TU
+Record:  12-25-0
+
+
+Colleges: tulsa
+
+School: 
+University of Tulsa
+
+
+Location: 
+Tulsa, OK
+
+
+Stadium: 
+Chapman (1930)
+
+
+First
+Year of Football:  1895
+
+
+
+First Year at TU:  2015
+
+
+TU
+Record:  0-0-0
+
+
+Colleges: air_force
+
+School: 
+United States Air Force Academy
+
+
+Location: 
+Air Force Academy, CO
+
+
+Stadium: 
+Falcon (1962)
+
+
+First
+Year of Football:  1956
+
+
+First
+Year at USAFA:  2007
+
+
+USAFA
+Record:  59-44-0
+
+
+Colleges: nevada
+
+School: 
+University of Nevada: Reno
+
+
+Location: 
+Reno, NV
+
+
+Stadium: 
+Mackay (1967)
+
+
+First
+Year of Football:  1896
+
+
+First
+Year at UN:  2013
+
+
+UN
+Record:  11-14-0
+
+
+Colleges: army
+
+School: 
+United States Military Academy
+
+
+Location: 
+West Point, NY
+
+
+Stadium: 
+Michie (1924)
+
+
+First
+Year of Football:  1890
+
+
+First
+Year at USMA:  2014
+
+
+USMA
+Record:  4-8-0
+
+
+Colleges: navy
+
+School: 
+United States Naval Academy
+
+
+Location: 
+Annapolis, MD
+
+
+Stadium: 
+Navy-Marine Corps (1959)
+
+
+First
+Year of Football:  1879
+
+
+First
+Year at USNA:  2007
+
+
+USNA
+Record:  57-35-0
+
+
+Colleges: new_mexico_state
+
+School: 
+New Mexico State University
+
+
+Location: 
+Las Cruces, NM
+
+
+Stadium: 
+Aggie Memorial (1978)
+
+
+First
+Year of Football:  1893
+
+
+First
+Year at NMSU:  2013
+
+
+NMSU
+Record:  4-20-0
+
+
+Colleges: new_mexico
+
+School: 
+University of New Mexico
+
+
+Location: 
+Albuquerque, NM
+
+
+Stadium: 
+University (1960)
+
+
+First
+Year of Football:  1892
+
+
+First
+Year at UNM:  2012
+
+
+UNM
+Record:  11-26-0
+
+
+Colleges: nebraska
+
+School: 
+University of Nebraska - Lincoln
+
+
+Location: 
+Lincoln, NE
+
+
+Stadium: 
+Memorial/Osborne Field (1923)
+
+
+First
+Year of Football:  1890
+
+
+
+First Year at UNL:  2015
+
+
+UNL
+Record:  0-0-0
+
+
+Colleges: utah
+
+School: 
+University of Utah
+
+
+Location: 
+Salt Lake City, UT
+
+
+Stadium: 
+Rice-Eccles (1927)
+
+
+First
+Year of Football:  1892
+
+
+First
+Year at Utah:  2005
+
+
+Utah
+Record:  84-43-0
+
+
+Colleges: auburn
+
+School: 
+Auburn University
+
+
+Location: 
+Auburn, AL
+
+
+Stadium: 
+Jordan-Hare (1939)
+
+
+First
+Year of Football:  1891
+
+
+First
+Year at AU:  2013
+
+
+AU
+Record:  20-7-0
+
+
+Colleges: vanderbilt
+
+School: 
+Vanderbilt University
+
+
+Location: 
+Nashville, TN
+
+
+Stadium: 
+Vanderbilt (1981)
+
+
+First
+Year of Football:  1890
+
+
+First
+Year at Vandy:  2014
+
+
+Vandy
+Record:  3-9-0
+
+
+Colleges: florida_atlantic
+
+School: 
+Florida Atlantic University
+
+
+Location: 
+Boca Raton, FL
+
+
+Stadium: 
+Lockhart (1959)
+
+
+First
+Year of Football:  2001
+
+
+First
+Year at FAU:  2014
+
+
+FAU
+Record:  3-9-0
+
+
+Colleges: virginia_tech
+
+School: 
+Virginia Polytechnic Institute & State University
+
+
+Location: 
+Blacksburg, VA
+
+
+Stadium: 
+Lane (1965)
+
+
+First
+Year of Football:  1892
+
+
+First
+Year at VPI:  1987
+
+
+VPI
+Record:  231-115-2
+
+
+Colleges: florida_international
+
+School: 
+Florida International University
+
+
+Location: 
+Miami, FL
+
+
+Stadium: 
+FIU Community Stadium
+
+
+First
+Year of Football:  2002
+
+
+First
+Year at FIU:  2013
+
+
+FIU
+Record:  5-19-0
+
+
+Colleges: virginia
+
+School: 
+University of Virginia
+
+
+Location: 
+Charlottesville, VA
+
+
+Stadium: 
+Scott (1931)
+
+
+First
+Year of Football:  1888
+
+
+First
+Year at UVA:  2010
+
+
+UVA
+Record:  23-38-0
+
+
+Colleges: florida
+
+School: 
+University of Florida
+
+
+Location: 
+Gainesville, FL
+
+
+Stadium: 
+Florida Field (1930)
+
+
+First
+Year of Football:  1906
+
+
+
+First Year at UF:  2015
+
+
+UF
+Record:  0-0-0
+
+
+Colleges: wake_forest
+
+School: 
+Wake Forest University
+
+
+Location: 
+Winston-Salem, NC
+
+
+Stadium: 
+Groves (1968)
+
+
+First
+Year of Football:  1888
+
+
+First
+Year at WFU:  2014
+
+
+WFU
+Record:  3-9-0
+
+
+Colleges: missouri
+
+School: 
+University of Missouri: Columbia
+
+
+Location: 
+Columbia, MO
+
+
+Stadium: 
+Memorial/Faurot Field (1926)
+
+
+First
+Year of Football:  1890
+
+
+First
+Year at MU:  2001
+
+
+MU
+Record:  112-66-0
+
+
+Colleges: north_texas
+
+School: 
+University of North Texas
+
+
+Location: 
+Denton, TX
+
+
+Stadium: 
+Apogee Stadium (2011)
+
+
+First
+Year of Football:  1913
+
+
+First
+Year at UNT:  2011
+
+
+UNT
+Record:  22-27-0
+
+
+Colleges: washington_state
+
+School: 
+Washington State University
+
+
+Location: 
+Pullman, WA
+
+
+Stadium: 
+Clarence D. Martin (1972)
+
+
+First
+Year of Football:  1893
+
+
+First
+Year at WSU:  2012
+
+
+WSU
+Record:  12-25-0
+
+
+Colleges: washington
+
+School: 
+University of Washington
+
+
+Location: 
+Seattle, WA
+
+
+Stadium: 
+Husky (1920)
+
+
+First
+Year of Football:  1889
+
+
+First
+Year at UW:  2014
+
+
+UW
+Record:  8-6-0
+
+
+Colleges: northern_illinois
+
+School: 
+Northern Illinois University
+
+
+Location: 
+DeKalb, IL
+
+
+Stadium: 
+Huskie (1965)
+
+
+First
+Year of Football:  1899
+
+
+First
+Year at NIU:  2012
+
+
+NIU
+Record:  23-6-0
+
+
+Colleges: northwestern
+
+School: 
+Northwestern University
+
+
+Location: 
+Evanston, IL
+
+
+Stadium: 
+Ryan Field (1926)
+
+
+First
+Year of Football:  1875
+
+
+First
+Year at NU:  2006
+
+
+NU
+Record:  60-53-0
+
+
+Colleges: georgia_state
+
+School: 
+Georgia State University
+
+
+Location: 
+Atlanta, GA
+
+
+Stadium: 
+Georgia Dome (1992)
+
+
+First
+Year of Football:  2010
+
+
+First
+Year at GSU:  2013
+
+
+GSU
+Record:  1-23-0
+
+
+Colleges: georgia_tech
+
+School: 
+Georgia Institute of Technology
+
+
+Location: 
+Atlanta, GA
+
+
+Stadium: 
+Bobby Dodd (1913)
+
+
+First
+Year of Football:  1892
+
+
+First
+Year at GT:  2008
+
+
+GT
+Record:  58-35-0
+
+
