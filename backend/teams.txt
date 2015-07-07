@@ -1,0 +1,641 @@
+Colleges: west_virginia
+
+[]
+
+
+Colleges: notre_dame
+
+[]
+
+
+Colleges: western_kentucky
+
+[]
+
+
+Colleges: akron
+
+[]
+
+
+Colleges: ohio_state
+
+[]
+
+
+Colleges: ohio
+
+[]
+
+
+Colleges: alabama
+
+[]
+
+
+Colleges: oklahoma_state
+
+[]
+
+
+Colleges: oklahoma
+
+[]
+
+
+Colleges: old_dominion
+
+[]
+
+
+Colleges: oregon_state
+
+[]
+
+
+Colleges: oregon
+
+[]
+
+
+Colleges: alabama_birmingham
+
+[]
+
+
+Colleges: hawaii
+
+[]
+
+
+Colleges: penn_state
+
+[]
+
+
+Colleges: wisconsin
+
+[]
+
+
+Colleges: arizona
+
+[]
+
+
+Colleges: arkansas_state
+
+[]
+
+
+Colleges: arkansas
+
+[]
+
+
+Colleges: houston
+
+[]
+
+
+Colleges: pittsburgh
+
+[]
+
+
+Colleges: utah_state
+
+[]
+
+
+Colleges: south_alabama
+
+[]
+
+
+Colleges: western_michigan
+
+[]
+
+
+Colleges: idaho
+
+[]
+
+
+Colleges: wyoming
+
+[<p style="margin-left: 15; margin-top: 5; margin-bottom: 5"><font face="Arial" size="2"><b>School: 
+University of Wyoming</b></font></p>, <p style="margin-left: 15; margin-top: 5; margin-bottom: 5"><font face="Arial" size="2"><b>Location: 
+Laramie, WY</b></font></p>, <p style="margin-left: 15; margin-top: 5; margin-bottom: 5"><font face="Arial" size="2"><b>Stadium: 
+War Memorial (1950)</b></font></p>, <p style="margin-left: 15; margin-top: 5; margin-bottom: 5"><font face="Arial" size="2"><b>First
+Year of Football:  1893</b></font></p>, <p style="margin-left: 15; margin-top: 5; margin-bottom: 5"><font face="Arial" size="2"><b>First
+Year at UW:  2014</b></font></p>, <p style="margin-left: 15; margin-top: 5; margin-bottom: 5"><font face="Arial" size="2"><b>UW
+Record:  4-8-0</b></font></p>]
+
+
+Colleges: georgia
+
+[]
+
+
+Colleges: illinois
+
+[]
+
+
+Colleges: ball_state
+
+[]
+
+
+Colleges: appalachian_state
+
+[]
+
+
+Colleges: south_carolina
+
+[]
+
+
+Colleges: indiana
+
+[]
+
+
+Colleges: baylor
+
+[]
+
+
+Colleges: iowa_state
+
+[]
+
+
+Colleges: iowa
+
+[]
+
+
+Colleges: rice
+
+[]
+
+
+Colleges: boise_state
+
+[]
+
+
+Colleges: boston_college
+
+[]
+
+
+Colleges: bowling_green
+
+[]
+
+
+Colleges: kansas_state
+
+[]
+
+
+Colleges: rutgers
+
+[]
+
+
+Colleges: brigham_young
+
+[]
+
+
+Colleges: kentucky
+
+[]
+
+
+Colleges: buffalo
+
+[]
+
+
+Colleges: fresno_state
+
+[]
+
+
+Colleges: troy_state
+
+[]
+
+
+Colleges: california
+
+[]
+
+
+Colleges: louisiana_state
+
+[]
+
+
+Colleges: louisiana_tech
+
+[]
+
+
+Colleges: louisville
+
+[]
+
+
+Colleges: san_diego_state
+
+[]
+
+
+Colleges: san_jose_state
+
+[]
+
+
+Colleges: florida_state
+
+[]
+
+
+Colleges: central_florida
+
+[]
+
+
+Colleges: central_michigan
+
+[]
+
+
+Colleges: marshall
+
+[]
+
+
+Colleges: north_carolina_state
+
+[]
+
+
+Colleges: maryland
+
+[]
+
+
+Colleges: south_florida
+
+[]
+
+
+Colleges: cincinnati
+
+[]
+
+
+Colleges: massachusetts
+
+[]
+
+
+Colleges: south_carolina
+
+[]
+
+
+Colleges: nevada_las_vegas
+
+[]
+
+
+Colleges: clemson
+
+[]
+
+
+Colleges: memphis
+
+[]
+
+
+Colleges: ucla
+
+[]
+
+
+Colleges: southern_mississippi
+
+[]
+
+
+Colleges: southern_mississippi
+
+[]
+
+
+Colleges: purdue
+
+[]
+
+
+Colleges: colorado_state
+
+[]
+
+
+Colleges: colorado
+
+[]
+
+
+Colleges: miami_oh
+
+[]
+
+
+Colleges: miami_fl
+
+[]
+
+
+Colleges: michigan_state
+
+[]
+
+
+Colleges: michigan
+
+[]
+
+
+Colleges: middle_tennessee_state
+
+[]
+
+
+Colleges: connecticut
+
+[]
+
+
+Colleges: arizona_state
+
+[]
+
+
+Colleges: minnesota
+
+[]
+
+
+Colleges: louisiana_monroe
+
+[]
+
+
+Colleges: mississippi_state
+
+[]
+
+
+Colleges: syracuse
+
+[]
+
+
+Colleges: mississippi
+
+[]
+
+
+Colleges: temple
+
+[]
+
+
+Colleges: georgia_southern
+
+[]
+
+
+Colleges: texas_state
+
+[]
+
+
+Colleges: tennessee
+
+[]
+
+
+Colleges: texas_a&m
+
+[]
+
+
+Colleges: texas_christian
+
+[]
+
+
+Colleges: louisiana_lafayette
+
+[]
+
+
+Colleges: texas_tech
+
+[]
+
+
+Colleges: texas
+
+[]
+
+
+Colleges: texas_el_paso
+
+[]
+
+
+Colleges: duke
+
+[]
+
+
+Colleges: texas_san_antonio
+
+[]
+
+
+Colleges: kent_state
+
+[]
+
+
+Colleges: east_carolina
+
+[]
+
+
+Colleges: toledo
+
+[]
+
+
+Colleges: north_carolina
+
+[]
+
+
+Colleges: eastern_michigan
+
+[]
+
+
+Colleges: stanford
+
+[]
+
+
+Colleges: tulane
+
+[]
+
+
+Colleges: tulsa
+
+[]
+
+
+Colleges: air_force
+
+[]
+
+
+Colleges: nevada
+
+[]
+
+
+Colleges: army
+
+[]
+
+
+Colleges: navy
+
+[]
+
+
+Colleges: new_mexico_state
+
+[]
+
+
+Colleges: new_mexico
+
+[]
+
+
+Colleges: nebraska
+
+[]
+
+
+Colleges: utah
+
+[]
+
+
+Colleges: auburn
+
+[]
+
+
+Colleges: vanderbilt
+
+[]
+
+
+Colleges: florida_atlantic
+
+[]
+
+
+Colleges: virginia_tech
+
+[]
+
+
+Colleges: florida_international
+
+[]
+
+
+Colleges: virginia
+
+[]
+
+
+Colleges: florida
+
+[]
+
+
+Colleges: wake_forest
+
+[]
+
+
+Colleges: missouri
+
+[]
+
+
+Colleges: north_texas
+
+[]
+
+
+Colleges: washington_state
+
+[]
+
+
+Colleges: washington
+
+[]
+
+
+Colleges: northern_illinois
+
+[]
+
+
+Colleges: northwestern
+
+[]
+
+
+Colleges: georgia_state
+
+[]
+
+
+Colleges: georgia_tech
+
+[]
+
+
