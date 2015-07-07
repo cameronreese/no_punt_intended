@@ -48,38 +48,52 @@ players = [
 
 teams = [
     {
-        'name': 'Texas Longhorns',
-        'location': 'Austin, TX',
-        'roster': (), # tuple of player links
-        'schedule': [[]], # a dict of {date : opponent} or some custom list of data
-        'head_coach': 'Strong',
-        'conf': 'Big 12'
+        'name': 'Texas Longhorns'
+        # 'location': 'Austin, TX',
+        # 'roster': (), # tuple of player links
+        # 'schedule': [[]], # a dict of {date : opponent} or some custom list of data
+        # 'head_coach': 'Strong',
+        # 'conf': 'Big 12'
     },
     {
-        'name': 'Baylor Bears',
-        'location': 'Waco, TX',
-        'roster': (), # tuple of player links
-        'schedule': [[]], # a dict of {date : opponent} or some custom list of data
-        'head_coach': 'Unknown',
-        'conf': 'Big 12'
+        'name': 'Baylor Bears'
+        # 'location': 'Waco, TX',
+        # 'roster': (), # tuple of player links
+        # 'schedule': [[]], # a dict of {date : opponent} or some custom list of data
+        # 'head_coach': 'Unknown',
+        # 'conf': 'Big 12'
     },
     {
-        'name': 'TCU Horned Frogs',
-        'location': 'Fort Worth, TX',
-        'roster': (), # tuple of player links
-        'schedule': [[]], # a dict of {date : opponent} or some custom list of data
-        'head_coach': 'Unknown',
-        'conf': 'Big 12'
+        'name': 'TCU Horned Frogs'
+        # 'location': 'Fort Worth, TX',
+        # 'roster': (), # tuple of player links
+        # 'schedule': [[]], # a dict of {date : opponent} or some custom list of data
+        # 'head_coach': 'Unknown',
+        # 'conf': 'Big 12'
     }
 ]
 
 conf = [
     {
-        'name': 'Big 12',
-        'founded': 'some year',
-        'current_conf_champion': 'team',
-        'teams': [], # list of teams
-        'number_of_teams': 'a_num'
+        'name': 'Big 12'
+        # 'founded': 'some year',
+        # 'current_conf_champion': 'team',
+        # 'teams': [], # list of teams
+        # 'number_of_teams': 'a_num'
+    },
+    {
+        'name': 'Big Ten'
+        # 'founded': 'some year',
+        # 'current_conf_champion': 'team',
+        # 'teams': [], # list of teams
+        # 'number_of_teams': 'a_num'
+    },
+    {
+        'name': 'ACC'
+        # 'founded': 'some year',
+        # 'current_conf_champion': 'team',
+        # 'teams': [], # list of teams
+        # 'number_of_teams': 'a_num'
     }
 ]
 

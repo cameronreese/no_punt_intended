@@ -29,32 +29,50 @@ class TestModels(TestCase):
         self.assertEqual(player, data)
 
     def test_get_players_2(self):
-        player = {
-            'name': 'Shiro Davis',
-            'no': '#1',
-            'pos': 'DE',
-            'team': 'Texas Longhorns',
-            'ht': '6-3',
-            'wt': '265',
-            'hometown': 'Shreveport, LA',
-        }
+        player = {'players': {'hometown': 'Shreveport, LA', 'ht': '6-3', 'team': 'Texas Longhorns', 'pos': 'DE', 'name': 'Shiro Davis', 'wt': '265', 'no': '#1'}}
         data = requests.get('http://cfdb.me:5000/punt/players/Shiro%20Davis').json()
         self.assertEqual(player, data)
 
     def test_get_players_3(self):
-        player = {
-            'name': 'Jeff Bryson',
-            'no': '#59',
-            'pos': 'LB',
-            'team': 'Baylor Bears',
-            'ht': '5-10',
-            'wt': '200',
-            'hometown': 'San Antonio, TX',
-        }
+        player = {'players': {'hometown': 'San Antonio, TX', 'ht': '5-10', 'team': 'Baylor Bears', 'pos': 'LB', 'name': 'Jeff Bryson', 'wt': '200', 'no': '#59'}}
         data = requests.get('http://cfdb.me:5000/punt/players/Jeff%20Bryson').json()
         self.assertEqual(player, data)
 
+    # -----------
+    # get_teams
+    # -----------
+    def test_get_teams_1(self):
+        team = {"teams": {"name": "Texas Longhorns"}}
+        data = requests.get('http://cfdb.me:5000/punt/teams/Texas%20Longhorns').json()
+        self.assertEqual(team, data)
 
+    def test_get_teams_2(self):
+        team = {"teams": {"name": "Baylor Bears"}}
+        data = requests.get('http://cfdb.me:5000/punt/teams/Baylor%20Bears').json()
+        self.assertEqual(team, data)
+
+    def test_get_teams_3(self):
+        team = {"teams": {"name": "TCU Horned Frogs"}}
+        data = requests.get('http://cfdb.me:5000/punt/teams/TCU%20Horned%20Frogs').json()
+        self.assertEqual(team, data)
+
+    # -----------
+    # get_conf
+    # -----------
+    def test_get_conf_1(self):
+        conf = {"conf": {"name": "Big 12"}}
+        data = requests.get('http://cfdb.me:5000/punt/conf/Big%2012').json()
+        self.assertEqual(conf, data)
+
+    def test_get_conf_2(self):
+        conf = {"conf": {"name": "Big Ten"}}
+        data = requests.get('http://cfdb.me:5000/punt/conf/Big%20Ten').json()
+        self.assertEqual(conf, data)
+
+    def test_get_conf_3(self):
+        conf = {"conf": {"name": "ACC"}}
+        data = requests.get('http://cfdb.me:5000/punt/conf/ACC').json()
+        self.assertEqual(conf, data)
 # ----
 # main
 # ----
