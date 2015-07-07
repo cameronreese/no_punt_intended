@@ -1,0 +1,624 @@
+commit c5244d7d6ded37d85b4f8ce1b5b2bbd3767bbf2f
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 7 14:44:47 2015 -0500
+
+    added my bio info
+
+commit 8dedddbb20eea80cd031d51590d713a077b30850
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 7 14:21:14 2015 -0500
+
+    created pydoc
+
+commit b8004998348e011a90779a123da336d0accbeb9a
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 7 14:15:39 2015 -0500
+
+    added comments to models.py
+
+commit 71fa634115cbf36b297c943fe98129972b933fb6
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 7 13:27:36 2015 -0500
+
+    updating everything
+
+commit b8d73a99740dcec2ed8e7c5dc9fafd8e091540b8
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 7 13:23:23 2015 -0500
+
+    changed temp data for testing and api calls
+
+commit 46e2f8fb1f07d47c172950cbbdecced17623f1ca
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 7 13:08:27 2015 -0500
+
+    changed sequence of js calls
+
+commit cd79563812a3daa9c01cedc12236b6d7abab79b4
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 7 13:06:00 2015 -0500
+
+    chagned js path
+
+commit 6ca7d042ee61683b8e3774fa1adcfead5befa25d
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 7 13:04:14 2015 -0500
+
+    chagned js path
+
+commit 264dd2a6a70a7263d497f849e71fc1eaaabe9a48
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 7 13:01:31 2015 -0500
+
+    chagned js path
+
+commit be08963105a7acec4a69e4596138152dc91fc786
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 7 12:58:36 2015 -0500
+
+    chagned js path
+
+commit 82664dd7ff88a09b4db57ae10737f6020494e4da
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 7 12:54:41 2015 -0500
+
+    chagned js path
+
+commit 32cfe37c0c8ae097781af0a70c78c3b3bda1ebc5
+Merge: 85e7521 6b2edc2
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 7 12:40:06 2015 -0500
+
+    Merge branch 'dev' of github.com:cameronreese/no_punt_intended into dev
+
+commit 85e75216485fe0bbdf56fc3b97ffc5bc68ea91f9
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 7 12:39:41 2015 -0500
+
+    changed js path
+
+commit 6b2edc2bc9a750cd422907a62fecc32ecdf5f727
+Author: David <dsipos05@gmail.com>
+Date:   Tue Jul 7 12:35:36 2015 -0500
+
+    Cleaned up code and added comment
+
+commit c9cae4f7685ff7205bd666f0af7a3a55601029f8
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 7 12:31:16 2015 -0500
+
+    changed srcipt layout
+
+commit 0fe65a44cdda6ebb67be2c331945cf5d402f7ca2
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 7 12:26:48 2015 -0500
+
+    reformatted about page
+
+commit 7ffa6c5e7fd638e0af76e4bd671f1b9bba1695e6
+Merge: de10284 822ae74
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 7 12:15:47 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit de10284824cfc74f912dd19b3c6beefb02eef4e5
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 7 12:15:34 2015 -0500
+
+    bug fix
+
+commit 822ae7408aa0abb554e0d22f796a23b454d365cd
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 7 12:10:55 2015 -0500
+
+    Delete big12.html
+
+commit 50406973c9b3baa885296afbe8da0b30abf0992f
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 7 12:10:44 2015 -0500
+
+    Delete beards.jpg
+
+commit bc96a571a6359e305664f64128660cc1792fbe16
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 7 12:10:33 2015 -0500
+
+    Delete acc.html
+
+commit cdb94ddd8f9bc18bfd5ab7ac024252f46f9ac3b3
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 7 12:07:19 2015 -0500
+
+    bug fix
+
+commit ad9dafd8714d30ec785f6a74f69d825b553c74b6
+Merge: 37757b9 e19eb03
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 7 11:20:37 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit 37757b9b8e70b414ce1cd780e650d5791edd8a29
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 7 11:20:33 2015 -0500
+
+    added table nav bar to more pages, redid splash image
+
+commit e19eb0393a71f788fe1db175377daf7e0ceccf7a
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 7 11:01:35 2015 -0500
+
+    added apairy doc file
+
+commit f1e1fa7fedce60f1acab51d7cd02ac20685632bc
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 7 10:53:10 2015 -0500
+
+    example of RunTests.out output
+
+commit 57b1c020c9e21a0b21dc3670d3a2afff75d879cd
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 7 10:18:06 2015 -0500
+
+    fixed bug with secondary nav-bar behavior
+
+commit 56115f9b678212de75d2417cde197b4bd2cddf5e
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 7 09:32:00 2015 -0500
+
+    added appropriate titles to each page for browser tab display
+
+commit 711d05445b3aa656a8e592fa6fadc1d22029f814
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 7 09:21:35 2015 -0500
+
+    reorganized files into folders for easier access, added schedules to team's page
+
+commit 0aaeae02dc77b15b51ca8d249673df96953fe56f
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Mon Jul 6 21:57:09 2015 -0500
+
+    fixed bugs in makefile and added install packages in travis ci script
+
+commit b4db95100a37964d82ccc9dafbc25992e881fec8
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Mon Jul 6 21:45:51 2015 -0500
+
+    removed un-needed imports
+
+commit faac22a867fb1c62f0dcdd1c4584088b2ecc7033
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Mon Jul 6 21:35:42 2015 -0500
+
+    added unit tests for rest of all APIs
+
+commit caf6b2affb91142f9f3bd164aecea5a60e79ae65
+Merge: df7c3e4 6a8a973
+Author: Chris <crlesage@gmail.com>
+Date:   Mon Jul 6 21:29:32 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit df7c3e4d8e4e9f578c90841af679e0f4f73e832a
+Author: Chris <crlesage@gmail.com>
+Date:   Mon Jul 6 21:29:23 2015 -0500
+
+    Added schedule tables
+
+commit 6a8a9735fd3df3d0a1b0bb3a342ac79471d1489b
+Author: Josh Waller <jrwall11@utexas.edu>
+Date:   Mon Jul 6 21:22:37 2015 -0500
+
+    Created teams.txt
+
+commit 005fb18cce099ace5074847cc2a130c42a283c3b
+Author: David <dsipos05@gmail.com>
+Date:   Mon Jul 6 21:15:12 2015 -0500
+
+    Getting just the info needed for teams and for all teams
+
+commit 8555a2cbbcc2576e3329304b1c1a18c7a9fe64a8
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Mon Jul 6 21:10:45 2015 -0500
+
+    changes to tests
+
+commit 9743e0312604cf03aff104de84defb1175fdc6fc
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Mon Jul 6 20:11:20 2015 -0500
+
+    testing changes on json return format for api
+
+commit 9553a28461c8fbddd361745fa0425add201050e3
+Merge: aa9ad59 fbc08b0
+Author: David <dsipos05@gmail.com>
+Date:   Mon Jul 6 20:01:11 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit aa9ad59f3550afdd0b7fb3e4b19941c538a6031a
+Author: David <dsipos05@gmail.com>
+Date:   Mon Jul 6 20:00:56 2015 -0500
+
+    Added file getteams.py to get Team stats, but still only getting it for one team
+
+commit fbc08b07e83a8db64660b934b47ef34ac239bce9
+Author: Chris <crlesage@gmail.com>
+Date:   Mon Jul 6 19:46:52 2015 -0500
+
+    Added data tables to site
+
+commit b1751abf7cf40383d2fa7b5f87bd586c8c821f37
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Mon Jul 6 19:24:28 2015 -0500
+
+    fixed bug with mobile browser navigation bar
+
+commit b45ead0ffab372ea507832d2d19515bc490f6a91
+Merge: 8858f71 a6ac970
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Mon Jul 6 19:19:17 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit 8858f71b8a1b6f6dfb32e50c16e14cd0f3159189
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Mon Jul 6 19:19:12 2015 -0500
+
+    made working links from conference pages to team pages
+
+commit a6ac970db5d5241bc6a2fda3a444746ea5177780
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Mon Jul 6 18:44:17 2015 -0500
+
+    fixed flask run argument
+
+commit 0e624bc4817c98549e24fc25403d8ca69af9fefe
+Author: Chris LeSage <crlesage@gmail.com>
+Date:   Mon Jul 6 18:28:02 2015 -0500
+
+    Added initial sortable data tables
+
+commit 3b61216a12cfe27d42f381280eaf911702c33d73
+Merge: f984ba9 60cda53
+Author: Chris LeSage <crlesage@gmail.com>
+Date:   Mon Jul 6 18:26:50 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit 60cda535e8ef874dfd01d94f90cb0ca3c77d90a8
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Mon Jul 6 18:26:17 2015 -0500
+
+    added server updates to API init
+
+commit f984ba91d6c0ecdd870e0876a99a457b959ad739
+Author: Chris LeSage <crlesage@gmail.com>
+Date:   Mon Jul 6 18:23:14 2015 -0500
+
+    Added initial sortable data tables
+
+commit 52b5a1622c6c6fe439a32114996b96b61b5b10d3
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Mon Jul 6 18:21:33 2015 -0500
+
+    added server updates to API init
+
+commit 64583406dcb74c8e36545ad455bb32c78783081f
+Merge: e08f942 7b960b3
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Mon Jul 6 18:17:32 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit e08f94203839c1146da3b31cdbc3979ae5efd3da
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Mon Jul 6 18:17:26 2015 -0500
+
+    created 3 pages for conferences
+
+commit 7b960b37b6340f7a05849e3afc582e51b8c216ad
+Author: David <dsipos05@gmail.com>
+Date:   Mon Jul 6 17:43:28 2015 -0500
+
+    Edited getplayers.py to get all players from all teams
+
+commit 7fb72f27ceebbecf3ca2df2edc4da498d8e922c6
+Merge: b4bb18e 8243110
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Mon Jul 6 17:34:02 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit b4bb18e9017dac7ec5971deeffa9c7ac43415766
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Mon Jul 6 17:33:57 2015 -0500
+
+    created 3 examples for teams and 3 examples for players
+
+commit 82431101cf807678e95665ceba7076ae2f66bc82
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Mon Jul 6 17:30:50 2015 -0500
+
+    added files to live site, inlcuding api files
+
+commit f7c317c7e5c51184f8eae515b6d39c85e9761c6d
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Mon Jul 6 17:24:59 2015 -0500
+
+    created initial unit tests for a single function for initial testing
+
+commit 937a073f7a3eb09742346701f2d7126fe9374109
+Author: Josh Waller <joshwaller@wireless-10-147-224-191.public.utexas.edu>
+Date:   Mon Jul 6 16:56:03 2015 -0500
+
+    Corrected a typo in UML
+
+commit d672988d2f3df74f4fd87f060e0b6d3bfb94c0ee
+Merge: 5373ea3 2d391db
+Author: Josh Waller <joshwaller@wireless-10-147-224-191.public.utexas.edu>
+Date:   Mon Jul 6 16:20:53 2015 -0500
+
+    Merge branch 'dev' of github.com:cameronreese/no_punt_intended into dev
+
+commit 5373ea354b698b52e01fb284ce6c128140cf9be5
+Author: Josh Waller <joshwaller@wireless-10-147-224-191.public.utexas.edu>
+Date:   Mon Jul 6 16:20:10 2015 -0500
+
+    Added conference model to UML
+
+commit 2d391db5e6996d719a2ca0debd875528ea245966
+Merge: e7c0bd7 5490dc7
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Mon Jul 6 16:18:56 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit e7c0bd759d5c17409fc4da2d65a565ea6ee341cf
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Mon Jul 6 16:18:48 2015 -0500
+
+    created 3 examples for team profiles
+
+commit 5490dc776062390005bec9bdf86606412b92423c
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Mon Jul 6 16:07:51 2015 -0500
+
+    added a third pillar to models.py: conf for conferences
+
+commit 5033730086f93f18ab616095c059aaa2a1499e82
+Author: David <dsipos05@gmail.com>
+Date:   Mon Jul 6 15:44:52 2015 -0500
+
+    added test file for git purposes
+
+commit 07767709cf346ab1ce2fe71e17aed0e04bede7be
+Author: David <dsipos05@gmail.com>
+Date:   Mon Jul 6 15:28:10 2015 -0500
+
+    Created file getplayers.py that got stats for players from one team from cfstats.com
+
+commit 27e8241dad6a778d56f955da0c5e66aa96670021
+Merge: 9341a1d 0cd748d
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Mon Jul 6 15:22:55 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit 9341a1dd2ba22e9fedd457e49217e2a198302831
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Mon Jul 6 15:22:51 2015 -0500
+
+    created template team and player profile pages
+
+commit 0cd748db461380d046de5526afa9fd25964049eb
+Merge: b3d77ad e0228e3
+Author: Josh Waller <joshwaller@wireless-10-147-224-191.public.utexas.edu>
+Date:   Mon Jul 6 15:15:13 2015 -0500
+
+    Merge branch 'dev' of github.com:cameronreese/no_punt_intended into dev
+
+commit b3d77addf73df5f6012af026dfdc85fb0bf0487c
+Author: Josh Waller <joshwaller@wireless-10-147-224-191.public.utexas.edu>
+Date:   Mon Jul 6 15:11:33 2015 -0500
+
+    Issue 18 resolved w/ UML redesign
+
+commit e0228e3ba20000e57aa39d58d79e6981e57832a8
+Merge: c3e6787 5e64668
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Mon Jul 6 15:09:24 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit c3e678737c367b267536393dcbc3089c5e40aee4
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Mon Jul 6 15:09:20 2015 -0500
+
+    created player profile page
+
+commit 5e6466856cd56f1593cebbf05f56e06b7b007100
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Mon Jul 6 14:55:09 2015 -0500
+
+    updated team attributes
+
+commit 85f4adb62e72bb8e11e433d68048b95d3ef44d33
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Mon Jul 6 12:10:56 2015 -0500
+
+    created indiv_teams.html with working links in navbar
+
+commit be338e0c4a8382c1ebd85e288ea7072cd057ca9a
+Merge: b4a63c2 975f3dc
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Mon Jul 6 11:58:32 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit b4a63c2ecdd7097386b7ca13c520d9d2fdf2019a
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Mon Jul 6 11:58:23 2015 -0500
+
+    added list of teams and conferences under teams.html
+
+commit 975f3dc37df8c920ca834877453abaca62368f16
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Mon Jul 6 10:24:44 2015 -0500
+
+    ammended travis config file to install needed libraries and frameworks
+
+commit 924a75de614cd8194e4b48b32c6bcc33005023e3
+Merge: 4173259 5fe2c7b
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Mon Jul 6 10:22:55 2015 -0500
+
+    Merge branch 'dev' of github.com:cameronreese/no_punt_intended into dev
+
+commit 4173259017a8ed5a3221fed644456db66169d5f2
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Mon Jul 6 10:22:39 2015 -0500
+
+    added temp data structure for api, and started implementing api
+
+commit 5fe2c7bf023bf60406f0d87350f4c13bf0f0c7d0
+Merge: 2d91d72 2cedd5e
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Mon Jul 6 09:54:56 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit 2d91d723167128d4f23c0c32c036d973ae3c8b8f
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Mon Jul 6 09:54:51 2015 -0500
+
+    added new font
+
+commit 2cedd5e1a08c56fafbb2b5166da2905b4fc8d7c2
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Mon Jul 6 07:31:04 2015 -0500
+
+    added Flask to install script on travis ci
+
+commit b567c57e4dc66f574ef83a754f3e8dfef11babae
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Sun Jul 5 21:31:36 2015 -0500
+
+    added UML.pdf to dev branch as well
+
+commit 6a4bd57903381cd959cadf46825ce9a0956aeb1a
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Sun Jul 5 21:25:20 2015 -0500
+
+    empty models.py file
+
+commit c7812f4a58c3358c2349fc5a278351e05a6e912b
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Sun Jul 5 20:59:04 2015 -0500
+
+    organized code, added space for data table
+
+commit 7b714bb33d6ba1c17c7fdc7600d790a812195b77
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Sun Jul 5 20:42:42 2015 -0500
+
+    added flag to keep apache from caching previous updates
+
+commit 260d644d161e2f40b053e136a432a5db4e697d81
+Merge: c689678 b68a877
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Sun Jul 5 20:24:29 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit c68967873b9ad5dc4f9a3720112f28f64e1e6954
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Sun Jul 5 20:24:16 2015 -0500
+
+    cleaned up documents, removed unnecessary info
+
+commit b68a8771ace6e6b6692186bd897d5e6b7004c1d1
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Mon Jul 6 01:19:34 2015 +0000
+
+    removed bad index.html
+
+commit cbcc56c68eee78fabd05d668670dd789f4362a12
+Merge: 8e9dd71 40db591
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Sun Jul 5 20:07:34 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit 8e9dd71e0c62629bc50597f8bc92a8b8b9281069
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Sun Jul 5 20:06:48 2015 -0500
+
+    created primitive template for front end bootstrap
+
+commit 40db591612e965f7d5f6b2e050115a7153b94a03
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Sun Jul 5 20:01:30 2015 -0500
+
+    changed makefile
+
+commit 2363ba5e55e4d081cc6b63f9bc4d14883ff6c4d7
+Author: David <dsipos05@gmail.com>
+Date:   Sun Jul 5 19:59:16 2015 -0500
+
+    Switching same created file backend.py over to dev branch
+
+commit e7b77470e917832458208713e66e1c62471a334b
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Sun Jul 5 19:37:52 2015 -0500
+
+    changed .travis config file to match makefile calls
+
+commit 903f737b4f35207f90178d01a7bb1f4bdc779577
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Sun Jul 5 19:27:29 2015 -0500
+
+    added makefile and travis ci config file
+
+commit b63b98eca42d97ea7a709aa28a5f9ef36ad02fd7
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Sun Jul 5 19:23:38 2015 -0500
+
+    created rest of bootstrap premade files
+
+commit 5092dee4b6f73b62f93ae3fe99f3b06accbed40f
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Sun Jul 5 18:28:53 2015 -0500
+
+    first draft of bootstrap files
+
+commit 35d1a5c04637f3a2d2c9831a407aca53a07db7d7
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Sun Jul 5 18:16:53 2015 -0500
+
+    added conceptual layouts from nick
+
+commit c343c5fa3948c8eafa36e24de3b088206a675b36
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Fri Jul 3 17:14:46 2015 -0500
+
+    created site_live dir for webserver to pull from
+
+commit 27ebf5dd6b999a0f83fd455d554cd85938fdd20f
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Fri Jul 3 16:15:47 2015 -0500
+
+    changed file structure
+
+commit f406ccc7b1c346d89924029f2d0b5ff968c08834
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Fri Jul 3 16:15:03 2015 -0500
+
+    added temp splash page
+
+commit b9050542c980906176f5b4bda93f0f45c8741557
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Fri Jul 3 16:12:40 2015 -0500
+
+    first commit
