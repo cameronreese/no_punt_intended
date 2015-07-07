@@ -115,6 +115,12 @@ hr {
     letter-spacing: 1px;
 }
 
+.bold-text {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+}
+
 .conf-text {
     text-transform: uppercase;
     text-decoration: underline;
