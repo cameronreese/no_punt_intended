@@ -7,16 +7,6 @@
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap.css">
 
-        <script type="text/javascript">
-
-        $(document).ready(function() {
-          $('#playerTable').DataTable( {
-            "iDisplayLength": 50,
-            "sDom": "<'row'<'col-xs-6'T><'col-xs-6'f>r>t<'row'<'col-xs-6'i><'col-xs-6'p>>",
-            "sPaginationType": "bootstrap"
-          } );
-        } );
-        </script>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -338,6 +328,16 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $('#playerTable').DataTable( {
+        "iDisplayLength": 50,
+        "sDom": "<'row'<'col-xs-6'T><'col-xs-6'f>r>t<'row'<'col-xs-6'i><'col-xs-6'p>>",
+        "sPaginationType": "bootstrap"
+      } );
+    } );
+    </script>
 
     </body>
 </html>
