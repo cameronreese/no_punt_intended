@@ -6,14 +6,27 @@
 
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap.css">
+        
+        <!-- jQuery -->
+        <script src="/js/jquery.js"></script>
+
+        <script src="/js/jquery_dataTables.js"> </script>
+        <script src="/js/dataTables_bootstrap.js"> </script>
+        <script src="/js/dataTables_bootstrapPagination.js"> </script>
+
+        
+        <!-- Bootstrap Core JavaScript -->
+        <script src="/js/bootstrap.min.js"></script>
 
         <script type="text/javascript">
 
+        $(document).ready(function() {
           $('#teamTable').DataTable( {
             "iDisplayLength": 50,
             "sDom": "<'row'<'col-xs-6'T><'col-xs-6'f>r>t<'row'<'col-xs-6'i><'col-xs-6'p>>",
             "sPaginationType": "bootstrap"
           } );
+        } );
         </script>
 
     <meta charset="utf-8">
@@ -198,15 +211,6 @@
 ******************************************************************************************************************************* -->
 
 
-    <!-- jQuery -->
-    <script src="/js/jquery.js"></script>
 
-    <script src="/js/jquery_dataTables.js"> </script>
-    <script src="/js/dataTables_bootstrap.js"> </script>
-    <script src="/js/dataTables_bootstrapPagination.js"> </script>
-
-    
-    <!-- Bootstrap Core JavaScript -->
-    <script src="/js/bootstrap.min.js"></script>
     </body>
 </html>
