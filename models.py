@@ -46,6 +46,7 @@ players = [
     },
 ]
 
+# teams model
 teams = [
     {
         'name': 'Texas Longhorns',
@@ -73,6 +74,7 @@ teams = [
     }
 ]
 
+# conferences model
 conf = [
     {
         'name': 'Big 12',
@@ -99,6 +101,11 @@ conf = [
 
 @punt.route('/punt/players/<string:player_name>', methods=['GET'])
 def get_players(player_name):
+    """ GET method
+        takes in a player's name as an argument from an http URL 
+        and returns json object of the players attributes 
+        to retrieve info for all players use 'players' as input
+    """
     if player_name == 'players':
         return jsonify({'players': players})
     player = [player for player in players if player['name'] == player_name]
@@ -108,6 +115,11 @@ def get_players(player_name):
 
 @punt.route('/punt/teams/<string:team_name>', methods=['GET'])
 def get_teams(team_name):
+    """ GET method
+        takes in a team's name as an argument from an http URL 
+        and returns json object of the team's attributes 
+        to retrieve info for all teams use 'teams' as input
+    """
     if team_name == 'teams':
         return jsonify({'teams': teams})
 
@@ -118,6 +130,11 @@ def get_teams(team_name):
 
 @punt.route('/punt/conf/<string:conf_name>', methods=['GET'])
 def get_conf(conf_name):
+    """ GET method
+        takes in a conference's nickname as an argument from an http URL 
+        and returns json object of the conference's attributes
+        to retrieve info for all conferences use 'conf' as input
+    """
     if conf_name == 'conf':
         return jsonify({'conf': conf})
 
