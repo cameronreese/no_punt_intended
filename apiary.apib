@@ -1,0 +1,116 @@
+FORMAT: 1A
+HOST: http://cfdb.me:5000/punt
+
+# punt
+
+Punt is an api that allows someone to pull meta data about college football players, teams, and conferences
+
+# Punt API Root [/]
+
+This resource does not have any attributes at the root level. Further URL agurgments are required.
+
+
+## Retrieve the Entry Point [GET]
+
++ Response 200 (:5000/punt/)
+
+        {
+            "cfdb.me:5000/punt": "/"
+        }
+
+## Group Player
+
+Resources related to the players in the API
+
+## Players [/players/{player_name}]
+
+A Player object has the following attributes:
+
++ name
++ no [number]
++ pos [position]
++ team [team they play on]
++ ht [height]
++ wt [weight]
++ hometown
+
++ Parameters
+    + player_name: Nick Jordan (required, string) - name of the player in the form of a string, spaces substituted with "%20"
+
+### View a Player's Meta Data [GET]
+
++ Response 200 (:5000/punt/players/Nick%20Jordan)
+
+        {
+            'name': 'Nick Jordan',
+            'no': '#28',
+            'pos': 'PK',
+            'team': 'Texas Longhorns',
+            'ht': '6-1',
+            'wt': '193',
+            'hometown': 'Coppell, TX',
+        }
+
+
+## Group Team
+
+Resources related to the football teams in the API
+
+## Teams [/teams/{team_name}]
+
+A Team object has the following attributes:
+
++ name
++ location
++ roster
++ schedule
++ head_coach
++ conference
+
++ Parameters
+    + team_name: Texas Longhorns (required, string) - name of the team in the form of a string, spaces substituted with "%20"
+
+### View a Teams's Meta Data [GET]
+
++ Response 200 (:5000/punt/teams/Texas%20Longhorns)
+
+        {
+            'name': 'Texas Longhorns',
+            'location': 'Austin, TX',
+            'roster': (), # tuple of player links
+            'schedule': [], # a list of scheduled games
+            'head_coach': 'Strong',
+            'conf': 'Big 12'
+        }
+
+
+## Group Conference
+
+Resources related to the football teams in the API
+
+## Conference [/conf/{conf_name}]
+
+A Conference object has the following attributes:
+
++ name
++ nickname
++ founded
++ current conf champion [team]
++ teams
++ number of teams
+
++ Parameters
+    + conf_name: ACC (required, string) - Nickname of the conference in the form of a string, spaces substituted with "%20"
+
+### View a Conference's Meta Data [GET]
+
++ Response 200 (:5000/punt/conf/ACC)
+
+        {
+            'name': 'Atlantic Coast Conference',
+            'nickname': 'ACC',
+            'founded': '1953', 
+            'conf_champ': 'N/A', 
+            'teams': [], # link to a list of teams that are in the conference
+            'num_teams': '15'
+        }
