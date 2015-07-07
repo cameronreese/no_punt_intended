@@ -12,7 +12,6 @@ import requests
 from flask import Flask, Response
 from flask import jsonify
 from flask import abort
-from models import get_players, get_teams, get_conf
 
 # -----------
 # TestModels
