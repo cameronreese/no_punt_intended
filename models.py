@@ -48,12 +48,12 @@ players = [
 
 teams = [
     {
-        'name': 'Texas Longhorns'
-        # 'location': 'Austin, TX',
-        # 'roster': (), # tuple of player links
-        # 'schedule': [[]], # a dict of {date : opponent} or some custom list of data
-        # 'head_coach': 'Strong',
-        # 'conf': 'Big 12'
+        'name': 'Texas Longhorns',
+        'location': 'Austin, TX',
+        'roster': ['Nick Jordan', 'Shiro Davis'], # list of players
+        'schedule': [], # data of schedule
+        'head_coach': 'Charlie Strong',
+        'conf': 'Big 12'
     },
     {
         'name': 'Baylor Bears'
@@ -75,11 +75,11 @@ teams = [
 
 conf = [
     {
-        'name': 'Big 12'
-        # 'founded': 'some year',
-        # 'current_conf_champion': 'team',
-        # 'teams': [], # list of teams
-        # 'number_of_teams': 'a_num'
+        'name': 'Big 12',
+        'founded': 'some year',
+        'current_conf_champion': 'team',
+        'teams': [], # list of teams
+        'number_of_teams': 'a_num'
     },
     {
         'name': 'Big Ten'
