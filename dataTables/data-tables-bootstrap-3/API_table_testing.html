@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Texas Schedule</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap.css">
+
+        <script type="text/javascript" src="js/jquery.js"> </script>
+        <script type="text/javascript" src="js/jquery.dataTables.js"> </script>
+        <script type="text/javascript" src="js/bootstrap.min.js"> </script>
+        <script type="text/javascript" src="js/dataTables.bootstrap.js"> </script>
+        <script type="text/javascript" src="js/dataTables.bootstrapPagination.js"> </script>
+
+        <script type="text/javascript">
+        //Global var for counter
+        //var giCount = 2;
+
+        $(document).ready(function() {
+          $('#utSchedule').dataTable();
+          oTable.fnClearTable();
+          //oTable.fnUpdate( 'utSchedule update', 0, 0, 0, );
+          //oTable.fnSort([ [2, 'dec']]);
+
+        } );
+
+        // function fnClickAddRow() {
+        //   $('#utSchedule').dataTable().fnAddData( 
+        //    //[default = true]
+        //     );
+        //   giCount++;
+        // }
+
+        </script>
+<!-- 
+        <script type="text/javascript">
+
+        $(document).ready(function() {
+          $('#utSchedule').DataTable( {
+            "sDom": "<'row'<'col-xs-6'T><'col-xs-6'f>r>t<'row'<'col-xs-6'i><'col-xs-6'p>>",
+            "sPaginationType": "bootstrap"
+          } );
+        } );
+        </script>
+         -->
+    </head>
+      <body id="body">
+       <div class="container">
+          <h1 align="center">Texas 2015 Schedule</h1>
+          <table cellpadding="0" cellspacing="0" border="0"
+                 class="table table-hover table-bordered" id="utSchedule">
+              <thead>
+                  <tr>
+                      <th>Date</th>
+                      <th>Opponent</th>
+                      <th>Location</th>
+                      <th>Time/Result</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                    <td>Sat, Sept 5th</td>
+                    <td>Notre Dame</td>
+                    <td>Notre Dame Stadium</td>
+                    <td>6:30 PM ET</td>
+                  </tr>
+                  <tr>
+                    <td>Sat, Sept 12th</td>
+                    <td>Rice</td>
+                    <td>Home Stadium</td>
+                    <td>7 PM ET</td>
+                  </tr>
+                  <tr>
+                    <td>Sat, Sept 19th</td>
+                    <td>California</td>
+                    <td>Home Stadium</td>
+                    <td>6:30 PM ET</td>
+                  </tr>
+                  <tr>
+                    <td>Sat, Sept 26h</td>
+                    <td>Oklahoma State</td>
+                    <td>Home Stadium</td>
+                    <td>TBD</td>
+                  </tr>
+                  <tr>
+                    <td>Sat, Oct 3rd</td>
+                    <td>TCU</td>
+                    <td>TCU Stadium</td>
+                    <td>TBD</td>
+                  </tr>
+                  <tr>
+                    <td>Sat, Oct 10th</td>
+                    <td>Oklahoma</td>
+                    <td>Dallas Stadium</td>
+                    <td>TBD</td>
+                  </tr>
+                  <tr>
+                    <td>Sat, Oct 17th</td>
+                    <td> --- </td>
+                    <td> --- </td>
+                    <td> --- </td>
+                  </tr>
+                  <tr>
+                    <td>Sat, Oct 24th</td>
+                    <td>K-State</td>
+                    <td>Home Stadium</td>
+                    <td>TBD</td>
+                  </tr>
+                  <tr>
+                    <td>Sat, Oct 31st</td>
+                    <td>Iowa State</td>
+                    <td>Iowa Stadium</td>
+                    <td>TBD</td>
+                  </tr>
+                  <tr>
+                    <td>Sat, Nov 7th</td>
+                    <td>Kansas</td>
+                    <td>Home Stadium</td>
+                    <td>TBD</td>
+                  </tr>
+                  <tr>
+                    <td>Sat, Nov 14th</td>
+                    <td>West Virginia</td>
+                    <td>West Virginia Stadium</td>
+                    <td>TBD</td>
+                  </tr>
+                  <tr>
+                    <td>Thurs, Nov 26st</td>
+                    <td>Texas Tech</td>
+                    <td>Home Stadium</td>
+                    <td>6:30 PM ET</td>
+                  </tr>
+                  <tr>
+                    <td>Sat, Dec 5th</td>
+                    <td>Baylor</td>
+                    <td>Baylor Stadium</td>
+                    <td>TBD</td>
+                  </tr>
+              </tbody>
+          </table>
+       </div>
+    </body>
+</html>
