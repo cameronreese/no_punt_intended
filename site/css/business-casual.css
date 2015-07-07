@@ -62,6 +62,11 @@ hr {
     max-width: 75%;
 }
 
+.img-middle {
+    margin: auto;
+    max-width: 75%;
+}
+
 .img-fix {
     margin: auto;
     max-height: 300px;
