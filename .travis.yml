@@ -16,6 +16,7 @@ install:
     - pip install coverage
     - sudo apt-get install python-numpy
     - pip install Flask
+    - pip install requests
     - sudo apt-get install php5-curl
 
 before_script:
