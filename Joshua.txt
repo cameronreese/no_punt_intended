@@ -1,0 +1,5 @@
+Joshua Waller
+Joshua spent most of his childhood believing he would attend Oklahoma State University with two degrees in Electrical Engineering and Computer Science. He is an avid sports fan due to his continuous participation in sports growing up. When he reached his senior year, he decided to continue playing baseball at North Central Texas College instead of going to his desired school OSU. Unfortunately after he tore his labrum in his shoulder, Joshua quit baseball and began to scope out potential schools to attend. Luckily, a close friend from childhood led him to venture away from OSU and informed him about the excellent academia that The University of Texas had to offer. Though his heart was torn on the decision, he enrolled in the Computer Science program at UT. Joshua believes he wants to enter the field of DBA or become a Data Scientist.
+
+Responsibilities
+Joshua obtained the responsibility of creating the database for the project. He will interact with David Sipos on extracting the data in the correct format to populate the tables in the database. Joshua will utilize SQLAlchemy and MySQL to implement the database.
