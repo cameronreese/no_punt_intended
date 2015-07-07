@@ -112,6 +112,11 @@ hr {
     background: rgba(255,255,255,0.9);
 }
 
+.boxx {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
 .box-thin {
     margin-bottom: 20px;
     padding: 3px 15px;

@@ -6,7 +6,7 @@ request = request('http://placekitten.com')
 
 try:
 	response = urlopen(request)
-	kittens = respone.read()
+	kittens = response.read()
 	print kittens[559:1000]
 except URLError, e:
 <<<<<<< HEAD
