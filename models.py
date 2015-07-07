@@ -86,12 +86,12 @@ conf = [
 @punt.route('/punt/players/<string:player_name>', methods=['GET'])
 def get_players(player_name):
     if player_name == 'players':
-        return jsonify({'players': players})
+        return json.dump({'players': players})
 
     player = [player for player in players if player['name'] == player_name]
     if len(player) == 0:
         abort(404)
-    return jsonify({'players': player[0]})
+    return json.dump({'players': player[0]})
 
 @punt.route('/punt/teams/<string:team_name>', methods=['GET'])
 def get_teams(team_name):
