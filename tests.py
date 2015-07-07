@@ -41,7 +41,7 @@ class TestModels(TestCase):
     # get_teams
     # -----------
     def test_get_teams_1(self):
-        team = {"teams": {"name": "Texas Longhorns"}}
+        team = {'teams': {'roster': ['Nick Jordan', 'Shiro Davis'], 'conf': 'Big 12', 'schedule': [], 'name': 'Texas Longhorns', 'location': 'Austin, TX', 'head_coach': 'Charlie Strong'}}
         data = requests.get('http://cfdb.me:5000/punt/teams/Texas%20Longhorns').json()
         self.assertEqual(team, data)
 
@@ -59,7 +59,7 @@ class TestModels(TestCase):
     # get_conf
     # -----------
     def test_get_conf_1(self):
-        conf = {"conf": {"name": "Big 12"}}
+        conf = {'conf': {'teams': [], 'name': 'Big 12', 'founded': 'some year', 'number_of_teams': 'a_num', 'current_conf_champion': 'team'}}
         data = requests.get('http://cfdb.me:5000/punt/conf/Big%2012').json()
         self.assertEqual(conf, data)
 
