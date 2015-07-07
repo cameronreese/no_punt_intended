@@ -73,6 +73,12 @@ hr {
     max-width: 300px;
 }
 
+.img-prof {
+    max-height: 20%;
+    max-width: 20%;
+    padding: 30px 15px;
+}
+
 .img-center {
     margin: auto;
     width: 90%;
