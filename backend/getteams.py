@@ -24,9 +24,21 @@ for key, value in d.items() :
 	#print(value)
 	# for row in soup('p'):
 	# data = [str(i.getText()) for i in row('b')]
-	products = soup.findAll("p", style = "margin-left: 15; margin-top: 5; margin-bottom: 5")
-	print(products)
-	print('\n')
+	stats = soup.findAll("p", style = "margin-left: 15; margin-top: 5; margin-bottom: 5")
+	for text in stats:
+		print(text.find('b').string)
+		print('\n')
+	# stats.contents
+	# b1 = "<b>"
+	# b2 = "</b>"
+	# text = ""
+	# for i in stats:
+	# 	if i[stats] == 'b' and i[stats + 1] == '>':
+	# 		while i[stats] != '<':
+	# 			text += i[stats]
+
+	# print(stats.contents)
+	# print('\n')
 	#     #link = row('td')[1]('a') # the linked player
 	#     if len(link) > 0:
 	#         link = str(link[0]['href'])
