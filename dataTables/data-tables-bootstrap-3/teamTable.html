@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Team Table</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap.css">
+
+        <script type="text/javascript" src="js/jquery.js"> </script>
+        <script type="text/javascript" src="js/jquery.dataTables.js"> </script>
+        <script type="text/javascript" src="js/bootstrap.min.js"> </script>
+        <script type="text/javascript" src="js/dataTables.bootstrap.js"> </script>
+        <script type="text/javascript" src="js/dataTables.bootstrapPagination.js"> </script>
+
+        <script type="text/javascript">
+
+        $(document).ready(function() {
+          $('#teamTable').DataTable( {
+            "sDom": "<'row'<'col-xs-6'T><'col-xs-6'f>r>t<'row'<'col-xs-6'i><'col-xs-6'p>>",
+            "sPaginationType": "bootstrap"
+          } );
+        } );
+        </script>
+    </head>
+      <body id="body">
+       <div class="container">
+          <h1>Team Table</h1>
+          <table cellpadding="0" cellspacing="0" border="0"
+                 class="table table-striped table-bordered" id="teamTable">
+              <thead>
+                  <tr>
+                      <th>Name</th>
+                      <th>Location</th>
+                      <th>Roster</th>
+                      <th>Schedule</th>
+                      <th>Head Coach</th>
+                      <th>Conference</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                    <td>Texas</td>
+                    <td>Austin, Texas</td>
+                    <td></td>
+                    <td></td>
+                    <td>Charlie Strong</td>
+                    <td>Big 12</td>
+                  </tr>
+                  <tr>
+                    <td>Clemson</td>
+                    <td>Clemson, South Carolina</td>
+                    <td></td>
+                    <td></td>
+                    <td>Dabo Swinney</td>
+                    <td>ACC</td>
+                  </tr>
+                  <tr>
+                    <td>Purdue</td>
+                    <td>West Lafayette, Indiana</td>
+                    <td></td>
+                    <td></td>
+                    <td>Darrell Hazell</td>
+                    <td>Big Ten</td>
+                  </tr>
+                
+                  
+              </tbody>
+              <tfoot>
+                  <tr>
+                    <th>Name</th>
+                    <th>Location</th>
+                    <th>Roster</th>
+                    <th>Schedule</th>
+                    <th>Head Coach</th>
+                    <th>Conference</th>
+                  </tr>
+              </tfoot>
+          </table>
+       </div>
+    </body>
+</html>
