@@ -26,8 +26,8 @@ h6 {
 }
 
 p {
-    font-size: 1.25em;
-    line-height: 1.6;
+    font-size: 1.2em;
+    line-height: 1.2;
     color: #000;
 }
 
@@ -57,6 +57,34 @@ hr {
     min-width: 100%;
 }
 
+.img-med {
+    min-width: 75%;
+    max-width: 75%;
+}
+
+.img-middle {
+    margin: auto;
+    max-width: 75%;
+}
+
+.img-fix {
+    margin: auto;
+    max-height: 300px;
+    max-width: 300px;
+}
+
+.img-prof {
+    max-height: 20%;
+    max-width: 20%;
+    padding: 30px 15px;
+}
+
+.img-center {
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+}
+
 .brand-before,
 .brand-name {
     text-transform: capitalize;
@@ -84,11 +112,52 @@ hr {
     background: rgba(255,255,255,0.9);
 }
 
+.box-thin {
+    margin-bottom: 20px;
+    padding: 3px 15px;
+    background: #fff;
+    background: rgba(192,192,192,0.9);
+}
+
 .intro-text {
     text-transform: uppercase;
     font-size: 1.25em;
     font-weight: 400;
     letter-spacing: 1px;
+}
+
+.bold-text {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+}
+
+.conf-text {
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 1.5em;
+    font-weight: 900;
+    letter-spacing: 1.3px;
+}
+.team-text {
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.player-text {
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.team-title-text{
+    text-transform: uppercase;
+    font-size: 4em;
+    font-weight: 900;
+    letter-spacing: 1px;   
 }
 
 .img-border {
@@ -167,7 +236,7 @@ footer p {
     }
 
     .nav>li>a {
-        padding: 35px;
+        padding: 15px;
     }
 
     .navbar-nav>li>a {

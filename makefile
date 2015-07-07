@@ -27,9 +27,9 @@ clean:
 config: 
 	git config -l
 
-test: RunTests
+test: RunTests.out
 
-Netflix.html: models.py
+models.html: RunModels.out
 	pydoc3 -w models
 
 IDB.log: 

@@ -15,6 +15,9 @@ install:
     - pip install --upgrade pip
     - pip install coverage
     - sudo apt-get install python-numpy
+    - pip install Flask
+    - pip install requests
+    - sudo apt-get install php5-curl
 
 before_script:
     - uname -a
@@ -34,6 +37,6 @@ script:
     - make models.html
     - ls -al
     - make -B test
-    - cat tests.out
+    - cat RunTests.out
     - ls -al
     - make check

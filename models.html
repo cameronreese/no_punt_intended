@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module models</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>models</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/Users/MBA11/Dropbox/School/UT/Summer%202015/CS373/project3/punt_repo/models.py">/Users/MBA11/Dropbox/School/UT/Summer 2015/CS373/project3/punt_repo/models.py</a></font></td></tr></table>
+    <p><tt>#&nbsp;-----------<br>
+#&nbsp;imports<br>
+#&nbsp;-----------</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="json.html">json</a><br>
+</td><td width="25%" valign=top><a href="random.html">random</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-get_conf"><strong>get_conf</strong></a>(conf_name)</dt><dd><tt>GET&nbsp;method<br>
+takes&nbsp;in&nbsp;a&nbsp;conference's&nbsp;nickname&nbsp;as&nbsp;an&nbsp;argument&nbsp;from&nbsp;an&nbsp;http&nbsp;URL&nbsp;<br>
+and&nbsp;returns&nbsp;json&nbsp;object&nbsp;of&nbsp;the&nbsp;conference's&nbsp;attributes<br>
+to&nbsp;retrieve&nbsp;info&nbsp;for&nbsp;all&nbsp;conferences&nbsp;use&nbsp;'conf'&nbsp;as&nbsp;input</tt></dd></dl>
+ <dl><dt><a name="-get_players"><strong>get_players</strong></a>(player_name)</dt><dd><tt>GET&nbsp;method<br>
+takes&nbsp;in&nbsp;a&nbsp;player's&nbsp;name&nbsp;as&nbsp;an&nbsp;argument&nbsp;from&nbsp;an&nbsp;http&nbsp;URL&nbsp;<br>
+and&nbsp;returns&nbsp;json&nbsp;object&nbsp;of&nbsp;the&nbsp;players&nbsp;attributes&nbsp;<br>
+to&nbsp;retrieve&nbsp;info&nbsp;for&nbsp;all&nbsp;players&nbsp;use&nbsp;'players'&nbsp;as&nbsp;input</tt></dd></dl>
+ <dl><dt><a name="-get_teams"><strong>get_teams</strong></a>(team_name)</dt><dd><tt>GET&nbsp;method<br>
+takes&nbsp;in&nbsp;a&nbsp;team's&nbsp;name&nbsp;as&nbsp;an&nbsp;argument&nbsp;from&nbsp;an&nbsp;http&nbsp;URL&nbsp;<br>
+and&nbsp;returns&nbsp;json&nbsp;object&nbsp;of&nbsp;the&nbsp;team's&nbsp;attributes&nbsp;<br>
+to&nbsp;retrieve&nbsp;info&nbsp;for&nbsp;all&nbsp;teams&nbsp;use&nbsp;'teams'&nbsp;as&nbsp;input</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>abort</strong> = &lt;werkzeug.exceptions.Aborter object&gt;<br>
+<strong>conf</strong> = [{'current_conf_champion': 'team', 'founded': 'some year', 'name': 'Big 12', 'number_of_teams': 'a_num', 'teams': []}, {'name': 'Big Ten'}, {'name': 'ACC'}]<br>
+<strong>players</strong> = [{'hometown': 'Coppell, TX', 'ht': '6-1', 'name': 'Nick Jordan', 'no': '#28', 'pos': 'PK', 'team': 'Texas Longhorns', 'wt': '193'}, {'hometown': 'Shreveport, LA', 'ht': '6-3', 'name': 'Shiro Davis', 'no': '#1', 'pos': 'DE', 'team': 'Texas Longhorns', 'wt': '265'}, {'hometown': 'San Antonio, TX', 'ht': '5-10', 'name': 'Jeff Bryson', 'no': '#59', 'pos': 'LB', 'team': 'Baylor Bears', 'wt': '200'}]<br>
+<strong>punt</strong> = &lt;Flask 'models'&gt;<br>
+<strong>sqrt</strong> = &lt;ufunc 'sqrt'&gt;<br>
+<strong>square</strong> = &lt;ufunc 'square'&gt;<br>
+<strong>subtract</strong> = &lt;ufunc 'subtract'&gt;<br>
+<strong>teams</strong> = [{'conf': 'Big 12', 'head_coach': 'Charlie Strong', 'location': 'Austin, TX', 'name': 'Texas Longhorns', 'roster': ['Nick Jordan', 'Shiro Davis'], 'schedule': []}, {'name': 'Baylor Bears'}, {'name': 'TCU Horned Frogs'}]</td></tr></table>
+</body></html>

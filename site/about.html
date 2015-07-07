@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>About - Business Casual - Start Bootstrap Theme</title>
+    <title>About The Graybeards</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -32,8 +32,9 @@
 
 <body>
 
-    <div class="brand">Business Casual</div>
-    <div class="address-bar">3481 Melrose Place | Beverly Hills, CA 90210 | 123.456.7890</div>
+<!-- ********************************  "College Football Database" logo  ********************************* -->
+    <img class="img-responsive img-med img-center" src="img/txt.png" alt="">
+<!-- ***************************************************************************************************** -->
 
   <!-- *************************************************************************************************************************
                                                         Start Navigation Bar
@@ -50,7 +51,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-                <a class="navbar-brand" href="index.html">College Football Database</a>
+                <a class="navbar-brand" href="index.html">CFDb</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -59,7 +60,7 @@
                         <a href="index.html">Home</a>
                     </li>
                     <li>
-                        <a href="teams.html">Teams</a>
+                        <a href="teams.html">NCAA FBS</a>
                     </li>
                     <li>
                         <a href="about.html">About</a>
@@ -74,6 +75,48 @@
                                                         End Navigation Bar
 ******************************************************************************************************************************* -->
 
+<!-- *************************************************************************************************************************
+                                                        Start tables nav
+******************************************************************************************************************************* -->
+    <!-- Navigation -->
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+                <a class="navbar-brand" href="index.html">Tables</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="conferenceTable.html">Conferences Table</a>
+                    </li>
+                    <li>
+                        <a href="teamTable.html">Teams Table</a>
+                    </li>
+                    <li>
+                        <a href="playerTable.html">Players Table</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+<!-- *************************************************************************************************************************
+                                                        End tables nav
+******************************************************************************************************************************* -->
+
+<!-- *************************************************************************************************************************
+                                                        Start Team Bio box
+******************************************************************************************************************************* -->
 
     <div class="container">
 
@@ -82,22 +125,31 @@
                 <div class="col-lg-12">
                     <hr>
                     <h2 class="intro-text text-center">About
-                        <strong>business casual</strong>
+                        <strong>the graybeards</strong>
                     </h2>
                     <hr>
                 </div>
-                <div class="col-md-6">
-                    <img class="img-responsive img-border-left" src="img/slide-2.jpg" alt="">
-                </div>
-                <div class="col-md-6">
-                    <p>This is a great place to introduce your company or project and describe what you do.</p>
-                    <p>Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets.</p>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                <div class="col-md-12">
+                    <p><strong>Team Bio:</strong> The Graybeards was originally founded by Nick and David long before computer science was on their minds, as they were part of a group project for a business foundations class years ago. Soon after, they started taking CS courses, and a study group began to emerge. It wasn't long before The Graybeards had a large number of members. The group decided to expand their name to "The Graybeard Society of Computer Science Gentlemen," but keep "The Graybeards" as a shorter nickname. Time has passed, and the group now has over 10 members, and continues to expand. Many members of The Graybeards are not featured on this website, but every member of this group is a Graybeard.</p> 
+                    <p>team stats: total no. of commits, total no. of issues, total no. of unit tests, a link to the Apiary API, a link to the GitHub Issue Tracker, a link to the GitHub Repo, a link to the GitHub Wiki</p>
+                    <p>data: links to the data sources, description of how each was scraped</p>
+                    <hr>
+                <p>Members: Nick Jordan, David Sipos, Cameron Reese, Chris LeSage, Josh Waller</p>
+                <p>For each member: name, photo, bio, major responsibilities, no. of commits, no. of issues, no. of unit tests</p>
+                
                 </div>
                 <div class="clearfix"></div>
             </div>
         </div>
+<!-- *************************************************************************************************************************
+                                                        End Team Bio Box
+******************************************************************************************************************************* -->
 
+
+
+<!-- *************************************************************************************************************************
+                                                        Start Member bios box
+******************************************************************************************************************************* -->
         <div class="row">
             <div class="box">
                 <div class="col-lg-12">
@@ -107,40 +159,133 @@
                     </h2>
                     <hr>
                 </div>
-                <div class="col-sm-4 text-center">
-                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
-                    <h3>John Smith
-                        <small>Job Title</small>
-                    </h3>
+
+<!-- nicks row -->
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="img-responsive img-circle img-fix" src="img/nick.jpg" alt="">
+                    </div>
+                    <div class="col-md-7">
+                        <h3>Nick Jordan<small>  The Gui God</small></h3>
+                        
+                        <p><strong>Bio:</strong> From the time he was a small child, Nick has always taken a high interest in technology. Coming out of high school, Nick earned a scholarship to play football for The University of Texas, and came to Austin with the mindset of becoming an engineer. Soon afterwards however, he realized his lack of interest in Engineering. After overseeing some school work of a friend majoring in Computer Science, Nick quickly developed an interest in this field of study. It wasn't long after joining the school of Computer Science that he realized his passion for it.  </p>
+                        
+                        <p><strong>Responsibilities:</strong> Nick was primarily responsible for the layout, design, and graphical user interface, front-end portions of the website. He initialized the GUI using a premade Bootstrap theme, but soon veered far from the original template code. He created the GUI template based on the conceptual layout and design of the website, and with the help from his other team mates, populated the pages with the appropriate data. Nick worked with HTML, CSS, Javascript, and Bootstrap during this work.</p>
+
+                        <p><strong>Number of Commits:</strong> 6</p>
+
+                        <p><strong>Number of Issues:</strong> </p>
+
+                        <p><strong>Number of Unit Tests:</strong> </p>
+                    </div>
                 </div>
-                <div class="col-sm-4 text-center">
-                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
-                    <h3>John Smith
-                        <small>Job Title</small>
-                    </h3>
+<hr> <br>
+<!-- davids row -->
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="img-responsive img-circle img-fix" src="img/david.jpg" alt="">
+                    </div>
+                    <div class="col-md-7">
+                        <h3>David Sipos<small>  The Backend Brethren</small></h3>
+                        
+                        <p><strong>Bio:</strong> David grew up using computers through childhood, starting with the software MS-DOS and eventually Windows 3.0.  He began to build computers and became the PC guru in the family, who everyone would call when they had any issues.  As he grew older he started doing networking and IT for small companies, which piqued his interest in programming.  University of Texas offered one of the best Computer Science programs in the state and was the clear choice for his future.</p>
+
+                        <p><strong>Responsibilities:</strong> David took on the responsibility of handling the backend for the project.  This included gathering of the data such as the team and player stats from several websites. To achieve this, the Beautiful Soup library for Python was used to effectively scrape the information programmatically from the websites for all the teams and players at one time. </p>
+
+                        <p><strong>Number of Commits:</strong> 6</p>
+
+                        <p><strong>Number of Issues:</strong> </p>
+
+                        <p><strong>Number of Unit Tests:</strong> </p>
+                    </div>
+                </div>                
+<hr> <br>
+<!-- camerons row -->
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="img-responsive img-circle img-fix" src="img/cameron.jpg" alt="">
+                    </div>
+                    <div class="col-md-7">
+                        <h3>Cameron Reese<small>  The Prince of API</small></h3>
+                        
+                        <p><strong>Bio:</strong> </p>
+                        
+                        <p><strong>Responsibilities:</strong> </p>
+
+                        <p><strong>Number of Commits:</strong> </p>
+
+                        <p><strong>Number of Issues:</strong> </p>
+
+                        <p><strong>Number of Unit Tests:</strong> </p>
+                    </div>
+                </div>   
+<hr> <br>
+<!-- chrises row -->
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="img-responsive img-circle img-fix" src="img/chris.jpg" alt="">
+                    </div>
+                    <div class="col-md-7">
+                        <h3>Chris LeSage<small> The Bootstrappin Boss</small></h3>
+                        
+                        <p><strong>Bio:</strong> Chris LeSage is a Senior at Univeristy of Texas who is pursuing a Bachelors of Science and Arts Degree in Computer Science. He enjoys to play soccer, football, and play video games in his spare time. He is also currently working on his beard...</p>
+                        
+                        <p><strong>Responsibilities:</strong> Chris works on front end data manager, data tables, and data read in from API which populate the pages on the website with the appropriate data. He also helps with Bootstrap and website layout.</p>
+
+                        <p><strong>Number of Commits:</strong> 6</p>
+
+                        <p><strong>Number of Issues:</strong> </p>
+
+                        <p><strong>Number of Unit Tests:</strong> </p>
+
+                    </div>
                 </div>
-                <div class="col-sm-4 text-center">
-                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
-                    <h3>John Smith
-                        <small>Job Title</small>
-                    </h3>
+<hr> <br>
+<!-- joshes row -->
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img class="img-responsive img-circle img-fix" src="img/josh.jpg" alt="">
+                    </div>
+                    <div class="col-md-7">
+                        <h3>Josh Waller<small>  The Master Databaser</small> </h3>
+                        
+                        <p><strong>Bio:</strong> Joshua spent most of his childhood believing he would attend Oklahoma State University with two degrees in Electrical Engineering and Computer Science. He is an avid sports fan due to his continuous participation in sports growing up. When he reached his senior year, he decided to continue playing baseball at North Central Texas College instead of going to his desired school OSU. Unfortunately after he tore his labrum in his shoulder, Joshua quit baseball and began to scope out potential schools to attend. Luckily, a close friend from childhood led him to venture away from OSU and informed him about the excellent academia that The University of Texas had to offer. Though his heart was torn on the decision, he enrolled in the Computer Science program at UT. Joshua believes he wants to enter the field of DBA or become a Data Scientist.</p>
+                        
+                        <p><strong>Responsibilities:</strong> Joshua obtained the responsibility of creating the database for the project. He will interact with David Sipos on extracting the data in the correct format to populate the tables in the database. Joshua will utilize SQLAlchemy and MySQL to implement the database.</p>
+
+                        <p><strong>Number of Commits:</strong> </p>
+
+                        <p><strong>Number of Issues:</strong> </p>
+
+                        <p><strong>Number of Unit Tests:</strong> </p>
+                    </div>
                 </div>
+<hr> <br>
                 <div class="clearfix"></div>
             </div>
         </div>
-
     </div>
-    <!-- /.container -->
 
+<!-- *************************************************************************************************************************
+                                                        End Member Bio Box
+******************************************************************************************************************************* -->
+
+<!-- *************************************************************************************************************************
+                                                        Start footer
+******************************************************************************************************************************* -->
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <p>Copyright &copy; Your Website 2014</p>
+                    <p>Copyright &copy; Graybeards 2015</p>
                 </div>
             </div>
         </div>
     </footer>
+<!-- *************************************************************************************************************************
+                                                        end footer
+******************************************************************************************************************************* -->
+
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
