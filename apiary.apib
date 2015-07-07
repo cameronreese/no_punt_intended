@@ -93,11 +93,11 @@ Resources related to the football teams in the API
 A Conference object has the following attributes:
 
 + name
-+ location
-+ roster
-+ schedule
-+ head_coach
-+ conference
++ nickname
++ founded
++ current conf champion [team]
++ teams
++ number of teams
 
 + Parameters
     + conf_name: ACC (required, string) - Nickname of the conference in the form of a string, spaces substituted with "%20"
@@ -107,10 +107,10 @@ A Conference object has the following attributes:
 + Response 200 (:5000/punt/conf/ACC)
 
         {
-            'name': 'Texas Longhorns',
-            'location': 'Austin, TX',
-            'roster': (), # tuple of player links
-            'schedule': [[]], # a dict of {date : opponent} or some custom list of data
-            'head_coach': 'Strong',
-            'conf': 'Big 12'
+            'name': 'Atlantic Coast Conference',
+            'nickname': 'ACC',
+            'founded': '1953', 
+            'conf_champ': 'N/A', 
+            'teams': [], # link to a list of teams that are in the conference
+            'num_teams': '15'
         }
