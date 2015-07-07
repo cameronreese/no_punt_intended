@@ -1,5 +1,5 @@
 FORMAT: 1A
-HOST: http://cfdb.me/punt
+HOST: http://cfdb.me:5000/punt
 
 # punt
 
@@ -12,10 +12,10 @@ This resource does not have any attributes at the root level. Further URL agurgm
 
 ## Retrieve the Entry Point [GET]
 
-+ Response 200 (punt/)
++ Response 200 (:5000/punt/)
 
         {
-            "cfdb.me/punt": "/"
+            "cfdb.me:5000/punt": "/"
         }
 
 ## Group Player
@@ -39,7 +39,7 @@ A Player object has the following attributes:
 
 ### View a Player's Meta Data [GET]
 
-+ Response 200 (punt/players/Nick%20Jordan)
++ Response 200 (:5000/punt/players/Nick%20Jordan)
 
         {
             'name': 'Nick Jordan',
