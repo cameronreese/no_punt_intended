@@ -4,7 +4,7 @@ FILES :=							  \
 	IDB.log 						  \
 	models.py						  \
 	tests.py      					  \
-    apiary.apid                       \
+    apiary.apib                       \
     .gitignore                        \
     UML.pdf
 
