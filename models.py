@@ -10,6 +10,8 @@ import json
 from flask import Flask
 from flask import jsonify
 from flask import abort
+from flask import render_template
+
 
 punt = Flask(__name__)
 
@@ -99,6 +101,11 @@ conf = [
     }
 ]
 
+
+# *********************************************************************************************************************
+# API calls to retrieve model specific data
+# *********************************************************************************************************************
+
 @punt.route('/punt/players/<string:player_name>', methods=['GET'])
 def get_players(player_name):
     """ GET method
@@ -142,6 +149,26 @@ def get_conf(conf_name):
     if len(c) == 0:
         abort(404)
     return jsonify({'conf': c[0]})
+
+
+# *********************************************************************************************************************
+# End of API calls to retrieve model specific data  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+# *********************************************************************************************************************
+
+
+
+
+# *********************************************************************************************************************
+# Template API calls for populating website URLS
+# *********************************************************************************************************************
+
+@punt.route('/')
+@punt.route('/index')
+def index():
+    return render_template('index.html', title='CFDB')
+
+
+
 
 if __name__ == '__main__':
     punt.run(debug=True, host='0.0.0.0')
