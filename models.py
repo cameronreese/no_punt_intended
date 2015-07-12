@@ -11,6 +11,7 @@ from flask import Flask
 from flask import jsonify
 from flask import abort
 from flask import render_template
+from collections import namedtuple
 
 
 punt = Flask(__name__)
@@ -23,7 +24,7 @@ players = [
         'name': 'Nick Jordan',
         'no': '#28',
         'pos': 'PK',
-        'team': 'Texas Longhorns',
+        'team': 'Texas',
         'ht': '6-1',
         'wt': '193',
         'hometown': 'Coppell, TX',
@@ -32,7 +33,7 @@ players = [
         'name': 'Shiro Davis',
         'no': '#1',
         'pos': 'DE',
-        'team': 'Texas Longhorns',
+        'team': 'Texas',
         'ht': '6-3',
         'wt': '265',
         'hometown': 'Shreveport, LA',
@@ -41,7 +42,7 @@ players = [
         'name': 'Jeff Bryson',
         'no': '#59',
         'pos': 'LB',
-        'team': 'Baylor Bears',
+        'team': 'Baylor',
         'ht': '5-10',
         'wt': '200',
         'hometown': 'San Antonio, TX',
@@ -51,7 +52,7 @@ players = [
 # teams model
 teams = [
     {
-        'name': 'Texas Longhorns',
+        'name': 'Texas',
         'location': 'Austin, TX',
         'roster': ['Nick Jordan', 'Shiro Davis'], # list of players
         'schedule': [], # data of schedule
@@ -59,7 +60,7 @@ teams = [
         'conf': 'Big 12'
     },
     {
-        'name': 'Baylor Bears'
+        'name': 'Baylor'
         # 'location': 'Waco, TX',
         # 'roster': (), # tuple of player links
         # 'schedule': [[]], # a dict of {date : opponent} or some custom list of data
@@ -67,7 +68,7 @@ teams = [
         # 'conf': 'Big 12'
     },
     {
-        'name': 'TCU Horned Frogs'
+        'name': 'TCU'
         # 'location': 'Fort Worth, TX',
         # 'roster': (), # tuple of player links
         # 'schedule': [[]], # a dict of {date : opponent} or some custom list of data
@@ -79,7 +80,7 @@ teams = [
 # conferences model
 conf = [
     {
-        'name': 'Big 12',
+        'name': 'Big12',
         'founded': '1996',
         'champ': 'Baylor',
         'teams': ['Baylor', 'Iowa State', 'Kansas', 'Kansas State', 'Oklahoma', 'Oklahoma State', 'TCU', 'Texas', 'Texas Tech', 'West Virginia' ], # list of teams
@@ -215,8 +216,9 @@ def player_table():
 @punt.route('/')
 @punt.route('/conf_t/<string:c_name>')
 def conf_template(c_name):
-    conference = get_conf(c_name.replace(" ", "%20"))
-    return render_template('conference_profile.html', conf=conference.get('name'), year=conference.get('founded'), com=conference.get('comm'), champ=conference.get('champ'), num=conference.get('num_teams'), teamList=conference.get('teams'))
+    c = [c for c in conf if c['name'] == c_name]
+    conference = c[0]
+    return render_template('conference_profile.html', conf=conference['name'], year=conference['founded'], com=conference['comm'], champ=conference['champ'], num=conference['num_teams'], teamList=conference['teams'])
 
 
 if __name__ == '__main__':
