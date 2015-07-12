@@ -6,7 +6,7 @@
 ******************************************************************************************************************************* -->
             <div class="box-thin">
                     <h2 class="team-title-text text-center">
-                        <strong>Big 12</strong>
+                        <strong>{{conf}}</strong>
                     </h2>
             </div>
 
@@ -25,22 +25,15 @@
                         <strong>Statistics</strong>
                     </h2>
                     <hr>
-                    <p class="text-center">Year Founded: 1996</p>
-                    <p class="text-center">Commissioner: Bob Bowlsby</p>
-                    <p class="text-center">Current Conference Champion: Baylor, TCU</p>
-                    <p class="text-center">Number of Members: 10</p>
+                    <p class="text-center">Year Founded: {{year}}</p>
+                    <p class="text-center">Commissioner: {{com}}</p>
+                    <p class="text-center">Current Conference Champion: {{champ}}</p>
+                    <p class="text-center">Number of Members: {{num}}</p>
                     <hr>
                     <p class="text-center bold-text">Teams: </p>
-                        <p class="text-center">Baylor</p>
-                        <p class="text-center">Iowa State</p>
-                        <p class="text-center">Kansas</p>
-                        <p class="text-center">Kansas State</p>
-                        <p class="text-center">Oklahoma</p>
-                        <p class="text-center">Oklahoma State</p>
-                        <p class="text-center">TCU</p>
-                        <p class="text-center"> <a href="../team_pages/ut.html">Texas</a> </p>
-                        <p class="text-center">Texas Tech</p>
-                        <p class="text-center">West Virginia</p>
+                        {% for team in teamList %}
+                            <div> <p class="text-center">{{team}}</p> </div>   <!-- change "team" to a link -->
+                        {% endfor %}
                 </div>
             </div>
         </div>
