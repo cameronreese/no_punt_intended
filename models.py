@@ -80,10 +80,11 @@ teams = [
 conf = [
     {
         'name': 'Big 12',
-        'founded': 'some year',
-        'current_conf_champion': 'team',
-        'teams': [], # list of teams
-        'number_of_teams': 'a_num'
+        'founded': '1996',
+        'champ': 'Baylor',
+        'teams': ['Baylor', 'Iowa State', 'Kansas', 'Kansas State', 'Oklahoma', 'Oklahoma State', 'TCU', 'Texas', 'Texas Tech', 'West Virginia' ], # list of teams
+        'num_teams': '10',
+        'comm': 'Bob Bowlsby'
     },
     {
         'name': 'Big Ten'
@@ -118,7 +119,7 @@ def get_players(player_name):
     player = [player for player in players if player['name'] == player_name]
     if len(player) == 0:
         abort(404)
-    return jsonify({'players': player[0]})
+    return jsonify(player[0])
 
 @punt.route('/punt/teams/<string:team_name>', methods=['GET'])
 def get_teams(team_name):
@@ -173,12 +174,49 @@ def index():
 @punt.route('/')
 @punt.route('/about')
 def about():
+    """
+    :return: about page
+    """
     return render_template('about.html', title='CFDB: About')
 
 @punt.route('/')
 @punt.route('/ncaa')
 def ncaa():
+    """
+    :return: NCAA FBS page
+    """
     return render_template('teams.html', title='CFDB: NCAA')
+
+@punt.route('/')
+@punt.route('/conf_table')
+def conf_table():
+    """
+    :return: Conference table page
+    """
+    return render_template('conferenceTable.html', title='CFDB: Conference Table')
+
+
+@punt.route('/')
+@punt.route('/team_table')
+def team_table():
+    """
+    :return: Team table page
+    """
+    return render_template('teamTable.html', title='CFDB: Team Table')
+
+@punt.route('/')
+@punt.route('/player_table')
+def player_table():
+    """
+    :return: Player table page
+    """
+    return render_template('playerTable.html', title='CFDB: Player Table')
+
+@punt.route('/')
+@punt.route('/conf_t')
+def conf_template(c_name):
+    conference = get_conf(c_name.replace(" ", "%20"))
+    return render_template('conference_profile.html', conf=conference.get('name'), year=conference.get('founded'), com=conference.get('comm'), champ=conference.get('champ'), num=conference.get('num_teams'), teamList=conference.get('teams'))
 
 
 if __name__ == '__main__':
