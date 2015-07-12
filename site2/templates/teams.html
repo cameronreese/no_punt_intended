@@ -17,7 +17,7 @@
 
                     {% for conf in confList %}
                         <div class="col-lg-3 text-center">
-                            <h6 class="conf-text"><a href="conference_pages/acc.html"><strong>ACC</a></h6>
+                            <script> document.write('<a href="http://cfdb.me/conf_t/' + {{conf}} + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​><h6 class="conf-text"> {{conf}} </h6></a> 
                             {% for team in teamList %}
                                 <script> document.write('<a href="http://cfdb.me/team_t/' + {{team}} + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​><h6 class="team-text text-center"> <strong>{{team}}</strong></h6></a>
                             {% endfor %}
