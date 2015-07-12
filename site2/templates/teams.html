@@ -15,18 +15,14 @@
                     <hr>
                 </div>
 
-                <div class="col-lg-3 text-center">
-                    <h6 class="conf-text"><a href="conference_pages/acc.html"><strong>ACC</a></h6>
-                    <h6 class="team-text text-center"> <a href="team_pages/clemson.html"><strong>Clemson</a> </strong></h6>
-                </div>
-                <div class="col-lg-3 text-center">
-                    <h6 class="conf-text"><a href="conference_pages/big12.html"><strong>Big 12</a></h6>
-                    <h6 class="team-text text-center"> <a href="team_pages/ut.html"><strong>Texas</a> </strong></h6>
-                </div>
-                <div class="col-lg-3 text-center">
-                    <h6 class="conf-text"><a href="conference_pages/bigten.html"><strong>Big 10</a></h6>
-                    <h6 class="team-text text-center"> <a href="team_pages/purdue.html"><strong>Purdue</a> </strong></h6>
-                </div>
+                    {% for conf in confList %}
+                        <div class="col-lg-3 text-center">
+                            <h6 class="conf-text"><a href="conference_pages/acc.html"><strong>ACC</a></h6>
+                            {% for team in teamList %}
+                                <script> document.write('<a href="http://cfdb.me/team_t/' + {{team}} + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​><h6 class="team-text text-center"> <strong>{{team}}</strong></h6></a>
+                            {% endfor %}
+                        </div>       
+                    {% endfor %}
 
             </div>
         </div>

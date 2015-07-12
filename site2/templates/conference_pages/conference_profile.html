@@ -32,8 +32,9 @@
                     <hr>
                     <p class="text-center bold-text">Teams: </p>
                         {% for team in teamList %}
-                            <div> <p class="text-center">{{team}}</p> </div>   <!-- change "team" to a link -->
+                            <div> <p class="text-center"><script> document.write('<a href="http://cfdb.me/team_t/' + {{team}} + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>{{team}}</a></p> </div>   
                         {% endfor %}
+
                 </div>
             </div>
         </div>
