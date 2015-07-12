@@ -134,7 +134,7 @@ def get_teams(team_name):
     team = [team for team in teams if team['name'] == team_name]
     if len(team) == 0:
         abort(404)
-    return jsonify({'teams': team[0]})
+    return jsonify(team[0])
 
 @punt.route('/punt/conf/<string:conf_name>', methods=['GET'])
 def get_conf(conf_name):
@@ -149,7 +149,7 @@ def get_conf(conf_name):
     c = [c for c in conf if c['name'] == conf_name]
     if len(c) == 0:
         abort(404)
-    return jsonify({'conf': c[0]})
+    return jsonify(c[0])
 
 
 # *********************************************************************************************************************
@@ -213,7 +213,7 @@ def player_table():
     return render_template('playerTable.html', title='CFDB: Player Table')
 
 @punt.route('/')
-@punt.route('/conf_t')
+@punt.route('/conf_t/<string:c_name>')
 def conf_template(c_name):
     conference = get_conf(c_name.replace(" ", "%20"))
     return render_template('conference_profile.html', conf=conference.get('name'), year=conference.get('founded'), com=conference.get('comm'), champ=conference.get('champ'), num=conference.get('num_teams'), teamList=conference.get('teams'))
