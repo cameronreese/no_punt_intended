@@ -162,20 +162,23 @@ def get_conf(conf_name):
 # Template API calls for populating website URLS
 # *********************************************************************************************************************
 
-@punt.route('punt/')
-@punt.route('punt/index')
+@punt.route('/')
+@punt.route('/index')
 def index():
+    """
+    :return:splash page
+    """
     return render_template('index.html', title='CFDB')
 
-@punt.route('punt/')
-@punt.route('punt/about')
+@punt.route('/')
+@punt.route('/about')
 def about():
-    return render_template('about.html', title='CFDB')
+    return render_template('about.html', title='CFDB: About')
 
-@punt.route('punt/')
-@punt.route('punt/ncaa')
+@punt.route('/')
+@punt.route('/ncaa')
 def ncaa():
-    return render_template('teams.html', title='CFDB')
+    return render_template('teams.html', title='CFDB: NCAA')
 
 
 if __name__ == '__main__':
