@@ -28,12 +28,13 @@
                     <td>{{conf.champ}}</td>
 
 
+
                     <!-- Check this button for teams -->
                     <td>
                       <!-- Trigger the modal with a button -->
-                      <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal1">Teams</button>
+                      <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#{{conf.name}}">Teams</button>
                       <!-- Modal -->
-                      <div id="myModal1" class="modal fade" role="dialog">
+                      <div id="{{conf.name}}" class="modal fade" role="dialog">
                         <div class="modal-dialog">
                           <!-- Modal content-->
                           <div class="modal-content">
@@ -55,6 +56,8 @@
                       </div>
                     </td>
 
+
+
                     <td>{{conf.num_teams}}</td>
                     <td>{{conf.comm}}</td>
 
@@ -64,11 +67,11 @@
               <tfoot>
                   <tr>
                       <th>Name</th>
-                      <th>Nickname</th>
                       <th>Founded</th>
                       <th>Current Conference Champ</th>
                       <th>Teams</th>
                       <th>Number of Teams</th>
+                      <th>Team Commissioner</th>
                   </tr>
               </tfoot>
           </table>
