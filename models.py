@@ -65,25 +65,58 @@ teams = [
         'name': 'Texas',
         'location': 'Austin, TX',
         'roster': ['Nick Jordan', 'Shiro Davis'], # list of players
-        'schedule': ['1st game', '2nd game', 'last game'], # data of schedule
+        'schedule': [{'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'TBD'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'}
+                     ], # list of dictionaries
         'head_coach': 'Charlie Strong',
         'conf': 'Big 12'
     },
     {
-        'name': 'Baylor'
-        # 'location': 'Waco, TX',
-        # 'roster': (), # tuple of player links
-        # 'schedule': [[]], # a dict of {date : opponent} or some custom list of data
-        # 'head_coach': 'Unknown',
-        # 'conf': 'Big 12'
+        'name': 'Baylor',
+        'location': 'Waco, TX',
+        'roster': ['Nick Jordan', 'Shiro Davis'], # list of players
+        'schedule': [{'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'TBD'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'}
+                     ], # list of dictionaries
+        'head_coach': 'Charlie Strong',
+        'conf': 'Big 12'
     },
     {
-        'name': 'TCU'
-        # 'location': 'Fort Worth, TX',
-        # 'roster': (), # tuple of player links
-        # 'schedule': [[]], # a dict of {date : opponent} or some custom list of data
-        # 'head_coach': 'Unknown',
-        # 'conf': 'Big 12'
+        'name': 'TCU',
+        'location': 'Fort Worth, TX',
+        'roster': ['Nick Jordan', 'Shiro Davis'], # list of players
+        'schedule': [{'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'TBD'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'}
+                     ], # list of dictionaries
+        'head_coach': 'Charlie Strong',
+        'conf': 'Big Ten'
     }
 ]
 
@@ -269,7 +302,7 @@ def team_template(t_name):
     """
     t = [t for t in teams if t['name'] == t_name] # <---- this will need to change to a call to the database returning all of the team's attributes in a python dict MATCHING THE KEY NAMES INDICATED BELOW
     team = t[0]
-    player_list = [player for player in players for p in team['roster'] if player['name'] == p]
+    player_list = [player for player in players for p in team['roster'] if player['name'] == p] # <----- call to database retrieving a list of the full data for each player of the team
     return render_template('team_profile.html', team=team['name'], conf=team['conf'], location=team['location'], coach=team['head_coach'], playerList=list(player_list), gameList=team['schedule'])
 
 
