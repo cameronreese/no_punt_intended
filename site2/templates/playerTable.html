@@ -22,12 +22,12 @@
               <tbody>
                 {% for player in playerList %}
                   <tr>
-                    <td>{{player.number}}</td>
+                    <td>{{player.no}}</td>
                     <td><script> document.write('<a href="http://localhost:5000/player_t/' + "{{player.name}}" + '"'); </script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>{{player.name}}</a></td>
                     <td>{{player.pos}}</td>
                     <td>{{player.ht}}</td>
                     <td>{{player.wt}}</td>
-                    <td>{{player.town}}</td>
+                    <td>{{player.hometown}}</td>
                     <td><script> document.write('<a href="http://localhost:5000/team_t/' + "{{player.team}}" + '"'); </script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>{{player.team}}</a></td>
                   </tr>
                   {% endfor %}
@@ -60,6 +60,7 @@
     <script type="text/javascript">
     $(document).ready(function() {
       $('#conferenceTable').DataTable( {
+        responsive: true,
         "iDisplayLength": 11,
         "sDom": "<'row'<'col-xs-6'T><'col-xs-6'f>r>t<'row'<'col-xs-6'i><'col-xs-6'p>>",
         "sPaginationType": "bootstrap"
