@@ -23,12 +23,12 @@
               <tbody>
                 {% for team in teamList %}
                 <tr>
-                  <td><script> document.write('<a href="http://localhost:5000/team_t/' + "{{team.name}}" + '"'); </script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>{{team.name}}</a></td>
+                  <td><script> document.write('<a href="http://cfdb.me:5000/team_t/' + "{{team.name}}" + '"'); </script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>{{team.name}}</a></td>
                   <td>{{team.location}}</td>
-                  <td><script> document.write('<a href="http://localhost:5000/team_t/' + "{{team}}" + '#roster"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>Roster</a></td>
-                  <td><script> document.write('<a href="http://localhost:5000/team_t/' + "{{team}}" + '#schedule"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>Schedule</a></td>
+                  <td><script> document.write('<a href="http://cfdb.me:5000/team_t/' + "{{team}}" + '#roster"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>Roster</a></td>
+                  <td><script> document.write('<a href="http://cfdb.me:5000/team_t/' + "{{team}}" + '#schedule"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>Schedule</a></td>
                   <td>{{team.coach}}</td>
-                  <td><script> document.write('<a href="http://localhost:5000/conf_t/' + "{{team.conf}}" + '"'); </script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>{{team.conf}}</a></td>
+                  <td><script> document.write('<a href="http://cfdb.me:5000/conf_t/' + "{{team.conf}}" + '"'); </script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>{{team.conf}}</a></td>
                 </tr>  
                 {% endfor %}                       
               </tbody>
