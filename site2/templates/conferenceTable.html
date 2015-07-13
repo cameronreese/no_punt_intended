@@ -22,92 +22,41 @@
               </thead>
               <tbody>
                   <tr>
-                    <td>American Athletic Conference</td>
-                    <td>The American</td>
-                    <td>1979</td>
-                    <td></td>
-                    <td>Teams</td>
-                    <td>11</td>
-                  </tr>
-                  <tr>
-                    <td><a href="conference_pages/acc.html">Atlantic Coast Conference</a></td>
-                    <td>ACC</td>
-                    <td>1953</td>
-                    <td></td>
-                    <td>Teams</td>
-                    <td>15</td>
-                  </tr>
-                  <tr>
-                    <td><a href="conference_pages/bigten.html">Big Ten Conference</a></td>
-                    <td>Big Ten</td>
-                    <td>1896</td>
-                    <td></td>
-                    <td>Teams</td>
-                    <td>14</td>
-                  </tr>
-                  <tr>
-                    <td><a href="conference_pages/big12.html">Big 12 Conference</a></td>
-                    <td>Big 12</td>
-                    <td>1996</td>
-                    <td></td>
-                    <td>Teams</td>
-                    <td>10</td>
-                  </tr>
-                  <tr>
-                    <td>Conference USA</td>
-                    <td>C-USA</td>
-                    <td>1995</td>
-                    <td></td>
-                    <td>Teams</td>
-                    <td>14</td>
-                  </tr>
-                  <tr>
-                    <td>Division I FBS Independents</td>
-                    <td>Ind.</td>
-                    <td>None</td>
-                    <td></td>
-                    <td>Teams</td>
-                    <td>3</td>
-                  </tr>
-                  <tr>
-                    <td>Mid-American Conference</td>
-                    <td>MAC</td>
-                    <td>1946</td>
-                    <td></td>
-                    <td>Teams</td>
-                    <td>12</td>
-                  </tr>
-                  <tr>
-                    <td>Mountain West Conference</td>
-                    <td>MW</td>
-                    <td>1999</td>
-                    <td></td>
-                    <td>Teams</td>
-                    <td>11</td>
-                  </tr>
-                  <tr>
-                    <td>Pacific-12 Conference</td>
-                    <td>PAC-12</td>
-                    <td>1959</td>
-                    <td></td>
-                    <td>Teams</td>
-                    <td>12</td>
-                  </tr>
-                  <tr>
-                    <td>Southeastern Conference</td>
-                    <td>SEC</td>
-                    <td>1932</td>
-                    <td></td>
-                    <td>Teams</td>
-                    <td>14</td>
-                  </tr>
-                  <tr>
-                    <td>Sun Belt Conference</td>
-                    <td>Sun Belt</td>
-                    <td>1976</td>
-                    <td></td>
-                    <td>Teams</td>
-                    <td>11</td>
+                    {% for team in teamList %}
+                    <td><script> document.write('<a href="http://localhost:5000/team_t/' + "{{team.name}}" + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>{{team.name}}</a></td>
+                    <td>{{team.nickname}}</td>
+                    <td>{{team.year}}</td>
+                    <td>{{team.champ}}</td>
+
+
+                    <!-- Check this button for teams -->
+                    <td>
+                      <!-- Trigger the modal with a button -->
+                      <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal1">Teams</button>
+                      <!-- Modal -->
+                      <div id="myModal1" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+                          <!-- Modal content-->
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                              <h4 class="modal-title">{{team.name}} Teams:</h4>
+                            </div>
+                            <div class="modal-body">
+                              {% for team in conf.teams %}
+                              <p class="text-center">
+                                <script> document.write('<a href="http://localhost:5000/team_t/' + "{{team}}" + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>{{team}}</p>
+                              {% endfor %}
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+
+                    <td>{{num}}</td>
                   </tr>
               </tbody>
               <tfoot>
