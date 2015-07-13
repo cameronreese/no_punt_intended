@@ -128,7 +128,7 @@ conf = [
     },
     {
         'name': 'ACC',
-        'founded': '1996',
+        'founded': '1945',
         'champ': 'Baylor',
         'teams': ['Baylor', 'College', 'University', 'York Town', 'Spain', 'Hawaii', 'TCU', 'Texas', 'Georgia Tech'], # list of teams
         'num_teams': '10',
@@ -136,7 +136,7 @@ conf = [
     },
     {
         'name': 'Big Ten',
-        'founded': '1996',
+        'founded': '1987',
         'champ': 'Baylor',
         'teams': ['Baylor', 'iPad', 'iPod', 'Macbook Air', 'Macbook', 'Baylor', 'TCU', 'Texas', 'Macbook Pro', 'Watch' ], # list of teams
         'num_teams': '10',
