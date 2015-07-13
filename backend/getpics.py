@@ -47,7 +47,7 @@ for line in fileinput.input():
 		for link in re.findall('http://sports.cbsimg.net/images/collegefootball/players/60x80/[0-9]*.jpg', source2):
 			site = j.rsplit('/',1)
 			site = site[1]
-			site = site.replace('-', '')
+			site = site.replace('-', ' ')
 			d[str(site)] = link
 
 print d
