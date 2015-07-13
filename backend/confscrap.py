@@ -13,11 +13,15 @@ conf_num = []
 conf_comm = []
 conf_nick = []
 conf_dict = {}
+
+# The data is scraped from first page and enters the conference's page to extract commissioner
+# The final dictionary helps produce the json out file
 i = 1
 for conf_info in soup_data :
 	cool = conf_info.find("a")
 	conf_help = conf_info.text
 	conf_help2 = conf_help.split('\n')
+	#break once the page gets to FCS teams
 	if conf_help == 'Big Sky Conference' :
 		break
 	if i == 1 :
