@@ -130,88 +130,18 @@
                       <th>Date</th>
                       <th>Opponent</th>
                       <th>Location</th>
-                      <th>Time/Result</th>
+                      <th>Time</th>
                   </tr>
               </thead>
               <tbody>
+                {% for game in gameList %}
                   <tr>
-                    <td>Sat, Sept 5th</td>
-                    <td>Notre Dame</td>
-                    <td>Notre Dame Stadium</td>
-                    <td>6:30 PM ET</td>
+                    <td>{{ game.date }}</td>
+                    <td><script> document.write('<a href="http://localhost:5000/team_t/' + "{{game.opponent}}" + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>{{game.opponent}}</a></td>
+                    <td>{{game.location}}</td>
+                    <td>{{game.time}}</td>
                   </tr>
-                  <tr>
-                    <td>Sat, Sept 12th</td>
-                    <td>Rice</td>
-                    <td>Home Stadium</td>
-                    <td>7 PM ET</td>
-                  </tr>
-                  <tr>
-                    <td>Sat, Sept 19th</td>
-                    <td>California</td>
-                    <td>Home Stadium</td>
-                    <td>6:30 PM ET</td>
-                  </tr>
-                  <tr>
-                    <td>Sat, Sept 26h</td>
-                    <td>Oklahoma State</td>
-                    <td>Home Stadium</td>
-                    <td>TBD</td>
-                  </tr>
-                  <tr>
-                    <td>Sat, Oct 3rd</td>
-                    <td>TCU</td>
-                    <td>TCU Stadium</td>
-                    <td>TBD</td>
-                  </tr>
-                  <tr>
-                    <td>Sat, Oct 10th</td>
-                    <td>Oklahoma</td>
-                    <td>Dallas Stadium</td>
-                    <td>TBD</td>
-                  </tr>
-                  <tr>
-                    <td>Sat, Oct 17th</td>
-                    <td> --- </td>
-                    <td> --- </td>
-                    <td> --- </td>
-                  </tr>
-                  <tr>
-                    <td>Sat, Oct 24th</td>
-                    <td>K-State</td>
-                    <td>Home Stadium</td>
-                    <td>TBD</td>
-                  </tr>
-                  <tr>
-                    <td>Sat, Oct 31st</td>
-                    <td>Iowa State</td>
-                    <td>Iowa Stadium</td>
-                    <td>TBD</td>
-                  </tr>
-                  <tr>
-                    <td>Sat, Nov 7th</td>
-                    <td>Kansas</td>
-                    <td>Home Stadium</td>
-                    <td>TBD</td>
-                  </tr>
-                  <tr>
-                    <td>Sat, Nov 14th</td>
-                    <td>West Virginia</td>
-                    <td>West Virginia Stadium</td>
-                    <td>TBD</td>
-                  </tr>
-                  <tr>
-                    <td>Thurs, Nov 26st</td>
-                    <td>Texas Tech</td>
-                    <td>Home Stadium</td>
-                    <td>6:30 PM ET</td>
-                  </tr>
-                  <tr>
-                    <td>Sat, Dec 5th</td>
-                    <td>Baylor</td>
-                    <td>Baylor Stadium</td>
-                    <td>TBD</td>
-                  </tr>
+                  {% endfor %}
               </tbody>
           </table>
        </div>
