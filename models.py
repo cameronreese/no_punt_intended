@@ -12,6 +12,7 @@ from flask import jsonify
 from flask import abort
 from flask import render_template
 from collections import namedtuple
+from urllib.request import urlopen
 
 
 punt = Flask(__name__)
@@ -161,7 +162,7 @@ def get_conf(conf_name):
 
 
 # *********************************************************************************************************************
-# Template API calls for populating website URLS
+# Template API calls for populating website MAIN static pages
 # *********************************************************************************************************************
 
 @punt.route('/')
@@ -188,6 +189,12 @@ def ncaa():
     """
     return render_template('teams.html', title='CFDB: NCAA')
 
+
+
+# *********************************************************************************************************************
+# Template API calls for populating website TABLE pages
+# *********************************************************************************************************************
+
 @punt.route('/')
 @punt.route('/conf_table')
 def conf_table():
@@ -213,12 +220,47 @@ def player_table():
     """
     return render_template('playerTable.html', title='CFDB: Player Table')
 
+
+# *********************************************************************************************************************
+# Template API calls for populating website PROFILE pages
+# *********************************************************************************************************************
+
+
 @punt.route('/')
 @punt.route('/conf_t/<string:c_name>')
 def conf_template(c_name):
-    c = [c for c in conf if c['name'] == c_name]
+    """
+    :param c_name: the conference's name
+    :return: the conference profile page populated with content specific for that conference
+    """
+    c = [c for c in conf if c['name'] == c_name] # <---- this will need to change to a call to the database returning all of the conference's attributes in a python dict
     conference = c[0]
     return render_template('conference_profile.html', conf=conference['name'], year=conference['founded'], com=conference['comm'], champ=conference['champ'], num=conference['num_teams'], teamList=conference['teams'])
+
+
+
+@punt.route('/')
+@punt.route('/team_t/<string:t_name>')
+def team_template(t_name):
+    """
+    :param t_name: the team's name
+    :return: the team profile page populated with content specific for that team
+    """
+    t = [t for t in teams if t['name'] == t_name] # <---- this will need to change to a call to the database returning all of the team's attributes in a python dict
+    team = t[0]
+    return render_template('team_profile.html', conf=conference['name'], year=conference['founded'], com=conference['comm'], champ=conference['champ'], num=conference['num_teams'], teamList=conference['teams'])
+
+
+@punt.route('/')
+@punt.route('/player_t/<string:p_name>')
+def player_template(c_name):
+    """
+    :param p_name: the player's name
+    :return: the player profile page populated with content specific for that player
+    """
+    p = [p for p in players if p['name'] == p_name] # <---- this will need to change to a call to the database returning all of the conference's attributes and a python dict
+    player = p[0]
+    return render_template('player_profile.html', conf=conference['name'], year=conference['founded'], com=conference['comm'], champ=conference['champ'], num=conference['num_teams'], teamList=conference['teams'])
 
 
 if __name__ == '__main__':
