@@ -97,7 +97,7 @@
                 </div>
                 <div class="col-lg-12 text-center">
                     {% for player in playerList %}
-                      <p><script> document.write('<a href="http://localhost:5000/player_t/' + "{{player}}" + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>{{number}} - {{player}}</a></p>
+                      <p><script> document.write('<a href="http://localhost:5000/player_t/' + "{{player.name}}" + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>{{player.no}} - {{player.name}}</a></p>
                     {% endfor %}
                     <hr>
                 </div>

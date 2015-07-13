@@ -23,7 +23,7 @@ punt = Flask(__name__)
 players = [
     {
         'name': 'Nick Jordan',
-        'no': '#28',
+        'no': '28',
         'pos': 'PK',
         'team': 'Texas',
         'ht': '6-1',
@@ -35,7 +35,7 @@ players = [
     },
     {
         'name': 'Shiro Davis',
-        'no': '#1',
+        'no': '1',
         'pos': 'DE',
         'team': 'Texas',
         'ht': '6-3',
@@ -47,7 +47,7 @@ players = [
     },
     {
         'name': 'Jeff Bryson',
-        'no': '#59',
+        'no': '59',
         'pos': 'LB',
         'team': 'Baylor',
         'ht': '5-10',
@@ -90,7 +90,7 @@ teams = [
 # conferences model
 conf = [
     {
-        'name': 'Big12',
+        'name': 'Big 12',
         'founded': '1996',
         'champ': 'Baylor',
         'teams': ['Baylor', 'Iowa State', 'Kansas', 'Kansas State', 'Oklahoma', 'Oklahoma State', 'TCU', 'Texas', 'Texas Tech', 'West Virginia' ], # list of teams
@@ -98,18 +98,28 @@ conf = [
         'comm': 'Bob Bowlsby'
     },
     {
-        'name': 'Big Ten'
-        # 'founded': 'some year',
-        # 'current_conf_champion': 'team',
-        # 'teams': [], # list of teams
-        # 'number_of_teams': 'a_num'
+        'name': 'ACC',
+        'founded': '1996',
+        'champ': 'Baylor',
+        'teams': ['Baylor', 'Iowa State', 'Kansas', 'Kansas State', 'Oklahoma', 'Oklahoma State', 'TCU', 'Texas', 'Texas Tech', 'West Virginia' ], # list of teams
+        'num_teams': '10',
+        'comm': 'Bob Bowlsby'
     },
     {
-        'name': 'ACC'
-        # 'founded': 'some year',
-        # 'current_conf_champion': 'team',
-        # 'teams': [], # list of teams
-        # 'number_of_teams': 'a_num'
+        'name': 'Big Ten',
+        'founded': '1996',
+        'champ': 'Baylor',
+        'teams': ['Baylor', 'Iowa State', 'Kansas', 'Kansas State', 'Oklahoma', 'Oklahoma State', 'TCU', 'Texas', 'Texas Tech', 'West Virginia' ], # list of teams
+        'num_teams': '10',
+        'comm': 'Bob Bowlsby'
+    },
+    {
+        'name': 'Nick\'s Own Conf',
+        'founded': '2015',
+        'champ': 'Nick',
+        'teams': ['Baylor', 'Iowa State', 'Kansas', 'Kansas State', 'Oklahoma', 'Oklahoma State', 'TCU', 'Texas', 'Texas Tech', 'West Virginia' ], # list of teams
+        'num_teams': '1001',
+        'comm': 'Nick the Slick'
     }
 ]
 
@@ -196,7 +206,8 @@ def ncaa():
     """
     :return: NCAA FBS page
     """
-    return render_template('teams.html', title='CFDB: NCAA')
+    conferences = [c for c in conf] # <---- this will need to change to a call to the database returning a list or generator of all the conferences
+    return render_template('teams.html', confList=list(conferences), title='CFDB: NCAA')
 
 
 
@@ -242,6 +253,7 @@ def conf_template(c_name):
     :param c_name: the conference's name
     :return: the conference profile page populated with content specific for that conference
     """
+
     c = [c for c in conf if c['name'] == c_name] # <---- this will need to change to a call to the database returning all of the conference's attributes in a python dict MATCHING THE KEY NAMES INDICATED BELOW
     conference = c[0]
     return render_template('conference_profile.html', conf=conference['name'], year=conference['founded'], com=conference['comm'], champ=conference['champ'], num=conference['num_teams'], teamList=conference['teams'])
@@ -257,7 +269,8 @@ def team_template(t_name):
     """
     t = [t for t in teams if t['name'] == t_name] # <---- this will need to change to a call to the database returning all of the team's attributes in a python dict MATCHING THE KEY NAMES INDICATED BELOW
     team = t[0]
-    return render_template('team_profile.html', team=team['name'], conf=team['conf'], location=team['location'], coach=team['head_coach'], playerList=team['roster'], gameList=team['schedule'])
+    player_list = [player for player in players for p in team['roster'] if player['name'] == p]
+    return render_template('team_profile.html', team=team['name'], conf=team['conf'], location=team['location'], coach=team['head_coach'], playerList=list(player_list), gameList=team['schedule'])
 
 
 @punt.route('/')
@@ -269,7 +282,7 @@ def player_template(p_name):
     """
     p = [p for p in players if p['name'] == p_name] # <---- this will need to change to a call to the database returning all of the conference's attributes and a python dict MATCHING THE KEY NAMES INDICATED BELOW
     player = p[0]
-    return render_template('player_profile.html', player=player['name'], number=player['no'], team=player['team'], year=player['year'], pos=player['pos'], ht=player['ht'], wt=player['wt'], town=player['hometown'], hs=player['hs'], photo=player['photo'])
+    return render_template('player_profile.html', name=player['name'], number=player['no'], team=player['team'], year=player['year'], pos=player['pos'], ht=player['ht'], wt=player['wt'], town=player['hometown'], hs=player['hs'], photo=player['photo'])
 
 
 if __name__ == '__main__':
