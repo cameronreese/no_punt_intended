@@ -3,16 +3,12 @@
 # -----------
 # imports
 # -----------
-import random
-from numpy import mean, sqrt, square, subtract
-import json
 
 from flask import Flask
 from flask import jsonify
 from flask import abort
 from flask import render_template
-from collections import namedtuple
-from urllib.request import urlopen
+
 
 
 punt = Flask(__name__)

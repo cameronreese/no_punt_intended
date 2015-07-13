@@ -16,13 +16,13 @@
                 </div>
                     {% for conf in confList %}
                         <div class="col-lg-3 text-center">
-                            <script> document.write('<a href="http://localhost:5000/conf_t/' + "{{conf.name}}" + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​><h6 class="conf-text"> {{conf.name}} </h6></a> 
+                            <script> document.write('<a href="http://cfdb.me:5000/conf_t/' + "{{conf.name}}" + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​><h6 class="conf-text"> {{conf.name}} </h6></a> 
                             {% for team in conf.teams %}
-                                <script> document.write('<a href="http://localhost:5000/team_t/' + "{{team}}" + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​><h6 class="team-text text-center"> <strong>{{team}}</strong></h6></a>
+                                <script> document.write('<a href="http://cfdb.me:5000/team_t/' + "{{team}}" + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​><h6 class="team-text text-center"> <strong>{{team}}</strong></h6></a>
                             {% endfor %}
                         </div>       
                     {% endfor %}
-                  <!--  <script> document.write('<a href="http://localhost:5000/conf_t/' + "Big 12" + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​><h6 class="conf-text">Big 12</h6></a> -->
+                  <!--  <script> document.write('<a href="http://cfdb.me:5000/conf_t/' + "Big 12" + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​><h6 class="conf-text">Big 12</h6></a> -->
         </div>
     </div>
 <!-- *************************************************************************************************************************
