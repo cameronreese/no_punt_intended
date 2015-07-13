@@ -29,6 +29,9 @@ players = [
         'ht': '6-1',
         'wt': '193',
         'hometown': 'Coppell, TX',
+        'year': 'S',
+        'hs': 'Coppell',
+        'photo': 'http://texassports.com/common/controls/image_handler.aspx?thumb_prefix=player&image_path=/images/2013/6/25/7930078.jpeg'
     },
     {
         'name': 'Shiro Davis',
@@ -38,6 +41,9 @@ players = [
         'ht': '6-3',
         'wt': '265',
         'hometown': 'Shreveport, LA',
+        'year': 'S',
+        'hs': 'Coppell',
+        'photo': 'http://texassports.com/common/controls/image_handler.aspx?thumb_prefix=player&image_path=/images/2013/6/25/7930067.jpeg'
     },
     {
         'name': 'Jeff Bryson',
@@ -47,6 +53,9 @@ players = [
         'ht': '5-10',
         'wt': '200',
         'hometown': 'San Antonio, TX',
+        'year': 'S',
+        'hs': 'Coppell',
+        'photo': 'http://www.baylorbears.com/sports/m-footbl/mtt/jeff_bryson_953393.html'
     },
 ]
 
@@ -56,7 +65,7 @@ teams = [
         'name': 'Texas',
         'location': 'Austin, TX',
         'roster': ['Nick Jordan', 'Shiro Davis'], # list of players
-        'schedule': [], # data of schedule
+        'schedule': ['1st game', '2nd game', 'last game'], # data of schedule
         'head_coach': 'Charlie Strong',
         'conf': 'Big 12'
     },
@@ -233,7 +242,7 @@ def conf_template(c_name):
     :param c_name: the conference's name
     :return: the conference profile page populated with content specific for that conference
     """
-    c = [c for c in conf if c['name'] == c_name] # <---- this will need to change to a call to the database returning all of the conference's attributes in a python dict
+    c = [c for c in conf if c['name'] == c_name] # <---- this will need to change to a call to the database returning all of the conference's attributes in a python dict MATCHING THE KEY NAMES INDICATED BELOW
     conference = c[0]
     return render_template('conference_profile.html', conf=conference['name'], year=conference['founded'], com=conference['comm'], champ=conference['champ'], num=conference['num_teams'], teamList=conference['teams'])
 
@@ -246,21 +255,21 @@ def team_template(t_name):
     :param t_name: the team's name
     :return: the team profile page populated with content specific for that team
     """
-    t = [t for t in teams if t['name'] == t_name] # <---- this will need to change to a call to the database returning all of the team's attributes in a python dict
+    t = [t for t in teams if t['name'] == t_name] # <---- this will need to change to a call to the database returning all of the team's attributes in a python dict MATCHING THE KEY NAMES INDICATED BELOW
     team = t[0]
-    return render_template('team_profile.html', conf=conference['name'], year=conference['founded'], com=conference['comm'], champ=conference['champ'], num=conference['num_teams'], teamList=conference['teams'])
+    return render_template('team_profile.html', team=team['name'], conf=team['conf'], location=team['location'], coach=['head_coach'], playerList=['roster'], gameList=['schedule'])
 
 
 @punt.route('/')
 @punt.route('/player_t/<string:p_name>')
-def player_template(c_name):
+def player_template(p_name):
     """
     :param p_name: the player's name
     :return: the player profile page populated with content specific for that player
     """
-    p = [p for p in players if p['name'] == p_name] # <---- this will need to change to a call to the database returning all of the conference's attributes and a python dict
+    p = [p for p in players if p['name'] == p_name] # <---- this will need to change to a call to the database returning all of the conference's attributes and a python dict MATCHING THE KEY NAMES INDICATED BELOW
     player = p[0]
-    return render_template('player_profile.html', conf=conference['name'], year=conference['founded'], com=conference['comm'], champ=conference['champ'], num=conference['num_teams'], teamList=conference['teams'])
+    return render_template('player_profile.html', player=player['name'], number=player['no'], team=player['team'], year=player['year'], pos=player['pos'], ht=player['ht'], wt=player['wt'], town=player['hometown'], hs=player['hs'], photo=player['photo'])
 
 
 if __name__ == '__main__':
