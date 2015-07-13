@@ -83,19 +83,4 @@
 ******************************************************************************************************************************* -->
 
 
-
-    <!--additional jQuery -->
-    <script src="{{ url_for('static', filename='/js/jquery_dataTables.js') }}"> </script>
-    <script src="{{ url_for('static', filename='/js/dataTables_bootstrap.js') }}"> </script>
-    <script src="{{ url_for('static', filename='/js/dataTables_bootstrapPagination.js') }}"> </script>
-    <script type="text/javascript">
-    $(document).ready(function() {
-      $('#conferenceTable').DataTable( {
-        "iDisplayLength": 11,
-        "sDom": "<'row'<'col-xs-6'T><'col-xs-6'f>r>t<'row'<'col-xs-6'i><'col-xs-6'p>>",
-        "sPaginationType": "bootstrap"
-      } );
-    } );
-    </script>
-
 {% endblock %}
