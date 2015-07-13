@@ -28,26 +28,27 @@ d = {}
 # for i in re.findall('/collegefootball/teams/roster/[A-Z]*/[a-z-]*', source):
 # 	print 'http://www.cbssports.com' + str(i)
 
-# for line in fileinput.input():
+for line in fileinput.input():
 	# process(line)
 
-source = urllib.urlopen('http://www.cbssports.com/collegefootball/teams/roster/CINCY/cincinnati-bearcats').read()
+	source = urllib.urlopen(line).read()
 
 
-# source2 = urllib.urlopen('http://www.cbssports.com' + str(i)).read()
-# # print source2
+	# source2 = urllib.urlopen('http://www.cbssports.com' + str(i)).read()
+	# # print source2
 
-for j in re.findall('/collegefootball/players/playerpage/[0-9]*/[a-z-]*', source):
-	
-	source2 = urllib.urlopen('http://www.cbssports.com' + str(j)).read()
-	
+	for j in re.findall('/collegefootball/players/playerpage/[0-9]*/[a-z-]*', source):
+		
+		source2 = urllib.urlopen('http://www.cbssports.com' + str(j)).read()
+		
 
-	# print source3
+		# print source3
 
-	for link in re.findall('http://sports.cbsimg.net/images/collegefootball/players/60x80/[0-9]*.jpg', source2):
-		site = j.rsplit('/',1)
-		site = site[1]
-		d[str(site)] = link
+		for link in re.findall('http://sports.cbsimg.net/images/collegefootball/players/60x80/[0-9]*.jpg', source2):
+			site = j.rsplit('/',1)
+			site = site[1]
+			site = site.replace('-', '')
+			d[str(site)] = link
 
 print d
 	
