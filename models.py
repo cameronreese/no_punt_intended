@@ -130,7 +130,7 @@ conf = [
         'name': 'ACC',
         'founded': '1996',
         'champ': 'Baylor',
-        'teams': ['Baylor', 'Iowa State', 'Kansas', 'Kansas State', 'Oklahoma', 'Oklahoma State', 'TCU', 'Texas', 'Texas Tech', 'West Virginia' ], # list of teams
+        'teams': ['Baylor', 'College', 'University', 'York Town', 'Spain', 'Hawaii', 'TCU', 'Texas', 'Georgia Tech'], # list of teams
         'num_teams': '10',
         'comm': 'Bob Bowlsby'
     },
@@ -138,7 +138,7 @@ conf = [
         'name': 'Big Ten',
         'founded': '1996',
         'champ': 'Baylor',
-        'teams': ['Baylor', 'Iowa State', 'Kansas', 'Kansas State', 'Oklahoma', 'Oklahoma State', 'TCU', 'Texas', 'Texas Tech', 'West Virginia' ], # list of teams
+        'teams': ['Baylor', 'iPad', 'iPod', 'Macbook Air', 'Macbook', 'Baylor', 'TCU', 'Texas', 'Macbook Pro', 'Watch' ], # list of teams
         'num_teams': '10',
         'comm': 'Bob Bowlsby'
     },
@@ -146,7 +146,7 @@ conf = [
         'name': 'Nick\'s Own Conf',
         'founded': '2015',
         'champ': 'Nick',
-        'teams': ['Baylor', 'Iowa State', 'Kansas', 'Kansas State', 'Oklahoma', 'Oklahoma State', 'TCU', 'Texas', 'Texas Tech', 'West Virginia' ], # list of teams
+        'teams': ['Baylor', 'Bilbo', 'Baggins', 'Frodo', 'Gimli', 'Sauron', 'TCU', 'Texas', 'Smeagal'], # list of teams
         'num_teams': '1001',
         'comm': 'Nick the Slick'
     }
