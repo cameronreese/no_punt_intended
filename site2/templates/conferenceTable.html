@@ -22,11 +22,11 @@
               </thead>
               <tbody>
                   <tr>
-                    {% for team in teamList %}
-                    <td><script> document.write('<a href="http://cfdb.me:5000/team_t/' + "{{team.name}}" + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>{{team.name}}</a></td>
-                    <td>{{team.nickname}}</td>
-                    <td>{{team.year}}</td>
-                    <td>{{team.champ}}</td>
+                    {% for conf in confList %}
+                    <td><script> document.write('<a href="http://cfdb.me:5000/team_t/' + "{{team.name}}" + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>{{conf.name}}</a></td>
+                    <td>{{conf.nickname}}</td>
+                    <td>{{conf.year}}</td>
+                    <td>{{conf.champ}}</td>
 
 
                     <!-- Check this button for teams -->
@@ -56,7 +56,7 @@
                       </div>
                     </td>
 
-                    <td>{{num}}</td>
+                    <td>{{conf.num}}</td>
                   </tr>
                   {% endfor %}
               </tbody>
@@ -81,9 +81,9 @@
 
 
     <!--additional jQuery -->
-    <script src="js/jquery_dataTables.js"> </script>
-    <script src="js/dataTables_bootstrap.js"> </script>
-    <script src="js/dataTables_bootstrapPagination.js"> </script>
+    <script src="{{ url_for('static', filename='js/jquery_dataTables.js') }}"> </script>
+    <script src="{{ url_for('static', filename='js/dataTables_bootstrap.js') }}"> </script>
+    <script src="{{ url_for('static', filename='js/dataTables_bootstrapPagination.js') }}"> </script>
     <script type="text/javascript">
     $(document).ready(function() {
       $('#conferenceTable').DataTable( {

@@ -51,12 +51,13 @@
 
 
     <!--additional jQuery -->
-    <script src="js/jquery_dataTables.js"> </script>
-    <script src="js/dataTables_bootstrap.js"> </script>
-    <script src="js/dataTables_bootstrapPagination.js"> </script>
+    <script src="{{ url_for('static', filename='js/jquery_dataTables.js') }}"> </script>
+    <script src="{{ url_for('static', filename='js/dataTables_bootstrap.js') }}"> </script>
+    <script src="{{ url_for('static', filename='js/dataTables_bootstrapPagination.js') }}"> </script>
     <script type="text/javascript">
     $(document).ready(function() {
       $('#conferenceTable').DataTable( {
+        responsive: true,
         "iDisplayLength": 11,
         "sDom": "<'row'<'col-xs-6'T><'col-xs-6'f>r>t<'row'<'col-xs-6'i><'col-xs-6'p>>",
         "sPaginationType": "bootstrap"
