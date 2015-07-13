@@ -267,7 +267,8 @@ def player_table():
     """
     :return: Player table page
     """
-    return render_template('playerTable.html', title='CFDB: Player Table')
+    player_list = [p for p in players]
+    return render_template('playerTable.html', playerList=list(player_list), title='CFDB: Player Table')
 
 
 # *********************************************************************************************************************
