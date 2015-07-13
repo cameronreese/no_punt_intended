@@ -257,7 +257,7 @@ def team_template(t_name):
     """
     t = [t for t in teams if t['name'] == t_name] # <---- this will need to change to a call to the database returning all of the team's attributes in a python dict MATCHING THE KEY NAMES INDICATED BELOW
     team = t[0]
-    return render_template('team_profile.html', team=team['name'], conf=team['conf'], location=team['location'], coach=['head_coach'], playerList=['roster'], gameList=['schedule'])
+    return render_template('team_profile.html', team=team['name'], conf=team['conf'], location=team['location'], coach=team['head_coach'], playerList=team['roster'], gameList=team['schedule'])
 
 
 @punt.route('/')
