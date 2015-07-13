@@ -45,7 +45,7 @@
                             <div class="modal-body">
                               {% for team in conf.teams %}
                               <p class="text-center">
-                                <script> document.write('<a href="http://localhost:5000/team_t/' + "{{team}}" + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>{{team}}</p>
+                                <script> document.write('<a href="http://localhost:5000/team_t/' + "{{team.name}}" + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>{{team.name}}</p>
                               {% endfor %}
                             </div>
                             <div class="modal-footer">
@@ -58,6 +58,7 @@
 
                     <td>{{num}}</td>
                   </tr>
+                  {% endfor %}
               </tbody>
               <tfoot>
                   <tr>
