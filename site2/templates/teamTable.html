@@ -21,32 +21,15 @@
                   </tr>
               </thead>
               <tbody>
-                  <tr>
-                    <td><a href="team_pages/ut.html">Texas</a></td>
-                    <td>Austin, Texas</td>
-                    <td><a href="team_pages/ut.html#roster">Link</a></td>
-                    <td><a href="team_pages/ut.html#schedule">Link</a></td>
-                    <td>Charlie Strong</td>
-                    <td><a href="conference_pages/big12.html">Big 12</a></td>
-                  </tr>
-                  <tr>
-                    <td><a href="team_pages/clemson.html">Clemson</a></td>
-                    <td>Clemson, South Carolina</td>
-                    <td><a href="team_pages/clemson.html#roster">Link</a></td>
-                    <td><a href="team_pages/clemson.html#schedule">Link</a></td>
-                    <td>Dabo Swinney</td>
-                    <td><a href="conference_pages/acc.html">ACC</a></td>
-                  </tr>
-                  <tr>
-                    <td><a href="team_pages/purdue.html">Purdue</a></td>
-                    <td>West Lafayette, Indiana</td>
-                    <td><a href="team_pages/purdue.html#roster">Link</a></td>
-                    <td><a href="team_pages/purdue.html#schedule">Link</a></td>
-                    <td>Darrell Hazell</td>
-                    <td><a href="conference_pages/bigten.html">Big Ten</a></td>
-                  </tr>
-                
-                  
+                {% for team in teamList %}
+                <tr>
+                  <td><script> document.write('<a href="http://localhost:5000/team_t/' + "{{team.name}}" + '"'); </script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>{{team.name}}</a></td>
+                  <td>{{team.location}}</td>
+                  <td><script> document.write('<a href="http://localhost:5000/team_t/' + "{{team}}" + '#roster"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>Roster</a></td>
+                  <td><script> document.write('<a href="http://localhost:5000/team_t/' + "{{team}}" + '#schedule"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>Schedule</a></td>
+                  <td>{{team.coach}}</td>
+                  <td><script> document.write('<a href="http://localhost:5000/conf_t/' + "{{conf}}" + '"'); </script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>{{conf}}</a></td>
+                </tr>                         
               </tbody>
               <tfoot>
                   <tr>
