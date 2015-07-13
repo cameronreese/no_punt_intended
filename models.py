@@ -250,7 +250,8 @@ def conf_table():
     """
     :return: Conference table page
     """
-    return render_template('conferenceTable.html', title='CFDB: Conference Table')
+    conference_list = [c for c in conf] # <---- this will need to be a call to the database that returns a list of all the conferences
+    return render_template('conferenceTable.html', confList=list(conference_list), title='CFDB: Conference Table')
 
 
 @punt.route('/')
@@ -259,7 +260,8 @@ def team_table():
     """
     :return: Team table page
     """
-    return render_template('teamTable.html', title='CFDB: Team Table')
+    team_list = [t for t in teams] # <---- this will need to be a call to the database that returns a list of all the teams
+    return render_template('teamTable.html', teamList=list(team_list), title='CFDB: Team Table')
 
 @punt.route('/')
 @punt.route('/player_table')
@@ -267,7 +269,7 @@ def player_table():
     """
     :return: Player table page
     """
-    player_list = [p for p in players]
+    player_list = [p for p in players] # <---- this will need to be a call to the database that returns a list of all the players
     return render_template('playerTable.html', playerList=list(player_list), title='CFDB: Player Table')
 
 
