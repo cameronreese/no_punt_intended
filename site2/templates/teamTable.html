@@ -28,8 +28,9 @@
                   <td><script> document.write('<a href="http://localhost:5000/team_t/' + "{{team}}" + '#roster"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>Roster</a></td>
                   <td><script> document.write('<a href="http://localhost:5000/team_t/' + "{{team}}" + '#schedule"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>Schedule</a></td>
                   <td>{{team.coach}}</td>
-                  <td><script> document.write('<a href="http://localhost:5000/conf_t/' + "{{conf}}" + '"'); </script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>{{conf}}</a></td>
-                </tr>                         
+                  <td><script> document.write('<a href="http://localhost:5000/conf_t/' + "{{team.conf}}" + '"'); </script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>{{team.conf}}</a></td>
+                </tr>  
+                {% endfor %}                       
               </tbody>
               <tfoot>
                   <tr>
