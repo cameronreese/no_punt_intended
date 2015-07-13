@@ -68,9 +68,9 @@
                     <hr>
                 </div>
                 <div class="col-lg-12 text-center">
-                    <p>Conference: <script> document.write('<a href="http://cfdb.me/conf_t/' + "{{conf}}" + '"'); </script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>{{conf}}</a> </p>
-                    <p>Location: Austin, Tx</p>
-                    <p>Head Coach: Charlie Strong</p>
+                    <p>Conference: <script> document.write('<a href="http://localhost:5000/conf_t/' + "{{conf}}" + '"'); </script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>{{conf}}</a> </p>
+                    <p>Location: {{location}}</p>
+                    <p>Head Coach: {{coach}}</p>
                     <hr>
                 </div>
             </div>
@@ -96,7 +96,9 @@
                     <hr>
                 </div>
                 <div class="col-lg-12 text-center">
-                    <p><script> document.write('<a href="http://cfdb.me/player_t/' + "{{player}}" + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>{{number}} - {{player}}</a></p>
+                    {% for player in playerList %}
+                      <p><script> document.write('<a href="http://localhost:5000/player_t/' + "{{player}}" + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>{{number}} - {{player}}</a></p>
+                    {% endfor %}
                     <hr>
                 </div>
             </div>
