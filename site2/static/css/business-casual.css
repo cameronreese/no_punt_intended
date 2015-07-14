@@ -171,6 +171,11 @@ hr {
     border: #999999 solid 1px;
 }
 
+.img-front {
+    margin: auto;
+    max-width: 85%;
+}
+
 .img-left {
     float: none;
     margin: 0 auto 0;

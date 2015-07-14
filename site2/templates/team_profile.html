@@ -68,9 +68,9 @@
                     <hr>
                 </div>
                 <div class="col-lg-12 text-center">
-                    <p>Conference: <script> document.write('<a href="http://cfdb.me:5000/conf_t/' + "{{conf}}" + '"'); </script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>{{conf}}</a> </p>
-                    <p>Location: {{location}}</p>
-                    <p>Head Coach: {{coach}}</p>
+                    <p><strong>Conference:</strong> <script> document.write('<a href="http://cfdb.me:5000/conf_t/' + "{{conf}}" + '"'); </script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>{{conf}}</a> </p>
+                    <p><strong>Location:</strong> {{location}}</p>
+                    <p><strong>Head Coach:</strong> {{coach}}</p>
                     <hr>
                 </div>
             </div>
@@ -85,8 +85,8 @@
                                                         Start roster box
 ******************************************************************************************************************************* -->
     <div class="container">
-        <div class="row">
-            <div class="box">
+        <div class="box">
+            <div class="row">
                 <a name="roster"></a> 
                 <div class="col-lg-12">
                     <hr>
@@ -97,14 +97,13 @@
                 </div>
                 <div class="col-lg-12 text-center">
                     {% for player in playerList %}
-                        <div class="col-md-3"> 
+                        <div class="col-lg-2 col-md-3 col-sm-4 "> 
                           <script> document.write('<a href="http://cfdb.me:5000/player_t/' + "{{player.name}}" + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​><strong>&nbsp;&nbsp;{{player.no}}</strong>-{{player.name}}&nbsp;&nbsp;</a> 
                         </div>
-                    {% endfor %}
-                  <br>
-                  <hr>
-                </div>
+                    {% endfor %}                  
+                </div>                
             </div>
+            <hr>
         </div>
     </div>
     <!-- /.container -->
