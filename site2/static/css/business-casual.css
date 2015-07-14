@@ -122,12 +122,12 @@ hr {
 
 .box-thin {
     margin-bottom: 20px;
-/*    padding: 5px 5px;
-*/    background: #fff;
+/*    padding: 5px 5px;*/    
+    background: #fff;
     background: rgba(192,192,192,0.9);
-    /*-moz-box-shadow: 0 0 5px 5px rgba(192,192,192,0.9);
+    -moz-box-shadow: 0 0 5px 5px rgba(192,192,192,0.9);
     -webkit-box-shadow: 0 0 5px 5px rgba(192,192,192,0.9);
-    box-shadow: 0 0 5px 5px rgba(192,192,192,0.9);*/
+    box-shadow: 0 0 5px 5px rgba(192,192,192,0.9);
 }
 
 .intro-text {
