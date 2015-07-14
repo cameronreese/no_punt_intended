@@ -99,7 +99,7 @@
                   <ul>
                     {% for player in playerList %}
                       <ul class="list-inline">
-                        <li> <script> document.write('<a href="http://cfdb.me:5000/player_t/' + "{{player.name}}" + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>{{player.no}} - {{player.name}}</a> </li>
+                         <script> document.write('<a href="http://cfdb.me:5000/player_t/' + "{{player.name}}" + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​><li>{{player.no}} - {{player.name}}</li></a> 
                       </ul>
                     {% endfor %}
                   </ul>
