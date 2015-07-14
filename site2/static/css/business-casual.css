@@ -187,14 +187,14 @@ hr {
 footer {
     background: #fff;
     background: rgba(255,255,255,0.9);
-    -moz-box-shadow: 0 0 10px 10px rgba(255,255,255,0.9);
-    -webkit-box-shadow: 0 0 10px 10px rgba(255,255,255,0.9);
-    box-shadow: 0 0 10px 10px rgba(255,255,255,0.9);
+    -moz-box-shadow: 0 0 5px 5px rgba(255,255,255,0.9);
+    -webkit-box-shadow: 0 0 5px 5px rgba(255,255,255,0.9);
+    box-shadow: 0 0 5px 5px rgba(255,255,255,0.9);
 }
 
 footer p {
     margin: 0;
-    padding: 50px 0;
+    padding: 25px 0;
 }
 
 @media screen and (min-width:768px) {
