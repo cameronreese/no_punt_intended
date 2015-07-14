@@ -3,7 +3,8 @@
 
 <head>
 
-    <!-- Page Tab Icon -->
+<!-- *************************************** Start - Page Favicon Icon ******************************************* -->
+        <!-- ***** Favicon Links ****** -->
     <link rel="apple-touch-icon" sizes="57x57" href="/img/beard/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/img/beard/apple-touch-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/img/beard/apple-touch-icon-72x72.png">
@@ -18,10 +19,13 @@
     <link rel="icon" type="image/png" href="/img/beard/favicon-96x96.png" sizes="96x96">
     <link rel="icon" type="image/png" href="/img/beard/favicon-16x16.png" sizes="16x16">
     <link rel="manifest" href="/img/beard/manifest.json">
-    <meta name="msapplication-TileColor" content="#da532c">
+        <!--  ***** Favicon MetaData ******-->    
+        <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-TileImage" content="/img/beard/mstile-144x144.png">
     <meta name="theme-color" content="#ffffff">
+<!-- ***************************************  End - Page Favicon Icon Links ******************************************-->  
 
+        <!-- *****  Website MetaData ***** -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -37,11 +41,6 @@
     <link href=" {{ url_for('static', filename='css/business-casual.css') }}" rel="stylesheet">
     <link href=" {{ url_for('static', filename='css/dataTables_responsive.css') }}" rel="stylesheet">
 
-
-<!--     <link href=" {{ url_for('static', filename='css/bootstrap.css') }}" rel="stylesheet">
- -->
-
-
     <!-- Fonts -->
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
@@ -53,18 +52,13 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    {% if title %}
-    <title>{{title}}</title>
-    {% else %}
-    <title>CFDB</title>
-    {% endif %}
 
 </head>
 
 <body>
 
 <!-- ********************************  "College Football Database" logo  ********************************* -->
-    <img class="img-responsive img-med img-center img-hover" src="{{ url_for('static', filename='img/txt.png') }}" alt="">
+    <img class="img-responsive img-med img-center img-hover" src="{{ url_for('static', filename='img/txt2.png') }}" alt="">
 <!-- ***************************************************************************************************** -->
 
 <!-- *************************************************************************************************************************
@@ -114,6 +108,8 @@
 <!-- *************************************************************************************************************************
                                                         End Navigation Bar
 ******************************************************************************************************************************* -->
+
+
 
 <!-- *************************************************************************************************************************
                                                         Start display box
