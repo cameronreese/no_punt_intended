@@ -96,11 +96,11 @@
                     <hr>
                 </div>
                 <div class="col-lg-12 text-center">
-                      <ul class="list-inline">
+                      <dl class="dl-horizontal">
                     {% for player in playerList %}
-                         <script> document.write('<a href="http://cfdb.me:5000/player_t/' + "{{player.name}}" + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​><li>{{player.no}} - {{player.name}}</li></a> 
+                         <script> document.write('<a href="http://cfdb.me:5000/player_t/' + "{{player.name}}" + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​><dt>{{player.no}}</dt> <dd>{{player.name}}</dd></a> 
                     {% endfor %}
-                  </ul>
+                  </dl>
                   <hr>
                 </div>
             </div>
