@@ -36,6 +36,13 @@ hr {
     border-color: #999999;
 }
 
+.img-hover
+{
+-moz-box-shadow: 0 0 5px 5px #ddd;
+-webkit-box-shadow: 0 0 5px 5px #ddd;
+box-shadow: 0 0 5px 5px #ddd;
+}
+
 .brand,
 .address-bar {
     display: none;
