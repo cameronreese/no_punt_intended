@@ -56,7 +56,8 @@ class conf(db.Model) :
 class games(db.Model) :
     id = db.Column(db.Integer,primary_key = True,unique = True,index = True)
     date = db.Column(db.String(256))
-    opponent = db.Column(db.String(256),db.ForeignKey(teams.name))
+    home_team = db.Column(db.String(256),db.ForeignKey(teams.name))
+    away_team = db.Column(db.String(256),db.ForeignKey(teams.name))
     location = db.Column(db.String(256),db.ForeignKey(teams.location))
     time = db.Column(db.String(256))
 '''
