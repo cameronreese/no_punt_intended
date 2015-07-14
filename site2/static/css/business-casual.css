@@ -246,9 +246,9 @@ footer p {
         border: none;
         background: #fff;
         background: rgba(255,255,255,0.9);
-        -moz-box-shadow: 0 0 10px 10px #ddd;
-        -webkit-box-shadow: 0 0 10px 10px #ddd;
-        box-shadow: 0 0 10px 10px #ddd;
+        -moz-box-shadow: 0 0 5px 5px rgba(255,255,255,0.9);
+        -webkit-box-shadow: 0 0 5px 5px rgba(255,255,255,0.9);
+        box-shadow: 0 0 5px 5px rgba(255,255,255,0.9);
     }
 
     .nav>li>a {
