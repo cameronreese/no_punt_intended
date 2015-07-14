@@ -266,10 +266,10 @@ th {
 }
 @font-face {
     font-family: 'College Font';
-    src: url('../fonts/college.ttf');
+    src: url('../fonts/college.ttf') format('tff');
 }
 
-colfont {
+.colfont {
     font-family: 'College Font', Times;
     font-size: 4em;
     text-shadow: 0 0 0.2em #FFF, 0 0 0.2em #FFF, 0 0 0.2em #FFF;
@@ -1188,17 +1188,23 @@ hr {
 [role="button"] {
   cursor: pointer;
 }
+h5,
+.h5 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+
 h1,
 h2,
 h3,
 h4,
-h5,
 h6,
 .h1,
 .h2,
 .h3,
 .h4,
-.h5,
 .h6 {
   font-family: inherit;
   font-weight: 500;
@@ -1209,25 +1215,21 @@ h1 small,
 h2 small,
 h3 small,
 h4 small,
-h5 small,
 h6 small,
 .h1 small,
 .h2 small,
 .h3 small,
 .h4 small,
-.h5 small,
 .h6 small,
 h1 .small,
 h2 .small,
 h3 .small,
 h4 .small,
-h5 .small,
 h6 .small,
 .h1 .small,
 .h2 .small,
 .h3 .small,
 .h4 .small,
-.h5 .small,
 .h6 .small {
   font-weight: normal;
   line-height: 1;
@@ -1256,10 +1258,15 @@ h3 .small,
 .h3 .small {
   font-size: 65%;
 }
+
+h5,
+.h5 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 h4,
 .h4,
-h5,
-.h5,
 h6,
 .h6 {
   margin-top: 10px;
@@ -1267,18 +1274,20 @@ h6,
 }
 h4 small,
 .h4 small,
-h5 small,
-.h5 small,
 h6 small,
 .h6 small,
 h4 .small,
 .h4 .small,
-h5 .small,
-.h5 .small,
 h6 .small,
 .h6 .small {
   font-size: 75%;
 }
+
+h5.
+.h5 {
+  font-size: 40px;
+}
+
 h1,
 .h1 {
   font-size: 36px;
@@ -1294,10 +1303,6 @@ h3,
 h4,
 .h4 {
   font-size: 18px;
-}
-h5,
-.h5 {
-  font-size: 14px;
 }
 h6,
 .h6 {
