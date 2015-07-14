@@ -8,13 +8,13 @@ from flask import Flask
 from flask import jsonify
 from flask import abort
 from flask import render_template
-#from flask.sqlalchemy import SQLAlchemy
+from flask.sqlalchemy import SQLAlchemy
 
 
 
 punt = Flask(__name__)
 
-'''
+
 punt.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://graybeard@127.0.0.1:5000/cfdb_flask'
 db = SQLAlchemy(punt)
 # players model
@@ -48,13 +48,13 @@ class conf(db.Model) :
     num_teams = db.Column(db.String(256))
     comm = db.Column(db.String(256))
 # games model
-class games(db.Model) :
-    id = db.Column(db.Integer,primary_key = True,unique = True,index = True)
-    date = db.Column(db.String(256))
-    home_team = db.Column(db.String(256),db.ForeignKey(teams.name))
-    away_team = db.Column(db.String(256),db.ForeignKey(teams.name))
-    location = db.Column(db.String(256),db.ForeignKey(teams.location))
-    time = db.Column(db.String(256))
+# class games(db.Model) :
+#     id = db.Column(db.Integer,primary_key = True,unique = True,index = True)
+#     date = db.Column(db.String(256))
+#     home_team = db.Column(db.String(256),db.ForeignKey(teams.name))
+#     away_team = db.Column(db.String(256),db.ForeignKey(teams.name))
+#     location = db.Column(db.String(256),db.ForeignKey(teams.location))
+#     time = db.Column(db.String(256))
 
 
 """ Temporary data structures until we have a data base set up """
@@ -391,7 +391,7 @@ conf = [
         'comm': 'Nick the Slick'
     }
 ]
-
+'''
 
 # *********************************************************************************************************************
 # API calls to retrieve model specific data
@@ -475,8 +475,8 @@ def ncaa():
     """
     :return: NCAA FBS page
     """
-    # conferences = conf.
-    conferences = [c for c in conf] # <---- this will need to change to a call to the database returning a list or generator of all the conferences
+    conferences = conf.query.all()
+    #conferences = [c for c in conf] # <---- this will need to change to a call to the database returning a list or generator of all the conferences
     return render_template('teams.html', confList=list(conferences), title='CFDB: NCAA')
 
 
@@ -491,7 +491,8 @@ def conf_table():
     """
     :return: Conference table page
     """
-    conference_list = [c for c in conf] # <---- this will need to be a call to the database that returns a list of all the conferences
+    conference_list = conf.query.all()
+    #conference_list = [c for c in conf] # <---- this will need to be a call to the database that returns a list of all the conferences
     return render_template('conferenceTable.html', confList=list(conference_list), title='CFDB: Conference Table')
 
 
@@ -501,7 +502,8 @@ def team_table():
     """
     :return: Team table page
     """
-    team_list = [t for t in teams] # <---- this will need to be a call to the database that returns a list of all the teams
+    team_list = teams.query.all()
+    #team_list = [t for t in teams] # <---- this will need to be a call to the database that returns a list of all the teams
     return render_template('teamTable.html', teamList=list(team_list), title='CFDB: Team Table')
 
 @punt.route('/')
@@ -510,7 +512,8 @@ def player_table():
     """
     :return: Player table page
     """
-    player_list = [p for p in players] # <---- this will need to be a call to the database that returns a list of all the players
+    player_list = players.query.all()
+    #player_list = [p for p in players] # <---- this will need to be a call to the database that returns a list of all the players
     return render_template('playerTable.html', playerList=list(player_list), title='CFDB: Player Table')
 
 
@@ -527,8 +530,9 @@ def conf_template(c_name):
     :return: the conference profile page populated with content specific for that conference
     """
 
-    c = [c for c in conf if c['name'] == c_name] # <---- this will need to change to a call to the database returning all of the conference's attributes in a python dict MATCHING THE KEY NAMES INDICATED BELOW
-    conference = c[0]
+    # c = [c for c in conf if c['name'] == c_name] # <---- this will need to change to a call to the database returning all of the conference's attributes in a python dict MATCHING THE KEY NAMES INDICATED BELOW
+    # conference = c[0]
+    conference = conf.query.get(c_name)
     return render_template('conference_profile.html', conf=conference['name'], year=conference['founded'], com=conference['comm'], champ=conference['champ'], num=conference['num_teams'], teamList=conference['teams'])
 
 
@@ -540,9 +544,10 @@ def team_template(t_name):
     :param t_name: the team's name
     :return: the team profile page populated with content specific for that team
     """
-    t = [t for t in teams if t['name'] == t_name] # <---- this will need to change to a call to the database returning all of the team's attributes in a python dict MATCHING THE KEY NAMES INDICATED BELOW
-    team = t[0]
-    player_list = [player for player in players for p in team['roster'] if player['name'] == p] # <----- call to database retrieving a list of the full data for each player of the team
+    # t = [t for t in teams if t['name'] == t_name] # <---- this will need to change to a call to the database returning all of the team's attributes in a python dict MATCHING THE KEY NAMES INDICATED BELOW
+    # team = t[0]
+    team = teams.query.get(t_name)
+    #player_list = [player for player in players for p in team['roster'] if player['name'] == p] # <----- call to database retrieving a list of the full data for each player of the team
     return render_template('team_profile.html', team=team['name'], conf=team['conf'], location=team['location'], coach=team['head_coach'], playerList=list(player_list), gameList=team['schedule'])
 
 
