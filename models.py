@@ -23,22 +23,22 @@ class players(db.Model) :
     name = db.Column(db.String(256))
     no = db.Column(db.String(256))
     pos = db.Column(db.String(256))
-    team = db.Column(db.String(256),db.ForeignKey(teams.name))
+    team = db.Column(db.String(256),db.ForeignKey('teams.name'))
     ht = db.Column(db.String(256))
     wt = db.Column(db.String(256))
     hometown = db.Column(db.String(256))
     year = db.Column(db.String(256))
     hs = db.Column(db.String(256))
     photo = db.Column(db.String(256))
-schedule = db.Table('schedule',db.Column('teams_name',db.String(256),db.ForeignKey('teams.name')),db.Column('game_id',db.Integer,db.ForeignKey('games.id')))
+#schedule = db.Table('schedule',db.Column('teams_name',db.String(256),db.ForeignKey('teams.name')),db.Column('game_id',db.Integer,db.ForeignKey('games.id')))
 # teams model
 class teams(db.Model) :
     name = db.Column(db.String(256),primary_key = True)
     location = db.Column(db.String(256))
     roster = db.relationship('players',backref = 'teams', lazy = 'dynamic')
-    schedule = db.relationship('games',secondary=schedule,backref=db.backref('teams',lazy='dynamic'))
+    #schedule = db.relationship('games',secondary=schedule,backref=db.backref('teams',lazy='dynamic'))
     head_coach = db.Column(db.String(256))
-    conf = db.Column(db.String(256),db.ForeignKey(conf.name))
+    conf = db.Column(db.String(256),db.ForeignKey('conf.name'))
 # conference model
 class conf(db.Model) :
     name = db.Column(db.String(256),primary_key = True)
@@ -51,9 +51,9 @@ class conf(db.Model) :
 # class games(db.Model) :
 #     id = db.Column(db.Integer,primary_key = True,unique = True,index = True)
 #     date = db.Column(db.String(256))
-#     home_team = db.Column(db.String(256),db.ForeignKey(teams.name))
-#     away_team = db.Column(db.String(256),db.ForeignKey(teams.name))
-#     location = db.Column(db.String(256),db.ForeignKey(teams.location))
+#     home_team = db.Column(db.String(256),db.ForeignKey('teams.name'))
+#     away_team = db.Column(db.String(256),db.ForeignKey('teams.name'))
+#     location = db.Column(db.String(256),db.ForeignKey('teams.location'))
 #     time = db.Column(db.String(256))
 
 
