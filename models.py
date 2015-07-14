@@ -8,15 +8,83 @@ from flask import Flask
 from flask import jsonify
 from flask import abort
 from flask import render_template
+#from flask.sqlalchemy import SQLAlchemy
 
 
 
 punt = Flask(__name__)
 
-""" Temporary data structures until we have a data base set up """
+'''
+punt.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://graybeard@127.0.0.1:5000/cfdb_flask'
+db = SQLAlchemy(punt)
+# players model
+class players(db.Model) :
+    id = db.Column(db.Integer,primary_key = True,unique = True,index = True)
+    name = db.Column(db.String(256))
+    no = db.Column(db.String(256))
+    pos = db.Column(db.String(256))
+    team = db.Column(db.String(256),db.ForeignKey(teams.name))
+    ht = db.Column(db.String(256))
+    wt = db.Column(db.String(256))
+    hometown = db.Column(db.String(256))
+    year = db.Column(db.String(256))
+    hs = db.Column(db.String(256))
+    photo = db.Column(db.String(256))
+schedule = db.Table('schedule',db.Column('teams_name',db.String(256),db.ForeignKey('teams.name')),db.Column('game_id',db.Integer,db.ForeignKey('games.id')))
+# teams model
+class teams(db.Model) :
+    name = db.Column(db.String(256),primary_key = True)
+    location = db.Column(db.String(256))
+    roster = db.relationship('players',backref = 'teams', lazy = 'dynamic')
+    schedule = db.relationship('games',secondary=schedule,backref=db.backref('teams',lazy='dynamic'))
+    head_coach = db.Column(db.String(256))
+    conf = db.Column(db.String(256),db.ForeignKey(conf.name))
+# conference model
+class conf(db.Model) :
+    name = db.Column(db.String(256),primary_key = True)
+    founded = db.Column(db.String(256))
+    champ = db.Column(db.String(256))
+    teams = db.relationship('teams',backref = 'conf', lazy = 'dynamic')
+    num_teams = db.Column(db.String(256))
+    comm = db.Column(db.String(256))
+# games model
+class games(db.Model) :
+    id = db.Column(db.Integer,primary_key = True,unique = True,index = True)
+    date = db.Column(db.String(256))
+    home_team = db.Column(db.String(256),db.ForeignKey(teams.name))
+    away_team = db.Column(db.String(256),db.ForeignKey(teams.name))
+    location = db.Column(db.String(256),db.ForeignKey(teams.location))
+    time = db.Column(db.String(256))
 
+
+""" Temporary data structures until we have a data base set up """
+'''
 # players model
 players = [
+    {
+        'name': 'Nick Jordan',
+        'no': '28',
+        'pos': 'PK',
+        'team': 'Texas',
+        'ht': '6-1',
+        'wt': '193',
+        'hometown': 'Coppell, TX',
+        'year': 'S',
+        'hs': 'Coppell',
+        'photo': 'http://texassports.com/common/controls/image_handler.aspx?thumb_prefix=player&image_path=/images/2013/6/25/7930078.jpeg'
+    },
+    {
+        'name': 'Shiro Davis',
+        'no': '1',
+        'pos': 'DE',
+        'team': 'Texas',
+        'ht': '6-3',
+        'wt': '265',
+        'hometown': 'Shreveport, LA',
+        'year': 'S',
+        'hs': 'Coppell',
+        'photo': 'http://texassports.com/common/controls/image_handler.aspx?thumb_prefix=player&image_path=/images/2013/6/25/7930067.jpeg'
+    },
     {
         'name': 'Nick Jordan',
         'no': '28',
@@ -53,6 +121,114 @@ players = [
         'hs': 'Coppell',
         'photo': 'http://www.baylorbears.com/sports/m-footbl/mtt/jeff_bryson_953393.html'
     },
+    {
+        'name': 'Nick Jordan',
+        'no': '28',
+        'pos': 'PK',
+        'team': 'Texas',
+        'ht': '6-1',
+        'wt': '193',
+        'hometown': 'Coppell, TX',
+        'year': 'S',
+        'hs': 'Coppell',
+        'photo': 'http://texassports.com/common/controls/image_handler.aspx?thumb_prefix=player&image_path=/images/2013/6/25/7930078.jpeg'
+    },
+    {
+        'name': 'Shiro Davis',
+        'no': '1',
+        'pos': 'DE',
+        'team': 'Texas',
+        'ht': '6-3',
+        'wt': '265',
+        'hometown': 'Shreveport, LA',
+        'year': 'S',
+        'hs': 'Coppell',
+        'photo': 'http://texassports.com/common/controls/image_handler.aspx?thumb_prefix=player&image_path=/images/2013/6/25/7930067.jpeg'
+    },
+    {
+        'name': 'Nick Jordan',
+        'no': '28',
+        'pos': 'PK',
+        'team': 'Texas',
+        'ht': '6-1',
+        'wt': '193',
+        'hometown': 'Coppell, TX',
+        'year': 'S',
+        'hs': 'Coppell',
+        'photo': 'http://texassports.com/common/controls/image_handler.aspx?thumb_prefix=player&image_path=/images/2013/6/25/7930078.jpeg'
+    },
+    {
+        'name': 'Shiro Davis',
+        'no': '1',
+        'pos': 'DE',
+        'team': 'Texas',
+        'ht': '6-3',
+        'wt': '265',
+        'hometown': 'Shreveport, LA',
+        'year': 'S',
+        'hs': 'Coppell',
+        'photo': 'http://texassports.com/common/controls/image_handler.aspx?thumb_prefix=player&image_path=/images/2013/6/25/7930067.jpeg'
+    },
+    {
+        'name': 'Nick Jordan',
+        'no': '28',
+        'pos': 'PK',
+        'team': 'Texas',
+        'ht': '6-1',
+        'wt': '193',
+        'hometown': 'Coppell, TX',
+        'year': 'S',
+        'hs': 'Coppell',
+        'photo': 'http://texassports.com/common/controls/image_handler.aspx?thumb_prefix=player&image_path=/images/2013/6/25/7930078.jpeg'
+    },
+    {
+        'name': 'Shiro Davis',
+        'no': '1',
+        'pos': 'DE',
+        'team': 'Texas',
+        'ht': '6-3',
+        'wt': '265',
+        'hometown': 'Shreveport, LA',
+        'year': 'S',
+        'hs': 'Coppell',
+        'photo': 'http://texassports.com/common/controls/image_handler.aspx?thumb_prefix=player&image_path=/images/2013/6/25/7930067.jpeg'
+    },
+        {
+        'name': 'Shiro Davis',
+        'no': '1',
+        'pos': 'DE',
+        'team': 'Texas',
+        'ht': '6-3',
+        'wt': '265',
+        'hometown': 'Shreveport, LA',
+        'year': 'S',
+        'hs': 'Coppell',
+        'photo': 'http://texassports.com/common/controls/image_handler.aspx?thumb_prefix=player&image_path=/images/2013/6/25/7930067.jpeg'
+    },
+    {
+        'name': 'Nick Jordan',
+        'no': '28',
+        'pos': 'PK',
+        'team': 'Texas',
+        'ht': '6-1',
+        'wt': '193',
+        'hometown': 'Coppell, TX',
+        'year': 'S',
+        'hs': 'Coppell',
+        'photo': 'http://texassports.com/common/controls/image_handler.aspx?thumb_prefix=player&image_path=/images/2013/6/25/7930078.jpeg'
+    },
+    {
+        'name': 'Shiro Davis',
+        'no': '1',
+        'pos': 'DE',
+        'team': 'Texas',
+        'ht': '6-3',
+        'wt': '265',
+        'hometown': 'Shreveport, LA',
+        'year': 'S',
+        'hs': 'Coppell',
+        'photo': 'http://texassports.com/common/controls/image_handler.aspx?thumb_prefix=player&image_path=/images/2013/6/25/7930067.jpeg'
+    }
 ]
 
 # teams model
@@ -299,6 +475,7 @@ def ncaa():
     """
     :return: NCAA FBS page
     """
+    # conferences = conf.
     conferences = [c for c in conf] # <---- this will need to change to a call to the database returning a list or generator of all the conferences
     return render_template('teams.html', confList=list(conferences), title='CFDB: NCAA')
 
