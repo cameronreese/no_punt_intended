@@ -540,7 +540,8 @@ def team_template(t_name):
     :return: the team profile page populated with content specific for that team
     """
     team = teams.query.get(t_name)
-    return render_template('team_profile.html', team=team['name'], conf=team['confname'], location=team['location'], coach=team['head_coach'], playerList=team['roster'])
+    player_list = [p.name for p in team.roster]
+    return render_template('team_profile.html', team=team.name, conf=team.confname, location=team.location, coach=team.head_coach, playerList=list(player_list))
 # gameList=team['schedule'] <---- add schedule back in
 
 @punt.route('/')
@@ -551,7 +552,7 @@ def player_template(p_name):
     :return: the player profile page populated with content specific for that player
     """
     player = players.query.get(p_name)
-    return render_template('player_profile.html', name=player['name'], number=player['no'], team=player['team'], year=player['year'], pos=player['pos'], ht=player['ht'], wt=player['wt'], town=player['hometown'], hs=player['hs'], photo=player['photo'])
+    return render_template('player_profile.html', name=player.name, number=player.no, team=player.team, year=player.year, pos=player.pos, ht=player.ht, wt=player.wt, town=player.hometown, hs=player.hs, photo=player.photo)
 
 
 if __name__ == '__main__':
