@@ -262,6 +262,9 @@ footer p {
         margin: 0 auto;
         table-layout: fixed;
         font-size: 1.25em;
+        -moz-box-shadow: 0 0 10px 10px #ddd;
+        -webkit-box-shadow: 0 0 10px 10px #ddd;
+        box-shadow: 0 0 10px 10px #ddd;
     }
 }
 
