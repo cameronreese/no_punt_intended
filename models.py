@@ -527,7 +527,7 @@ def conf_template(c_name):
     :return: the conference profile page populated with content specific for that conference
     """
     conference = conf.query.get(c_name)
-    return render_template('conference_profile.html', conf=conference['name'], year=conference['founded'], com=conference['comm'], champ=conference['champ'], num=conference['num_teams'], teamList=conference['teamset'])
+    return render_template('conference_profile.html', conf=conference.name, year=conference.founded, com=conference.comm, champ=conference.champ, num=conference.num_teams, teamList=conference.teamset)
 
 
 
