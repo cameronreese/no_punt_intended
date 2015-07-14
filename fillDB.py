@@ -9,24 +9,8 @@ from models import punt, db
 import json
 import sys
 
-players_json
-teams_json
-conf_json
-games_json
 
-with open("./backend/player.json") as fj:
-	players_json = json.load(fj)
-
-with open("./backend/team.json") as fj:
-	teams_json = json.load(fj)
-
-with open("./backend/conf.json") as fj:
-	conf_json = json.load(fj)
-
-# with open("../backend/game.json") as fj:
-# 	games_json = json.load(fj)
-
-def fill() :
+def fill():
 
 	db.session.remove()
 	db.drop_all()
@@ -40,6 +24,7 @@ def fill() :
 			comm = c_info['comm'])
 		db.session.add(c_data)
 		db.session.commit()
+		print('conf made')
 
 	for t_name in teams_json :
 		t_info = teams_json[t_name]
@@ -49,6 +34,7 @@ def fill() :
 			conf = t_info['conference'])
 		db.session.add(t_data)
 		db.session.commit()
+		print('team made')
 
 	for p_id in players_json :
 		p_info = players_json[p_id]
@@ -65,6 +51,7 @@ def fill() :
 			photo = p_info['photo'])
 		db.session.add(p_data)
 		db.session.commit()
+	print('players made')
 
 	# for g_id in games_json :
 	# 	g_info = games_json[g_id]
@@ -87,4 +74,15 @@ def fill() :
 	# 	db.session.commit()
 
 if __name__ == '__main__':
+	with open("./backend/player.json") as fjp:
+		players_json = json.load(fjp)
+
+	with open("./backend/team.json") as fjt:
+		teams_json = json.load(fjt)
+
+	with open("./backend/conf.json") as fjc:
+		conf_json = json.load(fjc)
+
+# 	with open("./backend/game.json") as fjg:
+# 		games_json = json.load(fjg)
 	fill()

@@ -15,10 +15,10 @@ from flask.ext.sqlalchemy import SQLAlchemy
 punt = Flask(__name__)
 
 
-punt.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://graybeard@127.0.0.1:5000/cfdb_flask'
+punt.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://graybeard@104.239.228.32:5000/cfdb_flask'
 db = SQLAlchemy(punt)
 # players model
-class players(db.Model) :
+class players(db.Model):
     id = db.Column(db.Integer,primary_key = True,unique = True,index = True)
     name = db.Column(db.String(256))
     no = db.Column(db.String(256))
@@ -32,7 +32,7 @@ class players(db.Model) :
     photo = db.Column(db.String(256))
 #schedule = db.Table('schedule',db.Column('teams_name',db.String(256),db.ForeignKey('teams.name')),db.Column('game_id',db.Integer,db.ForeignKey('games.id')))
 # teams model
-class teams(db.Model) :
+class teams(db.Model):
     name = db.Column(db.String(256),primary_key = True)
     location = db.Column(db.String(256))
     roster = db.relationship('players',backref = 'teams', lazy = 'dynamic')
@@ -40,7 +40,7 @@ class teams(db.Model) :
     head_coach = db.Column(db.String(256))
     conf = db.Column(db.String(256),db.ForeignKey('conf.name'))
 # conference model
-class conf(db.Model) :
+class conf(db.Model):
     name = db.Column(db.String(256),primary_key = True)
     founded = db.Column(db.String(256))
     champ = db.Column(db.String(256))
@@ -48,7 +48,7 @@ class conf(db.Model) :
     num_teams = db.Column(db.String(256))
     comm = db.Column(db.String(256))
 # games model
-# class games(db.Model) :
+# class games(db.Model):
 #     id = db.Column(db.Integer,primary_key = True,unique = True,index = True)
 #     date = db.Column(db.String(256))
 #     home_team = db.Column(db.String(256),db.ForeignKey('teams.name'))
