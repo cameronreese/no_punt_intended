@@ -43,10 +43,10 @@ def fill() :
 
 	for t_name in teams_json :
 		t_info = teams_json[t_name]
-		t_data = teams(name = t_info['name'],
+		t_data = teams(name = t_name,
 			location = t_info['location'],
-			head_coach = t_info['head_coach'],
-			conf = t_info['conf'])
+			head_coach = t_info['coach'],
+			conf = t_info['conference'])
 		db.session.add(t_data)
 		db.session.commit()
 
@@ -66,16 +66,25 @@ def fill() :
 		db.session.add(p_data)
 		db.session.commit()
 
-	for g_id in games_json :
-		g_info = games_json[g_id]
-		g_data = games(id = g_id,
-			date = g_info['date'],
-			home_team = g_info['home_team'],
-			away_team = g_info['away_team'],
-			location = g_info['location'],
-			time = g_info['time'])
-		db.session.add(g_data)
-		db.session.commit()
+	# for g_id in games_json :
+	# 	g_info = games_json[g_id]
+	# 	g_data = games(id = g_id,
+	# 		date = g_info['date'],
+	# 		home_team = g_info['home_team'],
+	# 		away_team = g_info['away_team'],
+	# 		location = g_info['location'],
+	# 		time = g_info['time'])
+	# 	db.session.add(g_data)
+	# 	db.session.commit()
+
+	# sched = games.query.all()
+	# for s_data in sched :
+	# 	home = 
+	# 	away = s_data.away_team
+	# 	db.session.execute(schedule.insert().values([s_data.home_team,s_data.id]))
+	# 	db.session.commit()
+	# 	db.session.execute(schedule.insert().values([s_data.away_team,s_data.id]))
+	# 	db.session.commit()
 
 if __name__ == '__main__':
 	fill()
