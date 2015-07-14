@@ -3,7 +3,7 @@
 # -----------
 # imports
 # -----------
-from models import players, teams, conf, games, schedule
+from models import players, teams, conf
 from flask import Flask
 from models import punt, db
 import json
@@ -14,13 +14,13 @@ teams_json
 conf_json
 games_json
 
-with open("../backend/player.json") as fj:
+with open("./backend/player.json") as fj:
 	players_json = json.load(fj)
 
-with open("../backend/team.json") as fj:
+with open("./backend/team.json") as fj:
 	teams_json = json.load(fj)
 
-with open("../backend/conf.json") as fj:
+with open("./backend/conf.json") as fj:
 	conf_json = json.load(fj)
 
 # with open("../backend/game.json") as fj:
