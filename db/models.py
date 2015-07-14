@@ -3,16 +3,11 @@
 # -----------
 # imports
 # -----------
-import random
-from numpy import mean, sqrt, square, subtract
-import json
 
 from flask import Flask
 from flask import jsonify
 from flask import abort
 from flask import render_template
-from collections import namedtuple
-from urllib.request import urlopen
 from flask.ext.sqlalchemy import SQLAlchemy
 
 
@@ -114,25 +109,58 @@ teams = [
         'name': 'Texas',
         'location': 'Austin, TX',
         'roster': ['Nick Jordan', 'Shiro Davis'], # list of players
-        'schedule': ['1st game', '2nd game', 'last game'], # data of schedule
+        'schedule': [{'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'TBD'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'}
+                     ], # list of dictionaries
         'head_coach': 'Charlie Strong',
         'conf': 'Big 12'
     },
     {
-        'name': 'Baylor'
-        # 'location': 'Waco, TX',
-        # 'roster': (), # tuple of player links
-        # 'schedule': [[]], # a dict of {date : opponent} or some custom list of data
-        # 'head_coach': 'Unknown',
-        # 'conf': 'Big 12'
+        'name': 'Baylor',
+        'location': 'Waco, TX',
+        'roster': ['Nick Jordan', 'Shiro Davis'], # list of players
+        'schedule': [{'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'TBD'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'}
+                     ], # list of dictionaries
+        'head_coach': 'Charlie Strong',
+        'conf': 'Big 12'
     },
     {
-        'name': 'TCU'
-        # 'location': 'Fort Worth, TX',
-        # 'roster': (), # tuple of player links
-        # 'schedule': [[]], # a dict of {date : opponent} or some custom list of data
-        # 'head_coach': 'Unknown',
-        # 'conf': 'Big 12'
+        'name': 'TCU',
+        'location': 'Fort Worth, TX',
+        'roster': ['Nick Jordan', 'Shiro Davis'], # list of players
+        'schedule': [{'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'TBD'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'},
+                     {'date': 'Sat, Dec 5th', 'opponent': 'Baylor', 'location': 'Baylor Stadium', 'time': 'Never'}
+                     ], # list of dictionaries
+        'head_coach': 'Charlie Strong',
+        'conf': 'Big Ten'
     }
 ]
 
@@ -148,17 +176,17 @@ conf = [
     },
     {
         'name': 'ACC',
-        'founded': '1996',
+        'founded': '1945',
         'champ': 'Baylor',
-        'teams': ['Baylor', 'Iowa State', 'Kansas', 'Kansas State', 'Oklahoma', 'Oklahoma State', 'TCU', 'Texas', 'Texas Tech', 'West Virginia' ], # list of teams
+        'teams': ['Baylor', 'College', 'University', 'York Town', 'Spain', 'Hawaii', 'TCU', 'Texas', 'Georgia Tech'], # list of teams
         'num_teams': '10',
         'comm': 'Bob Bowlsby'
     },
     {
         'name': 'Big Ten',
-        'founded': '1996',
+        'founded': '1987',
         'champ': 'Baylor',
-        'teams': ['Baylor', 'Iowa State', 'Kansas', 'Kansas State', 'Oklahoma', 'Oklahoma State', 'TCU', 'Texas', 'Texas Tech', 'West Virginia' ], # list of teams
+        'teams': ['Baylor', 'iPad', 'iPod', 'Macbook Air', 'Macbook', 'Baylor', 'TCU', 'Texas', 'Macbook Pro', 'Watch' ], # list of teams
         'num_teams': '10',
         'comm': 'Bob Bowlsby'
     },
@@ -166,7 +194,71 @@ conf = [
         'name': 'Nick\'s Own Conf',
         'founded': '2015',
         'champ': 'Nick',
+        'teams': ['Baylor', 'Bilbo', 'Baggins', 'Frodo', 'Gimli', 'Sauron', 'TCU', 'Texas', 'Smeagal'], # list of teams
+        'num_teams': '1001',
+        'comm': 'Nick the Slick'
+    },
+        {
+        'name': 'Big 122',
+        'founded': '1996',
+        'champ': 'Baylor',
         'teams': ['Baylor', 'Iowa State', 'Kansas', 'Kansas State', 'Oklahoma', 'Oklahoma State', 'TCU', 'Texas', 'Texas Tech', 'West Virginia' ], # list of teams
+        'num_teams': '10',
+        'comm': 'Bob Bowlsby'
+    },
+    {
+        'name': 'ACC2',
+        'founded': '1945',
+        'champ': 'Baylor',
+        'teams': ['Baylor', 'College', 'University', 'York Town', 'Spain', 'Hawaii', 'TCU', 'Texas', 'Georgia Tech'], # list of teams
+        'num_teams': '10',
+        'comm': 'Bob Bowlsby'
+    },
+    {
+        'name': 'Big Ten2',
+        'founded': '1987',
+        'champ': 'Baylor',
+        'teams': ['Baylor', 'iPad', 'iPod', 'Macbook Air', 'Macbook', 'Baylor', 'TCU', 'Texas', 'Macbook Pro', 'Watch' ], # list of teams
+        'num_teams': '10',
+        'comm': 'Bob Bowlsby'
+    },
+    {
+        'name': 'Nick\'s Own Conf2',
+        'founded': '2015',
+        'champ': 'Nick',
+        'teams': ['Baylor', 'Bilbo', 'Baggins', 'Frodo', 'Gimli', 'Sauron', 'TCU', 'Texas', 'Smeagal'], # list of teams
+        'num_teams': '1001',
+        'comm': 'Nick the Slick'
+    },
+        {
+        'name': 'Big 123',
+        'founded': '1996',
+        'champ': 'Baylor',
+        'teams': ['Baylor', 'Iowa State', 'Kansas', 'Kansas State', 'Oklahoma', 'Oklahoma State', 'TCU', 'Texas', 'Texas Tech', 'West Virginia' ], # list of teams
+        'num_teams': '10',
+        'comm': 'Bob Bowlsby'
+    },
+    {
+        'name': 'ACC3',
+        'founded': '1945',
+        'champ': 'Baylor',
+        'teams': ['Baylor', 'College', 'University', 'York Town', 'Spain', 'Hawaii', 'TCU', 'Texas', 'Georgia Tech'], # list of teams
+        'num_teams': '10',
+        'comm': 'Bob Bowlsby'
+    },
+    {
+        'name': 'Big Ten3',
+        'founded': '1987',
+        'champ': 'Baylor',
+        'teams': ['Baylor', 'iPad', 'iPod', 'Macbook Air', 'Macbook', 'Baylor', 'TCU', 'Texas', 'Macbook Pro', 'Watch' ], # list of teams
+        'num_teams': '10',
+        'comm': 'Bob Bowlsby'
+    },
+    {
+        'name': 'Nick\'s Own Conf3',
+        'founded': '2015',
+        'champ': 'Nick',
+        'teams': ['Baylor', 'Bilbo', 'Baggins', 'Frodo', 'Gimli', 'Sauron', 'TCU', 'Texas', 'Smeagal'], # list of teams
         'num_teams': '1001',
         'comm': 'Nick the Slick'
     }
@@ -270,7 +362,8 @@ def conf_table():
     """
     :return: Conference table page
     """
-    return render_template('conferenceTable.html', title='CFDB: Conference Table')
+    conference_list = [c for c in conf] # <---- this will need to be a call to the database that returns a list of all the conferences
+    return render_template('conferenceTable.html', confList=list(conference_list), title='CFDB: Conference Table')
 
 
 @punt.route('/')
@@ -279,7 +372,8 @@ def team_table():
     """
     :return: Team table page
     """
-    return render_template('teamTable.html', title='CFDB: Team Table')
+    team_list = [t for t in teams] # <---- this will need to be a call to the database that returns a list of all the teams
+    return render_template('teamTable.html', teamList=list(team_list), title='CFDB: Team Table')
 
 @punt.route('/')
 @punt.route('/player_table')
@@ -287,7 +381,8 @@ def player_table():
     """
     :return: Player table page
     """
-    return render_template('playerTable.html', title='CFDB: Player Table')
+    player_list = [p for p in players] # <---- this will need to be a call to the database that returns a list of all the players
+    return render_template('playerTable.html', playerList=list(player_list), title='CFDB: Player Table')
 
 
 # *********************************************************************************************************************
@@ -318,7 +413,7 @@ def team_template(t_name):
     """
     t = [t for t in teams if t['name'] == t_name] # <---- this will need to change to a call to the database returning all of the team's attributes in a python dict MATCHING THE KEY NAMES INDICATED BELOW
     team = t[0]
-    player_list = [player for player in players for p in team['roster'] if player['name'] == p]
+    player_list = [player for player in players for p in team['roster'] if player['name'] == p] # <----- call to database retrieving a list of the full data for each player of the team
     return render_template('team_profile.html', team=team['name'], conf=team['conf'], location=team['location'], coach=team['head_coach'], playerList=list(player_list), gameList=team['schedule'])
 
 
