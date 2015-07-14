@@ -149,6 +149,70 @@ conf = [
         'teams': ['Baylor', 'Bilbo', 'Baggins', 'Frodo', 'Gimli', 'Sauron', 'TCU', 'Texas', 'Smeagal'], # list of teams
         'num_teams': '1001',
         'comm': 'Nick the Slick'
+    },
+        {
+        'name': 'Big 122',
+        'founded': '1996',
+        'champ': 'Baylor',
+        'teams': ['Baylor', 'Iowa State', 'Kansas', 'Kansas State', 'Oklahoma', 'Oklahoma State', 'TCU', 'Texas', 'Texas Tech', 'West Virginia' ], # list of teams
+        'num_teams': '10',
+        'comm': 'Bob Bowlsby'
+    },
+    {
+        'name': 'ACC2',
+        'founded': '1945',
+        'champ': 'Baylor',
+        'teams': ['Baylor', 'College', 'University', 'York Town', 'Spain', 'Hawaii', 'TCU', 'Texas', 'Georgia Tech'], # list of teams
+        'num_teams': '10',
+        'comm': 'Bob Bowlsby'
+    },
+    {
+        'name': 'Big Ten2',
+        'founded': '1987',
+        'champ': 'Baylor',
+        'teams': ['Baylor', 'iPad', 'iPod', 'Macbook Air', 'Macbook', 'Baylor', 'TCU', 'Texas', 'Macbook Pro', 'Watch' ], # list of teams
+        'num_teams': '10',
+        'comm': 'Bob Bowlsby'
+    },
+    {
+        'name': 'Nick\'s Own Conf2',
+        'founded': '2015',
+        'champ': 'Nick',
+        'teams': ['Baylor', 'Bilbo', 'Baggins', 'Frodo', 'Gimli', 'Sauron', 'TCU', 'Texas', 'Smeagal'], # list of teams
+        'num_teams': '1001',
+        'comm': 'Nick the Slick'
+    },
+        {
+        'name': 'Big 123',
+        'founded': '1996',
+        'champ': 'Baylor',
+        'teams': ['Baylor', 'Iowa State', 'Kansas', 'Kansas State', 'Oklahoma', 'Oklahoma State', 'TCU', 'Texas', 'Texas Tech', 'West Virginia' ], # list of teams
+        'num_teams': '10',
+        'comm': 'Bob Bowlsby'
+    },
+    {
+        'name': 'ACC3',
+        'founded': '1945',
+        'champ': 'Baylor',
+        'teams': ['Baylor', 'College', 'University', 'York Town', 'Spain', 'Hawaii', 'TCU', 'Texas', 'Georgia Tech'], # list of teams
+        'num_teams': '10',
+        'comm': 'Bob Bowlsby'
+    },
+    {
+        'name': 'Big Ten3',
+        'founded': '1987',
+        'champ': 'Baylor',
+        'teams': ['Baylor', 'iPad', 'iPod', 'Macbook Air', 'Macbook', 'Baylor', 'TCU', 'Texas', 'Macbook Pro', 'Watch' ], # list of teams
+        'num_teams': '10',
+        'comm': 'Bob Bowlsby'
+    },
+    {
+        'name': 'Nick\'s Own Conf3',
+        'founded': '2015',
+        'champ': 'Nick',
+        'teams': ['Baylor', 'Bilbo', 'Baggins', 'Frodo', 'Gimli', 'Sauron', 'TCU', 'Texas', 'Smeagal'], # list of teams
+        'num_teams': '1001',
+        'comm': 'Nick the Slick'
     }
 ]
 
