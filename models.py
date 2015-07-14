@@ -476,7 +476,6 @@ def ncaa():
     :return: NCAA FBS page
     """
     conferences = conf.query.all()
-    #conferences = [c for c in conf] # <---- this will need to change to a call to the database returning a list or generator of all the conferences
     return render_template('teams.html', confList=list(conferences), title='CFDB: NCAA')
 
 
@@ -492,7 +491,6 @@ def conf_table():
     :return: Conference table page
     """
     conference_list = conf.query.all()
-    #conference_list = [c for c in conf] # <---- this will need to be a call to the database that returns a list of all the conferences
     return render_template('conferenceTable.html', confList=list(conference_list), title='CFDB: Conference Table')
 
 
@@ -503,7 +501,6 @@ def team_table():
     :return: Team table page
     """
     team_list = teams.query.all()
-    #team_list = [t for t in teams] # <---- this will need to be a call to the database that returns a list of all the teams
     return render_template('teamTable.html', teamList=list(team_list), title='CFDB: Team Table')
 
 @punt.route('/')
@@ -529,11 +526,8 @@ def conf_template(c_name):
     :param c_name: the conference's name
     :return: the conference profile page populated with content specific for that conference
     """
-
-    # c = [c for c in conf if c['name'] == c_name] # <---- this will need to change to a call to the database returning all of the conference's attributes in a python dict MATCHING THE KEY NAMES INDICATED BELOW
-    # conference = c[0]
     conference = conf.query.get(c_name)
-    return render_template('conference_profile.html', conf=conference['name'], year=conference['founded'], com=conference['comm'], champ=conference['champ'], num=conference['num_teams'], teamList=conference['teams'])
+    return render_template('conference_profile.html', conf=conference['name'], year=conference['founded'], com=conference['comm'], champ=conference['champ'], num=conference['num_teams'], teamList=conference['teamset'])
 
 
 
@@ -544,12 +538,9 @@ def team_template(t_name):
     :param t_name: the team's name
     :return: the team profile page populated with content specific for that team
     """
-    # t = [t for t in teams if t['name'] == t_name] # <---- this will need to change to a call to the database returning all of the team's attributes in a python dict MATCHING THE KEY NAMES INDICATED BELOW
-    # team = t[0]
     team = teams.query.get(t_name)
-    #player_list = [player for player in players for p in team['roster'] if player['name'] == p] # <----- call to database retrieving a list of the full data for each player of the team
-    return render_template('team_profile.html', team=team['name'], conf=team['conf'], location=team['location'], coach=team['head_coach'], playerList=list(player_list), gameList=team['schedule'])
-
+    return render_template('team_profile.html', team=team['name'], conf=team['confname'], location=team['location'], coach=team['head_coach'], playerList=team['roster'])
+# gameList=team['schedule'] <---- add schedule back in
 
 @punt.route('/')
 @punt.route('/player_t/<string:p_name>')
@@ -558,8 +549,7 @@ def player_template(p_name):
     :param p_name: the player's name
     :return: the player profile page populated with content specific for that player
     """
-    p = [p for p in players if p['name'] == p_name] # <---- this will need to change to a call to the database returning all of the conference's attributes and a python dict MATCHING THE KEY NAMES INDICATED BELOW
-    player = p[0]
+    player = players.query.get(p_name)
     return render_template('player_profile.html', name=player['name'], number=player['no'], team=player['team'], year=player['year'], pos=player['pos'], ht=player['ht'], wt=player['wt'], town=player['hometown'], hs=player['hs'], photo=player['photo'])
 
 
