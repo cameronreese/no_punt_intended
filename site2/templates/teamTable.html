@@ -1,5 +1,17 @@
 {% extends "base.html" %}
 {% block content %}
+
+<!-- **************************************   Javascript stuff   **************************************** -->
+    <!-- jQuery -->
+    <script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+     <script src="{{ url_for('static', filename='js/jquery_dataTables.js') }}"> </script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/dataTables_bootstrap.js') }}"> </script>
+    <script src="{{ url_for('static', filename='js/dataTables_bootstrapPagination.js') }}"> </script>
+    <script src="{{ url_for('static', filename='js/dataTables_responsive.js') }}"> </script>
+
     <script type="text/javascript">
         $(document).ready(function() {
           $('#teamTable').DataTable( {
@@ -58,17 +70,6 @@
                                                         End table box
 ******************************************************************************************************************************* -->
 
-
-<!-- **************************************   Javascript stuff   **************************************** -->
-    <!-- jQuery -->
-    <script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
-     <script src="{{ url_for('static', filename='js/jquery_dataTables.js') }}"> </script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/dataTables_bootstrap.js') }}"> </script>
-    <script src="{{ url_for('static', filename='js/dataTables_bootstrapPagination.js') }}"> </script>
-    <script src="{{ url_for('static', filename='js/dataTables_responsive.js') }}"> </script>
 
 
 
