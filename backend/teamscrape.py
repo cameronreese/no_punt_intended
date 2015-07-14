@@ -37,18 +37,21 @@ for team_info in soup_data :
 		else :
 			team_nick.append(team_help)
 			nickcount += 1
-		team_url = ('https://en.wikipedia.org' + cool['href'])
-		data2 = urlopen(team_url)
-		soup2 = BeautifulSoup(data2.read(), "html.parser")
-		soup_data2 = soup2.findAll("tr")
-		for get_coach in soup_data2 :
-			team_help3 = get_coach.text
-			team_help4 = team_help3.split('\n')
-			if team_help4[1] == 'Head coach' :
-				team_coach.append(team_help4[2])
-				coachcount += 1
-			if team_help == 'Miners':
-				team_coach.append('Sean Kugler')
+		if team_help == 'Miners':
+			print('got here')
+			team_coach.append('Sean Kugler')
+		else :
+			team_url = ('https://en.wikipedia.org' + cool['href'])
+			data2 = urlopen(team_url)
+			soup2 = BeautifulSoup(data2.read(), "html.parser")
+			soup_data2 = soup2.findAll("tr")
+			for get_coach in soup_data2 :
+				team_help3 = get_coach.text
+				team_help4 = team_help3.split('\n')
+				if team_help4[1] == 'Head coach' :
+					team_coach.append(team_help4[2])
+					coachcount += 1
+
 				# print(namecount)
 				# print(coachcount)
 			# if team_help4[1] == 'Head Coach' :

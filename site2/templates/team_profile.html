@@ -28,7 +28,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-                <a class="navbar-brand" href="index.html">Team Info</a>
+                <a class="navbar-brand" >Team Info</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
@@ -97,9 +97,12 @@
                 </div>
                 <div class="col-lg-12 text-center">
                     {% for player in playerList %}
-                      <p><script> document.write('<a href="http://cfdb.me:5000/player_t/' + "{{player.name}}" + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>{{player.no}} - {{player.name}}</a></p>
+                        <div class="col-md-3"> 
+                          <script> document.write('<a href="http://cfdb.me:5000/player_t/' + "{{player.name}}" + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​><strong>&nbsp;&nbsp;{{player.no}}</strong>-{{player.name}}&nbsp;&nbsp;</a> 
+                        </div>
                     {% endfor %}
-                    <hr>
+                  <br>
+                  <hr>
                 </div>
             </div>
         </div>
