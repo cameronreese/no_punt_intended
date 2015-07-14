@@ -246,6 +246,9 @@ footer p {
         border: none;
         background: #fff;
         background: rgba(255,255,255,0.9);
+        -moz-box-shadow: 0 0 10px 10px #ddd;
+        -webkit-box-shadow: 0 0 10px 10px #ddd;
+        box-shadow: 0 0 10px 10px #ddd;
     }
 
     .nav>li>a {
@@ -262,9 +265,6 @@ footer p {
         margin: 0 auto;
         table-layout: fixed;
         font-size: 1.25em;
-        -moz-box-shadow: 0 0 10px 10px #ddd;
-        -webkit-box-shadow: 0 0 10px 10px #ddd;
-        box-shadow: 0 0 10px 10px #ddd;
     }
 }
 
