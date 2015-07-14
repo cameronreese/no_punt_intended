@@ -15,7 +15,7 @@ from flask.ext.sqlalchemy import SQLAlchemy
 punt = Flask(__name__)
 
 
-punt.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://graybeard@104.239.228.32:5000/cfdb_flask'
+punt.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:beard@localhost/cfdb_flask'
 db = SQLAlchemy(punt)
 # players model
 class players(db.Model):
@@ -35,16 +35,16 @@ class players(db.Model):
 class teams(db.Model):
     name = db.Column(db.String(256),primary_key = True)
     location = db.Column(db.String(256))
-    roster = db.relationship('players',backref = 'teams', lazy = 'dynamic')
+    roster = db.relationship('players')
     #schedule = db.relationship('games',secondary=schedule,backref=db.backref('teams',lazy='dynamic'))
     head_coach = db.Column(db.String(256))
-    conf = db.Column(db.String(256),db.ForeignKey('conf.name'))
+    confname = db.Column(db.String(256),db.ForeignKey('conf.name'))
 # conference model
 class conf(db.Model):
     name = db.Column(db.String(256),primary_key = True)
     founded = db.Column(db.String(256))
     champ = db.Column(db.String(256))
-    teams = db.relationship('teams',backref = 'conf', lazy = 'dynamic')
+    teamset = db.relationship('teams')
     num_teams = db.Column(db.String(256))
     comm = db.Column(db.String(256))
 # games model

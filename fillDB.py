@@ -11,13 +11,16 @@ import sys
 
 
 def fill():
-
+	print('entered fill()')
 	db.session.remove()
+	print('db.session.remove()...')
 	db.drop_all()
+	print('db.drop_all()...')
 	db.create_all()
-
+	print('db.create_all()...')
 	for c_name in conf_json :
-		c_info = conf_json[cname]
+		print('here in the first for loop')
+		c_info = conf_json[c_name]
 		c_data = conf(name = c_info['name'],
 			founded = c_info['founded'],
 			num_teams = c_info['num_teams'],
@@ -27,30 +30,32 @@ def fill():
 		print('conf made')
 
 	for t_name in teams_json :
+		print('entered teams building...')
 		t_info = teams_json[t_name]
 		t_data = teams(name = t_name,
 			location = t_info['location'],
 			head_coach = t_info['coach'],
-			conf = t_info['conference'])
+			confname = t_info['conference'])
 		db.session.add(t_data)
 		db.session.commit()
 		print('team made')
 
 	for p_id in players_json :
 		p_info = players_json[p_id]
-		p_data = players(id = p_id,
-			name = p_info['name'],
-			no = p_info['no'],
-			pos = p_info['pos'],
-			team = p_info['team'],
-			ht = p_info['ht'],
-			wt = p_info['wt'],
-			hometown = p_info['hometown'],
-			year = p_info['year'],
-			hs = p_info['hs'],
-			photo = p_info['photo'])
-		db.session.add(p_data)
-		db.session.commit()
+		if (p_info['team'] != 'UAB'):
+			p_data = players(id = p_id,
+				name = p_info['name'],
+				no = p_info['no'],
+				pos = p_info['pos'],
+				team = p_info['team'],
+				ht = p_info['ht'],
+				wt = p_info['wt'],
+				hometown = p_info['hometown'],
+				year = p_info['year'],
+				hs = p_info['hs'],
+				photo = p_info['pic'])
+			db.session.add(p_data)
+			db.session.commit()
 	print('players made')
 
 	# for g_id in games_json :
@@ -74,6 +79,7 @@ def fill():
 	# 	db.session.commit()
 
 if __name__ == '__main__':
+	print('started program')
 	with open("./backend/player.json") as fjp:
 		players_json = json.load(fjp)
 
@@ -85,4 +91,7 @@ if __name__ == '__main__':
 
 # 	with open("./backend/game.json") as fjg:
 # 		games_json = json.load(fjg)
+	print('about to enter fill function')
 	fill()
+	print('just finished fill()')
+
