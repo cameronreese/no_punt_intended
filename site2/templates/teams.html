@@ -5,13 +5,11 @@
                                                         Start team Box
 ******************************************************************************************************************************* -->
     <div class="container">
-        <div class="row">
-            <div class="box">
+        <div class="box">
+            <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12">
                     <hr>
-                        <h2 class="intro-text text-center">FBS
-                            <strong>conferences</strong>
-                        </h2>
+                        <h2 class="intro-text text-center">FBS <strong>conferences</strong> </h2>
                     <hr>
                 
                     {% for conf in confList %}
@@ -23,7 +21,7 @@
                                 <script> document.write('<a href="http://cfdb.me:5000/team_t/' + "{{team}}" + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>
                                     <h6 class="team-text text-center"> <strong>{{team}}</strong></h6></a>
                             {% endfor %}
-                            
+
                         </div>       
                     {% endfor %}
 
