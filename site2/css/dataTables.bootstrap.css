@@ -54,12 +54,12 @@ table.dataTable thead .sorting_desc_disabled {
 	cursor: pointer;
 }
 
-table.dataTable thead .sorting { background: url('static/img/sort_both.png') no-repeat center right; }
-table.dataTable thead .sorting_asc { background: url('static/img/sort_asc.png') no-repeat center right; }
-table.dataTable thead .sorting_desc { background: url('static/img/sort_desc.png') no-repeat center right; }
+table.dataTable thead .sorting { background: url('sort_both.png') no-repeat center right; }
+table.dataTable thead .sorting_asc { background: url('sort_asc.png') no-repeat center right; }
+table.dataTable thead .sorting_desc { background: url('sort_desc.png') no-repeat center right; }
 
-table.dataTable thead .sorting_asc_disabled { background: url('static/img/sort_asc_disabled.png') no-repeat center right; }
-table.dataTable thead .sorting_desc_disabled { background: url('static/img/sort_desc_disabled.png') no-repeat center right; }
+table.dataTable thead .sorting_asc_disabled { background: url('sort_asc_disabled.png') no-repeat center right; }
+table.dataTable thead .sorting_desc_disabled { background: url('sort_desc_disabled.png') no-repeat center right; }
 
 table.dataTable th:active {
 	outline: none;
@@ -100,7 +100,7 @@ div.dataTables_scrollFoot table {
  */
 .table tbody tr.active td,
 .table tbody tr.active th {
-	background-color: #08C;
+	background-color: #FFF;
 	color: white;
 }
 
