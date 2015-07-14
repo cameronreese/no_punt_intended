@@ -19,7 +19,7 @@ from flask.ext.sqlalchemy import SQLAlchemy
 punt = Flask(__name__)
 
 '''
-punt.config['SQLALCHEMY_DATABASE_URI] = 'mysql+pymysql://username:password@host:port/database'
+punt.config['SQLALCHEMY_DATABASE_URI] = 'mysql+pymysql://graybeards@127.0.0.1:5000/cfdb_flask'
 
 db = SQLAlchemy(punt)
 

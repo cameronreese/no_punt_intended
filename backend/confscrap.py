@@ -62,7 +62,7 @@ for y in conf_names :
 		dict_help['comm'] = conf_comm[x]
 	conf_dict[y] = dict_help
 	x+=1
-print(conf_dict)
+# print(conf_dict)
 #print(conf_names)
 #print(conf_nick)
 #print(conf_founded)
