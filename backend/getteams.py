@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-import urllib, re
+
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
 
@@ -14,8 +14,22 @@ for key, value in d.items() :
 	data = urlopen('http://www.cfbdatawarehouse.com/data/active/' + str(letter)  + '/' + str(value) + '/index.php')
 	soup = BeautifulSoup(data.read())
 
-	print('Colleges: ' + value + '\n')
+	# print('Colleges: ' + value + '\n')
 	stats = soup.findAll("p", style = "margin-left: 15; margin-top: 5; margin-bottom: 5")
-	for text in stats:
-		print(text.find('b').string)
-		print('\n')
+	coach = soup.findAll("p", style = "margin-left: 15")
+	sstring = ''
+	cstring = ''
+	for row in soup.findAll("p", style = "margin-left: 15; margin-top: 5; margin-bottom: 5"):
+		for r in soup.findAll('table', border = '"0" cellpadding="0" cellspacing="0" width="260"'):
+			d2 = [str(i.getText()) for i in r('b')]
+			print(d2)
+		data = [str(i.getText()) for i in row('b')]
+		# print(d2 + data)
+	# for text in stats:
+	# 	sstring += text.find('b').string
+	# for text2 in coach:
+	# 	cstring += text2.find('b').string
+
+	# print([str(value) + sstring + cstring])
+
+print('\n')
