@@ -11309,7 +11309,7 @@
 		 *  @default false
 		 *  @deprecated
 		 */
-		"bSorted": false,
+		"bSorted": true,
 		
 		/**
 		 * Indicate that if multiple rows are in the header and there is more than 
