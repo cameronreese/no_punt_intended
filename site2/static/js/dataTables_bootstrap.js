@@ -4,8 +4,6 @@ $.extend( true, $.fn.dataTable.defaults, {
 	"sPaginationType": "bootstrap",
 	"oLanguage": {
 		"sLengthMenu": "_MENU_ records per page"
-	"data": "sources/arrays.txt",
-  "deferRender": true
 	}
 } );
 
