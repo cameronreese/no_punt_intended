@@ -164,12 +164,12 @@
     <script type="text/javascript">
         $(document).ready(function() {
           $('#teamTable').DataTable( {
-            // "serverSide": true,
-            "responsive" : true,
-            "processing": true,
             "serverSide": true,
-            "ajax": "scripts/server_processing.php",
-            "deferLoading": 128
+            // "responsive" : true,
+            // "processing": true,
+            // "serverSide": true,
+            // "ajax": "scripts/server_processing.php",
+            // "deferLoading": 128
           	// "deferLoading": 128,
             "iDisplayLength": 50,
             "sDom": "<'row'<'col-xs-6'T><'col-xs-6'f>r>t<'row'<'col-xs-6'i><'col-xs-6'p>>",
@@ -182,7 +182,7 @@
     $(document).ready(function() {
       $('#playerTable').DataTable( {
         "serverSide": true,
-        "responsive" : true,
+        // "responsive" : true,
       	"order": [[2, "desc"]],
         "iDisplayLength": 50,
         "sDom": "<'row'<'col-xs-6'T><'col-xs-6'f>r>t<'row'<'col-xs-6'i><'col-xs-6'p>>",
