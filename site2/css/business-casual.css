@@ -6,7 +6,7 @@
 
 body {
     font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-    background: url('../img/bg.png') no-repeat center center fixed;
+    background: url('../img/bg2.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -110,6 +110,9 @@ hr {
     padding: 30px 15px;
     background: #fff;
     background: rgba(255,255,255,0.9);
+    -moz-box-shadow: 0 0 10px 10px rgba(255,255,255,0.9);
+    -webkit-box-shadow: 0 0 10px 10px rgba(255,255,255,0.9);
+    box-shadow: 0 0 10px 10px rgba(255,255,255,0.9);
 }
 
 .boxx {
@@ -118,10 +121,13 @@ hr {
 }
 
 .box-thin {
-    margin-bottom: 20px;
-    padding: 3px 15px;
+    margin-bottom: 25px;
+    padding: 5px 0px;   
     background: #fff;
     background: rgba(192,192,192,0.9);
+    -moz-box-shadow: 0 0 5px 5px rgba(192,192,192,0.9);
+    -webkit-box-shadow: 0 0 5px 5px rgba(192,192,192,0.9);
+    box-shadow: 0 0 5px 5px rgba(192,192,192,0.9);
 }
 
 .intro-text {
@@ -160,7 +166,7 @@ hr {
 
 .team-title-text{
     text-transform: uppercase;
-    font-size: 75%;
+    font-size: 4em;
     font-weight: 900;
     letter-spacing: 1px;   
 }
@@ -171,6 +177,11 @@ hr {
     border: #999999 solid 1px;
 }
 
+.img-front {
+    margin: auto;
+    max-width: 85%;
+}
+
 .img-left {
     float: none;
     margin: 0 auto 0;
@@ -179,11 +190,14 @@ hr {
 footer {
     background: #fff;
     background: rgba(255,255,255,0.9);
+    -moz-box-shadow: 0 0 5px 5px rgba(255,255,255,0.9);
+    -webkit-box-shadow: 0 0 5px 5px rgba(255,255,255,0.9);
+    box-shadow: 0 0 5px 5px rgba(255,255,255,0.9);
 }
 
 footer p {
     margin: 0;
-    padding: 50px 0;
+    padding: 25px 0;
 }
 
 @media screen and (min-width:768px) {
@@ -238,6 +252,9 @@ footer p {
         border: none;
         background: #fff;
         background: rgba(255,255,255,0.9);
+        -moz-box-shadow: 0 0 5px 5px rgba(255,255,255,0.9);
+        -webkit-box-shadow: 0 0 5px 5px rgba(255,255,255,0.9);
+        box-shadow: 0 0 5px 5px rgba(255,255,255,0.9);
     }
 
     .nav>li>a {

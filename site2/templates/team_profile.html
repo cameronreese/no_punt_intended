@@ -57,8 +57,7 @@
                                                         Start stats Box
 ******************************************************************************************************************************* -->
     <div class="container">
-        <div class="row">
-            <div class="box">
+        <div class="box row">
                 <a name="statistics"></a> 
                 <div class="col-lg-12">
                     <hr>
@@ -73,7 +72,6 @@
                     <p><strong>Head Coach:</strong> {{coach}}</p>
                     <hr>
                 </div>
-            </div>
         </div>
     </div>
 <!-- *************************************************************************************************************************
@@ -85,25 +83,22 @@
                                                         Start roster box
 ******************************************************************************************************************************* -->
     <div class="container">
-        <div class="box">
-            <div class="row">
+        <div class="box row">
                 <a name="roster"></a> 
                 <div class="col-lg-12">
                     <hr>
-                    <h2 class="intro-text text-center">Team
-                        <strong>Roster</strong>
-                    </h2>
+                    <h2 class="intro-text text-center">Team<strong> Roster</strong></h2>
                     <hr>
                 </div>
                 <div class="col-lg-12 text-center">
                     {% for player in playerList %}
-                        <div class="col-lg-2 col-md-3 col-sm-4 "> 
-                          <script> document.write('<a href="http://cfdb.me:5000/player_t/' + "{{player.name}}" + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​><strong>&nbsp;&nbsp;{{player.no}}</strong>-{{player.name}}&nbsp;&nbsp;</a> 
+                        <div class="col-lg-3 col-md-4 col-sm-6 "> 
+                          <script> document.write('<a href="http://cfdb.me:5000/player_t/' + "{{player.id}}" + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​><strong>&nbsp;&nbsp;{{player.no}}</strong>&nbsp;{{player.name}}&nbsp;&nbsp;</a> 
                         </div>
                     {% endfor %}                  
                 </div>                
-            </div>
             <hr>
+            <br>
         </div>
     </div>
     <!-- /.container -->
@@ -115,8 +110,7 @@
                                                         Start schedule box
 ******************************************************************************************************************************* -->
     <div class="container">
-        <div class="row">
-            <div class="box">
+        <div class="box row">
                 <a name="schedule"></a> 
                 <div class="col-lg-12">
                     <hr>
@@ -146,8 +140,8 @@
                   {% endfor %}
               </tbody>
           </table>
-       </div>
                     <hr>
+          </div>
         </div>
     </div>
     <!-- /.container -->

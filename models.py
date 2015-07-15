@@ -8,53 +8,53 @@ from flask import Flask
 from flask import jsonify
 from flask import abort
 from flask import render_template
-#from flask.sqlalchemy import SQLAlchemy
+from flask.ext.sqlalchemy import SQLAlchemy
 
 
 
 punt = Flask(__name__)
 
-'''
-punt.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://graybeard@127.0.0.1:5000/cfdb_flask'
+
+punt.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:beard@localhost/cfdb_flask'
 db = SQLAlchemy(punt)
 # players model
-class players(db.Model) :
+class players(db.Model):
     id = db.Column(db.Integer,primary_key = True,unique = True,index = True)
     name = db.Column(db.String(256))
     no = db.Column(db.String(256))
     pos = db.Column(db.String(256))
-    team = db.Column(db.String(256),db.ForeignKey(teams.name))
+    team = db.Column(db.String(256),db.ForeignKey('teams.name'))
     ht = db.Column(db.String(256))
     wt = db.Column(db.String(256))
     hometown = db.Column(db.String(256))
     year = db.Column(db.String(256))
     hs = db.Column(db.String(256))
     photo = db.Column(db.String(256))
-schedule = db.Table('schedule',db.Column('teams_name',db.String(256),db.ForeignKey('teams.name')),db.Column('game_id',db.Integer,db.ForeignKey('games.id')))
+#schedule = db.Table('schedule',db.Column('teams_name',db.String(256),db.ForeignKey('teams.name')),db.Column('game_id',db.Integer,db.ForeignKey('games.id')))
 # teams model
-class teams(db.Model) :
+class teams(db.Model):
     name = db.Column(db.String(256),primary_key = True)
     location = db.Column(db.String(256))
-    roster = db.relationship('players',backref = 'teams', lazy = 'dynamic')
-    schedule = db.relationship('games',secondary=schedule,backref=db.backref('teams',lazy='dynamic'))
+    roster = db.relationship('players')
+    #schedule = db.relationship('games',secondary=schedule,backref=db.backref('teams',lazy='dynamic'))
     head_coach = db.Column(db.String(256))
-    conf = db.Column(db.String(256),db.ForeignKey(conf.name))
+    confname = db.Column(db.String(256),db.ForeignKey('conf.name'))
 # conference model
-class conf(db.Model) :
+class conf(db.Model):
     name = db.Column(db.String(256),primary_key = True)
     founded = db.Column(db.String(256))
     champ = db.Column(db.String(256))
-    teams = db.relationship('teams',backref = 'conf', lazy = 'dynamic')
+    teamset = db.relationship('teams')
     num_teams = db.Column(db.String(256))
     comm = db.Column(db.String(256))
 # games model
-class games(db.Model) :
-    id = db.Column(db.Integer,primary_key = True,unique = True,index = True)
-    date = db.Column(db.String(256))
-    home_team = db.Column(db.String(256),db.ForeignKey(teams.name))
-    away_team = db.Column(db.String(256),db.ForeignKey(teams.name))
-    location = db.Column(db.String(256),db.ForeignKey(teams.location))
-    time = db.Column(db.String(256))
+# class games(db.Model):
+#     id = db.Column(db.Integer,primary_key = True,unique = True,index = True)
+#     date = db.Column(db.String(256))
+#     home_team = db.Column(db.String(256),db.ForeignKey('teams.name'))
+#     away_team = db.Column(db.String(256),db.ForeignKey('teams.name'))
+#     location = db.Column(db.String(256),db.ForeignKey('teams.location'))
+#     time = db.Column(db.String(256))
 
 
 """ Temporary data structures until we have a data base set up """
@@ -391,7 +391,7 @@ conf = [
         'comm': 'Nick the Slick'
     }
 ]
-
+'''
 
 # *********************************************************************************************************************
 # API calls to retrieve model specific data
@@ -475,8 +475,7 @@ def ncaa():
     """
     :return: NCAA FBS page
     """
-    # conferences = conf.
-    conferences = [c for c in conf] # <---- this will need to change to a call to the database returning a list or generator of all the conferences
+    conferences = conf.query.all()
     return render_template('teams.html', confList=list(conferences), title='CFDB: NCAA')
 
 
@@ -491,7 +490,7 @@ def conf_table():
     """
     :return: Conference table page
     """
-    conference_list = [c for c in conf] # <---- this will need to be a call to the database that returns a list of all the conferences
+    conference_list = conf.query.all()
     return render_template('conferenceTable.html', confList=list(conference_list), title='CFDB: Conference Table')
 
 
@@ -501,7 +500,7 @@ def team_table():
     """
     :return: Team table page
     """
-    team_list = [t for t in teams] # <---- this will need to be a call to the database that returns a list of all the teams
+    team_list = teams.query.all()
     return render_template('teamTable.html', teamList=list(team_list), title='CFDB: Team Table')
 
 @punt.route('/')
@@ -510,7 +509,8 @@ def player_table():
     """
     :return: Player table page
     """
-    player_list = [p for p in players] # <---- this will need to be a call to the database that returns a list of all the players
+    player_list = players.query.all()
+    #player_list = [p for p in players] # <---- this will need to be a call to the database that returns a list of all the players
     return render_template('playerTable.html', playerList=list(player_list), title='CFDB: Player Table')
 
 
@@ -526,10 +526,9 @@ def conf_template(c_name):
     :param c_name: the conference's name
     :return: the conference profile page populated with content specific for that conference
     """
-
-    c = [c for c in conf if c['name'] == c_name] # <---- this will need to change to a call to the database returning all of the conference's attributes in a python dict MATCHING THE KEY NAMES INDICATED BELOW
-    conference = c[0]
-    return render_template('conference_profile.html', conf=conference['name'], year=conference['founded'], com=conference['comm'], champ=conference['champ'], num=conference['num_teams'], teamList=conference['teams'])
+    conference = conf.query.get(c_name)
+    team_list = [t.name for t in conference.teamset]
+    return render_template('conference_profile.html', conf=conference.name, year=conference.founded, com=conference.comm, champ=conference.champ, num=conference.num_teams, teamList=list(team_list))
 
 
 
@@ -540,23 +539,21 @@ def team_template(t_name):
     :param t_name: the team's name
     :return: the team profile page populated with content specific for that team
     """
-    t = [t for t in teams if t['name'] == t_name] # <---- this will need to change to a call to the database returning all of the team's attributes in a python dict MATCHING THE KEY NAMES INDICATED BELOW
-    team = t[0]
-    player_list = [player for player in players for p in team['roster'] if player['name'] == p] # <----- call to database retrieving a list of the full data for each player of the team
-    return render_template('team_profile.html', team=team['name'], conf=team['conf'], location=team['location'], coach=team['head_coach'], playerList=list(player_list), gameList=team['schedule'])
-
+    team = teams.query.get(t_name)
+    player_list = [p for p in team.roster]
+    return render_template('team_profile.html', team=team.name, conf=team.confname, location=team.location, coach=team.head_coach, playerList=list(player_list))
+# gameList=team['schedule'] <---- add schedule back in
 
 @punt.route('/')
-@punt.route('/player_t/<string:p_name>')
-def player_template(p_name):
+@punt.route('/player_t/<string:p_id>')
+def player_template(p_id):
     """
     :param p_name: the player's name
     :return: the player profile page populated with content specific for that player
     """
-    p = [p for p in players if p['name'] == p_name] # <---- this will need to change to a call to the database returning all of the conference's attributes and a python dict MATCHING THE KEY NAMES INDICATED BELOW
-    player = p[0]
-    return render_template('player_profile.html', name=player['name'], number=player['no'], team=player['team'], year=player['year'], pos=player['pos'], ht=player['ht'], wt=player['wt'], town=player['hometown'], hs=player['hs'], photo=player['photo'])
-
+    p = players.query.get(p_id)
+    return render_template('player_profile.html', player=p)
+#name=player.name, number=player.no, team=player.team, year=player.year, pos=player.pos, ht=player.ht, wt=player.wt, town=player.hometown, hs=player.hs, photo=player.photo
 
 if __name__ == '__main__':
     punt.run(debug=True, host='0.0.0.0')
