@@ -10,19 +10,17 @@
                     <hr>
                         <h2 class="intro-text text-center">FBS <strong>conferences</strong> </h2>
                     <hr>
+                    <div id="my-row" class="row">
+                        {% for conf in confList %}
+                                <div class="col-lg-3 col-md-4 col-sm-6 text-center panel">
+                                    <script> document.write('<a href="http://cfdb.me:5000/conf_t/' + "{{conf.name}}" + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​><h6 class="conf-text"> {{conf.name}} </h6></a> 
 
-                    {% for conf in confList %}
-                            <div class="col-lg-pull-3 col-md-pull-4 col-sm-pull-6 text-center">
-                                <script> document.write('<a href="http://cfdb.me:5000/conf_t/' + "{{conf.name}}" + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​><h6 class="conf-text"> {{conf.name}} </h6></a> 
-
-                                {% for team in conf.teamset %}
-                                    <script> document.write('<a href="http://cfdb.me:5000/team_t/' + "{{team.name}}" + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​><h6 class="team-text text-center"> <strong>{{team.name}}</strong></h6></a>
-                                {% endfor %}
-                            </div>
-
-                               
-                    {% endfor %}
-                                        <div class="clearfix"></div>
+                                    {% for team in conf.teamset %}
+                                        <script> document.write('<a href="http://cfdb.me:5000/team_t/' + "{{team.name}}" + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​><h6 class="team-text text-center"> <strong>{{team.name}}</strong></h6></a>
+                                    {% endfor %}
+                                </div>
+                        {% endfor %}
+                    </div>
 
                 </div>
         </div>
@@ -32,3 +30,16 @@
 ******************************************************************************************************************************* -->
 
 {% endblock %}
+
+<div id="my-row" class="row">
+  <div class="col-xs-12 col-sm-4 panel" style="background-color: red">
+  some content
+  </div>
+  <div class="col-xs-6 col-sm-4 panel" style="background-color: yellow">
+  kittenz
+  <img src="http://placekitten.com/100/100">
+  </div>
+  <div class="col-xs-6 col-sm-4 panel" style="background-color: blue">
+  some more content
+  </div>
+</div>

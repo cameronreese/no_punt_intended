@@ -205,6 +205,16 @@ hr {
     font-size: 150%;
 }
 
+#my-row {
+    display: table;
+}
+
+#my-row .panel {
+    float: none;
+    display: table-cell;
+    vertical-align: top;
+}
+
 footer {
     background: #fff;
     background: rgba(255,255,255,0.9);
