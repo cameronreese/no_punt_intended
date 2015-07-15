@@ -19,34 +19,6 @@ def fill():
 	db.create_all()
 	print('db.create_all()...')
 
-	for g_id in games_json :
-		g_info = games_json[g_id]
-		away_t = "NOT FBS"
-		home_t = "NOT FBS"
-		if g_info['away'] is in teams_json:
-			away_t = g_info['away']
-		if g_info['home'] is in teams_json:
-			away_t = g_info['home']
-		g_data = games(id = g_id,
-			date = g_info['date'],
-			home_team = home_t,
-			away_team = away_t,
-			location = 'TBD',
-			time = g_info['time'])
-		db.session.add(g_data)
-		db.session.commit()
-	print('games made')
-
-	sched = games.query.all()
-	for s_data in sched :
-		home = s_data.home_team
-		away = s_data.away_team
-		db.session.execute(schedule.insert().values([s_data.home_team,s_data.id]))
-		db.session.commit()
-		db.session.execute(schedule.insert().values([s_data.away_team,s_data.id]))
-		db.session.commit()
-	print('schedule made')
-
 	for c_name in conf_json :
 		print('here in the first for loop')
 		c_info = conf_json[c_name]
@@ -87,6 +59,33 @@ def fill():
 			db.session.commit()
 	print('players made')
 
+	for g_id in games_json :
+		g_info = games_json[g_id]
+		away_t = "NOT FBS"
+		home_t = "NOT FBS"
+		if g_info['away'] in teams_json:
+			away_t = g_info['away']
+		if g_info['home'] in teams_json:
+			away_t = g_info['home']
+		g_data = games(id = g_id,
+			date = g_info['date'],
+			home_team = home_t,
+			away_team = away_t,
+			location = 'TBD',
+			time = g_info['time'])
+		db.session.add(g_data)
+		db.session.commit()
+	print('games made')
+
+	sched = games.query.all()
+	for s_data in sched :
+		home = s_data.home_team
+		away = s_data.away_team
+		db.session.execute(schedule.insert().values([s_data.home_team,s_data.id]))
+		db.session.commit()
+		db.session.execute(schedule.insert().values([s_data.away_team,s_data.id]))
+		db.session.commit()
+	print('schedule made')
 
 
 if __name__ == '__main__':
