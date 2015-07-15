@@ -40,19 +40,19 @@ class teams(db.Model):
     head_coach = db.Column(db.String(256))
     confname = db.Column(db.String(256),db.ForeignKey('conf.name'))
 
-    def __init__(self, name, location, roster, head_coach, confname):
-        self.name = name
-        self.location = location
-        self.roster = roster
-        self.head_coach = head_coach
-        self.confname = confname
-
-    def __iter__(self):
-        yield self.name
-        yield self.location
-        yield list([p.name for p in self.roster])
-        yield self.head_coach
-        yield self.confname
+    # def __init__(self, name, location, roster, head_coach, confname):
+    #     self.name = name
+    #     self.location = location
+    #     self.roster = roster
+    #     self.head_coach = head_coach
+    #     self.confname = confname
+    #
+    # def __iter__(self):
+    #     yield self.name
+    #     yield self.location
+    #     yield list([p.name for p in self.roster])
+    #     yield self.head_coach
+    #     yield self.confname
 
 # conference model
 class conf(db.Model):
@@ -63,21 +63,21 @@ class conf(db.Model):
     num_teams = db.Column(db.String(256))
     comm = db.Column(db.String(256))
 
-    def __init__(self, name, founded, champ, teamset, num_teams, comm):
-        self.name = name
-        self.founded = founded
-        self.champ = champ
-        self.teamset = teamset
-        self.num_teams = num_teams
-        self.comm = comm
-
-    def __iter__(self):
-        yield self.name
-        yield self.founded
-        yield self.champ
-        yield list([t.name for t in self.teamset])
-        yield self.num_teams
-        yield self.comm
+    # def __init__(self, name, founded, champ, teamset, num_teams, comm):
+    #     self.name = name
+    #     self.founded = founded
+    #     self.champ = champ
+    #     self.teamset = teamset
+    #     self.num_teams = num_teams
+    #     self.comm = comm
+    #
+    # def __iter__(self):
+    #     yield self.name
+    #     yield self.founded
+    #     yield self.champ
+    #     yield list([t.name for t in self.teamset])
+    #     yield self.num_teams
+    #     yield self.comm
 
 
 # games model
