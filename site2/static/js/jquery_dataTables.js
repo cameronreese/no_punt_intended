@@ -4138,69 +4138,69 @@
 				 * thread continuation for the end-developer's point of view (their code would execute
 				 * too early), so we only do it when we absolutely have to.
 				 */
-				// var fnInnerSorting = function () {
-				// 	var iColumn, iNextSort;
+				var fnInnerSorting = function () {
+					var iColumn, iNextSort;
 					
-				// 	/* If the shift key is pressed then we are multiple column sorting */
-				// 	if ( e.shiftKey )
-				// 	{
-				// 		/* Are we already doing some kind of sort on this column? */
-				// 		var bFound = false;
-				// 		for ( var i=0 ; i<oSettings.aaSorting.length ; i++ )
-				// 		{
-				// 			if ( oSettings.aaSorting[i][0] == iDataIndex )
-				// 			{
-				// 				bFound = true;
-				// 				iColumn = oSettings.aaSorting[i][0];
-				// 				iNextSort = oSettings.aaSorting[i][2]+1;
+					/* If the shift key is pressed then we are multiple column sorting */
+					if ( e.shiftKey )
+					{
+						/* Are we already doing some kind of sort on this column? */
+						var bFound = false;
+						for ( var i=0 ; i<oSettings.aaSorting.length ; i++ )
+						{
+							if ( oSettings.aaSorting[i][0] == iDataIndex )
+							{
+								bFound = true;
+								iColumn = oSettings.aaSorting[i][0];
+								iNextSort = oSettings.aaSorting[i][2]+1;
 								
-				// 				if ( !oSettings.aoColumns[iColumn].asSorting[iNextSort] )
-				// 				{
-				// 					/* Reached the end of the sorting options, remove from multi-col sort */
-				// 					oSettings.aaSorting.splice( i, 1 );
-				// 				}
-				// 				else
-				// 				{
-				// 					/* Move onto next sorting direction */
-				// 					oSettings.aaSorting[i][1] = oSettings.aoColumns[iColumn].asSorting[iNextSort];
-				// 					oSettings.aaSorting[i][2] = iNextSort;
-				// 				}
-				// 				break;
-				// 			}
-				// 		}
+								if ( !oSettings.aoColumns[iColumn].asSorting[iNextSort] )
+								{
+									/* Reached the end of the sorting options, remove from multi-col sort */
+									oSettings.aaSorting.splice( i, 1 );
+								}
+								else
+								{
+									/* Move onto next sorting direction */
+									oSettings.aaSorting[i][1] = oSettings.aoColumns[iColumn].asSorting[iNextSort];
+									oSettings.aaSorting[i][2] = iNextSort;
+								}
+								break;
+							}
+						}
 						
-				// 		/* No sort yet - add it in */
-				// 		if ( bFound === false )
-				// 		{
-				// 			oSettings.aaSorting.push( [ iDataIndex, 
-				// 				oSettings.aoColumns[iDataIndex].asSorting[0], 0 ] );
-				// 		}
-				// 	}
-				// 	else
-				// 	{
-				// 		/* If no shift key then single column sort */
-				// 		if ( oSettings.aaSorting.length == 1 && oSettings.aaSorting[0][0] == iDataIndex )
-				// 		{
-				// 			iColumn = oSettings.aaSorting[0][0];
-				// 			iNextSort = oSettings.aaSorting[0][2]+1;
-				// 			if ( !oSettings.aoColumns[iColumn].asSorting[iNextSort] )
-				// 			{
-				// 				iNextSort = 0;
-				// 			}
-				// 			oSettings.aaSorting[0][1] = oSettings.aoColumns[iColumn].asSorting[iNextSort];
-				// 			oSettings.aaSorting[0][2] = iNextSort;
-				// 		}
-				// 		else
-				// 		{
-				// 			oSettings.aaSorting.splice( 0, oSettings.aaSorting.length );
-				// 			oSettings.aaSorting.push( [ iDataIndex, 
-				// 				oSettings.aoColumns[iDataIndex].asSorting[0], 0 ] );
-				// 		}
-				// 	}
+						/* No sort yet - add it in */
+						if ( bFound === false )
+						{
+							oSettings.aaSorting.push( [ iDataIndex, 
+								oSettings.aoColumns[iDataIndex].asSorting[0], 0 ] );
+						}
+					}
+					else
+					{
+						/* If no shift key then single column sort */
+						if ( oSettings.aaSorting.length == 1 && oSettings.aaSorting[0][0] == iDataIndex )
+						{
+							iColumn = oSettings.aaSorting[0][0];
+							iNextSort = oSettings.aaSorting[0][2]+1;
+							if ( !oSettings.aoColumns[iColumn].asSorting[iNextSort] )
+							{
+								iNextSort = 0;
+							}
+							oSettings.aaSorting[0][1] = oSettings.aoColumns[iColumn].asSorting[iNextSort];
+							oSettings.aaSorting[0][2] = iNextSort;
+						}
+						else
+						{
+							oSettings.aaSorting.splice( 0, oSettings.aaSorting.length );
+							oSettings.aaSorting.push( [ iDataIndex, 
+								oSettings.aoColumns[iDataIndex].asSorting[0], 0 ] );
+						}
+					}
 					
-				// 	/* Run the sort */
-				// 	_fnSort( oSettings );
-				// }; /* /fnInnerSorting */
+					/* Run the sort */
+					_fnSort( oSettings );
+				}; /* /fnInnerSorting */
 				
 				if ( !oSettings.oFeatures.bProcessing )
 				{
