@@ -50,10 +50,7 @@ class teams(db.Model):
     def __iter__(self):
         yield self.name
         yield self.location
-        s = ""
-        for p in self.roster:
-            s += (", " + p.name)
-        yield s
+        yield list([p.name for p in self.roster])
         yield self.head_coach
         yield self.confname
 
@@ -105,8 +102,14 @@ def get_teams(team_name):
     else:
         qryresult = teams.query.get(team_name)
         r = ""
-        for s in qryresult:
-            r += (", " + s)
+        _it = iter(qryresult)
+
+        r += next(_it)
+        r += next(_it)
+        # r += next(_it)
+        # r += next(_it)
+        # r += next(_it)
+
         return r
 
 @punt.route('/punt/conf/<string:conf_name>', methods=['GET'])
