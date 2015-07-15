@@ -66,7 +66,7 @@ def fill():
 		if g_info['away'] in teams_json:
 			away_t = g_info['away']
 		if g_info['home'] in teams_json:
-			away_t = g_info['home']
+			home_t = g_info['home']
 		g_data = games(id = g_id,
 			date = g_info['date'],
 			home_team = home_t,
