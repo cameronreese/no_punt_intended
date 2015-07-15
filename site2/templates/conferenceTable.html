@@ -44,9 +44,11 @@
                               <h4 class="modal-title">{{conf.name}} Teams:</h4>
                             </div>
                             <div class="modal-body">
-                              {% for team in conf.teamset %}
+                              Hello World!
+                              {% for t in conf.teamset %}
+                              Hello Word in for loop
                               <p class="text-center">
-                                <script> document.write('<a href="http://cfdb.me:5000/team_t/' + "{{team.name}}" + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>{{team.name}}</a></p>
+                                <script> document.write('<a href="http://cfdb.me:5000/team_t/' + "{{t.name}}" + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>{{t.name}}</a></p>
                               {% endfor %}
                             </div>
                             <div class="modal-footer">

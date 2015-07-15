@@ -140,7 +140,7 @@ def ncaa():
     :return: NCAA FBS page
     """
     conferences = conf.query.all()
-    return render_template('teams.html', confList=list(conferences), title='CFDB: NCAA')
+    return render_template('teams.html', confList=list(conferences) , title='CFDB: NCAA')
 
 
 
@@ -174,7 +174,6 @@ def player_table():
     :return: Player table page
     """
     player_list = players.query.all()
-    #player_list = [p for p in players] # <---- this will need to be a call to the database that returns a list of all the players
     return render_template('playerTable.html', playerList=list(player_list), title='CFDB: Player Table')
 
 
