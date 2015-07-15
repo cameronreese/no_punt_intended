@@ -124,7 +124,8 @@
               <thead>
                   <tr>
                       <th>Date</th>
-                      <th>Opponent</th>
+                      <th>Home Team</th>
+                      <th>Away Team</th>
                       <th>Location</th>
                       <th>Time</th>
                   </tr>
@@ -133,7 +134,8 @@
                 {% for game in gameList %}
                   <tr>
                     <td>{{ game.date }}</td>
-                    <td><script> document.write('<a href="http://cfdb.me:5000/team_t/' + "{{game.opponent}}" + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>{{game.opponent}}</a></td>
+                    <td><script> document.write('<a href="http://cfdb.me:5000/team_t/' + "{{game.home_team}}" + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>{{game.home_team}}</a></td>
+                    <td><script> document.write('<a href="http://cfdb.me:5000/team_t/' + "{{game.away_team}}" + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>{{game.away_team}}</a></td>
                     <td>{{game.location}}</td>
                     <td>{{game.time}}</td>
                   </tr>
