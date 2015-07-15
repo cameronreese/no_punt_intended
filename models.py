@@ -91,8 +91,8 @@ def get_teams(team_name):
     if team_name == 'teams':
         return teams.query.all()
     else:
-        qryresult = teams.query.get(team_name)
-        return jsonify(json_list=[i.serialize for i in qryresult.all()])
+        #qryresult = teams.query.get(team_name)
+        return jsonify(json_list=[i.serialize for i in teams.query.get(team_name)])
 
 @punt.route('/punt/conf/<string:conf_name>', methods=['GET'])
 def get_conf(conf_name):
