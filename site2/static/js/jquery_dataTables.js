@@ -3929,127 +3929,127 @@
 		 *  @param {bool} bApplyClasses optional - should we apply classes or not
 		 *  @memberof DataTable#oApi
 		 */
-		// function _fnSort ( oSettings, bApplyClasses )
-		// {
-		// 	var
-		// 		i, iLen, j, jLen, k, kLen,
-		// 		sDataType, nTh,
-		// 		aaSort = [],
-		// 	 	aiOrig = [],
-		// 		oSort = DataTable.ext.oSort,
-		// 		aoData = oSettings.aoData,
-		// 		aoColumns = oSettings.aoColumns,
-		// 		oAria = oSettings.oLanguage.oAria;
+		function _fnSort ( oSettings, bApplyClasses )
+		{
+			var
+				i, iLen, j, jLen, k, kLen,
+				sDataType, nTh,
+				aaSort = [],
+			 	aiOrig = [],
+				oSort = DataTable.ext.oSort,
+				aoData = oSettings.aoData,
+				aoColumns = oSettings.aoColumns,
+				oAria = oSettings.oLanguage.oAria;
 			
-		// 	/* No sorting required if server-side or no sorting array */
-		// 	if ( !oSettings.oFeatures.bServerSide && 
-		// 		(oSettings.aaSorting.length !== 0 || oSettings.aaSortingFixed !== null) )
-		// 	{
-		// 		aaSort = ( oSettings.aaSortingFixed !== null ) ?
-		// 			oSettings.aaSortingFixed.concat( oSettings.aaSorting ) :
-		// 			oSettings.aaSorting.slice();
+			/* No sorting required if server-side or no sorting array */
+			if ( !oSettings.oFeatures.bServerSide && 
+				(oSettings.aaSorting.length !== 0 || oSettings.aaSortingFixed !== null) )
+			{
+				aaSort = ( oSettings.aaSortingFixed !== null ) ?
+					oSettings.aaSortingFixed.concat( oSettings.aaSorting ) :
+					oSettings.aaSorting.slice();
 				
-		// 		/* If there is a sorting data type, and a function belonging to it, then we need to
-		// 		 * get the data from the developer's function and apply it for this column
-		// 		 */
-		// 		for ( i=0 ; i<aaSort.length ; i++ )
-		// 		{
-		// 			var iColumn = aaSort[i][0];
-		// 			var iVisColumn = _fnColumnIndexToVisible( oSettings, iColumn );
-		// 			sDataType = oSettings.aoColumns[ iColumn ].sSortDataType;
-		// 			if ( DataTable.ext.afnSortData[sDataType] )
-		// 			{
-		// 				var aData = DataTable.ext.afnSortData[sDataType].call( 
-		// 					oSettings.oInstance, oSettings, iColumn, iVisColumn
-		// 				);
-		// 				if ( aData.length === aoData.length )
-		// 				{
-		// 					for ( j=0, jLen=aoData.length ; j<jLen ; j++ )
-		// 					{
-		// 						_fnSetCellData( oSettings, j, iColumn, aData[j] );
-		// 					}
-		// 				}
-		// 				else
-		// 				{
-		// 					_fnLog( oSettings, 0, "Returned data sort array (col "+iColumn+") is the wrong length" );
-		// 				}
-		// 			}
-		// 		}
+				/* If there is a sorting data type, and a function belonging to it, then we need to
+				 * get the data from the developer's function and apply it for this column
+				 */
+				for ( i=0 ; i<aaSort.length ; i++ )
+				{
+					var iColumn = aaSort[i][0];
+					var iVisColumn = _fnColumnIndexToVisible( oSettings, iColumn );
+					sDataType = oSettings.aoColumns[ iColumn ].sSortDataType;
+					if ( DataTable.ext.afnSortData[sDataType] )
+					{
+						var aData = DataTable.ext.afnSortData[sDataType].call( 
+							oSettings.oInstance, oSettings, iColumn, iVisColumn
+						);
+						if ( aData.length === aoData.length )
+						{
+							for ( j=0, jLen=aoData.length ; j<jLen ; j++ )
+							{
+								_fnSetCellData( oSettings, j, iColumn, aData[j] );
+							}
+						}
+						else
+						{
+							_fnLog( oSettings, 0, "Returned data sort array (col "+iColumn+") is the wrong length" );
+						}
+					}
+				}
 				
-		// 		/* Create a value - key array of the current row positions such that we can use their
-		// 		 * current position during the sort, if values match, in order to perform stable sorting
-		// 		 */
-		// 		for ( i=0, iLen=oSettings.aiDisplayMaster.length ; i<iLen ; i++ )
-		// 		{
-		// 			aiOrig[ oSettings.aiDisplayMaster[i] ] = i;
-		// 		}
+				/* Create a value - key array of the current row positions such that we can use their
+				 * current position during the sort, if values match, in order to perform stable sorting
+				 */
+				for ( i=0, iLen=oSettings.aiDisplayMaster.length ; i<iLen ; i++ )
+				{
+					aiOrig[ oSettings.aiDisplayMaster[i] ] = i;
+				}
 		
-		// 		/* Build an internal data array which is specific to the sort, so we can get and prep
-		// 		 * the data to be sorted only once, rather than needing to do it every time the sorting
-		// 		 * function runs. This make the sorting function a very simple comparison
-		// 		 */
-		// 		var iSortLen = aaSort.length;
-		// 		var fnSortFormat, aDataSort;
-		// 		for ( i=0, iLen=aoData.length ; i<iLen ; i++ )
-		// 		{
-		// 			for ( j=0 ; j<iSortLen ; j++ )
-		// 			{
-		// 				aDataSort = aoColumns[ aaSort[j][0] ].aDataSort;
+				/* Build an internal data array which is specific to the sort, so we can get and prep
+				 * the data to be sorted only once, rather than needing to do it every time the sorting
+				 * function runs. This make the sorting function a very simple comparison
+				 */
+				var iSortLen = aaSort.length;
+				var fnSortFormat, aDataSort;
+				for ( i=0, iLen=aoData.length ; i<iLen ; i++ )
+				{
+					for ( j=0 ; j<iSortLen ; j++ )
+					{
+						aDataSort = aoColumns[ aaSort[j][0] ].aDataSort;
 		
-		// 				for ( k=0, kLen=aDataSort.length ; k<kLen ; k++ )
-		// 				{
-		// 					sDataType = aoColumns[ aDataSort[k] ].sType;
-		// 					fnSortFormat = oSort[ (sDataType ? sDataType : 'string')+"-pre" ];
+						for ( k=0, kLen=aDataSort.length ; k<kLen ; k++ )
+						{
+							sDataType = aoColumns[ aDataSort[k] ].sType;
+							fnSortFormat = oSort[ (sDataType ? sDataType : 'string')+"-pre" ];
 							
-		// 					aoData[i]._aSortData[ aDataSort[k] ] = fnSortFormat ?
-		// 						fnSortFormat( _fnGetCellData( oSettings, i, aDataSort[k], 'sort' ) ) :
-		// 						_fnGetCellData( oSettings, i, aDataSort[k], 'sort' );
-		// 				}
-		// 			}
-		// 		}
+							aoData[i]._aSortData[ aDataSort[k] ] = fnSortFormat ?
+								fnSortFormat( _fnGetCellData( oSettings, i, aDataSort[k], 'sort' ) ) :
+								_fnGetCellData( oSettings, i, aDataSort[k], 'sort' );
+						}
+					}
+				}
 				
-		// 		/* Do the sort - here we want multi-column sorting based on a given data source (column)
-		// 		 * and sorting function (from oSort) in a certain direction. It's reasonably complex to
-		// 		 * follow on it's own, but this is what we want (example two column sorting):
-		// 		 *  fnLocalSorting = function(a,b){
-		// 		 *  	var iTest;
-		// 		 *  	iTest = oSort['string-asc']('data11', 'data12');
-		// 		 *  	if (iTest !== 0)
-		// 		 *  		return iTest;
-		// 		 *    iTest = oSort['numeric-desc']('data21', 'data22');
-		// 		 *    if (iTest !== 0)
-		// 		 *  		return iTest;
-		// 		 *  	return oSort['numeric-asc']( aiOrig[a], aiOrig[b] );
-		// 		 *  }
-		// 		 * Basically we have a test for each sorting column, if the data in that column is equal,
-		// 		 * test the next column. If all columns match, then we use a numeric sort on the row 
-		// 		 * positions in the original data array to provide a stable sort.
-		// 		 */
-		// 		oSettings.aiDisplayMaster.sort( function ( a, b ) {
-		// 			var k, l, lLen, iTest, aDataSort, sDataType;
-		// 			for ( k=0 ; k<iSortLen ; k++ )
-		// 			{
-		// 				aDataSort = aoColumns[ aaSort[k][0] ].aDataSort;
+				/* Do the sort - here we want multi-column sorting based on a given data source (column)
+				 * and sorting function (from oSort) in a certain direction. It's reasonably complex to
+				 * follow on it's own, but this is what we want (example two column sorting):
+				 *  fnLocalSorting = function(a,b){
+				 *  	var iTest;
+				 *  	iTest = oSort['string-asc']('data11', 'data12');
+				 *  	if (iTest !== 0)
+				 *  		return iTest;
+				 *    iTest = oSort['numeric-desc']('data21', 'data22');
+				 *    if (iTest !== 0)
+				 *  		return iTest;
+				 *  	return oSort['numeric-asc']( aiOrig[a], aiOrig[b] );
+				 *  }
+				 * Basically we have a test for each sorting column, if the data in that column is equal,
+				 * test the next column. If all columns match, then we use a numeric sort on the row 
+				 * positions in the original data array to provide a stable sort.
+				 */
+			// 	oSettings.aiDisplayMaster.sort( function ( a, b ) {
+			// 		var k, l, lLen, iTest, aDataSort, sDataType;
+			// 		for ( k=0 ; k<iSortLen ; k++ )
+			// 		{
+			// 			aDataSort = aoColumns[ aaSort[k][0] ].aDataSort;
 		
-		// 				for ( l=0, lLen=aDataSort.length ; l<lLen ; l++ )
-		// 				{
-		// 					sDataType = aoColumns[ aDataSort[l] ].sType;
+			// 			for ( l=0, lLen=aDataSort.length ; l<lLen ; l++ )
+			// 			{
+			// 				sDataType = aoColumns[ aDataSort[l] ].sType;
 							
-		// 					iTest = oSort[ (sDataType ? sDataType : 'string')+"-"+aaSort[k][1] ](
-		// 						aoData[a]._aSortData[ aDataSort[l] ],
-		// 						aoData[b]._aSortData[ aDataSort[l] ]
-		// 					);
+			// 				iTest = oSort[ (sDataType ? sDataType : 'string')+"-"+aaSort[k][1] ](
+			// 					aoData[a]._aSortData[ aDataSort[l] ],
+			// 					aoData[b]._aSortData[ aDataSort[l] ]
+			// 				);
 						
-		// 					if ( iTest !== 0 )
-		// 					{
-		// 						return iTest;
-		// 					}
-		// 				}
-		// 			}
+			// 				if ( iTest !== 0 )
+			// 				{
+			// 					return iTest;
+			// 				}
+			// 			}
+			// 		}
 					
-		// 			return oSort['numeric-asc']( aiOrig[a], aiOrig[b] );
-		// 		} );
-		// 	}
+			// 		return oSort['numeric-asc']( aiOrig[a], aiOrig[b] );
+			// 	} );
+			// }
 			
 			/* Alter the sorting classes to take account of the changes */
 			if ( (bApplyClasses === undefined || bApplyClasses) && !oSettings.oFeatures.bDeferRender )
