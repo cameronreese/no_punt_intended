@@ -46,7 +46,7 @@
                             <div class="modal-body">
                               {% for team in conf.teams %}
                               <p class="text-center">
-                                <script> document.write('<a href="http://cfdb.me:5000/team_t/' + "{{team}}" + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>{{team}}</a></p>
+                                <script> document.write('<a href="http://cfdb.me:5000/team_t/' + "{{team.name}}" + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>{{team.name}}</a></p>
                               {% endfor %}
                             </div>
                             <div class="modal-footer">
