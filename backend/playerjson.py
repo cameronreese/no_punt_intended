@@ -19,8 +19,10 @@ for z in help_pic.split(', '):
 	for g in z.split(': ') :
 		if to == 1 :
 			pname = g[2:len(g)-1]
+			# print(pname)
 		if to%2 and to >1 :
 			pname = g[1:len(g)-1]
+			# print(pname)
 		if to == 9380 :
 			ppic = g[1:len(g)-2]
 		if to%2 == 0 :
@@ -49,42 +51,53 @@ for line in players :
 		pos = ''
 		ht = ''
 		wt = ''
+		city = ''
+		st = ''
 		hometown = ''
 		hs = ''
 		pic = ''
 
-		for line2 in line_help.split(",") :
+		for line2 in line_help.split(", ") :
 			if i == 1 :
-				team = line2[2:len(line2)-1]
+				team = line2
 			if i == 2 :
 				if line2[len(line2)-1] == 'A' :
-					no = line2[2:len(line2)-2]
+					no = line2[:len(line2)-1]
 				else :
-					no = line2[2:len(line2)-1]
+					no = line2
 			if i == 3 :
-				last = line2[2:]
+				last = line2
 			if i == 4 :
-				first = line2[1:len(line2)-1]
-				name = (first+' '+last)
-				if(isKey(name.lower())) :
-					pic = pic_dict[name.lower()]
+				if line2 == 'Jr' :
+					i = 3
+					# print("****\n")
+					# print(last)
+					temp = line2[:len(line2)-1]
+					tempL = last
+					last = (tempL + ' ' + temp)
 				else :
-					pic = ''
+					first = line2
+					name = (first+' '+last)
+					if(isKey(name.lower())) :
+						pic = pic_dict[name.lower()]
+					else :
+						pic = ''
 				# print(pic)
 			if i == 5 :
-				pos = line2[2:len(line2)-1]
+				pos = line2
 			if i == 6 :
-				year = line2[2:len(line2)-1]
+				year = line2
 			if i == 7 :
-				ht = line2[2:len(line2)-1]
+				ht = line2
 			if i == 8 :
-				wt = line2[2:len(line2)-1]
+				wt = line2
 			if i == 9 :
-				hometown = line2[2:]
+				city = line2
 			if i == 10 :
-				hometown += (', ' + line2[:len(line2)-1])
+				st = line2
+				hometown = (city + ', ' + st)
 			if i == 11 :
-				hs = line2[2:len(line2)-3]
+				hs = line2[:len(line2)-1]
 			#print(line2)
 			i+=1
 		# print(team)
