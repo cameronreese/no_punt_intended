@@ -101,7 +101,10 @@ def get_teams(team_name):
         return teams.query.all()
     else:
         qryresult = teams.query.get(team_name)
-        return list([i for i in qryresult])
+        r = ""
+        for s in qryresult:
+            r += ("," + s)
+        return r
 
 @punt.route('/punt/conf/<string:conf_name>', methods=['GET'])
 def get_conf(conf_name):
