@@ -789,9 +789,9 @@ Responsive.defaults = {
 var Api = $.fn.dataTable.Api;
 
 // Doesn't do anything - work around for a bug in DT... Not documented
-Api.register( 'responsive()', function () {
-	return this;
-} );
+// Api.register( 'responsive()', function () {
+// 	return this;
+// } );
 
 Api.register( 'responsive.index()', function ( li ) {
 	li = $(li);
