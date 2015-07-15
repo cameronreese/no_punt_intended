@@ -164,14 +164,13 @@
     <script type="text/javascript">
         $(document).ready(function() {
           $('#teamTable').DataTable( {
-            "serverSide": true,
+            "bServerSide": true,
             "responsive" : true,
             // "ajax": "data/arrays.txt",
             // "deferRender": true
             "iDisplayLength": 50,
             "sDom": "<'row'<'col-xs-6'T><'col-xs-6'f>r>t<'row'<'col-xs-6'i><'col-xs-6'p>>",
             "sPaginationType": "bootstrap",
-            "orderClasses": false
           } );
         } );
     </script>
