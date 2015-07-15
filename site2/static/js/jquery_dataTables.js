@@ -2621,10 +2621,10 @@
 			 * drawing for us. Otherwise we draw the table regardless of the Ajax source - this allows
 			 * the table to look initialised for Ajax sourcing data (show 'loading' message possibly)
 			 */
-			if ( oSettings.oFeatures.bSort )
-			{
-				_fnSort( oSettings );
-			}
+			// if ( oSettings.oFeatures.bSort )
+			// {
+			// 	_fnSort( oSettings );
+			// }
 			else if ( oSettings.oFeatures.bFilter )
 			{
 				_fnFilterComplete( oSettings, oSettings.oPreviousSearch );
