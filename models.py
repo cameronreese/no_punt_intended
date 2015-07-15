@@ -9,8 +9,6 @@ from flask import jsonify
 from flask import abort
 from flask import render_template
 from flask.ext.sqlalchemy import SQLAlchemy
-from
-
 
 
 punt = Flask(__name__)
@@ -52,7 +50,7 @@ class teams(db.Model):
     def __iter__(self):
         yield self.name
         yield self.location
-        yield self.roster
+        yield list([p for p in self.roster])
         yield self.head_coach
         yield self.confname
 
