@@ -62,8 +62,8 @@ def fill():
 		g_info = games_json[g_id]
 		g_data = games(id = g_id,
 			date = g_info['date'],
-			home_team = g_info['home_team'],
-			away_team = g_info['away_team'],
+			home_team = g_info['home'],
+			away_team = g_info['away'],
 			location = home_team.location
 			time = g_info['time'])
 		db.session.add(g_data)
