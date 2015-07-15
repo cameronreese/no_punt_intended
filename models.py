@@ -30,6 +30,8 @@ class players(db.Model):
     year = db.Column(db.String(256))
     hs = db.Column(db.String(256))
     photo = db.Column(db.String(256))
+    def as_dict(self):
+       return {c.name: getattr(self, c.name) for c in self.__table__.columns}
 #schedule = db.Table('schedule',db.Column('teams_name',db.String(256),db.ForeignKey('teams.name')),db.Column('game_id',db.Integer,db.ForeignKey('games.id')))
 # teams model
 class teams(db.Model):
@@ -39,6 +41,8 @@ class teams(db.Model):
     #schedule = db.relationship('games',secondary=schedule,backref=db.backref('teams',lazy='dynamic'))
     head_coach = db.Column(db.String(256))
     confname = db.Column(db.String(256),db.ForeignKey('conf.name'))
+    def as_dict(self):
+       return {c.name: getattr(self, c.name) for c in self.__table__.columns}
 # conference model
 class conf(db.Model):
     name = db.Column(db.String(256),primary_key = True)
@@ -47,6 +51,9 @@ class conf(db.Model):
     teamset = db.relationship('teams')
     num_teams = db.Column(db.String(256))
     comm = db.Column(db.String(256))
+    def as_dict(self):
+       return {c.name: getattr(self, c.name) for c in self.__table__.columns}
+
 # games model
 # class games(db.Model):
 #     id = db.Column(db.Integer,primary_key = True,unique = True,index = True)
@@ -61,11 +68,6 @@ class conf(db.Model):
 # API calls to retrieve model specific data
 # *********************************************************************************************************************
 
-def row2dict(row):
-    d = {}
-    for column in row.__table__.columns:
-        d[column.name] = str(getattr(row, column.name))
-    return d
 
 @punt.route('/punt/players/<string:player_name>', methods=['GET'])
 def get_players(player_name):
@@ -90,8 +92,7 @@ def get_teams(team_name):
         return teams.query.all()
     else:
         t = teams.query.get(team_name)
-        d = row2dict(t)
-        return d
+        return t.as_dict
 
 @punt.route('/punt/conf/<string:conf_name>', methods=['GET'])
 def get_conf(conf_name):
