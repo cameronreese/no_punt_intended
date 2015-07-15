@@ -4,6 +4,8 @@ $.extend( true, $.fn.dataTable.defaults, {
 	"sPaginationType": "bootstrap",
 	"oLanguage": {
 		"sLengthMenu": "_MENU_ records per page"
+	"ajax": "sources/arrays.txt",
+  "deferRender": true
 	}
 } );
 
@@ -59,7 +61,7 @@ $.extend( $.fn.dataTableExt.oPagination, {
 		},
 
 		"fnUpdate": function ( oSettings, fnDraw ) {
-			var iListLength = 500;
+			var iListLength = 5;
 			var oPaging = oSettings.oInstance.fnPagingInfo();
 			var an = oSettings.aanFeatures.p;
 			var i, ien, j, sClass, iStart, iEnd, iHalf=Math.floor(iListLength/2);
