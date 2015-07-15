@@ -106,7 +106,7 @@ def get_teams(team_name):
         result = "{\n\t\'name\': \'"  + next(_it) + "\'" + ",\n\t\'location\': " + "\'" + next(_it) + "\',\n\t\'roster\': ["
         roster_list = next(_it)
         for p in roster_list:
-            result += (p + ", ")
+            result += ("\'" + p + "\', ")
         result = result[:-2]
         result += "]\n\t\'head_coach: " + "\'" + next(_it) + "\',\n\t\'confname: \'" + next(_it) + "\'\n}"
         return result
