@@ -64,7 +64,7 @@ def fill():
 			date = g_info['date'],
 			home_team = g_info['home'],
 			away_team = g_info['away'],
-			location = home_team.location
+			location = 'TBD',
 			time = g_info['time'])
 		db.session.add(g_data)
 		db.session.commit()
