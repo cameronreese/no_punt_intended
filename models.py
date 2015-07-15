@@ -65,15 +65,13 @@ class conf(db.Model):
 def get_players(player_name):
     """ GET method
         takes in a player's name as an argument from an http URL 
-        and returns json object of the players attributes 
+        and returns data object of the players attributes
         to retrieve info for all players use 'players' as input
     """
     if player_name == 'players':
-        return jsonify({'players': players})
-    player = [player for player in players if player['name'] == player_name]
-    if len(player) == 0:
-        abort(404)
-    return jsonify(player[0])
+        return players.query.all()
+    else:
+        return players.query.get(player_name)
 
 @punt.route('/punt/teams/<string:team_name>', methods=['GET'])
 def get_teams(team_name):
@@ -83,12 +81,9 @@ def get_teams(team_name):
         to retrieve info for all teams use 'teams' as input
     """
     if team_name == 'teams':
-        return jsonify({'teams': teams})
-
-    team = [team for team in teams if team['name'] == team_name]
-    if len(team) == 0:
-        abort(404)
-    return jsonify(team[0])
+        return teams.query.all()
+    else:
+        return teams.query.get(team_name)
 
 @punt.route('/punt/conf/<string:conf_name>', methods=['GET'])
 def get_conf(conf_name):
@@ -98,12 +93,9 @@ def get_conf(conf_name):
         to retrieve info for all conferences use 'conf' as input
     """
     if conf_name == 'conf':
-        return jsonify({'conf': conf})
-
-    c = [c for c in conf if c['name'] == conf_name]
-    if len(c) == 0:
-        abort(404)
-    return jsonify(c[0])
+        return conf.query.all()
+    else:
+        return conf.query.get(conf_name)
 
 
 # *********************************************************************************************************************
