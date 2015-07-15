@@ -103,10 +103,12 @@ def get_teams(team_name):
         qryresult = teams.query.get(team_name)
         result = ""
         _it = iter(qryresult)
-        result = "{\n\t\'name\':" + "\'"  + next(_it) + "\'" + ",\n\t\'location\': " + "\'" + next(_it) + "\'" + ",\n\t\'roster\': ["
-        for p in qryresult.roster:
-            result += (p.name + ", ")
-
+        result = "{\n\t\'name\': \'"  + next(_it) + "\'" + ",\n\t\'location\': " + "\'" + next(_it) + "\',\n\t\'roster\': ["
+        roster_list = next(_it)
+        for p in roster_list:
+            result += ("\'" + p + "\', ")
+        result = result[:-2]
+        result += "]\n\t\'head_coach: " + "\'" + next(_it) + "\',\n\t\'confname: \'" + next(_it) + "\'\n}"
         return result
 
 @punt.route('/punt/conf/<string:conf_name>', methods=['GET'])
