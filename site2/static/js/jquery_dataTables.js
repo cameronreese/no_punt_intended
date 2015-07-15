@@ -4025,31 +4025,31 @@
 				 * test the next column. If all columns match, then we use a numeric sort on the row 
 				 * positions in the original data array to provide a stable sort.
 				 */
-			// 	oSettings.aiDisplayMaster.sort( function ( a, b ) {
-			// 		var k, l, lLen, iTest, aDataSort, sDataType;
-			// 		for ( k=0 ; k<iSortLen ; k++ )
-			// 		{
-			// 			aDataSort = aoColumns[ aaSort[k][0] ].aDataSort;
+				oSettings.aiDisplayMaster.sort( function ( a, b ) {
+					var k, l, lLen, iTest, aDataSort, sDataType;
+					for ( k=0 ; k<iSortLen ; k++ )
+					{
+						aDataSort = aoColumns[ aaSort[k][0] ].aDataSort;
 		
-			// 			for ( l=0, lLen=aDataSort.length ; l<lLen ; l++ )
-			// 			{
-			// 				sDataType = aoColumns[ aDataSort[l] ].sType;
+						for ( l=0, lLen=aDataSort.length ; l<lLen ; l++ )
+						{
+							sDataType = aoColumns[ aDataSort[l] ].sType;
 							
-			// 				iTest = oSort[ (sDataType ? sDataType : 'string')+"-"+aaSort[k][1] ](
-			// 					aoData[a]._aSortData[ aDataSort[l] ],
-			// 					aoData[b]._aSortData[ aDataSort[l] ]
-			// 				);
+							iTest = oSort[ (sDataType ? sDataType : 'string')+"-"+aaSort[k][1] ](
+								aoData[a]._aSortData[ aDataSort[l] ],
+								aoData[b]._aSortData[ aDataSort[l] ]
+							);
 						
-			// 				if ( iTest !== 0 )
-			// 				{
-			// 					return iTest;
-			// 				}
-			// 			}
-			// 		}
+							if ( iTest !== 0 )
+							{
+								return iTest;
+							}
+						}
+					}
 					
-			// 		return oSort['numeric-asc']( aiOrig[a], aiOrig[b] );
-			// 	} );
-			// }
+					return oSort['numeric-asc']( aiOrig[a], aiOrig[b] );
+				} );
+			}
 			
 			/* Alter the sorting classes to take account of the changes */
 			if ( (bApplyClasses === undefined || bApplyClasses) && !oSettings.oFeatures.bDeferRender )
@@ -6458,7 +6458,7 @@
 			_fnMap( oSettings.oFeatures, oInit, "bInfo" );
 			_fnMap( oSettings.oFeatures, oInit, "bProcessing" );
 			_fnMap( oSettings.oFeatures, oInit, "bAutoWidth" );
-			_fnMap( oSettings.oFeatures, oInit, "bSortClasses" );
+			// _fnMap( oSettings.oFeatures, oInit, "bSortClasses" );
 			_fnMap( oSettings.oFeatures, oInit, "bServerSide" );
 			_fnMap( oSettings.oFeatures, oInit, "bDeferRender" );
 			_fnMap( oSettings.oScroll, oInit, "sScrollX", "sX" );
