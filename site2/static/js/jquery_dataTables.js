@@ -9077,7 +9077,7 @@
 		 *      } );
 		 *    } );
 		 */
-		"iScrollLoadGap": 50,
+		"iScrollLoadGap": 100,
 	
 	
 		/**
