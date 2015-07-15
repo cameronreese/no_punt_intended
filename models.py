@@ -30,6 +30,34 @@ class players(db.Model):
     hs = db.Column(db.String(256))
     photo = db.Column(db.String(256))
 
+    def __init__(self, id, name, no, pos, team, ht, wt, hometown, year, hs, photo):
+        self.id = id
+        self.name = name
+        self.no = no
+        self.pos = pos
+        self.team = team
+        self.ht = ht
+        self.wt = wt
+        self.hometown = hometown
+        self.year = year
+        self.hs = hs
+        self.photo = photo
+
+    def __iter__(self):
+        yield self.id
+        yield self.name
+        yield self.no
+        yield self.pos
+        yield self.team
+        yield self.ht
+        yield self.wt
+        yield self.wt
+        yield self.hometown
+        yield self.year
+        yield self.hs
+        yield self.photo
+
+
 schedule = db.Table('schedule',db.Column('teams_name',db.String(256),db.ForeignKey('teams.name')),db.Column('game_id',db.Integer,db.ForeignKey('games.id')))
 # teams model
 class teams(db.Model):
@@ -40,19 +68,20 @@ class teams(db.Model):
     head_coach = db.Column(db.String(256))
     confname = db.Column(db.String(256),db.ForeignKey('conf.name'))
 
-    # def __init__(self, name, location, roster, head_coach, confname):
-    #     self.name = name
-    #     self.location = location
-    #     self.roster = roster
-    #     self.head_coach = head_coach
-    #     self.confname = confname
-    #
-    # def __iter__(self):
-    #     yield self.name
-    #     yield self.location
-    #     yield list([p.name for p in self.roster])
-    #     yield self.head_coach
-    #     yield self.confname
+    def __init__(self, name, location, roster, head_coach, confname):
+        self.name = name
+        self.location = location
+        self.roster = roster
+        self.schedule = schedule
+        self.head_coach = head_coach
+        self.confname = confname
+
+    def __iter__(self):
+        yield self.name
+        yield self.location
+        yield list([p.name for p in self.roster])
+        yield self.head_coach
+        yield self.confname
 
 # conference model
 class conf(db.Model):
@@ -63,21 +92,21 @@ class conf(db.Model):
     num_teams = db.Column(db.String(256))
     comm = db.Column(db.String(256))
 
-    # def __init__(self, name, founded, champ, teamset, num_teams, comm):
-    #     self.name = name
-    #     self.founded = founded
-    #     self.champ = champ
-    #     self.teamset = teamset
-    #     self.num_teams = num_teams
-    #     self.comm = comm
-    #
-    # def __iter__(self):
-    #     yield self.name
-    #     yield self.founded
-    #     yield self.champ
-    #     yield list([t.name for t in self.teamset])
-    #     yield self.num_teams
-    #     yield self.comm
+    def __init__(self, name, founded, champ, teamset, num_teams, comm):
+        self.name = name
+        self.founded = founded
+        self.champ = champ
+        self.teamset = teamset
+        self.num_teams = num_teams
+        self.comm = comm
+
+    def __iter__(self):
+        yield self.name
+        yield self.founded
+        yield self.champ
+        yield list([t.name for t in self.teamset])
+        yield self.num_teams
+        yield self.comm
 
 
 # games model
@@ -105,7 +134,7 @@ def get_players(player_name):
     qryresult = teams.query.get(player_name)
     result = ""
     _it = iter(qryresult)
-    result = "{\n\t\'id\': \'"  + next(_it) + "\'" + ",\n\t\'name\': " + "\'" + next(_it) + "\',\n\t\'no\': " + next(_it) + "\n\t\'pos: " + "\'" + next(_it) + "\',\n\t\'team: \'" + next(_it) + "\',\n\t\'  }"
+    result = "{\n\t\'id\': \'" + next(_it) + "\',\n\t\'name\': \'" + next(_it) + "\',\n\t\'no\': \'" + next(_it) + "\',\n\t\'pos\': \'" + next(_it) + "\',\n\t\'team: \'" + next(_it) + "\',\n\t\'ht\': \'" + next(_it) + "\',\n\t\'wt\': \'" + next(_it) + "\',\n\t\'hometown\': \'" + next(_it) + "\',\n\t\'year\': \'" + next(_it) + "\',\n\t\'hs\': \'" + next(_it) + "\',\n\t\'photo\': \'" + next(_it) + "\'\n}"
     return result
 
 @punt.route('/punt/teams/<string:team_name>', methods=['GET'])
@@ -118,12 +147,12 @@ def get_teams(team_name):
     qryresult = teams.query.get(team_name)
     result = ""
     _it = iter(qryresult)
-    result = "{\n\t\'name\': \'"  + next(_it) + "\'" + ",\n\t\'location\': " + "\'" + next(_it) + "\',\n\t\'roster\': ["
+    result = "{\n\t\'name\': \'" + next(_it) + "\'" + ",\n\t\'location\': \'" + next(_it) + "\',\n\t\'roster\': ["
     roster_list = next(_it)
     for p in roster_list:
         result += ("\'" + p + "\', ")
     result = result[:-2]
-    result += "]\n\t\'head_coach: " + "\'" + next(_it) + "\',\n\t\'confname: \'" + next(_it) + "\'\n}"
+    result += "]\n\t\'head_coach\': \'" + next(_it) + "\',\n\t\'confname\': \'" + next(_it) + "\'\n}"
     return result
 
 @punt.route('/punt/conf/<string:conf_name>', methods=['GET'])
@@ -136,12 +165,12 @@ def get_conf(conf_name):
     qryresult = conf.query.get(conf_name)
     result = ""
     _it = iter(qryresult)
-    result = "{\n\t\'name\': \'"  + next(_it) + "\'" + ",\n\t\'founded\': " + "\'" + next(_it) + "\',\n\t\'champ: \'" + next(_it) + "\',\n\t\'teamset\': ["
+    result = "{\n\t\'name\': \'" + next(_it) + "\'" + ",\n\t\'founded\': " + "\'" + next(_it) + "\',\n\t\'champ\': \'" + next(_it) + "\',\n\t\'teamset\': ["
     team_list = next(_it)
     for t in team_list:
         result += ("\'" + t + "\', ")
     result = result[:-2]
-    result += "]\n\t\'num_teams: " + "\'" + next(_it) + "\',\n\t\'comm: \'" + next(_it) + "\'\n}"
+    result += "]\n\t\'num_teams\': \'" + next(_it) + "\',\n\t\'comm\': \'" + next(_it) + "\'\n}"
     return result
 
 
