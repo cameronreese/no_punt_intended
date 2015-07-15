@@ -15,8 +15,14 @@
                         <div class="col-lg-3 col-md-4 col-sm-6 text-center">
                             <script> document.write('<a href="http://cfdb.me:5000/conf_t/' + "{{conf.name}}" + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​><h6 class="conf-text"> {{conf.name}} </h6></a> 
 
+<<<<<<< HEAD
                             {% for team in conf.teams %}
                                 <script> document.write('<a href="http://cfdb.me:5000/team_t/' + "{{team}}" + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​><h6 class="team-text text-center"> <strong>{{team}}</strong></h6></a>
+=======
+                            {% for team in conf.teamset %}
+                                <script> document.write('<a href="http://cfdb.me:5000/team_t/' + "{{team.name}}" + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>
+                                    <h6 class="team-text text-center"> <strong>{{team.name}}</strong></h6></a>
+>>>>>>> ad888f0a6cad6539e233123cac95ad00381e6d4c
                             {% endfor %}
 
                         </div>       
