@@ -30,13 +30,13 @@ class players(db.Model):
     hs = db.Column(db.String(256))
     photo = db.Column(db.String(256))
 
-#schedule = db.Table('schedule',db.Column('teams_name',db.String(256),db.ForeignKey('teams.name')),db.Column('game_id',db.Integer,db.ForeignKey('games.id')))
+schedule = db.Table('schedule',db.Column('teams_name',db.String(256),db.ForeignKey('teams.name')),db.Column('game_id',db.Integer,db.ForeignKey('games.id')))
 # teams model
 class teams(db.Model):
     name = db.Column(db.String(256),primary_key = True)
     location = db.Column(db.String(256))
     roster = db.relationship('players')
-    #schedule = db.relationship('games',secondary=schedule,backref=db.backref('teams',lazy='dynamic'))
+    schedule = db.relationship('games',secondary=schedule,backref=db.backref('teams',lazy='dynamic'))
     head_coach = db.Column(db.String(256))
     confname = db.Column(db.String(256),db.ForeignKey('conf.name'))
 
@@ -63,14 +63,31 @@ class conf(db.Model):
     num_teams = db.Column(db.String(256))
     comm = db.Column(db.String(256))
 
+    def __init__(self, name, founded, champ, teamset, num_teams, comm):
+        self.name = name
+        self.founded = founded
+        self.champ = champ
+        self.teamset = teamset
+        self.num_teams = num_teams
+        self.comm = comm
+
+    def __iter__(self):
+        yield self.name
+        yield self.founded
+        yield self.champ
+        yield list([t.name for t in self.teamset])
+        yield self.num_teams
+        yield self.comm
+
+
 # games model
-# class games(db.Model):
-#     id = db.Column(db.Integer,primary_key = True,unique = True,index = True)
-#     date = db.Column(db.String(256))
-#     home_team = db.Column(db.String(256),db.ForeignKey('teams.name'))
-#     away_team = db.Column(db.String(256),db.ForeignKey('teams.name'))
-#     location = db.Column(db.String(256),db.ForeignKey('teams.location'))
-#     time = db.Column(db.String(256))
+class games(db.Model):
+    id = db.Column(db.Integer,primary_key = True,unique = True,index = True)
+    date = db.Column(db.String(256))
+    home_team = db.Column(db.String(256),db.ForeignKey('teams.name'))
+    away_team = db.Column(db.String(256),db.ForeignKey('teams.name'))
+    location = db.Column(db.String(256),db.ForeignKey('teams.location'))
+    time = db.Column(db.String(256))
 
 
 # *********************************************************************************************************************
@@ -85,10 +102,11 @@ def get_players(player_name):
         and returns data object of the players attributes
         to retrieve info for all players use 'players' as input
     """
-    if player_name == 'players':
-        return players.query.all()
-    else:
-        return players.query.get(player_name)
+    qryresult = teams.query.get(player_name)
+    result = ""
+    _it = iter(qryresult)
+    result = "{\n\t\'id\': \'"  + next(_it) + "\'" + ",\n\t\'name\': " + "\'" + next(_it) + "\',\n\t\'no\': " + next(_it) + "\n\t\'pos: " + "\'" + next(_it) + "\',\n\t\'team: \'" + next(_it) + "\',\n\t\'  }"
+    return result
 
 @punt.route('/punt/teams/<string:team_name>', methods=['GET'])
 def get_teams(team_name):
@@ -97,19 +115,16 @@ def get_teams(team_name):
         and returns json object of the team's attributes
         to retrieve info for all teams use 'teams' as input
     """
-    if team_name == 'teams':
-        return teams.query.all()
-    else:
-        qryresult = teams.query.get(team_name)
-        result = ""
-        _it = iter(qryresult)
-        result = "{\n\t\'name\': \'"  + next(_it) + "\'" + ",\n\t\'location\': " + "\'" + next(_it) + "\',\n\t\'roster\': ["
-        roster_list = next(_it)
-        for p in roster_list:
-            result += ("\'" + p + "\', ")
-        result = result[:-2]
-        result += "]\n\t\'head_coach: " + "\'" + next(_it) + "\',\n\t\'confname: \'" + next(_it) + "\'\n}"
-        return result
+    qryresult = teams.query.get(team_name)
+    result = ""
+    _it = iter(qryresult)
+    result = "{\n\t\'name\': \'"  + next(_it) + "\'" + ",\n\t\'location\': " + "\'" + next(_it) + "\',\n\t\'roster\': ["
+    roster_list = next(_it)
+    for p in roster_list:
+        result += ("\'" + p + "\', ")
+    result = result[:-2]
+    result += "]\n\t\'head_coach: " + "\'" + next(_it) + "\',\n\t\'confname: \'" + next(_it) + "\'\n}"
+    return result
 
 @punt.route('/punt/conf/<string:conf_name>', methods=['GET'])
 def get_conf(conf_name):
@@ -118,10 +133,16 @@ def get_conf(conf_name):
         and returns json object of the conference's attributes
         to retrieve info for all conferences use 'conf' as input
     """
-    if conf_name == 'conf':
-        return conf.query.all()
-    else:
-        return conf.query.get(conf_name)
+    qryresult = conf.query.get(conf_name)
+    result = ""
+    _it = iter(qryresult)
+    result = "{\n\t\'name\': \'"  + next(_it) + "\'" + ",\n\t\'founded\': " + "\'" + next(_it) + "\',\n\t\'champ: \'" + next(_it) + "\',\n\t\'teamset\': ["
+    team_list = next(_it)
+    for t in team_list:
+        result += ("\'" + t + "\', ")
+    result = result[:-2]
+    result += "]\n\t\'num_teams: " + "\'" + next(_it) + "\',\n\t\'comm: \'" + next(_it) + "\'\n}"
+    return result
 
 
 # *********************************************************************************************************************
