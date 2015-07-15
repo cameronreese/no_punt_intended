@@ -86,7 +86,7 @@ class games(db.Model):
     date = db.Column(db.String(256))
     home_team = db.Column(db.String(256),db.ForeignKey('teams.name'))
     away_team = db.Column(db.String(256),db.ForeignKey('teams.name'))
-    location = db.Column(db.String(256),db.ForeignKey('teams.location'))
+    location = db.Column(db.String(256))
     time = db.Column(db.String(256))
 
 
