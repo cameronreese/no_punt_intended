@@ -21,10 +21,16 @@ def fill():
 
 	for g_id in games_json :
 		g_info = games_json[g_id]
+		away_t = "NOT FBS"
+		home_t = "NOT FBS"
+		if g_info['away'] is in teams_json:
+			away_t = g_info['away']
+		if g_info['home'] is in teams_json:
+			away_t = g_info['home']
 		g_data = games(id = g_id,
 			date = g_info['date'],
-			home_team = g_info['home'],
-			away_team = g_info['away'],
+			home_team = home_t,
+			away_team = away_t,
 			location = 'TBD',
 			time = g_info['time'])
 		db.session.add(g_data)
