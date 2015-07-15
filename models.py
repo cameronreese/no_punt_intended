@@ -545,14 +545,13 @@ def team_template(t_name):
 # gameList=team['schedule'] <---- add schedule back in
 
 @punt.route('/')
-@punt.route('/player_t/<string:p_name>')
-def player_template(p_name):
+@punt.route('/player_t/<int:p_id>')
+def player_template(p_id):
     """
     :param p_name: the player's name
     :return: the player profile page populated with content specific for that player
     """
-    #player = players.query.get(p_name)
-    return render_template('player_profile.html', player=players.query.get(p_name))
+    return render_template('player_profile.html', player=players.query.get(p_id))
 #name=player.name, number=player.no, team=player.team, year=player.year, pos=player.pos, ht=player.ht, wt=player.wt, town=player.hometown, hs=player.hs, photo=player.photo
 
 if __name__ == '__main__':
