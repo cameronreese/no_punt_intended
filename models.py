@@ -61,10 +61,16 @@ class conf(db.Model):
 # API calls to retrieve model specific data
 # *********************************************************************************************************************
 
+def row2dict(row):
+    d = {}
+    for column in row.__table__.columns:
+        d[column.name] = str(getattr(row, column.name))
+    return d
+
 @punt.route('/punt/players/<string:player_name>', methods=['GET'])
 def get_players(player_name):
     """ GET method
-        takes in a player's name as an argument from an http URL 
+        takes in a player's name as an argument from an http URL
         and returns data object of the players attributes
         to retrieve info for all players use 'players' as input
     """
@@ -76,19 +82,20 @@ def get_players(player_name):
 @punt.route('/punt/teams/<string:team_name>', methods=['GET'])
 def get_teams(team_name):
     """ GET method
-        takes in a team's name as an argument from an http URL 
-        and returns json object of the team's attributes 
+        takes in a team's name as an argument from an http URL
+        and returns json object of the team's attributes
         to retrieve info for all teams use 'teams' as input
     """
     if team_name == 'teams':
         return teams.query.all()
     else:
-        return teams.query.get(team_name)
+        t = teams.query.get(team_name)
+        return row2dict(t)
 
 @punt.route('/punt/conf/<string:conf_name>', methods=['GET'])
 def get_conf(conf_name):
     """ GET method
-        takes in a conference's nickname as an argument from an http URL 
+        takes in a conference's nickname as an argument from an http URL
         and returns json object of the conference's attributes
         to retrieve info for all conferences use 'conf' as input
     """
@@ -133,7 +140,6 @@ def ncaa():
     """
     conferences = conf.query.all()
     return render_template('teams.html', confList=list(conferences) , title='CFDB: NCAA')
-
 
 
 # *********************************************************************************************************************
