@@ -30,8 +30,7 @@ class players(db.Model):
     year = db.Column(db.String(256))
     hs = db.Column(db.String(256))
     photo = db.Column(db.String(256))
-    def as_dict(self):
-       return {c.name: getattr(self, c.name) for c in self.__table__.columns}
+
 #schedule = db.Table('schedule',db.Column('teams_name',db.String(256),db.ForeignKey('teams.name')),db.Column('game_id',db.Integer,db.ForeignKey('games.id')))
 # teams model
 class teams(db.Model):
@@ -41,8 +40,14 @@ class teams(db.Model):
     #schedule = db.relationship('games',secondary=schedule,backref=db.backref('teams',lazy='dynamic'))
     head_coach = db.Column(db.String(256))
     confname = db.Column(db.String(256),db.ForeignKey('conf.name'))
-    def as_dict(self):
-       return {c.name: getattr(self, c.name) for c in self.__table__.columns}
+
+    def _init_(self, name, location, roster, head_coach, confname):
+        self.name = name
+        self.location = location
+        self.roster = roster
+        self.head_coach = head_coach
+        self.confname = confname
+
 # conference model
 class conf(db.Model):
     name = db.Column(db.String(256),primary_key = True)
@@ -51,8 +56,6 @@ class conf(db.Model):
     teamset = db.relationship('teams')
     num_teams = db.Column(db.String(256))
     comm = db.Column(db.String(256))
-    def as_dict(self):
-       return {c.name: getattr(self, c.name) for c in self.__table__.columns}
 
 # games model
 # class games(db.Model):
@@ -92,7 +95,7 @@ def get_teams(team_name):
         return teams.query.all()
     else:
         qryresult = teams.query.get(team_name)
-        return jsonify(json_list=[i.serialize for i in list(qryresult)])
+        return jsonify(json_list=[i.serialize for i in qryresult.all()])
 
 @punt.route('/punt/conf/<string:conf_name>', methods=['GET'])
 def get_conf(conf_name):
