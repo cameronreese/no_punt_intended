@@ -58,25 +58,27 @@ def fill():
 			db.session.commit()
 	print('players made')
 
-	# for g_id in games_json :
-	# 	g_info = games_json[g_id]
-	# 	g_data = games(id = g_id,
-	# 		date = g_info['date'],
-	# 		home_team = g_info['home_team'],
-	# 		away_team = g_info['away_team'],
-	# 		location = g_info['location'],
-	# 		time = g_info['time'])
-	# 	db.session.add(g_data)
-	# 	db.session.commit()
+	for g_id in games_json :
+		g_info = games_json[g_id]
+		g_data = games(id = g_id,
+			date = g_info['date'],
+			home_team = g_info['home'],
+			away_team = g_info['away'],
+			location = home_team.location
+			time = g_info['time'])
+		db.session.add(g_data)
+		db.session.commit()
+	print('games made')
 
-	# sched = games.query.all()
-	# for s_data in sched :
-	# 	home = 
-	# 	away = s_data.away_team
-	# 	db.session.execute(schedule.insert().values([s_data.home_team,s_data.id]))
-	# 	db.session.commit()
-	# 	db.session.execute(schedule.insert().values([s_data.away_team,s_data.id]))
-	# 	db.session.commit()
+	sched = games.query.all()
+	for s_data in sched :
+		home = s_data.home_team
+		away = s_data.away_team
+		db.session.execute(schedule.insert().values([s_data.home_team,s_data.id]))
+		db.session.commit()
+		db.session.execute(schedule.insert().values([s_data.away_team,s_data.id]))
+		db.session.commit()
+	print('schedule made')
 
 if __name__ == '__main__':
 	print('started program')
@@ -89,8 +91,8 @@ if __name__ == '__main__':
 	with open("./backend/conf.json") as fjc:
 		conf_json = json.load(fjc)
 
-# 	with open("./backend/game.json") as fjg:
-# 		games_json = json.load(fjg)
+	with open("./backend/game.json") as fjg:
+		games_json = json.load(fjg)
 	print('about to enter fill function')
 	fill()
 	print('just finished fill()')
