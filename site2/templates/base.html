@@ -164,7 +164,8 @@
     <script type="text/javascript">
         $(document).ready(function() {
           $('#teamTable').DataTable( {
-            "bServerSide": true,
+            // "bServerSide": true,
+            "responsive": true,
             "iDisplayLength": 50,
             "sDom": "<'row'<'col-xs-6'T><'col-xs-6'f>r>t<'row'<'col-xs-6'i><'col-xs-6'p>>",
             "sPaginationType": "bootstrap",
@@ -175,7 +176,7 @@
     <script type="text/javascript">
     $(document).ready(function() {
       $('#playerTable').DataTable( {
-        "serverSide": true,
+        // "serverSide": true,
         "responsive" : true,
         "iDisplayLength": 50,
         "sDom": "<'row'<'col-xs-6'T><'col-xs-6'f>r>t<'row'<'col-xs-6'i><'col-xs-6'p>>",
