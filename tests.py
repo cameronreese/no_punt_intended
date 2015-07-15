@@ -43,9 +43,10 @@ class TestModels(TestCase):
     # get_teams
     # -----------
     def test_get_teams_1(self):
-        req = 'http://cfdb.me:5000/punt/teams/Texas'
-        result = requests.get(req)
-        print(result)
+        #data = requests.get('http://cfdb.me:5000/punt/teams/Texas')
+        url = urlopen('http://cfdb.me:5000/punt/teams/Texas')
+        data = url.read().decode(url.info().get_param('charset') or 'utf-8')
+        print(data)
         #self.assertEqual(team, data)
     #
     # def test_get_teams_2(self):
