@@ -51,7 +51,6 @@ for team_info in soup_data :
 				if team_help4[1] == 'Head coach' :
 					team_coach.append(team_help4[2])
 					coachcount += 1
-
 				# print(namecount)
 				# print(coachcount)
 			# if team_help4[1] == 'Head Coach' :
