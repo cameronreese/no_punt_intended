@@ -8082,7 +8082,7 @@
 		 *      } );
 		 *    } );
 		 */
-		"bDeferRender": false,
+		"bDeferRender": true,
 	
 	
 		/**
@@ -8218,7 +8218,7 @@
 		 *      } );
 		 *    } );
 		 */
-		"bProcessing": false,
+		"bProcessing": true,
 	
 	
 		/**
@@ -8338,7 +8338,7 @@
 		 *      } );
 		 *    } );
 		 */
-		"bServerSide": false,
+		"bServerSide": true,
 	
 	
 		/**
@@ -8393,7 +8393,7 @@
 		 *      } );
 		 *    } );
 		 */
-		"bSortClasses": true,
+		"bSortClasses": false,
 	
 	
 		/**
@@ -9077,7 +9077,7 @@
 		 *      } );
 		 *    } );
 		 */
-		"iScrollLoadGap": 100,
+		"iScrollLoadGap": 50,
 	
 	
 		/**
