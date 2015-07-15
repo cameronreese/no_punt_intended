@@ -36,7 +36,7 @@ class teams(db.Model):
     name = db.Column(db.String(256),primary_key = True)
     location = db.Column(db.String(256))
     roster = db.relationship('players')
-    schedule = db.relationship('games',secondary=schedule,backref=db.backref('teams',lazy='dynamic'))
+    schedule = db.relationship('games',secondary=schedule)
     head_coach = db.Column(db.String(256))
     confname = db.Column(db.String(256),db.ForeignKey('conf.name'))
 
@@ -242,8 +242,8 @@ def team_template(t_name):
     """
     team = teams.query.get(t_name)
     player_list = [p for p in team.roster]
-    return render_template('team_profile.html', team=team.name, conf=team.confname, location=team.location, coach=team.head_coach, playerList=list(player_list))
-# gameList=team['schedule'] <---- add schedule back in
+    game_list = [g for g in team.schedule]
+    return render_template('team_profile.html', team=team.name, conf=team.confname, location=team.location, coach=team.head_coach, playerList=list(player_list), gameList=list(game_list))
 
 @punt.route('/')
 @punt.route('/player_t/<string:p_id>')
@@ -254,7 +254,6 @@ def player_template(p_id):
     """
     p = players.query.get(p_id)
     return render_template('player_profile.html', player=p)
-#name=player.name, number=player.no, team=player.team, year=player.year, pos=player.pos, ht=player.ht, wt=player.wt, town=player.hometown, hs=player.hs, photo=player.photo
 
 if __name__ == '__main__':
     punt.run(debug=True, host='0.0.0.0')
