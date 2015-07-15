@@ -205,13 +205,7 @@ hr {
     font-size: 150%;
 }
 
-#my-row {
-    display: table;
-}
-
-#my-row .panel {
-    float: none;
-    display: table-cell;
+.goodness {
     vertical-align: top;
 }
 
