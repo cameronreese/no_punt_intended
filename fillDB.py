@@ -25,7 +25,8 @@ def fill():
 		c_data = conf(name = c_info['name'],
 			founded = c_info['founded'],
 			num_teams = c_info['num_teams'],
-			comm = c_info['comm'])
+			comm = c_info['comm'],
+			champ = c_info['champ'])
 		db.session.add(c_data)
 		db.session.commit()
 		print('conf made')
