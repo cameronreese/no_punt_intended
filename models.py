@@ -90,7 +90,8 @@ def get_teams(team_name):
         return teams.query.all()
     else:
         t = teams.query.get(team_name)
-        return row2dict(t)
+        d = row2dict(t)
+        return d
 
 @punt.route('/punt/conf/<string:conf_name>', methods=['GET'])
 def get_conf(conf_name):
