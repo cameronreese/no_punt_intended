@@ -107,12 +107,12 @@ hr {
 
 .box {
     margin-bottom: 25px;
-    padding: 20px 15px;
+    padding: 5px 0px;
     background: #fff;
     background: rgba(255,255,255,0.9);
-    -moz-box-shadow: 0 0 5px 5px rgba(255,255,255,0.9);
-    -webkit-box-shadow: 0 0 5px 5px rgba(255,255,255,0.9);
-    box-shadow: 0 0 5px 5px rgba(255,255,255,0.9);
+    -moz-box-shadow: 0 0 8px 8px rgba(255,255,255,0.9);
+    -webkit-box-shadow: 0 0 8px 8px rgba(255,255,255,0.9);
+    box-shadow: 0 0 8px 8px rgba(255,255,255,0.9);
 }
 
 .boxx {
@@ -125,9 +125,9 @@ hr {
     padding: 5px 0px;   
     background: #fff;
     background: rgba(192,192,192,0.9);
-    -moz-box-shadow: 0 0 5px 5px rgba(192,192,192,0.9);
-    -webkit-box-shadow: 0 0 5px 5px rgba(192,192,192,0.9);
-    box-shadow: 0 0 5px 5px rgba(192,192,192,0.9);
+    -moz-box-shadow: 0 0 8px 8px rgba(192,192,192,0.9);
+    -webkit-box-shadow: 0 0 8px 8px rgba(192,192,192,0.9);
+    box-shadow: 0 0 8px 8px rgba(192,192,192,0.9);
 }
 
 .intro-text {
