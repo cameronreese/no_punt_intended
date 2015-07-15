@@ -41,12 +41,19 @@ class teams(db.Model):
     head_coach = db.Column(db.String(256))
     confname = db.Column(db.String(256),db.ForeignKey('conf.name'))
 
-    def _init_(self, name, location, roster, head_coach, confname):
+    def __init__(self, name, location, roster, head_coach, confname):
         self.name = name
         self.location = location
         self.roster = roster
         self.head_coach = head_coach
         self.confname = confname
+
+    def __iter__(self):
+        yield self.name
+        yield self.location
+        yield self.roster
+        yield self.head_coach
+        yield self.confname
 
 # conference model
 class conf(db.Model):
@@ -95,7 +102,7 @@ def get_teams(team_name):
         return teams.query.all()
     else:
         qryresult = teams.query.get(team_name)
-        return jsonify(json_list=[i.serialize for i in qryresult.all()])
+        return jsonify(json_list=[i.serialize for i in qryresult])
 
 @punt.route('/punt/conf/<string:conf_name>', methods=['GET'])
 def get_conf(conf_name):
