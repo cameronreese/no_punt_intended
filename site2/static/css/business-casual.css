@@ -207,8 +207,7 @@ hr {
 
 .goodness {
     vertical-align: bottom;
-    padding-bottom: 10px;
-    min-height: 1000px;
+    min-height: 200px;
 }
 
 footer {
