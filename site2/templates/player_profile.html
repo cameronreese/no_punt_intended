@@ -66,7 +66,10 @@
                     <hr>
                 </div>
                 <div class="col-lg-4 col-md-4">
-                    <img class="img-responsive img-rounded img-fix" src="{{player.photo}}" onerror="this.src='../img/blank.png'" alt="Player Has No Photo"> 
+                    <object data="{{player.photo}}" type="image/jpg">
+                        <img src="http://playoffchallenge.fantasy.nfl.com/static/img/defaultHeadshot_1367279034.png"/>
+                    </object>
+                    <!-- <img class="img-responsive img-rounded img-fix" src="{{player.photo}}" alt="Player Has No Photo"> --> 
                 </div>
                 <div class="col-lg-8 col-md-8 text-left">
                     <h2 class="player-text"><strong>#{{player.no}} - {{player.name}}</strong></h2>
