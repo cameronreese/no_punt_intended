@@ -1,0 +1,186 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- *************************************************************************************************************************
+                                                        Start tables nav
+******************************************************************************************************************************* -->
+    <!-- Navigation -->
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+                <a class="navbar-brand" href="index.html">Tables</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="conferenceTable.html">Conferences Table</a>
+                    </li>
+                    <li>
+                        <a href="teamTable.html">Teams Table</a>
+                    </li>
+                    <li>
+                        <a href="playerTable.html">Players Table</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+<!-- *************************************************************************************************************************
+                                                        End tables nav
+******************************************************************************************************************************* -->
+
+<!-- *************************************************************************************************************************
+                                                        Start table box
+******************************************************************************************************************************* -->
+
+       <div class="container">
+        <div class="box">
+          <h1>Conference Table</h1>
+          <table cellpadding="0" cellspacing="0" border="0"
+                 class="table table-striped table-bordered" id="conferenceTable">
+              <thead>
+                  <tr>
+                      <th>Name</th>
+                      <th>Nickname</th>
+                      <th>Founded</th>
+                      <th>Current Conference Champ</th>
+                      <th>Teams</th>
+                      <th>Number of Teams</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                    <td>American Athletic Conference</td>
+                    <td>The American</td>
+                    <td>1979</td>
+                    <td></td>
+                    <td>Teams</td>
+                    <td>11</td>
+                  </tr>
+                  <tr>
+                    <td><a href="conference_pages/acc.html">Atlantic Coast Conference</a></td>
+                    <td>ACC</td>
+                    <td>1953</td>
+                    <td></td>
+                    <td>Teams</td>
+                    <td>15</td>
+                  </tr>
+                  <tr>
+                    <td><a href="conference_pages/bigten.html">Big Ten Conference</a></td>
+                    <td>Big Ten</td>
+                    <td>1896</td>
+                    <td></td>
+                    <td>Teams</td>
+                    <td>14</td>
+                  </tr>
+                  <tr>
+                    <td><a href="conference_pages/big12.html">Big 12 Conference</a></td>
+                    <td>Big 12</td>
+                    <td>1996</td>
+                    <td></td>
+                    <td>Teams</td>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <td>Conference USA</td>
+                    <td>C-USA</td>
+                    <td>1995</td>
+                    <td></td>
+                    <td>Teams</td>
+                    <td>14</td>
+                  </tr>
+                  <tr>
+                    <td>Division I FBS Independents</td>
+                    <td>Ind.</td>
+                    <td>None</td>
+                    <td></td>
+                    <td>Teams</td>
+                    <td>3</td>
+                  </tr>
+                  <tr>
+                    <td>Mid-American Conference</td>
+                    <td>MAC</td>
+                    <td>1946</td>
+                    <td></td>
+                    <td>Teams</td>
+                    <td>12</td>
+                  </tr>
+                  <tr>
+                    <td>Mountain West Conference</td>
+                    <td>MW</td>
+                    <td>1999</td>
+                    <td></td>
+                    <td>Teams</td>
+                    <td>11</td>
+                  </tr>
+                  <tr>
+                    <td>Pacific-12 Conference</td>
+                    <td>PAC-12</td>
+                    <td>1959</td>
+                    <td></td>
+                    <td>Teams</td>
+                    <td>12</td>
+                  </tr>
+                  <tr>
+                    <td>Southeastern Conference</td>
+                    <td>SEC</td>
+                    <td>1932</td>
+                    <td></td>
+                    <td>Teams</td>
+                    <td>14</td>
+                  </tr>
+                  <tr>
+                    <td>Sun Belt Conference</td>
+                    <td>Sun Belt</td>
+                    <td>1976</td>
+                    <td></td>
+                    <td>Teams</td>
+                    <td>11</td>
+                  </tr>
+              </tbody>
+              <tfoot>
+                  <tr>
+                      <th>Name</th>
+                      <th>Nickname</th>
+                      <th>Founded</th>
+                      <th>Current Conference Champ</th>
+                      <th>Teams</th>
+                      <th>Number of Teams</th>
+                  </tr>
+              </tfoot>
+          </table>
+       </div>
+     </div>
+
+<!-- *************************************************************************************************************************
+                                                        End table box
+******************************************************************************************************************************* -->
+
+
+
+    <!--additional jQuery -->
+    <script src="/js/jquery_dataTables.js"> </script>
+    <script src="/js/dataTables_bootstrap.js"> </script>
+    <script src="/js/dataTables_bootstrapPagination.js"> </script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $('#conferenceTable').DataTable( {
+        "iDisplayLength": 11,
+        "sDom": "<'row'<'col-xs-6'T><'col-xs-6'f>r>t<'row'<'col-xs-6'i><'col-xs-6'p>>",
+        "sPaginationType": "bootstrap"
+      } );
+    } );
+    </script>
+
+{% endblock %}

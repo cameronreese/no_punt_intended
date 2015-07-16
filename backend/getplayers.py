@@ -9,14 +9,10 @@ d = {140: 'Cincinnati', 164: 'Connecticut', 196: 'East Carolina', 288: 'Houston'
 
 for key, values in d.items() :
 	data = urlopen('http://www.cfbstats.com/2014/team/' + str(key) + '/roster.html')
-	soup = BeautifulSoup(data.read()) # creates a BS4 HTML parsing object
+	soup = BeautifulSoup(data.read()) 
 
-	print(values)
 	for row in soup('tr')[1:]:
 	    data = [str(i.getText()) for i in row('td')]
-	    link = row('td')[1]('a') # the linked player
-	    if len(link) > 0:
-	        link = str(link[0]['href'])
-	        data = [str(link)] + data
+	    data = [str(values)] + data
 	    print(data)
 	    print('\n')

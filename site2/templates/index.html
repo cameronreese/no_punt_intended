@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- *************************************************************************************************************************
+                                                        Start display box
+******************************************************************************************************************************* -->
+    <div class="container">
+        <div class="box row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="brand-before"> <small>Welcome to the</small> </h2>
+                    <h1> <strong>College Football Database</strong> <hr class="tagline-divider"> </h1>
+                    <h2> <small>By <strong>The Graybeards</strong> </small> </h2>
+                    <img class="img-responsive img-front img-center img-rounded" src="{{ url_for('static', filename='img/stadium.jpg') }}" alt="">
+                </div>
+        </div>
+    </div>
+<!-- *************************************************************************************************************************
+                                                        End display Box
+******************************************************************************************************************************* -->
+
+{% endblock %}
+
+

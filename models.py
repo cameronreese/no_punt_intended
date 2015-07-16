@@ -3,145 +3,283 @@
 # -----------
 # imports
 # -----------
-import random
-from numpy import mean, sqrt, square, subtract
-import json
 
 from flask import Flask
-from flask import jsonify
-from flask import abort
+from flask import render_template
+from flask.ext.sqlalchemy import SQLAlchemy
+
 
 punt = Flask(__name__)
 
-""" Temporary data structures until we have a data base set up """
 
+punt.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:beard@localhost/cfdb_flask'
+db = SQLAlchemy(punt)
 # players model
-players = [
-    {
-        'name': 'Nick Jordan',
-        'no': '#28',
-        'pos': 'PK',
-        'team': 'Texas Longhorns',
-        'ht': '6-1',
-        'wt': '193',
-        'hometown': 'Coppell, TX',
-    },
-    {
-        'name': 'Shiro Davis',
-        'no': '#1',
-        'pos': 'DE',
-        'team': 'Texas Longhorns',
-        'ht': '6-3',
-        'wt': '265',
-        'hometown': 'Shreveport, LA',
-    },
-    {
-        'name': 'Jeff Bryson',
-        'no': '#59',
-        'pos': 'LB',
-        'team': 'Baylor Bears',
-        'ht': '5-10',
-        'wt': '200',
-        'hometown': 'San Antonio, TX',
-    },
-]
+class players(db.Model):
+    id = db.Column(db.Integer,primary_key = True,unique = True,index = True)
+    name = db.Column(db.String(256))
+    no = db.Column(db.String(256))
+    pos = db.Column(db.String(256))
+    team = db.Column(db.String(256),db.ForeignKey('teams.name'))
+    ht = db.Column(db.String(256))
+    wt = db.Column(db.String(256))
+    hometown = db.Column(db.String(256))
+    year = db.Column(db.String(256))
+    hs = db.Column(db.String(256))
+    photo = db.Column(db.String(256))
 
+    def __init__(self, id, name, no, pos, team, ht, wt, hometown, year, hs, photo):
+        self.id = id
+        self.name = name
+        self.no = no
+        self.pos = pos
+        self.team = team
+        self.ht = ht
+        self.wt = wt
+        self.hometown = hometown
+        self.year = year
+        self.hs = hs
+        self.photo = photo
+
+    def __iter__(self):
+        yield self.id
+        yield self.name
+        yield self.no
+        yield self.pos
+        yield self.team
+        yield self.ht
+        yield self.wt
+        yield self.hometown
+        yield self.year
+        yield self.hs
+        yield self.photo
+
+
+schedule = db.Table('schedule',db.Column('teams_name',db.String(256),db.ForeignKey('teams.name')),db.Column('game_id',db.Integer,db.ForeignKey('games.id')))
 # teams model
-teams = [
-    {
-        'name': 'Texas Longhorns',
-        'location': 'Austin, TX',
-        'roster': ['Nick Jordan', 'Shiro Davis'], # list of players
-        'schedule': [], # data of schedule
-        'head_coach': 'Charlie Strong',
-        'conf': 'Big 12'
-    },
-    {
-        'name': 'Baylor Bears'
-        # 'location': 'Waco, TX',
-        # 'roster': (), # tuple of player links
-        # 'schedule': [[]], # a dict of {date : opponent} or some custom list of data
-        # 'head_coach': 'Unknown',
-        # 'conf': 'Big 12'
-    },
-    {
-        'name': 'TCU Horned Frogs'
-        # 'location': 'Fort Worth, TX',
-        # 'roster': (), # tuple of player links
-        # 'schedule': [[]], # a dict of {date : opponent} or some custom list of data
-        # 'head_coach': 'Unknown',
-        # 'conf': 'Big 12'
-    }
-]
+class teams(db.Model):
+    name = db.Column(db.String(256),primary_key = True)
+    location = db.Column(db.String(256))
+    roster = db.relationship('players')
+    schedule = db.relationship('games',secondary=schedule)
+    head_coach = db.Column(db.String(256))
+    confname = db.Column(db.String(256),db.ForeignKey('conf.name'))
 
-# conferences model
-conf = [
-    {
-        'name': 'Big 12',
-        'founded': 'some year',
-        'current_conf_champion': 'team',
-        'teams': [], # list of teams
-        'number_of_teams': 'a_num'
-    },
-    {
-        'name': 'Big Ten'
-        # 'founded': 'some year',
-        # 'current_conf_champion': 'team',
-        # 'teams': [], # list of teams
-        # 'number_of_teams': 'a_num'
-    },
-    {
-        'name': 'ACC'
-        # 'founded': 'some year',
-        # 'current_conf_champion': 'team',
-        # 'teams': [], # list of teams
-        # 'number_of_teams': 'a_num'
-    }
-]
+    def __init__(self, name, location, roster, head_coach, confname):
+        self.name = name
+        self.location = location
+        self.roster = roster
+        self.schedule = schedule
+        self.head_coach = head_coach
+        self.confname = confname
+
+    def __iter__(self):
+        yield self.name
+        yield self.location
+        yield list([p.name for p in self.roster])
+        yield self.head_coach
+        yield self.confname
+
+# conference model
+class conf(db.Model):
+    name = db.Column(db.String(256),primary_key = True)
+    founded = db.Column(db.String(256))
+    champ = db.Column(db.String(256))
+    teamset = db.relationship('teams')
+    num_teams = db.Column(db.String(256))
+    comm = db.Column(db.String(256))
+
+    def __init__(self, name, founded, champ, teamset, num_teams, comm):
+        self.name = name
+        self.founded = founded
+        self.champ = champ
+        self.teamset = teamset
+        self.num_teams = num_teams
+        self.comm = comm
+
+    def __iter__(self):
+        yield self.name
+        yield self.founded
+        yield self.champ
+        yield list([t.name for t in self.teamset])
+        yield self.num_teams
+        yield self.comm
+
+
+# games model
+class games(db.Model):
+    id = db.Column(db.Integer,primary_key = True,unique = True,index = True)
+    date = db.Column(db.String(256))
+    home_team = db.Column(db.String(256),db.ForeignKey('teams.name'))
+    away_team = db.Column(db.String(256),db.ForeignKey('teams.name'))
+    location = db.Column(db.String(256))
+    time = db.Column(db.String(256))
+
+
+# *********************************************************************************************************************
+# API calls to retrieve model specific data
+# *********************************************************************************************************************
+
 
 @punt.route('/punt/players/<string:player_name>', methods=['GET'])
 def get_players(player_name):
     """ GET method
-        takes in a player's name as an argument from an http URL 
-        and returns json object of the players attributes 
+        takes in a player's name as an argument from an http URL
+        and returns data object of the players attributes
         to retrieve info for all players use 'players' as input
     """
-    if player_name == 'players':
-        return jsonify({'players': players})
-    player = [player for player in players if player['name'] == player_name]
-    if len(player) == 0:
-        abort(404)
-    return jsonify({'players': player[0]})
+    qryresult = players.query.get(player_name)
+    result = ""
+    _it = iter(qryresult)
+    result = "{\n\t\"id\": \"" + str(next(_it)) + "\",\n\t\"name\": \"" + next(_it) + "\",\n\t\"no\": \"" + next(_it) + "\",\n\t\"pos\": \"" + next(_it) + "\",\n\t\"team\" : \"" + next(_it) + "\",\n\t\"ht\": \"" + next(_it) + "\",\n\t\"wt\": \"" + next(_it) + "\",\n\t\"hometown\": \"" + next(_it) + "\",\n\t\"year\": \"" + next(_it) + "\",\n\t\"hs\": \"" + next(_it) + "\",\n\t\"photo\": \"" + next(_it) + "\"\n}"
+    return result
 
 @punt.route('/punt/teams/<string:team_name>', methods=['GET'])
 def get_teams(team_name):
     """ GET method
-        takes in a team's name as an argument from an http URL 
-        and returns json object of the team's attributes 
+        takes in a team's name as an argument from an http URL
+        and returns json object of the team's attributes
         to retrieve info for all teams use 'teams' as input
     """
-    if team_name == 'teams':
-        return jsonify({'teams': teams})
-
-    team = [team for team in teams if team['name'] == team_name]
-    if len(team) == 0:
-        abort(404)
-    return jsonify({'teams': team[0]})
+    qryresult = teams.query.get(team_name)
+    result = ""
+    _it = iter(qryresult)
+    result = "{\n\t\"name\": \"" + next(_it) + "\"" + ",\n\t\"location\": \"" + next(_it) + "\",\n\t\"roster\": ["
+    roster_list = next(_it)
+    for p in roster_list:
+        result += ("\"" + p + "\", ")
+    result = result[:-2]
+    result += "],\n\t\"head_coach\": \"" + next(_it) + "\",\n\t\"confname\": \"" + next(_it) + "\"\n}"
+    return result
 
 @punt.route('/punt/conf/<string:conf_name>', methods=['GET'])
 def get_conf(conf_name):
     """ GET method
-        takes in a conference's nickname as an argument from an http URL 
+        takes in a conference's nickname as an argument from an http URL
         and returns json object of the conference's attributes
         to retrieve info for all conferences use 'conf' as input
     """
-    if conf_name == 'conf':
-        return jsonify({'conf': conf})
+    qryresult = conf.query.get(conf_name)
+    result = ""
+    _it = iter(qryresult)
+    result = "{\n\t\"name\": \"" + next(_it) + "\"" + ",\n\t\"founded\": " + "\"" + next(_it) + "\",\n\t\"champ\": \"" + next(_it) + "\",\n\t\"teamset\": ["
+    team_list = next(_it)
+    for t in team_list:
+        result += ("\"" + t + "\", ")
+    result = result[:-2]
+    result += "],\n\t\"num_teams\": \"" + next(_it) + "\",\n\t\"comm\": \"" + next(_it) + "\"\n}"
+    return result
 
-    c = [c for c in conf if c['name'] == conf_name]
-    if len(c) == 0:
-        abort(404)
-    return jsonify({'conf': c[0]})
+
+# *********************************************************************************************************************
+# End of API calls to retrieve model specific data  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+# *********************************************************************************************************************
+
+
+
+
+# *********************************************************************************************************************
+# Template API calls for populating website MAIN static pages
+# *********************************************************************************************************************
+
+@punt.route('/')
+@punt.route('/index')
+def index():
+    """
+    :return:splash page
+    """
+    return render_template('index.html', title='CFDB')
+
+@punt.route('/')
+@punt.route('/about')
+def about():
+    """
+    :return: about page
+    """
+    return render_template('about.html', title='CFDB: About')
+
+@punt.route('/')
+@punt.route('/ncaa')
+def ncaa():
+    """
+    :return: NCAA FBS page
+    """
+    conferences = conf.query.all()
+    return render_template('teams.html', confList=list(conferences) , title='CFDB: NCAA')
+
+
+# *********************************************************************************************************************
+# Template API calls for populating website TABLE pages
+# *********************************************************************************************************************
+
+@punt.route('/')
+@punt.route('/conf_table')
+def conf_table():
+    """
+    :return: Conference table page
+    """
+    conference_list = conf.query.all()
+    return render_template('conferenceTable.html', confList=list(conference_list), title='CFDB: Conference Table')
+
+
+@punt.route('/')
+@punt.route('/team_table')
+def team_table():
+    """
+    :return: Team table page
+    """
+    team_list = teams.query.all()
+    return render_template('teamTable.html', teamList=list(team_list), title='CFDB: Team Table')
+
+@punt.route('/')
+@punt.route('/player_table')
+def player_table():
+    """
+    :return: Player table page
+    """
+    player_list = players.query.all()
+    return render_template('playerTable.html', playerList=list(player_list), title='CFDB: Player Table')
+
+
+# *********************************************************************************************************************
+# Template API calls for populating website PROFILE pages
+# *********************************************************************************************************************
+
+
+@punt.route('/')
+@punt.route('/conf_t/<string:c_name>')
+def conf_template(c_name):
+    """
+    :param c_name: the conference's name
+    :return: the conference profile page populated with content specific for that conference
+    """
+    conference = conf.query.get(c_name)
+    team_list = [t.name for t in conference.teamset]
+    return render_template('conference_profile.html', conf=conference.name, year=conference.founded, com=conference.comm, champ=conference.champ, num=conference.num_teams, teamList=list(team_list))
+
+
+
+@punt.route('/')
+@punt.route('/team_t/<string:t_name>')
+def team_template(t_name):
+    """
+    :param t_name: the team's name
+    :return: the team profile page populated with content specific for that team
+    """
+    team = teams.query.get(t_name)
+    player_list = [p for p in team.roster]
+    game_list = [g for g in team.schedule]
+    return render_template('team_profile.html', team=team.name, conf=team.confname, location=team.location, coach=team.head_coach, playerList=list(player_list), gameList=list(game_list))
+
+@punt.route('/')
+@punt.route('/player_t/<string:p_id>')
+def player_template(p_id):
+    """
+    :param p_name: the player's name
+    :return: the player profile page populated with content specific for that player
+    """
+    p = players.query.get(p_id)
+    return render_template('player_profile.html', player=p)
 
 if __name__ == '__main__':
     punt.run(debug=True, host='0.0.0.0')
