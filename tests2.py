@@ -208,8 +208,8 @@ class TestModels(TestCase):
                     'commissioner': 'James Delany (since 1989)',
                     'current_champ': 'Ohio State',
                     'no_members': '14',
-                    'teams': ['Illinois','Indiana', 'Iowa', 'Maryland','Michigan', 'Michigan State', 'Minnesota', 'Nebraska', 'Northwestern', 'Ohio State', 'Penn State', 'Purdue', 'Rutgers', 'Wisconsin'],
-        
+                    'teams': ['Illinois','Indiana', 'Iowa', 'Maryland','Michigan', 'Michigan State', 'Minnesota', 'Nebraska', 'Northwestern', 'Ohio State', 'Penn State', 'Purdue', 'Rutgers', 'Wisconsin']
+                }
         url = urlopen('http://cfdb.me:5000/punt/conf_t/Big%20Ten').json()
         data = url.read().decode(url.info().get_param('charset') or 'utf-8')
         d = json.loads(data)
@@ -223,7 +223,7 @@ class TestModels(TestCase):
                     'current_champ': 'Baylor',
                     'no_members': '10',
                     'teams': ['Baylor', 'Iowa State', 'Kansas', 'Kansas State', 'Oklahoma', 'Oklahoma State', 'TCU', 'Texas', 'Texas Tech', 'West Virginia'],
-
+                }
         url = urlopen('http://cfdb.me:5000/punt/conf_t/Big%2012').json()
         data = url.read().decode(url.info().get_param('charset') or 'utf-8')
         d = json.loads(data)
@@ -237,7 +237,7 @@ class TestModels(TestCase):
                     'current_champ': 'Alabama',
                     'no_members': '14',
                     'teams': ['Alabama', 'Arkansas', 'Auburn', 'Florida', 'Georgia', 'Kentucky', 'LSU', 'Mississippi', 'Mississippi State', 'Missouri', 'South Carolina', 'Tennessee', 'Texas A&M', 'Vanderbilt'],
-
+                }
         url = urlopen('http://cfdb.me:5000/punt/conf_t/SEC').json()
         data = url.read().decode(url.info().get_param('charset') or 'utf-8')
         d = json.loads(data)
@@ -251,7 +251,7 @@ class TestModels(TestCase):
                     'current_champ': 'Ohio State',
                     'no_members': '14',
                     'teams': ['Illinois','Indiana', 'Iowa', 'Maryland','Michigan', 'Michigan State', 'Minnesota', 'Nebraska', 'Northwestern', 'Ohio State', 'Penn State', 'Purdue', 'Rutgers', 'Wisconsin'],
-        
+                }
         url = urlopen('http://cfdb.me:5000/punt/conf_t/Big%20Ten').json()
         data = url.read().decode(url.info().get_param('charset') or 'utf-8')
         d = json.loads(data)
@@ -265,7 +265,7 @@ class TestModels(TestCase):
                     'current_champ': 'Baylor',
                     'no_members': '10',
                     'teams': ['Baylor', 'Iowa State', 'Kansas', 'Kansas State', 'Oklahoma', 'Oklahoma State', 'TCU', 'Texas', 'Texas Tech', 'West Virginia'],
-
+                }
         url = urlopen('http://cfdb.me:5000/punt/conf_t/Big%2012').json()
         data = url.read().decode(url.info().get_param('charset') or 'utf-8')
         d = json.loads(data)
@@ -279,7 +279,7 @@ class TestModels(TestCase):
                     'current_champ': 'Alabama',
                     'no_members': '14',
                     'teams': ['Alabama', 'Arkansas', 'Auburn', 'Florida', 'Georgia', 'Kentucky', 'LSU', 'Mississippi', 'Mississippi State', 'Missouri', 'South Carolina', 'Tennessee', 'Texas A&M', 'Vanderbilt'],
-
+                }
         url = urlopen('http://cfdb.me:5000/punt/conf_t/SEC').json()
         data = url.read().decode(url.info().get_param('charset') or 'utf-8')
         d = json.loads(data)
@@ -293,7 +293,7 @@ class TestModels(TestCase):
                     'current_champ': 'Ohio State',
                     'no_members': '14',
                     'teams': ['Illinois','Indiana', 'Iowa', 'Maryland','Michigan', 'Michigan State', 'Minnesota', 'Nebraska', 'Northwestern', 'Ohio State', 'Penn State', 'Purdue', 'Rutgers', 'Wisconsin'],
-        
+                }
         url = urlopen('http://cfdb.me:5000/punt/conf_t/Big%20Ten').json()
         data = url.read().decode(url.info().get_param('charset') or 'utf-8')
         d = json.loads(data)
@@ -307,7 +307,7 @@ class TestModels(TestCase):
                     'current_champ': 'Baylor',
                     'no_members': '10',
                     'teams': ['Baylor', 'Iowa State', 'Kansas', 'Kansas State', 'Oklahoma', 'Oklahoma State', 'TCU', 'Texas', 'Texas Tech', 'West Virginia'],
-
+                }
         url = urlopen('http://cfdb.me:5000/punt/conf_t/Big%2012').json()
         data = url.read().decode(url.info().get_param('charset') or 'utf-8')
         d = json.loads(data)
@@ -321,7 +321,7 @@ class TestModels(TestCase):
                     'current_champ': 'Alabama',
                     'no_members': '14',
                     'teams': ['Alabama', 'Arkansas', 'Auburn', 'Florida', 'Georgia', 'Kentucky', 'LSU', 'Mississippi', 'Mississippi State', 'Missouri', 'South Carolina', 'Tennessee', 'Texas A&M', 'Vanderbilt'],
-
+                }
         url = urlopen('http://cfdb.me:5000/punt/conf_t/SEC').json()
         data = url.read().decode(url.info().get_param('charset') or 'utf-8')
         d = json.loads(data)
@@ -335,7 +335,7 @@ class TestModels(TestCase):
                     'current_champ': 'Ohio State',
                     'no_members': '14',
                     'teams': ['Illinois','Indiana', 'Iowa', 'Maryland','Michigan', 'Michigan State', 'Minnesota', 'Nebraska', 'Northwestern', 'Ohio State', 'Penn State', 'Purdue', 'Rutgers', 'Wisconsin'],
-        
+                }
         url = urlopen('http://cfdb.me:5000/punt/conf_t/Big%20Ten').json()
         data = url.read().decode(url.info().get_param('charset') or 'utf-8')
         d = json.loads(data)
@@ -349,7 +349,7 @@ class TestModels(TestCase):
                     'current_champ': 'Baylor',
                     'no_members': '10',
                     'teams': ['Baylor', 'Iowa State', 'Kansas', 'Kansas State', 'Oklahoma', 'Oklahoma State', 'TCU', 'Texas', 'Texas Tech', 'West Virginia'],
-
+                }
         url = urlopen('http://cfdb.me:5000/punt/conf_t/Big%2012').json()
         data = url.read().decode(url.info().get_param('charset') or 'utf-8')
         d = json.loads(data)
@@ -363,7 +363,7 @@ class TestModels(TestCase):
                     'current_champ': 'Alabama',
                     'no_members': '14',
                     'teams': ['Alabama', 'Arkansas', 'Auburn', 'Florida', 'Georgia', 'Kentucky', 'LSU', 'Mississippi', 'Mississippi State', 'Missouri', 'South Carolina', 'Tennessee', 'Texas A&M', 'Vanderbilt'],
-
+                }
         url = urlopen('http://cfdb.me:5000/punt/conf_t/SEC').json()
         data = url.read().decode(url.info().get_param('charset') or 'utf-8')
         d = json.loads(data)
@@ -377,7 +377,7 @@ class TestModels(TestCase):
                     'current_champ': 'Ohio State',
                     'no_members': '14',
                     'teams': ['Illinois','Indiana', 'Iowa', 'Maryland','Michigan', 'Michigan State', 'Minnesota', 'Nebraska', 'Northwestern', 'Ohio State', 'Penn State', 'Purdue', 'Rutgers', 'Wisconsin'],
-        
+                }
         url = urlopen('http://cfdb.me:5000/punt/conf_t/Big%20Ten').json()
         data = url.read().decode(url.info().get_param('charset') or 'utf-8')
         d = json.loads(data)
@@ -391,7 +391,7 @@ class TestModels(TestCase):
                     'current_champ': 'Baylor',
                     'no_members': '10',
                     'teams': ['Baylor', 'Iowa State', 'Kansas', 'Kansas State', 'Oklahoma', 'Oklahoma State', 'TCU', 'Texas', 'Texas Tech', 'West Virginia'],
-
+                }
         url = urlopen('http://cfdb.me:5000/punt/conf_t/Big%2012').json()
         data = url.read().decode(url.info().get_param('charset') or 'utf-8')
         d = json.loads(data)
@@ -405,7 +405,7 @@ class TestModels(TestCase):
                     'current_champ': 'Alabama',
                     'no_members': '14',
                     'teams': ['Alabama', 'Arkansas', 'Auburn', 'Florida', 'Georgia', 'Kentucky', 'LSU', 'Mississippi', 'Mississippi State', 'Missouri', 'South Carolina', 'Tennessee', 'Texas A&M', 'Vanderbilt'],
-
+                }
         url = urlopen('http://cfdb.me:5000/punt/conf_t/SEC').json()
         data = url.read().decode(url.info().get_param('charset') or 'utf-8')
         d = json.loads(data)
