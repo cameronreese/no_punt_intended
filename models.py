@@ -51,7 +51,6 @@ class players(db.Model):
         yield self.team
         yield self.ht
         yield self.wt
-        yield self.wt
         yield self.hometown
         yield self.year
         yield self.hs
@@ -131,10 +130,10 @@ def get_players(player_name):
         and returns data object of the players attributes
         to retrieve info for all players use 'players' as input
     """
-    qryresult = teams.query.get(player_name)
+    qryresult = players.query.get(player_name)
     result = ""
     _it = iter(qryresult)
-    result = "{\n\t\"id\": \"" + next(_it) + "\",\n\t\"name\": \"" + next(_it) + "\",\n\t\"no\": \"" + next(_it) + "\",\n\t\"pos\": \"" + next(_it) + "\",\n\t\"team: \"" + next(_it) + "\",\n\t\"ht\": \"" + next(_it) + "\",\n\t\"wt\": \"" + next(_it) + "\",\n\t\"hometown\": \"" + next(_it) + "\",\n\t\"year\": \"" + next(_it) + "\",\n\t\"hs\": \"" + next(_it) + "\",\n\t\"photo\": \"" + next(_it) + "\"\n}"
+    result = "{\n\t\"id\": \"" + str(next(_it)) + "\",\n\t\"name\": \"" + next(_it) + "\",\n\t\"no\": \"" + next(_it) + "\",\n\t\"pos\": \"" + next(_it) + "\",\n\t\"team\" : \"" + next(_it) + "\",\n\t\"ht\": \"" + next(_it) + "\",\n\t\"wt\": \"" + next(_it) + "\",\n\t\"hometown\": \"" + next(_it) + "\",\n\t\"year\": \"" + next(_it) + "\",\n\t\"hs\": \"" + next(_it) + "\",\n\t\"photo\": \"" + next(_it) + "\"\n}"
     return result
 
 @punt.route('/punt/teams/<string:team_name>', methods=['GET'])
@@ -170,7 +169,7 @@ def get_conf(conf_name):
     for t in team_list:
         result += ("\"" + t + "\", ")
     result = result[:-2]
-    result += "]\n\t\"num_teams\": \"" + next(_it) + "\",\n\t\"comm\": \"" + next(_it) + "\"\n}"
+    result += "],\n\t\"num_teams\": \"" + next(_it) + "\",\n\t\"comm\": \"" + next(_it) + "\"\n}"
     return result
 
 
