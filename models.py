@@ -134,7 +134,7 @@ def get_players(player_name):
     qryresult = teams.query.get(player_name)
     result = ""
     _it = iter(qryresult)
-    result = "{\n\t\'id\': \'" + next(_it) + "\',\n\t\'name\': \'" + next(_it) + "\',\n\t\'no\': \'" + next(_it) + "\',\n\t\'pos\': \'" + next(_it) + "\',\n\t\'team: \'" + next(_it) + "\',\n\t\'ht\': \'" + next(_it) + "\',\n\t\'wt\': \'" + next(_it) + "\',\n\t\'hometown\': \'" + next(_it) + "\',\n\t\'year\': \'" + next(_it) + "\',\n\t\'hs\': \'" + next(_it) + "\',\n\t\'photo\': \'" + next(_it) + "\'\n}"
+    result = "{\n\t\"id\": \"" + next(_it) + "\",\n\t\"name\": \"" + next(_it) + "\",\n\t\"no\": \"" + next(_it) + "\",\n\t\"pos\": \"" + next(_it) + "\",\n\t\"team: \"" + next(_it) + "\",\n\t\"ht\": \"" + next(_it) + "\",\n\t\"wt\": \"" + next(_it) + "\",\n\t\"hometown\": \"" + next(_it) + "\",\n\t\"year\": \"" + next(_it) + "\",\n\t\"hs\": \"" + next(_it) + "\",\n\t\"photo\": \"" + next(_it) + "\"\n}"
     return result
 
 @punt.route('/punt/teams/<string:team_name>', methods=['GET'])
@@ -147,12 +147,12 @@ def get_teams(team_name):
     qryresult = teams.query.get(team_name)
     result = ""
     _it = iter(qryresult)
-    result = "{\n\t\'name\': \'" + next(_it) + "\'" + ",\n\t\'location\': \'" + next(_it) + "\',\n\t\'roster\': ["
+    result = "{\n\t\"name\": \"" + next(_it) + "\"" + ",\n\t\"location\": \"" + next(_it) + "\",\n\t\"roster\": ["
     roster_list = next(_it)
     for p in roster_list:
-        result += ("\'" + p + "\', ")
+        result += ("\"" + p + "\", ")
     result = result[:-2]
-    result += "],\n\t\'head_coach\': \'" + next(_it) + "\',\n\t\'confname\': \'" + next(_it) + "\'\n}"
+    result += "],\n\t\"head_coach\": \"" + next(_it) + "\",\n\t\"confname\": \"" + next(_it) + "\"\n}"
     return result
 
 @punt.route('/punt/conf/<string:conf_name>', methods=['GET'])
@@ -165,12 +165,12 @@ def get_conf(conf_name):
     qryresult = conf.query.get(conf_name)
     result = ""
     _it = iter(qryresult)
-    result = "{\n\t\'name\': \'" + next(_it) + "\'" + ",\n\t\'founded\': " + "\'" + next(_it) + "\',\n\t\'champ\': \'" + next(_it) + "\',\n\t\'teamset\': ["
+    result = "{\n\t\"name\": \"" + next(_it) + "\"" + ",\n\t\"founded\": " + "\"" + next(_it) + "\",\n\t\"champ\": \"" + next(_it) + "\",\n\t\"teamset\": ["
     team_list = next(_it)
     for t in team_list:
-        result += ("\'" + t + "\', ")
+        result += ("\"" + t + "\", ")
     result = result[:-2]
-    result += "]\n\t\'num_teams\': \'" + next(_it) + "\',\n\t\'comm\': \'" + next(_it) + "\'\n}"
+    result += "]\n\t\"num_teams\": \"" + next(_it) + "\",\n\t\"comm\": \"" + next(_it) + "\"\n}"
     return result
 
 
