@@ -169,7 +169,7 @@ def get_conf(conf_name):
     for t in team_list:
         result += ("\"" + t + "\", ")
     result = result[:-2]
-    result += "]\n\t\"num_teams\": \"" + next(_it) + "\",\n\t\"comm\": \"" + next(_it) + "\"\n}"
+    result += "],\n\t\"num_teams\": \"" + next(_it) + "\",\n\t\"comm\": \"" + next(_it) + "\"\n}"
     return result
 
 
