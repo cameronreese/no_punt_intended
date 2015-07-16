@@ -152,7 +152,7 @@ def get_teams(team_name):
     for p in roster_list:
         result += ("\'" + p + "\', ")
     result = result[:-2]
-    result += "]\n\t\'head_coach\': \'" + next(_it) + "\',\n\t\'confname\': \'" + next(_it) + "\'\n}"
+    result += "],\n\t\'head_coach\': \'" + next(_it) + "\',\n\t\'confname\': \'" + next(_it) + "\'\n}"
     return result
 
 @punt.route('/punt/conf/<string:conf_name>', methods=['GET'])
