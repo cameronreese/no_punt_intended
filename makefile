@@ -6,8 +6,7 @@ FILES :=							  \
 	tests.py      					  \
     apiary.apib                       \
     .gitignore                        \
-    UML.pdf	                          \
-    buildDB.py
+    UML.pdf	                          
 
 all:
 

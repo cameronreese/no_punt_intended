@@ -1,9 +1,3362 @@
-commit 549b14b5a90b4fa963ea2ce31088317bfa57e7dd
-Merge: 175d14b 98ad86b
+commit c7eb76ca2e7b8110e6f5556cbce1300f009c1a3b
 Author: Cameron Reese <cameronreese@mac.com>
-Date:   Tue Jul 7 18:43:33 2015 -0500
+Date:   Wed Jul 15 20:31:25 2015 -0500
 
-    Merge branch 'dev'
+    total commit
+
+commit 8a98f0f39fa7bb1b8aa3955e2338773c6eb85180
+Merge: f7889c0 216c63b
+Author: David <dsipos05@gmail.com>
+Date:   Wed Jul 15 20:06:27 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit f7889c0e90801798a0c77307aeaff24b1dd47b22
+Author: David <dsipos05@gmail.com>
+Date:   Wed Jul 15 20:06:23 2015 -0500
+
+    Added conf unit tests
+
+commit 216c63b549a112e72af886d0618cd418575bdbf2
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Wed Jul 15 20:04:08 2015 -0500
+
+    fixed buggggzzzzz
+
+commit ea295c387baa4cfabde11bf38b4ffe9d549962bf
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Wed Jul 15 19:53:09 2015 -0500
+
+    fixed bug
+
+commit ae8cd1ba729c3fdda8d8ebb4a2816b1dc7fb679a
+Merge: 919016d 35b0c22
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Wed Jul 15 19:49:46 2015 -0500
+
+    Merge branch 'dev' of github.com:cameronreese/no_punt_intended into dev
+
+commit 919016d449effcba4d2b7b19fba232d33e331bad
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Wed Jul 15 19:49:30 2015 -0500
+
+    fixed bug
+
+commit 35b0c224133e2ca48dfc66ca92bfa252f5f6be2d
+Merge: 2b8681d 2b8c662
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 19:48:06 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit 2b8681d7906effd18ced1c6fbc67fb2382af7da1
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 19:48:01 2015 -0500
+
+    unit test making
+
+commit 2b8c662576bfff87648b406846becfe189964669
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Wed Jul 15 19:47:13 2015 -0500
+
+    fixed bug
+
+commit 313e1092afbf46812f0a48c406782d68cf9e7b40
+Merge: 368ad33 cdf39f5
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Wed Jul 15 19:42:16 2015 -0500
+
+    Merge branch 'dev' of github.com:cameronreese/no_punt_intended into dev
+
+commit 368ad3359817d924d8c8169478f24207520bd1ee
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Wed Jul 15 19:42:08 2015 -0500
+
+    fixed bug in unit tests
+
+commit cdf39f5b65deeb807d3f889d2866fcf752fcc763
+Author: David <dsipos05@gmail.com>
+Date:   Wed Jul 15 19:37:50 2015 -0500
+
+    Added unit tests
+
+commit de2567187323c1f4b5f5503044d432a3f6304391
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Wed Jul 15 19:29:09 2015 -0500
+
+    started tests
+
+commit cd8256347d523127eb19a89521649e2b50e4faa8
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Wed Jul 15 19:23:32 2015 -0500
+
+    changed apastrophies
+
+commit befe9b40166d5072cc9b0fa4e07563d9d1c11f1c
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Wed Jul 15 19:15:34 2015 -0500
+
+    added changes for api unit testing
+
+commit e3433251be819ac8374ceb3c6fa5c8db58265bb9
+Merge: 7ed22f1 d63d95d
+Author: Josh Waller <jrwall11@utexas.edu>
+Date:   Wed Jul 15 19:02:12 2015 -0500
+
+    Merge branch 'dev' of github.com:cameronreese/no_punt_intended into dev
+
+commit 7ed22f13abc0299d806a3111fa1a1290e5d2d286
+Author: Josh Waller <jrwall11@utexas.edu>
+Date:   Wed Jul 15 19:02:07 2015 -0500
+
+    corrected games
+
+commit d63d95debd80699790397b75ec462224ae0e045b
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Wed Jul 15 18:51:48 2015 -0500
+
+    finished api call to data base change
+
+commit e5d359cc6e3c50e969b9a5ef2e45702d6344f385
+Author: Josh Waller <jrwall11@utexas.edu>
+Date:   Wed Jul 15 18:50:39 2015 -0500
+
+    Corrected data scraping for players
+
+commit a7dae033667296a39b86504acceace1ef19810fe
+Merge: a7cccf3 3a085b2
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 18:33:47 2015 -0500
+
+    Merge branch 'master' into dev
+
+commit a7cccf396fbf9ec779d57f22c77de0e6c6f38fd4
+Merge: c2986a3 8aa82a3
+Author: David <dsipos05@gmail.com>
+Date:   Wed Jul 15 18:25:18 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit c2986a364901c79e221082ada130055c3dd530c9
+Author: David <dsipos05@gmail.com>
+Date:   Wed Jul 15 18:25:12 2015 -0500
+
+    Cleaned up data files
+
+commit 8aa82a3169adfd3bf215222bd41037858988c086
+Merge: 6dd3651 22c7cb8
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 18:24:01 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit 6dd36511dbf0fc291fd4ed03c37934c81b25ade4
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 18:23:57 2015 -0500
+
+    committing
+
+commit 22c7cb8325fe45c98591eeb71b3eddf660fdd4f4
+Merge: 90e2f4b 94a7533
+Author: David <dsipos05@gmail.com>
+Date:   Wed Jul 15 18:23:04 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit 90e2f4b1b18ad9a0458971eb88d9ce44256006ea
+Author: David <dsipos05@gmail.com>
+Date:   Wed Jul 15 18:22:59 2015 -0500
+
+    Trying to fix error
+
+commit 94a7533e9d58cf207ef220b385fb28877d4560dc
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 18:20:06 2015 -0500
+
+    committing
+
+commit ea7d495c4619c0c9ce1bbed05c08ac6abf661f28
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Wed Jul 15 18:08:12 2015 -0500
+
+    changed schedule table to have away and home
+
+commit 173570d7bdf9483b456557fbabe73002c061274d
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Wed Jul 15 18:02:39 2015 -0500
+
+    added game list in as team template arg
+
+commit adecf2b4829c9e7242779b33574880a1e8101632
+Author: Josh Waller <jrwall11@utexas.edu>
+Date:   Wed Jul 15 17:42:49 2015 -0500
+
+    corrected conf
+
+commit 51827f9c36a5decf7fc6b634e8c46554691bbede
+Author: Josh Waller <jrwall11@utexas.edu>
+Date:   Wed Jul 15 17:29:25 2015 -0500
+
+    updated fillDB.py & conf
+
+commit c9e5d951b35c27dbe8a599036ec6803346044725
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 17:22:05 2015 -0500
+
+    committing
+
+commit ae7a2f3b9d900f3b4bb761fd2398b7744a7c6e9a
+Merge: b0e2eae 33ede07
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 17:14:39 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit b0e2eaeb92ae3bfacf5995ac6d0968e77c2647e8
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 17:14:36 2015 -0500
+
+    committing
+
+commit 33ede078060dfb8c4665edafc3fcc37d4f1b74dc
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Wed Jul 15 17:08:03 2015 -0500
+
+    added imports
+
+commit 6e71763b3751c59365883c4a92f3cf05e1bcb9db
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 17:01:01 2015 -0500
+
+    committing
+
+commit 4d0e9516c250556fb32a8112e91a9cee969f4a59
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 17:00:04 2015 -0500
+
+    committing
+
+commit a08065af99e6453d9b2ae568594e8881649c3523
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 16:59:17 2015 -0500
+
+    committing
+
+commit 62b3478086a20cd779fcdf2353bd558fa7bc5880
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 16:58:09 2015 -0500
+
+    committing
+
+commit 0157e3107400e0711e9b3e70f12e326c4ec321ba
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 16:56:46 2015 -0500
+
+    committing
+
+commit ea5235cb31ffe3c7bff4a34240167222b03242e5
+Merge: 730f4c9 917df11
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 16:55:52 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit 730f4c9ed6228b24ff0680eea66d011af3bce50a
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 16:55:48 2015 -0500
+
+    committing
+
+commit 917df11bb74980566ecc705ea915956987f7ceb3
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Wed Jul 15 16:51:59 2015 -0500
+
+    added imports
+
+commit 279ce236856ad45550d3416f02efcc03250806a5
+Merge: 9efbd3d 28fd884
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Wed Jul 15 16:43:39 2015 -0500
+
+    Merge branch 'dev' of github.com:cameronreese/no_punt_intended into dev
+
+commit 9efbd3dc47039ed56d98649ec233d80cf2ae8c2b
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Wed Jul 15 16:43:30 2015 -0500
+
+    added imports
+
+commit 28fd88429a435a55562509cab154273124d3cbc9
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 16:30:10 2015 -0500
+
+    committing
+
+commit 97d9ae5e87bceb2ecd4c6ba27e515abee386eaeb
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Wed Jul 15 16:28:52 2015 -0500
+
+    added imports
+
+commit 43bb049a47d232fc0c2cf50f43b4c00b008b9f15
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Wed Jul 15 16:25:38 2015 -0500
+
+    changed game model
+
+commit d3cc7083642fe31e9d519a0cd2e431f085213a8e
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Wed Jul 15 16:21:10 2015 -0500
+
+    changed game model
+
+commit 6676666cbbd4bc07be7a5e66a06680fc44fbb7a4
+Merge: d8a8157 3dff49d
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Wed Jul 15 16:12:51 2015 -0500
+
+    Merge branch 'dev' of github.com:cameronreese/no_punt_intended into dev
+
+commit d8a81572e1f80c2c7b387829ecc4e2ae56140db4
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Wed Jul 15 16:12:46 2015 -0500
+
+    changed game location
+
+commit 3dff49dcc301230865ac5f30c416a438253f7f06
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 16:09:15 2015 -0500
+
+    committing
+
+commit 235e83bd8098169bd7bb9ebd2de8967efbe5a33e
+Merge: c3309c3 8a612e9
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 16:07:07 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit c3309c3ffaa27861d68c61748b1144736fb5e3ba
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 16:07:04 2015 -0500
+
+    committing
+
+commit 8a612e96369ddf46853c2080f43701006584e3c4
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Wed Jul 15 16:04:29 2015 -0500
+
+    worked on unit tests
+
+commit bfeecec5d611194d3a987adaedb9beb32af2349c
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 16:03:06 2015 -0500
+
+    committing
+
+commit 141fe6f01fde30264b68fc8ef7be329cba731cf1
+Merge: 8fbd8be e6db91d
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 16:01:20 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit 8fbd8be486cb4e189dc10eb9260d603eb14a2dfc
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 16:01:17 2015 -0500
+
+    committing
+
+commit e6db91dce86a0c26ef0606f411ba05bfbd96b4e7
+Author: Josh Waller <jrwall11@utexas.edu>
+Date:   Wed Jul 15 16:01:15 2015 -0500
+
+    New UML design
+
+commit d57429ef6029316d71a8a426fa1307ac6a4e7bb2
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 15:58:26 2015 -0500
+
+    committing
+
+commit 8a13f955a2aea9295ea8cc17b23eaf5c49bd1c0c
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 15:50:35 2015 -0500
+
+    committing
+
+commit 63787b36bbb2baf14ef5140387ccdfc3cba47235
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 15:49:12 2015 -0500
+
+    committing
+
+commit 7ddffc19f38664432623968573ef0cd31408356f
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 15:48:33 2015 -0500
+
+    committing
+
+commit 9a76fcd7529ff0defe93e46d61e2b65000e4d2f9
+Merge: 740170b 2661cab
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 15:47:07 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit 740170b8bc0d94d250d6b7660cf6d3b3e2ddbf95
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 15:47:04 2015 -0500
+
+    committing
+
+commit 2661cab8079d69b81ff5067d59f0395120cd7f97
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Wed Jul 15 15:35:52 2015 -0500
+
+    worked on unit tests
+
+commit 32d5b8ff9e8e21d34c2db6d55a41f3f3da211b40
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Wed Jul 15 15:35:12 2015 -0500
+
+    worked on unit tests
+
+commit 0ecc405acdcbc4c63011f442d0c28df906d0cda3
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Wed Jul 15 15:34:06 2015 -0500
+
+    worked on unit tests
+
+commit b2e5b3d9df1bfb67493626faa1fe94a28a055b33
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Wed Jul 15 15:32:50 2015 -0500
+
+    worked on unit tests
+
+commit 50bc0256e845c92e79277a66002d97ef39e046a9
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 15:32:28 2015 -0500
+
+    committing
+
+commit 8a5424d7cdeaac2b7b4932cf72145d4f273f98c1
+Merge: b5f97cb a9c8b30
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 15:31:05 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit b5f97cbd5d96ddc792a09c23d1170ee5cfdcd3e2
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 15:31:02 2015 -0500
+
+    committing
+
+commit a9c8b303c0d9be7d6e0234e26ddcdd28f60e5bba
+Author: Josh Waller <jrwall11@utexas.edu>
+Date:   Wed Jul 15 15:30:25 2015 -0500
+
+    corrected data extraction in fillDB.py
+
+commit d8e8c2a22f469646119237a7999e239c5c65e690
+Author: Josh Waller <jrwall11@utexas.edu>
+Date:   Wed Jul 15 15:28:35 2015 -0500
+
+    Update fillDB.py to implement schedule
+
+commit 6471e30e983480490abc890346a87b178ab8cded
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Wed Jul 15 15:26:45 2015 -0500
+
+    worked on unit tests
+
+commit 13c63728466111555c0ad462feadec2beed00631
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 15:26:11 2015 -0500
+
+    committing
+
+commit 2bf4e79e4daa37e5069fc7e03e98b7f7ff9c1a1a
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 15:20:17 2015 -0500
+
+    committing
+
+commit 3562b6516197a9d7664e272053fa824eb57a0b33
+Merge: f5e9cd2 5f14857
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 15:17:41 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit f5e9cd2f3b2fc5b8f2f15b81bffc7741665c2d4c
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 15:17:39 2015 -0500
+
+    committing
+
+commit 5f148574a845738a79aba61a9ab7a8de79ceb5e9
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Wed Jul 15 15:10:59 2015 -0500
+
+    worked on unit tests
+
+commit 65daf1181aec907e212b647d79847d60cec083b1
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 14:58:43 2015 -0500
+
+    committing
+
+commit 73d4f2e55dcb0300241c6fcc81e729a064799015
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Wed Jul 15 12:48:33 2015 -0500
+
+    worked on unit tests
+
+commit eb14f8e0b875a81d017a5c87e4970f8a3bf027c9
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Wed Jul 15 12:43:38 2015 -0500
+
+    added serialization in iter
+
+commit f38150b417cac5e4388726bb1ee148c6a091e2cd
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Wed Jul 15 12:41:26 2015 -0500
+
+    added serialization in iter
+
+commit 577e0399373c5451e0496b6ccc29d4b35a27612d
+Author: Josh Waller <jrwall11@utexas.edu>
+Date:   Wed Jul 15 12:34:46 2015 -0500
+
+    Schedule data has been extracted
+
+commit 06d09b5e8d7d94ef0db8c24cb5a1b2ef4a6a3cae
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Wed Jul 15 12:28:14 2015 -0500
+
+    added serialization in iter
+
+commit 03b1aa35fb4e45366f1104d811f16d2665f9cc4e
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Wed Jul 15 12:22:41 2015 -0500
+
+    added serialization in iter
+
+commit 1d702f5df1d60c4d37910e5b520ebc447f03f1b6
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Wed Jul 15 12:06:25 2015 -0500
+
+    added iter method to team model
+
+commit 217da1c6eef1fb4396745a071922b1c8851d8dc6
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 11:58:47 2015 -0500
+
+    committing
+
+commit ad7870724899da9192dfdf6aee286f1d52f09ed6
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 11:58:23 2015 -0500
+
+    committing
+
+commit 07cf3ac28104c292ad0413abc867268c9a34a7ca
+Merge: 111fd7d fc34599
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 11:57:41 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit 111fd7d8f0f727f393e9edbdc3327e0a4be1ed15
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 11:57:38 2015 -0500
+
+    committing
+
+commit fc345996f2413900cf7932a6af4fe2a525a4fcaf
+Merge: 5d6996d 1ee388b
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Wed Jul 15 11:55:36 2015 -0500
+
+    Merge branch 'dev' of github.com:cameronreese/no_punt_intended into dev
+
+commit 5d6996dd6ebe93dedd4ca1c1df365b87d7143f8a
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Wed Jul 15 11:55:24 2015 -0500
+
+    added iter method to team model
+
+commit 1ee388bdb6dd350436eb249604e52014dee3e5ef
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 11:55:22 2015 -0500
+
+    committing
+
+commit f1e794ad41e8dbd66f80cc7949fab4eea38ea643
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 11:53:34 2015 -0500
+
+    committing
+
+commit 21fdb7ce1e6dd6e2aea5aa286fc07e1f9f104dad
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 11:53:04 2015 -0500
+
+    committing
+
+commit 1cacdc30de61cec3227dca9850d6e011fbf6c870
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 11:52:41 2015 -0500
+
+    committing
+
+commit 103eeb04f7d83d0f9a5fe6e2c4aaffcbb4270dc9
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 11:51:44 2015 -0500
+
+    committing
+
+commit 8c0f543eb7cc7abf13bada278fa56419a23e01e3
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 11:51:13 2015 -0500
+
+    committing
+
+commit 005bf8f6172b48c365ad0427251a8486f9cee806
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 11:50:37 2015 -0500
+
+    committing
+
+commit d9bec708e6d6dc5a62d1dd396b9702e0733453f9
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 11:50:07 2015 -0500
+
+    committing
+
+commit 4e995237cd916dadf3837e85b46934d2ab7269b5
+Merge: 3e62d22 48a2a9b
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 11:49:39 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit 3e62d22d490ae94c751ec9b99768632100382036
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 11:49:36 2015 -0500
+
+    committing
+
+commit 48a2a9bb35eb95c7d427bc382e65f05e7413dba8
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Wed Jul 15 11:49:23 2015 -0500
+
+    unit test attempts
+
+commit b4c2734ee1207ea1458b3f2e798302605d01fe74
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 11:47:35 2015 -0500
+
+    committing
+
+commit f7378543b65a4b6eb54f27e51fef4b379535ade9
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 11:46:35 2015 -0500
+
+    committing
+
+commit 8d474e7a0d8d5a8329cc91257a13f36580157a29
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 11:45:37 2015 -0500
+
+    committing
+
+commit 18867db423d1904e9dfe12113fbfb4f3b92b7fd3
+Merge: cdd1502 0d76dc4
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 11:44:41 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit cdd15024aabea72f63869f874e227652b903bd1c
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 11:44:38 2015 -0500
+
+    committing
+
+commit 0d76dc4267d941adf414d22cf2cd1a27bc11b6f1
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Wed Jul 15 11:41:11 2015 -0500
+
+    unit test attempts
+
+commit a4f83004a6a1e0c18bee55d216fdf081ab5edc58
+Merge: 154596b 356b099
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Wed Jul 15 11:40:22 2015 -0500
+
+    Merge branch 'dev' of github.com:cameronreese/no_punt_intended into dev
+
+commit 154596b2fee42cc49b09d2a1e926d0c1555a3f58
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Wed Jul 15 11:40:13 2015 -0500
+
+    unit test attempts
+
+commit 356b099d25d1d445e0357df331145d563a687028
+Author: Chris <crlesage@gmail.com>
+Date:   Wed Jul 15 11:39:17 2015 -0500
+
+    updated wiki for part 2
+
+commit 14f4bce057549c2587aca5c32c2143999a8fc9ee
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Wed Jul 15 11:37:06 2015 -0500
+
+    unit test attempts
+
+commit 30a8528927f0c7d19463b4504ba8f808a7b61eff
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 11:36:13 2015 -0500
+
+    committing
+
+commit 1f2aa03883db4cd5828eaf9ee07e68c86de53e5d
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 11:34:16 2015 -0500
+
+    committing
+
+commit 3b87ab3562609fba30a2b0e83ccdd83abe36d4b0
+Merge: 1417c76 eacd1d3
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 11:33:38 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit 1417c76817c8f04850aee3936cba07778e2bcdf4
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 11:33:35 2015 -0500
+
+    committing
+
+commit eacd1d31bb717e35ed633379c0dd160d7fa40cfc
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Wed Jul 15 11:33:06 2015 -0500
+
+    unit test attempts
+
+commit 72190c3ec15d3c88e72b53206f0f65ecee39bc8c
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 11:26:14 2015 -0500
+
+    committing
+
+commit ba1b370af355923d0cbc2b0d720f48a58dc88951
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 11:25:39 2015 -0500
+
+    committing
+
+commit 9ef624ddfad3a2076bc760d1746e180d0ce67762
+Merge: e6b239c 2df8d0f
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 11:25:12 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit e6b239cd3bb44ab810642cb9020c207a7c062f69
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 11:25:09 2015 -0500
+
+    committing
+
+commit 2df8d0f282403f81ffc8a8c81d42b9d782098284
+Merge: e4eb039 8502d75
+Author: David <dsipos05@gmail.com>
+Date:   Wed Jul 15 11:22:33 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit e4eb03940bbe5ef38faa6f8544b4f0f74eda460c
+Author: David <dsipos05@gmail.com>
+Date:   Wed Jul 15 11:22:27 2015 -0500
+
+    Testing pagination
+
+commit 8502d756cbe65a5bda271d9006031cfe8646e441
+Merge: 206e459 7102d70
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 11:21:39 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit 206e459e58d9b7614d1f9354d741bcede3368550
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 11:21:36 2015 -0500
+
+    committing
+
+commit 7102d703724d8902b5266fad404b4ddeadcdbf61
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Wed Jul 15 11:17:42 2015 -0500
+
+    unit test attempts
+
+commit 6b1937ac24afd23bf68783ebb0a96d91bce2d98e
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 11:17:37 2015 -0500
+
+    committing
+
+commit 1ff8fe68a73c4e137737a07a480d7a9a97037226
+Merge: ff5d51c 785f794
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 11:16:24 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit ff5d51ce05b7742aa3bb44bf2efc314739c11206
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 11:16:21 2015 -0500
+
+    committing
+
+commit 785f794b40b8245af4e8510dd5faf947aca921fd
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Wed Jul 15 11:09:40 2015 -0500
+
+    unit test attempts
+
+commit 6928e995fbb7e0783b4f01086ec8b60bec895f4f
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 11:08:23 2015 -0500
+
+    committing
+
+commit f9e39bde68185b6361bde1fc5284b8a7911cb0cd
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 11:07:25 2015 -0500
+
+    committing
+
+commit 222eecc19d977f697765bb7ac039aa5bc9a84757
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 11:06:03 2015 -0500
+
+    committing
+
+commit 08469ff06a8c86ae26d22974a1faabfa3b71fe48
+Merge: f4d8fa3 5f45c35
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 11:05:14 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit f4d8fa37b51e0f157e3268bf9b70a550368aa649
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 11:05:12 2015 -0500
+
+    committing
+
+commit 5f45c3555a47fd8b4f0f6394f269e0cb17be22f7
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Wed Jul 15 11:03:01 2015 -0500
+
+    unit test attempts
+
+commit a9508596ba9cc680ef3c54586c629e585cdcce8f
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 11:01:13 2015 -0500
+
+    committing
+
+commit d9ce8ee099e121c92cbacf44d4fa28c45c38675d
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 10:59:25 2015 -0500
+
+    committing
+
+commit 53be86ee4b2792550030b6b4bd0aeb78d52df78a
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 10:52:45 2015 -0500
+
+    committing
+
+commit 507162b4cea5b7fc4645388b380b874c629cf6bd
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 10:52:02 2015 -0500
+
+    committing
+
+commit c722de2df6c70b26f47ec36955e04a9d18c826ed
+Merge: 6f78032 e44afa6
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 10:36:29 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit 6f780325cb63699f5ff16b71f4e5af5fe0e955c5
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 10:36:24 2015 -0500
+
+    making display better
+
+commit e44afa623b18d26ff6b2af260c65903034c53454
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 14 21:34:25 2015 -0500
+
+    working on unit tests
+
+commit 477a4e6461c5e24cec3be4150bf40a108f22450f
+Merge: 91289d3 7b3e42c
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 14 21:14:25 2015 -0500
+
+    Merge branch 'dev' of github.com:cameronreese/no_punt_intended into dev
+
+commit 91289d3f1bc93e13d53bf3061b2e594436d210fe
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 14 21:14:16 2015 -0500
+
+    fixed chjamp links
+
+commit 7b3e42c044fb9edca54f045e6764e48bf35dbfdb
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 20:59:24 2015 -0500
+
+    making display better
+
+commit 4629b572823d741b29c76d5eb7edecdd61677cd1
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 20:58:05 2015 -0500
+
+    making display better
+
+commit ca9003c2a8d5daa97aaddb2bcb4f837dfa0844f5
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 14 20:56:38 2015 -0500
+
+    trying to fix modals
+
+commit 263f60fcbd4b0b53ca227fe4811e7f368069624b
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 14 20:54:19 2015 -0500
+
+    trying to fix modals
+
+commit fcb5e3db397f3cd522808c740a19c09ef4c7f3e2
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 14 20:43:23 2015 -0500
+
+    fixed modal team reference
+
+commit e1f83dd12f41bd55958529a4db0259e741b5f43d
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 20:40:00 2015 -0500
+
+    making display better
+
+commit 446910a923c852766fda4446386734d2c1f445fb
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 20:29:03 2015 -0500
+
+    making display better
+
+commit 3aaabd2849f494aebdc9e1d69ff5ad4b3b80b0e8
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 20:28:01 2015 -0500
+
+    making display better
+
+commit 22d8842a25aaccfa4acf57c0893642fceb2e1cb7
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 20:22:39 2015 -0500
+
+    making display better
+
+commit 872f04c907c98110248e615a9e8cd078883fb474
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 20:21:30 2015 -0500
+
+    making display better
+
+commit 8b92d6b9a92079151fb2411e81ab6ddcdb8acf85
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 20:15:53 2015 -0500
+
+    making display better
+
+commit 294c9c2160b32373ad5637bd3d6537af13ff6e7d
+Merge: 2bf9bc2 e85c263
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 20:13:32 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit 2bf9bc22e5ac3e897be04ae47e247fbf6cbcdeba
+Merge: 1a8cdc9 d71a4b8
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 20:13:23 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit 1a8cdc901099352bbbb75e97b029a1e25216671b
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 20:13:20 2015 -0500
+
+    making display better
+
+commit e85c263739142f5d54d12651a47bd062d1912f5c
+Author: David <dsipos05@gmail.com>
+Date:   Tue Jul 14 20:13:08 2015 -0500
+
+    still working on base
+
+commit d71a4b87d36f66e1bcbdb5ea91e531177333d2d9
+Merge: b9d6e51 a7eb851
+Author: David <dsipos05@gmail.com>
+Date:   Tue Jul 14 20:11:40 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit b9d6e5103682c0c6d72105ee32f7ed1c507b34b3
+Author: David <dsipos05@gmail.com>
+Date:   Tue Jul 14 20:11:36 2015 -0500
+
+    still working on base
+
+commit a7eb851300fc0974e1a8c634351c68c43fde52a4
+Merge: dff7a4b 4f1b3ea
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 14 20:10:48 2015 -0500
+
+    Merge branch 'dev' of github.com:cameronreese/no_punt_intended into dev
+
+commit dff7a4b949c100964a638b616f4a90706246f32a
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 14 20:10:45 2015 -0500
+
+    fixed hometown for player profile
+
+commit 4f1b3ea48a1f60dbeb9c16d1933dcb7c784ec973
+Merge: 5466414 db5e3fc
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 20:07:51 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit 5466414fa82f45739b661978bbc6ed019cedae8a
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 20:07:48 2015 -0500
+
+    making display better
+
+commit db5e3fcef7b80014e65707e70f39ab72bb8f6622
+Merge: 09c7ad4 a505344
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 14 20:04:18 2015 -0500
+
+    Merge branch 'dev' of github.com:cameronreese/no_punt_intended into dev
+
+commit 09c7ad4991934bc0f8f24f29f44513bd9591473b
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 14 20:04:14 2015 -0500
+
+    changed modals to propery reference databse
+
+commit a5053443180cd11f65654fc4851e1b6ff81deb46
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 20:03:38 2015 -0500
+
+    making display better
+
+commit 60a549cdd96858effd7d063e4c84e0b8c627cd8e
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 20:01:39 2015 -0500
+
+    making display better
+
+commit 15d34238b116eb7bf67340e8ac4eeb1fcd2c255c
+Merge: 4643b81 ad888f0
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 20:00:28 2015 -0500
+
+    making display better
+
+commit 4643b81c02441ba452f7dbd288ebf7b1c0ecc9fe
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 19:59:12 2015 -0500
+
+    making display better
+
+commit ad888f0a6cad6539e233123cac95ad00381e6d4c
+Merge: 3fb8585 04edb9e
+Author: David <dsipos05@gmail.com>
+Date:   Tue Jul 14 19:54:59 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit 04edb9e813806d2748bb447803866a7cce593532
+Merge: 33bbad1 f9ce26a
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 14 19:54:24 2015 -0500
+
+    Merge branch 'dev' of github.com:cameronreese/no_punt_intended into dev
+
+commit 33bbad1739618e7eb686279a294bf4174ccc77bb
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 14 19:54:18 2015 -0500
+
+    added proper args for teams
+
+commit 3fb85853420562d631a81607d7be9013b586fe56
+Merge: f2ebe74 f9ce26a
+Author: David <dsipos05@gmail.com>
+Date:   Tue Jul 14 19:53:21 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit f2ebe74a7380a6f5506ec2fbfe65c7fd860820d7
+Author: David <dsipos05@gmail.com>
+Date:   Tue Jul 14 19:53:17 2015 -0500
+
+    copied datatable responsive js/css into static folder
+
+commit f9ce26a9f649162205fd41ed44c34422a074947b
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 19:53:11 2015 -0500
+
+    making display better
+
+commit dbabdc3eb155b99f2337132f150ebf3544d84ba4
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 19:52:48 2015 -0500
+
+    making display better
+
+commit 76b06f53a635dbdd7b478d55a527b76b4df10c30
+Merge: f074f24 b36fd52
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 19:48:56 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit f074f24e33f996a335c5dc0199aeb8fb9f423faa
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 19:48:53 2015 -0500
+
+    making display better
+
+commit b36fd5216338d8342674468a404998286b83e8ed
+Author: David <dsipos05@gmail.com>
+Date:   Tue Jul 14 19:48:35 2015 -0500
+
+    fix base
+
+commit 5e55c158af8e5693d482a3a1a0b23dce74a4e688
+Author: David <dsipos05@gmail.com>
+Date:   Tue Jul 14 19:46:23 2015 -0500
+
+    Working on base
+
+commit 4f4b411850cd1ac4ed333f6193afe75eae9e4862
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 19:45:02 2015 -0500
+
+    making display better
+
+commit 15bfa35ac6e47e24ec8eccc829b5fdb7f834d1d2
+Merge: 5d1ed27 96488cf
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 19:42:46 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit 5d1ed2761db057717f42e2474df58c6a61319f08
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 19:42:43 2015 -0500
+
+    making display better
+
+commit 96488cf5d9e22e4be8efea940f46b8eff1523331
+Author: David <dsipos05@gmail.com>
+Date:   Tue Jul 14 19:40:10 2015 -0500
+
+    Fix base
+
+commit 6c8fab0642e3fccd7fbb9e92ddbd25b05aa7099d
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 19:37:55 2015 -0500
+
+    making display better
+
+commit f6b92e1b8198ff0185ab4df51812dbb865500d48
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 19:36:31 2015 -0500
+
+    making display better
+
+commit 81b511e9d195652c9d16e1e14fdfd4bca1ca80a8
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 19:35:26 2015 -0500
+
+    making display better
+
+commit fd08f517bf00f0d907affa7ca4db48bfa838534d
+Merge: 7840589 7eb7b8a
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 14 19:34:17 2015 -0500
+
+    Merge branch 'dev' of github.com:cameronreese/no_punt_intended into dev
+
+commit 7840589a5e7d2327bf169c7ca697554995a7dda0
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 14 19:34:11 2015 -0500
+
+    fixed link to player photossrc
+
+commit 7eb7b8acf4f40a1a50935fa26141e5ebdac5c9ea
+Merge: ad39747 b82c12c
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 19:33:38 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit ad39747b3e0a060023f17a47bc87290b4a0097f6
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 19:33:29 2015 -0500
+
+    making display better
+
+commit b82c12cb3fe3037177c8fe5f567d03bc5721e1b2
+Merge: 6b711dd 4ea67d1
+Author: David <dsipos05@gmail.com>
+Date:   Tue Jul 14 19:33:17 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit 4ea67d16bfd29e8d44dd73e4e37b5e5d3d82b1ff
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 19:32:51 2015 -0500
+
+    making display better
+
+commit 6b711ddaac3d7f3eb0c974682f99b0ad4107a5cb
+Merge: 25c4c72 753319d
+Author: David <dsipos05@gmail.com>
+Date:   Tue Jul 14 19:32:06 2015 -0500
+
+    Working on base
+
+commit f878a4d3ad50e96baeeaf6aa01709331e0a5590b
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 19:31:30 2015 -0500
+
+    making display better
+
+commit 25c4c72ed9ef0a82887204779d15997908ef85b9
+Author: David <dsipos05@gmail.com>
+Date:   Tue Jul 14 19:30:17 2015 -0500
+
+    Working on tables
+
+commit 753319d095f540667deb0d38c7a1e9a7bffc10b4
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 19:30:10 2015 -0500
+
+    making display better
+
+commit 6657a3fddf9be1f17ba07ef7de84327463130c2c
+Merge: 985b441 a4d1c60
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 19:29:24 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit 985b4414387fd9b80a860768be60c060aa71fc2c
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 19:29:21 2015 -0500
+
+    making display better
+
+commit a4d1c6010738ffc0ec79de8bdbc69e39c2c595c5
+Merge: 4dcc98b c55e574
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 14 19:28:50 2015 -0500
+
+    Merge branch 'dev' of github.com:cameronreese/no_punt_intended into dev
+
+commit 4dcc98b2ec769b8f8fb6e7bd52b057643f4307d5
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 14 19:28:45 2015 -0500
+
+    changed player api arg to string
+
+commit c55e57489b036851e5534c0c8438e12482252013
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 19:27:27 2015 -0500
+
+    making display better
+
+commit 2c9263607b0c30c16946e273429dbba91964ec28
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 19:26:48 2015 -0500
+
+    making display better
+
+commit 42b3d06c419fd2a0006934eef72543cfff3c5a91
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 19:24:53 2015 -0500
+
+    making display better
+
+commit 709fd729cb1b9ba99c343acaa56eb6b41788d4d0
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 19:23:33 2015 -0500
+
+    making display better
+
+commit 372cdb9fded6e523131eec5b43f311ece82f17f3
+Merge: bf2adae 1387566
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 19:21:44 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit bf2adaef1fc73cb146505774de640edb2e3cd482
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 19:21:27 2015 -0500
+
+    making display better
+
+commit 13875666917c6588afc4da3a3f9c1b37f734ca30
+Merge: ad7a919 bac71f9
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 14 19:21:07 2015 -0500
+
+    Merge branch 'dev' of github.com:cameronreese/no_punt_intended into dev
+
+commit ad7a919395531ac016857bfc6ac12f65b7a306e4
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 14 19:21:03 2015 -0500
+
+    changed player calls to player id
+
+commit bac71f93aa0adc794e6bcff9f35060105829b61d
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 19:16:48 2015 -0500
+
+    making display better
+
+commit b9160f0836a205140610730d7e04283fb8227ebb
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 19:16:07 2015 -0500
+
+    making display better
+
+commit 2e659f630790e122f7551f621609beae512c0555
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 19:15:20 2015 -0500
+
+    making display better
+
+commit d1d0118c715dbcba78dc8b07a2de75a23d90452a
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 19:14:23 2015 -0500
+
+    making display better
+
+commit 4d9eda2db8c3cd2053c962ccaa44af8eda019318
+Merge: 78888a9 a253998
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 19:12:53 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit 78888a94740c2288860873e4c26d2bd3d528a2a0
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 19:12:50 2015 -0500
+
+    making display better
+
+commit a25399834d02dafdccac33e9a9556268b24dfb24
+Merge: 49594e3 9b66a6f
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 14 19:11:57 2015 -0500
+
+    Merge branch 'dev' of github.com:cameronreese/no_punt_intended into dev
+
+commit 49594e3c61e3976bc0d2a9b932bf7690dbce55b2
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 14 19:11:54 2015 -0500
+
+    changed player team links
+
+commit 9b66a6fcf652cc1607d3f14ad8cbb6c733095ed1
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 19:11:23 2015 -0500
+
+    making display better
+
+commit 37209cad755539b06b87d06981888eaa49e2552c
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 19:09:01 2015 -0500
+
+    making display better
+
+commit fa725c46c9ff518c66826835dc2c00c93ab6c828
+Merge: 277e48a 73e99bd
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 19:05:17 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit 277e48aa95235f29bf1ea76f2dfe9ffb5690d9be
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 19:05:14 2015 -0500
+
+    making display better
+
+commit 73e99bd6bb04fe98e5b3ab1ff02da2b210a15c4b
+Merge: 44f68ee cf6e783
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 14 19:04:57 2015 -0500
+
+    Merge branch 'dev' of github.com:cameronreese/no_punt_intended into dev
+
+commit 44f68ee5a0911b7e81381faff061ca01c7526479
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 14 19:04:47 2015 -0500
+
+    changed player attributes for player profile
+
+commit cf6e783b5a4464074399128ccb0aa5d2569df61b
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 19:03:53 2015 -0500
+
+    making display better
+
+commit a8cba1800454b14ec63dd6870db95981fecfa3b0
+Merge: c1ace42 33f6082
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 19:02:36 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit c1ace42da43c77921a8234d6cec3d469f44bbc09
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 19:02:34 2015 -0500
+
+    making display better
+
+commit 33f6082787a45a9765194e74e8d90cb60c0f1165
+Merge: 82c3112 51bee42
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 14 19:02:15 2015 -0500
+
+    Merge branch 'dev' of github.com:cameronreese/no_punt_intended into dev
+
+commit 82c3112b0d12d2cafce0613f311e89becca6b821
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 14 19:02:10 2015 -0500
+
+    changed player attributes for player profile
+
+commit 51bee42b1421f9b02b2a63b2732695a9ef40d077
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 19:00:24 2015 -0500
+
+    making display better
+
+commit 3d2d05ae2dd4284af080c352c75421cb46708c2a
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 18:58:22 2015 -0500
+
+    making display better
+
+commit 132b87fb18e4ba8d46d04c3858c87d315db18e1b
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 18:56:58 2015 -0500
+
+    making display better
+
+commit c3b2b0f3d3fc711e439083a7ac27257b5b3a388d
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 18:52:57 2015 -0500
+
+    making display better
+
+commit d496c9881e32cb2951f9b5c4718d635671337f72
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 18:52:00 2015 -0500
+
+    making display better
+
+commit 34c0821f3babdbc1897eee40f16846b486a1943d
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 18:51:27 2015 -0500
+
+    making display better
+
+commit 4c670366121cb88433908a9344e59cffb270758e
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 18:49:07 2015 -0500
+
+    making display better
+
+commit 992e928764ed6c4e84c657f44421f9356fb89940
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 18:46:24 2015 -0500
+
+    making display better
+
+commit 86774143eec7a319ec8fa03eeca468b14ff2b63b
+Merge: c93cc2e 77700d0
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 18:45:01 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit c93cc2eb320f2ca8ec5375d66ae9fb4355b42ca0
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 18:44:58 2015 -0500
+
+    making display better
+
+commit 77700d03972b3a883a36c2d92c4d26536d227da0
+Merge: b754448 f348fb3
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 14 18:43:07 2015 -0500
+
+    Merge branch 'dev' of github.com:cameronreese/no_punt_intended into dev
+
+commit b7544480cc74877889815566d494db81c9a8fee0
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 14 18:42:57 2015 -0500
+
+    player pass in full instance instead of name
+
+commit f348fb3f1d2649829650b98c868e3264056db0d1
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 18:40:17 2015 -0500
+
+    making display better
+
+commit 5f383fe093804f9c150460da14bdbc4265b5326f
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 18:39:33 2015 -0500
+
+    making display better
+
+commit db754cd9ded07c7196110738c38e15fad2c50e6a
+Merge: e83d130 7c2acfa
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 18:37:37 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit e83d130eec8787b1cc991a6776e621e9b44541aa
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 18:37:34 2015 -0500
+
+    making display better
+
+commit 7c2acfa5acf6c5f9e8d61813a7e2fac9f25794c6
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 14 18:36:33 2015 -0500
+
+    changned all args for each page render to match the syntax for the db calls
+
+commit 8e7013674399d0377e3c83fbc37ae65edd74deb2
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 18:35:36 2015 -0500
+
+    making display better
+
+commit 1dcc504a519628c72a38740310124565bab89a4c
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 18:34:57 2015 -0500
+
+    making display better
+
+commit 4757434578d994346a12e21542add520ae936609
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 18:34:19 2015 -0500
+
+    making display better
+
+commit 809172ab5cd7789ad050bf00d48995b2cd331c3b
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 18:33:32 2015 -0500
+
+    making display better
+
+commit baa46a1decdd4c6075927a6f548132ba4f169ffe
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 18:32:51 2015 -0500
+
+    making display better
+
+commit 68f4bae86f8166c2c162a8a6cd7451a3b82f98d3
+Merge: d4897d9 1264b31
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 18:31:58 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit 1264b31ae63c6a2e573786de9dac21ea632137b8
+Merge: 7a0fe2c 668fafb
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 14 18:31:21 2015 -0500
+
+    Merge branch 'dev' of github.com:cameronreese/no_punt_intended into dev
+
+commit d4897d93d4fcf08f84cda27f008844ce014856a4
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 18:31:19 2015 -0500
+
+    making display better
+
+commit 7a0fe2c4240d2b1da31341d6c9ae43ea2f15a4f4
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 14 18:31:12 2015 -0500
+
+    added list generator to team profile api
+
+commit 668fafb756ea9361038a73c580b13da421fe8de1
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 18:30:06 2015 -0500
+
+    making display better
+
+commit 41c19186d32f89453afa88d36b837e93adcdacc3
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 18:29:22 2015 -0500
+
+    making display better
+
+commit 8e3dc957d32dff7025c57f41bd3c8435a6c1cca0
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 18:28:10 2015 -0500
+
+    making display better
+
+commit 78e033dc8d75159ef076f824716f275f780ff0a2
+Merge: 7b2ab27 f659260
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 18:25:40 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit 7b2ab278d0a1dfc8436419d38ba2d68057e87ab9
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 18:25:29 2015 -0500
+
+    making display better
+
+commit f65926071de2394e5a7ff3751b9d0f3da8163746
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 14 18:25:10 2015 -0500
+
+    changed model element sub grab
+
+commit e9095365067cde40a56e1e9960272bc1962af938
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 18:24:02 2015 -0500
+
+    making display better
+
+commit 8b4340cc93031cb86b200462c40666db23a4d41d
+Merge: 4448152 5a607d2
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 18:17:50 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit 444815275e8a1cb29ef7853c275886e6d68bd747
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 18:17:47 2015 -0500
+
+    making display better
+
+commit 5a607d28ba3fd0d1e3fcff917cdd06870b897656
+Merge: ec2b7fe c5b69b3
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 14 18:14:24 2015 -0500
+
+    Merge branch 'dev' of github.com:cameronreese/no_punt_intended into dev
+
+commit ec2b7fe2f1bd21287781b245d52add02b60763db
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 14 18:14:20 2015 -0500
+
+    changed model attributes to match db
+
+commit c5b69b3adce3db4c9e0ddbee335d476d41432a32
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 18:08:12 2015 -0500
+
+    making display better
+
+commit 6ef212205560b6b1887a01515a9cf84c1d839805
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 18:07:16 2015 -0500
+
+    making display better
+
+commit 8d4961db28516d425886653275abd5ffd4517220
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 18:04:14 2015 -0500
+
+    making display better
+
+commit 0b29a56dbd1835148d20b68187d4abf9436002b9
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 18:02:22 2015 -0500
+
+    making display better
+
+commit 65b69af598fadb9734c3ec3f5199bdb0cd0a28f7
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 18:01:14 2015 -0500
+
+    making display better
+
+commit 0a82b5d9d369d363ec2abc6c92f78240110814df
+Merge: d861bfa 1264454
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 17:56:10 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit d861bfa8e61109571952f0fcf62a76e187dbf3c7
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 17:56:06 2015 -0500
+
+    making display better
+
+commit 1264454d70c1a3aa48069b62ab10632a40554825
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 14 22:45:27 2015 +0000
+
+    chagnes to make db work
+
+commit 14ae05fb671aef3f8ef90fd9ef73d979058e215b
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 17:36:58 2015 -0500
+
+    making display better
+
+commit 53c45feb3cb38e3c3fed8189daa3670dfb9b56f0
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 17:36:29 2015 -0500
+
+    making display better
+
+commit 561b781936af92dfda1e050d895b108e37f991b1
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 17:32:51 2015 -0500
+
+    making display better
+
+commit a3c075f07d9cbf7b32c2f4162ca5e6b9138bd065
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 17:29:01 2015 -0500
+
+    making display better
+
+commit 226c20c4906fd99ee2026bf57c71f7fa977e58ba
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 17:28:31 2015 -0500
+
+    making display better
+
+commit c7c48e240cc13613ed47091a34c0945d403d44bd
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 17:27:49 2015 -0500
+
+    making display better
+
+commit 12082c55f17e4e56504f7e3b935147a43eb1bddb
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 17:26:58 2015 -0500
+
+    making display better
+
+commit 3b39d4cdca98bbb8fb911bb631b50c306cdbacae
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 17:20:31 2015 -0500
+
+    making display better
+
+commit c18c9a23d996d9ee8bb03c31f43d0927a85d6363
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 17:17:08 2015 -0500
+
+    making display better
+
+commit 74a0f13e5396357dc71c3e8d8bea16847dc60fc3
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 17:16:32 2015 -0500
+
+    making display better
+
+commit 23916b20031a3f06c455fe1ba2c096ae12ead138
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 17:15:54 2015 -0500
+
+    making display better
+
+commit 4a0d8101de0c5d75d7340523cfc2b73be622439b
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 17:05:07 2015 -0500
+
+    making display better
+
+commit 7147a381c89a1ce6da1de17022aa9fd494cf9fa6
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 17:04:23 2015 -0500
+
+    making display better
+
+commit 367439643b1b2e76740cc12f95eaa293ddc5716b
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 17:01:29 2015 -0500
+
+    making display better
+
+commit 6744187ff83aaa2cc67da537b11d0fda31ff4b17
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 17:00:21 2015 -0500
+
+    making display better
+
+commit bde9f1e5861792c2edb89f76f014bdb022eca788
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 16:58:32 2015 -0500
+
+    making display better
+
+commit 4519fb1f329e9c4dbc1dd4fca42cfc1c3bb711fc
+Merge: 6e9ef80 1b2c1c5
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 16:57:02 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit 6e9ef8008986829d9e79298edba7dfcc772cecc6
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 16:56:59 2015 -0500
+
+    making display better
+
+commit 1b2c1c57945ebdd113e67a45b7ee1e5e73ea149a
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 14 15:34:12 2015 -0500
+
+    new ip for db
+
+commit f4a88062087628b176ef24a84502084a48a1ccfc
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 14 14:56:35 2015 -0500
+
+    changes
+
+commit 6b86d74176abd13cb3643e9bab09979fcbb8a5ba
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 14 14:45:23 2015 -0500
+
+    redid file structure
+
+commit a3d4913dc846f3b457ccd649a2c43d0d2ef4a499
+Merge: fadfc90 6fa6b0e
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 14:22:24 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit fadfc9051069a41aec90e8d78c3caca635e7e060
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 14:22:22 2015 -0500
+
+    making display better
+
+commit 6fa6b0e61686a8218330c9d0b18c3b03f1efdba1
+Merge: 5072990 53be5ab
+Author: Chris <crlesage@gmail.com>
+Date:   Tue Jul 14 14:21:53 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit 50729905b3527c7cb1dd0e3445cddfb60ef0364d
+Author: Chris <crlesage@gmail.com>
+Date:   Tue Jul 14 14:21:51 2015 -0500
+
+    messing with responsive tables
+
+commit 53be5abb777480bdd67eaadf0634d1f08df0a16d
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 14:21:31 2015 -0500
+
+    making display better
+
+commit d7f85281f3e852cb9c865bd0759515122377109e
+Merge: 52ad050 ea10317
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 14:19:30 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit 52ad050e095473364976ee93991943fa8d7cc85b
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 14:19:28 2015 -0500
+
+    making display better
+
+commit ea103177a1012731867902b673fccec1891a1001
+Merge: c263db3 360808f
+Author: Chris <crlesage@gmail.com>
+Date:   Tue Jul 14 14:18:23 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit c263db3026a6314c02bd7c83034be0de77ba8867
+Author: Chris <crlesage@gmail.com>
+Date:   Tue Jul 14 14:18:18 2015 -0500
+
+    messing with responsive tables
+
+commit 360808fb4858c874fa7e1a0416d625e5b62de26d
+Merge: a9ab99d 443b62b
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 14:18:04 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit a9ab99d02a575711b10c4b7f10567726ef7ffe74
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 14:18:00 2015 -0500
+
+    making display better
+
+commit 443b62b4365d7326ccac27c5cc2056cb309048ad
+Author: Chris <crlesage@gmail.com>
+Date:   Tue Jul 14 14:15:01 2015 -0500
+
+    messing with responsive tables
+
+commit b93ceed072e626bca56e40349fb8c0c7d9004516
+Author: Chris <crlesage@gmail.com>
+Date:   Tue Jul 14 14:12:48 2015 -0500
+
+    messing with responsive tables
+
+commit a202e055a9f616b0827fc0d6216d4cde462d6fad
+Merge: e0d2b9a c01fcee
+Author: Chris <crlesage@gmail.com>
+Date:   Tue Jul 14 14:11:25 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit e0d2b9a00127796d388174b29e27c9dd67da6be9
+Author: Chris <crlesage@gmail.com>
+Date:   Tue Jul 14 14:11:22 2015 -0500
+
+    messing with responsive tables
+
+commit c01fceec687af9b655e336186c18f31e604c6607
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 14:10:47 2015 -0500
+
+    making display better
+
+commit 670a5ba24f955f64312988edc72d79b783305596
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 14:09:46 2015 -0500
+
+    making display better
+
+commit f85d8a22bb54dd40cd2914aba0b1ceb81493c51a
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 14:07:42 2015 -0500
+
+    making display better
+
+commit 99693d22731757cd9dcfbc5637f83aebf50eb4b9
+Merge: 2f74c20 dd07ac9
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 14:05:40 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit 2f74c20aed5c8dca6a7c3421ef8ea91866bd85ba
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 14:05:38 2015 -0500
+
+    making display better
+
+commit dd07ac94f1d4f8c0d1fee2150246582708a94bd7
+Author: Josh Waller <jrwall11@utexas.edu>
+Date:   Tue Jul 14 14:05:10 2015 -0500
+
+    Update init_db.sh
+
+commit 8876b63b527beed8ffc2d4b7a8cb603102fbcde7
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 14:04:28 2015 -0500
+
+    making display better
+
+commit e11b15972aec3fb9bca397f423c2eeaa46173735
+Merge: 2a4eed1 f0c9353
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 14:03:02 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit 2a4eed1fa9916bae33eab9fc580f33db61eac576
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 14:03:00 2015 -0500
+
+    making display better
+
+commit f0c9353229bbb2a43a14d3494a01f848c8df979a
+Merge: 8882057 2f80154
+Author: Chris <crlesage@gmail.com>
+Date:   Tue Jul 14 14:02:34 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit 8882057d4986405eb8ff51ad05020060935bf175
+Author: Chris <crlesage@gmail.com>
+Date:   Tue Jul 14 14:02:29 2015 -0500
+
+    messing with responsive tables
+
+commit 2f80154961708d99fe610f074c5a6e44957992af
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 14:01:39 2015 -0500
+
+    making display better
+
+commit c02f6d338425480f7db90c34206a78a8741a7056
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 14:00:47 2015 -0500
+
+    making display better
+
+commit d54b4f64b9f94a4779f53c29011543126ea84e0b
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 13:59:38 2015 -0500
+
+    making display better
+
+commit 6bf9ba257b2767f8bf7f07d597dcfa9cbd5121f9
+Merge: b190f41 5f0def5
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 13:57:22 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit b190f412f86d2cf8e714efa1b65948db5482d42a
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 13:57:20 2015 -0500
+
+    making display better
+
+commit 5f0def54641c169d6d6ef4cb4ea34b582618aa69
+Merge: 76d7d1d 7174759
+Author: Chris <crlesage@gmail.com>
+Date:   Tue Jul 14 13:56:32 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit 76d7d1d65fbbb55b6a2f2f0acf507721ecbf6293
+Author: Chris <crlesage@gmail.com>
+Date:   Tue Jul 14 13:56:28 2015 -0500
+
+    messing with responsive tables
+
+commit 7174759f0f371aa062d81bbfd9e8bdfa905037f9
+Merge: bbdd1c3 1026b8c
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 13:54:09 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit bbdd1c3c76fb24a4df5dca07dc37e1a9cc07c9e8
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 13:54:06 2015 -0500
+
+    making display better
+
+commit 1026b8c74e655cbb0cf6269ca50d5e1b363d2b16
+Author: Chris <crlesage@gmail.com>
+Date:   Tue Jul 14 13:53:48 2015 -0500
+
+    messing with responsive tables
+
+commit 6cda739ee29c79e357a3f0ee7e0dc3ea8613013c
+Merge: f6b0a00 e6200e9
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 13:53:00 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit f6b0a000fd10ca73f1a098e8304a17114a7324cc
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 13:52:57 2015 -0500
+
+    making display better
+
+commit e6200e93bbc5827cb6f1e4199e6dd2807362175e
+Merge: c2eda8b 2badaa1
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 14 13:50:36 2015 -0500
+
+    Merge branch 'dev' of github.com:cameronreese/no_punt_intended into dev
+
+commit c2eda8b64f959962bf530ad86f83fe19c8102c07
+Merge: 36c8c4b 4f9e26a
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 14 13:50:25 2015 -0500
+
+    Merge branch 'dev' of github.com:cameronreese/no_punt_intended into dev
+
+commit 2badaa1186eb4c0160a3b0919318e244a5846292
+Author: Josh Waller <jrwall11@utexas.edu>
+Date:   Tue Jul 14 13:50:24 2015 -0500
+
+    Attempt to populate db
+
+commit 36c8c4b89f856b0a4b2820bf7ee5b65809512017
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 14 13:50:16 2015 -0500
+
+    started to add DB call implementation testing
+
+commit 4f9e26a055bdc9c649f1cc31c345130a229def1b
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 13:49:26 2015 -0500
+
+    making display better
+
+commit 71ac80e08e8770aca738d9746aff699c4cbc994d
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 13:48:59 2015 -0500
+
+    making display better
+
+commit c7735d8655b93e8b6d8a299b1ee640ce4c8a52de
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 13:47:26 2015 -0500
+
+    making display better
+
+commit 00a3aedc4215371968b4956766935325beddb4e1
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 13:46:53 2015 -0500
+
+    making display better
+
+commit 08dfc3738b88e05040287e37478c42f5c2dabef8
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 13:46:09 2015 -0500
+
+    making display better
+
+commit 11ed4cba5574dd2e3a74488febb1731facada5ad
+Author: David <dsipos05@gmail.com>
+Date:   Tue Jul 14 13:44:46 2015 -0500
+
+    Added homepage pic
+
+commit 5d4ba2655e2d479bea19f31171db51345c19cca7
+Author: Chris <crlesage@gmail.com>
+Date:   Tue Jul 14 13:44:02 2015 -0500
+
+    testing responsive table on player table
+
+commit 82a161c99b363b9e1d355dd3a0d6c325c4a81507
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 13:39:09 2015 -0500
+
+    making display better
+
+commit e1511c378adf3dc965381a044f5b1fd39d7a3f73
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 13:37:53 2015 -0500
+
+    making display better
+
+commit 64f30005f30762ac556a64d46619ec4e69f54fd8
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 13:37:24 2015 -0500
+
+    making display better
+
+commit d6b1f95ccb88b210e27d31461d1a5e206374d74f
+Merge: 4b602be bdd69df
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 13:36:58 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit 4b602bee85d0b3bf3c567242ed40af4ca251fbad
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 13:36:55 2015 -0500
+
+    making display better
+
+commit bdd69df208f11fd822feee5397322b5097c61509
+Merge: 76a8a1d 155cdb0
+Author: Chris <crlesage@gmail.com>
+Date:   Tue Jul 14 13:34:21 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit 76a8a1d92a70b07d286665b860f4af43554985a0
+Author: Chris <crlesage@gmail.com>
+Date:   Tue Jul 14 13:34:18 2015 -0500
+
+    alignment fixed
+
+commit 155cdb008e08bbe42e56694ce2b217a7adee0b3c
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 13:32:12 2015 -0500
+
+    making display better
+
+commit afcf9b22b17dce9d08a7daf7cf31cdc59df95be2
+Merge: 44734e2 0ef99a9
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 13:30:28 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit 44734e2a65560eca8e511dda766a9bf9b331001e
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 13:30:24 2015 -0500
+
+    making display better
+
+commit 0ef99a903e8658051856eac260ba7cd5ecd56511
+Author: Chris <crlesage@gmail.com>
+Date:   Tue Jul 14 13:30:01 2015 -0500
+
+    responsive attribute added to tables
+
+commit fc81c0fc86cf60d7b864d3700ddf23833a3c9e4d
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 13:29:05 2015 -0500
+
+    fixing display bugs
+
+commit e37711b3da5a4246780b0269c54294e9a8f4c02c
+Merge: d3d5c66 fed221e
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 13:27:17 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit d3d5c6656b038acb466d7b5b2987283fff21e13f
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 13:27:15 2015 -0500
+
+    fixing display bugs
+
+commit fed221efd40f362f8c36524621097fe1baa72c8c
+Author: Chris <crlesage@gmail.com>
+Date:   Tue Jul 14 13:26:17 2015 -0500
+
+    responsive attribute added to tables
+
+commit 7120db2d8e5de02d639d2b9f1125519ed4307beb
+Merge: b7ae20f 067a4d3
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 13:25:30 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit b7ae20f96474c7ac488d5afeece6196ce9dd8485
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 13:25:28 2015 -0500
+
+    fixing display bugs
+
+commit 067a4d37b97f69b2703ddba16c88ede69fcd9de6
+Merge: 8db0ada a88a8c7
+Author: David <dsipos05@gmail.com>
+Date:   Tue Jul 14 13:24:30 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit 8db0ada3a6825aaadb024419bd377d56fe89b06e
+Author: David <dsipos05@gmail.com>
+Date:   Tue Jul 14 13:23:47 2015 -0500
+
+    Fixed team stat file
+
+commit 645ac1f6189b2743b8324de4826d95152db658e6
+Author: David <dsipos05@gmail.com>
+Date:   Tue Jul 14 13:23:15 2015 -0500
+
+    Fixed team stat file
+
+commit a88a8c7c7bed60e75e7dd0ded1e550be6568ccb9
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 13:23:05 2015 -0500
+
+    fixing display bugs
+
+commit 6e03f4508fc0fd53cbe70a6f6088e8d70df9f873
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 13:21:15 2015 -0500
+
+    fixing display bugs
+
+commit a3049f3ffc5b07a5a859e6cec8c6184f3f7a278c
+Merge: a62ba5f a1ce54b
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 14 13:18:03 2015 -0500
+
+    Merge branch 'dev' of github.com:cameronreese/no_punt_intended into dev
+
+commit a62ba5f0e384d97a499fc6f661b201c720dfd505
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 14 13:17:55 2015 -0500
+
+    added more fake players
+
+commit a1ce54b49a362b86533f9420e74e8e37e0ecef5b
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 13:14:33 2015 -0500
+
+    fixing display bugs
+
+commit d2dfd2f028b9adac4a86d1a34f68ea37de2a263a
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 13:12:33 2015 -0500
+
+    fixing display bugs
+
+commit bbcd4bd57fb2a10d11fdbfe1bdcd3249a78e6fa5
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 13:11:21 2015 -0500
+
+    fixing display bugs
+
+commit 3d0003611dee4cc5c731aa0f53b8d990b0dff76a
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 13:06:56 2015 -0500
+
+    fixing display bugs
+
+commit 53d41897c3113681c4fdfdc971dbfff3d918b721
+Merge: 02b4213 9f49a8b
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 13:03:28 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit 02b42131cc9b114e417732cbfeef2daaa9301ebb
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 13:03:25 2015 -0500
+
+    fixing display bugs
+
+commit 9f49a8bccdc77a0cbaa87ae9e7f625d81284ab20
+Author: Chris <crlesage@gmail.com>
+Date:   Tue Jul 14 13:01:55 2015 -0500
+
+    initialized responsive files in base.html
+
+commit 117bedac9dad8397fbf12d38813e1b2b6f7d83b6
+Author: Chris <crlesage@gmail.com>
+Date:   Tue Jul 14 12:58:37 2015 -0500
+
+    added dataTable_responsive.css and .js files
+
+commit 00b04d8d22f588c209eeae2426073a811246e427
+Author: Chris <crlesage@gmail.com>
+Date:   Tue Jul 14 12:54:15 2015 -0500
+
+    testing responsive tables on old tables
+
+commit 9962041cf4a472be831cd250bf8dd975da38b3a6
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 12:52:09 2015 -0500
+
+    fixing display bugs
+
+commit 028d8e1453417cfdfef904eab32e7ef3a29dcb75
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 12:49:31 2015 -0500
+
+    fixing display bugs
+
+commit 6ead5e9c96c2e9b8b3324993e5efa858ffe50ec5
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 12:38:45 2015 -0500
+
+    fixing display bugs
+
+commit 8c461931e77cbb8647866d10e1847acd2a46af4f
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 12:37:30 2015 -0500
+
+    fixing display bugs
+
+commit 7f7719f5631629c438b8336ac56ded7b003d3761
+Merge: 597962b 4cd41ce
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 12:35:36 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit 597962b8eb200a6397a37f364ee757ffe9d42121
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 12:35:33 2015 -0500
+
+    fixing display bugs
+
+commit 4cd41ce4169df0f1e49d760e956e768bda96ee87
+Merge: 779505b 48be572
+Author: Josh Waller <jrwall11@utexas.edu>
+Date:   Tue Jul 14 12:34:31 2015 -0500
+
+    Merge branch 'dev' of github.com:cameronreese/no_punt_intended into dev
+
+commit 779505bbc33c64a03de8f3fef4ed766d907d278e
+Author: Josh Waller <jrwall11@utexas.edu>
+Date:   Tue Jul 14 12:34:08 2015 -0500
+
+    updated fillDB.py
+
+commit 48be5721e1fbdf40a70bc93174a6b1f0e6818458
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 12:32:41 2015 -0500
+
+    fixing display bugs
+
+commit 5eb12ce3d39f0bb2a13909e44be7ac639be78068
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 12:28:53 2015 -0500
+
+    fixing display bugs
+
+commit 00dbfbcec2ffc978e4b703d476741fec1036e9a0
+Merge: 2290c0f 356e729
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 12:22:03 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit 2290c0fcf0781846c8230d10135226e12a815741
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 12:21:59 2015 -0500
+
+    changing display style
+
+commit 356e729eea7d7755888a2af4674e7149113782d7
+Author: David <dsipos05@gmail.com>
+Date:   Tue Jul 14 12:19:20 2015 -0500
+
+    Team file data all correct
+
+commit 681b3489b47fd7d472b94a3aacb8e928d2112499
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 12:17:36 2015 -0500
+
+    changing display style
+
+commit 4a21f9813d8cd2a5dba472679dedf9dfa4e622f0
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 12:14:33 2015 -0500
+
+    changing display style
+
+commit ff6d004b3f9e15d5986544a9947848aab471bc37
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 12:13:01 2015 -0500
+
+    changing display style
+
+commit 79b826fcc7c7f90e5466ac18904fa5dab30cbb52
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 12:09:45 2015 -0500
+
+    changing display style
+
+commit 2a7428dde8dfabe9368ce6c16a3434d881f53ad7
+Merge: 1520bcc cf234a5
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 11:59:10 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit 1520bcc563e051806722351440b68da2f348f3c6
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 11:59:05 2015 -0500
+
+    font change
+
+commit cf234a571b6982693c95d9feb485049fb130cb5a
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 14 11:54:18 2015 -0500
+
+    changed teams.html block layout
+
+commit 89cc128270900eeb41774b4765f3c70d64bb4e39
+Merge: 46c721b fb88d5c
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 14 11:49:37 2015 -0500
+
+    Merge branch 'dev' of github.com:cameronreese/no_punt_intended into dev
+
+commit 46c721b357cc2bddf5949852043a4d84dc360d54
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 14 11:49:34 2015 -0500
+
+    changed teams.html block layout
+
+commit fb88d5c6674c501b0a4789d22da165d3d9404c93
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 11:41:39 2015 -0500
+
+    font change
+
+commit 85b07d6968996177357250c897057909125858ba
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 11:39:55 2015 -0500
+
+    font change
+
+commit e3567c0adde28c1f66258ec5da1284e4e94e38a0
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 11:35:10 2015 -0500
+
+    font change
+
+commit 498c24369036ddff35bcb6906ab86a0ad4794cc8
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 11:30:37 2015 -0500
+
+    font change
+
+commit 84836a746e919670f2c4d2cb8d528d2f1b036169
+Merge: 7ec1761 a404853
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 11:28:38 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit 7ec17611ed5509790788ccb8033fe33de854b0f1
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 11:28:31 2015 -0500
+
+    font change
+
+commit a404853893c8dfbf3ad3bbd0b07c6cfa30b942ae
+Merge: d52a9de ec02bae
+Author: Josh Waller <jrwall11@utexas.edu>
+Date:   Tue Jul 14 11:27:16 2015 -0500
+
+    Merge branch 'dev' of github.com:cameronreese/no_punt_intended into dev
+
+commit ec02bae2b0706aa10027da125a04904c24eb9a9c
+Merge: f50ce21 f08b243
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 14 11:24:29 2015 -0500
+
+    Merge branch 'dev' of github.com:cameronreese/no_punt_intended into dev
+
+commit f50ce2192557014ae06aa8eb39d47f812039d134
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 14 11:24:15 2015 -0500
+
+    added css src path
+
+commit d52a9de7e311ac1cf48e474d5b5e1752d4f50166
+Author: Josh Waller <jrwall11@utexas.edu>
+Date:   Tue Jul 14 11:24:13 2015 -0500
+
+    resloved issue 49
+
+commit f08b2433223fe14d8ed483618cb80f2f1bc13c64
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 11:23:56 2015 -0500
+
+    font change
+
+commit 268c296d8e5a9838d488dabe9cab3d075fa01c0a
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 14 11:16:21 2015 -0500
+
+    font change
+
+commit bf71281be8e7ad86b2d6d379e8da89d0eb23a09e
+Author: Josh Waller <jrwall11@utexas.edu>
+Date:   Tue Jul 14 11:01:23 2015 -0500
+
+    Corrected URI
+
+commit 98202302a30a3a58c84d85d1e13a9a1663b03d87
+Author: Josh Waller <jrwall11@utexas.edu>
+Date:   Tue Jul 14 00:36:01 2015 -0500
+
+    modified models.py in db
+
+commit 1fcc13df1d1e16eefe654606a52d72ab02304201
+Author: Josh Waller <jrwall11@utexas.edu>
+Date:   Tue Jul 14 00:27:01 2015 -0500
+
+    Corrected overwrite of conf.json & added gamescrap.py
+
+commit 296ea23c6b31342ee432808313b51bb440ab9532
+Author: Josh Waller <jrwall11@utexas.edu>
+Date:   Tue Jul 14 00:25:47 2015 -0500
+
+    Added to models.py and fillDB.py
+
+commit 634b416948b67edd847bd961da5ebc9c753746f4
+Author: Josh Waller <jrwall11@utexas.edu>
+Date:   Tue Jul 14 00:24:31 2015 -0500
+
+    Added init_db.sh
+
+commit 6b40080007ec2ac060f4209ee696faef487f7696
+Author: David <dsipos05@gmail.com>
+Date:   Mon Jul 13 20:57:11 2015 -0500
+
+    Team json created with name, location, coach, conference
+
+commit e0b0835fbe381ca7b61fc0ff934919e6b5a3cd1e
+Author: Josh Waller <jrwall11@utexas.edu>
+Date:   Mon Jul 13 20:48:04 2015 -0500
+
+    Cleaned player data and made json file
+
+commit d4e8dfbff87ea98b512360d55ab3c6d1ba5be19a
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Mon Jul 13 20:04:59 2015 -0500
+
+    added temp fake data
+
+commit 0c8e77fe503794fae55490fe68d1b17d3ef54d48
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Mon Jul 13 20:01:22 2015 -0500
+
+    added custom css link
+
+commit 047df74b5d97da354cb93d0ba29968e826392601
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Mon Jul 13 19:50:25 2015 -0500
+
+    added sorting images
+
+commit 2d9070d42d2ab7d088cde514c9096f90af640c78
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Mon Jul 13 19:48:16 2015 -0500
+
+    corrected correct file
+
+commit f91175ade60700d0e36a8e22513a02facbfad7cb
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Mon Jul 13 19:46:25 2015 -0500
+
+    corrected correct file
+
+commit 419b04d3f76a9b813d1dfcf10df0f84d3be90ca8
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Mon Jul 13 19:43:55 2015 -0500
+
+    corrected correct file
+
+commit cc902c2eecf90a09f59cda74a48bce01a41c81a5
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Mon Jul 13 19:41:57 2015 -0500
+
+    corrected correct file
+
+commit ff0930ce617fd943d2ec0ac548035c2aa3f6a44d
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Mon Jul 13 19:39:06 2015 -0500
+
+    file restructuring
+
+commit 273445f96fed591726f11aea65ee386c0d922bb1
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Mon Jul 13 19:30:59 2015 -0500
+
+    changed path to sorting imgs
+
+commit 36c7a8e92d7f8220c86fd4e4d8877c2a0549f867
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Mon Jul 13 19:28:37 2015 -0500
+
+    changed path to sorting imgs
+
+commit 0269d72332276ff8ad0c8610f872b63e89445387
+Author: Chris <crlesage@gmail.com>
+Date:   Mon Jul 13 19:05:57 2015 -0500
+
+    bug fixed: datatable's png's static file direction
+
+commit db623c2a207b5ce64d3ddfa8dfc1341d7ab49edd
+Merge: 81b75bf 4e63490
+Author: Chris <crlesage@gmail.com>
+Date:   Mon Jul 13 18:53:06 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit 81b75bf168bb16bfe5c02b2246db8804376bee6e
+Author: Chris <crlesage@gmail.com>
+Date:   Mon Jul 13 18:53:02 2015 -0500
+
+    change sorting icon filepath
+
+commit 4e63490e852604607f5ad035ad71a5a62007c26e
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Mon Jul 13 18:47:46 2015 -0500
+
+    chagned js import locations
+
+commit d19ed58b32b4b69078030c1a00a13cdac3927283
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Mon Jul 13 18:45:10 2015 -0500
+
+    chagned js import locations
+
+commit 6ed82f15908b12a0addb8b52666b08713a69ce95
+Merge: fa65b82 3e4a9fd
+Author: Chris <crlesage@gmail.com>
+Date:   Mon Jul 13 18:33:38 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit fa65b82f8fb7aaae61f3f58d3a0282f579ef715c
+Merge: fa5dc8c 1d2f4fa
+Author: Chris <crlesage@gmail.com>
+Date:   Mon Jul 13 18:33:30 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit 3e4a9fd5cda790e4f835418120b03ddbe0970e3b
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Mon Jul 13 18:33:28 2015 -0500
+
+    changed path to js
+
+commit fa5dc8c328ab4e3618f185616e19bf788ae196d7
+Author: Chris <crlesage@gmail.com>
+Date:   Mon Jul 13 18:33:27 2015 -0500
+
+    added / in front of js/ files
+
+commit 1d2f4fa94269b5b70e84261bc4105a057ca8f770
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Mon Jul 13 18:24:30 2015 -0500
+
+    changed fake data
+
+commit aceaa2bb291fb567cd7b4a91b3bdca06c89d6c44
+Author: Chris <crlesage@gmail.com>
+Date:   Mon Jul 13 18:22:12 2015 -0500
+
+    bug fixed, modal id can't have space
+
+commit 77b3f9cce0e72eb93d7551448f1253ab828e26c8
+Author: Chris <crlesage@gmail.com>
+Date:   Mon Jul 13 18:17:31 2015 -0500
+
+    modal extension table fix, hopefully
+
+commit 230e832ab7f378b035429ca597cec4f3ac2bfdcc
+Merge: 69a18bb bf08a8f
+Author: Chris <crlesage@gmail.com>
+Date:   Mon Jul 13 18:01:38 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit 69a18bb248ed10318761ea0428711f4bc1e7bbde
+Author: Chris <crlesage@gmail.com>
+Date:   Mon Jul 13 18:01:34 2015 -0500
+
+    confTable change
+
+commit bf08a8fa8e7366d1c374636ae081476f5da6bbb8
+Author: David Sipos <djs3567@cs.utexas.edu>
+Date:   Mon Jul 13 17:57:07 2015 -0500
+
+    Fixed player picture link file
+
+commit 25d01c8a865b69a7842f00820360f40857050a02
+Author: Josh Waller <jrwall11@utexas.edu>
+Date:   Mon Jul 13 17:48:27 2015 -0500
+
+    added buildDB.py for db
+
+commit 5b416e7f07e4e49885ffe30e12e707582b4735fa
+Merge: 886ddd3 5a2ece3
+Author: Chris <crlesage@gmail.com>
+Date:   Mon Jul 13 17:45:44 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit 886ddd3dad8723d2f9482a14f81389e45d0333b5
+Author: Chris <crlesage@gmail.com>
+Date:   Mon Jul 13 17:45:40 2015 -0500
+
+    confTable change
+
+commit 5a2ece341fd339ad9a2169fec70a499b4ad91e33
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Mon Jul 13 17:45:05 2015 -0500
+
+    changed test data to be different
+
+commit 62e83001d1a46ce788eef0b8cd43f6aca70c317a
+Author: Chris <crlesage@gmail.com>
+Date:   Mon Jul 13 17:39:30 2015 -0500
+
+    fixed team modal in confTable
+
+commit 3ca85b0a63418c3ac6741943640be569545c52c5
+Merge: e70500a dde5729
+Author: Chris <crlesage@gmail.com>
+Date:   Mon Jul 13 17:34:05 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit e70500acd2b52f92baa34235e8f6eff650b90c9c
+Author: Chris <crlesage@gmail.com>
+Date:   Mon Jul 13 17:34:03 2015 -0500
+
+    fixed small error in typing confTable
+
+commit dde57296fc606e2e9888727067a63d95a7caea3c
+Author: Josh Waller <jrwall11@utexas.edu>
+Date:   Mon Jul 13 17:31:49 2015 -0500
+
+    Commented out confscrap.py
+
+commit 9fdc18552ffe4cd05191c1526fb402acd74047b5
+Author: Chris <crlesage@gmail.com>
+Date:   Mon Jul 13 17:30:31 2015 -0500
+
+    fixed link for teamTable
+
+commit 756f9e5547401ed58b0b072a015da06407c0d9cb
+Author: Chris <crlesage@gmail.com>
+Date:   Mon Jul 13 17:29:05 2015 -0500
+
+    team roster/schedule link
+
+commit b64b7ff51dea04fcd28369e09cac200e1763589f
+Merge: d740b70 beb7a54
+Author: Chris <crlesage@gmail.com>
+Date:   Mon Jul 13 17:24:17 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit d740b70f24c30e558329cb577acf98fe33299235
+Author: Chris <crlesage@gmail.com>
+Date:   Mon Jul 13 17:24:09 2015 -0500
+
+    fixed confTable attributes
+
+commit beb7a544f804881ffbb369ee4ccfa77542701a5d
+Author: Josh Waller <jrwall11@utexas.edu>
+Date:   Mon Jul 13 17:23:32 2015 -0500
+
+    Created conf.json
+
+commit 9a316db4a6d53a5cd672b3953961bb9f586f5cb5
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Mon Jul 13 17:17:42 2015 -0500
+
+    added args for team and conf table template pages
+
+commit e642991e5e4f2d2d6b878652ab1a4480d4d2dac8
+Author: Chris <crlesage@gmail.com>
+Date:   Mon Jul 13 17:16:57 2015 -0500
+
+    fixed file direction in conf/teamTable.html
+
+commit def62bf59cdc3488b88ba9f2d26d35b104c43d18
+Author: Chris <crlesage@gmail.com>
+Date:   Mon Jul 13 17:12:54 2015 -0500
+
+    responsive table test and fixed file direction
+
+commit 21af947acd1e312f87c9ee94aae75f6c30e7a88d
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Mon Jul 13 17:04:31 2015 -0500
+
+    added args to playerTable.html page
+
+commit a96d4cb598db4fb0d4cda5e459e253d2afac3c69
+Author: Chris <crlesage@gmail.com>
+Date:   Mon Jul 13 17:03:25 2015 -0500
+
+    testing playerTable
+
+commit 04450c97c80024cfb85d0334b05a3ad053ea56e2
+Author: Chris <crlesage@gmail.com>
+Date:   Mon Jul 13 16:57:51 2015 -0500
+
+    changed localhost to cfdb.me
+
+commit 5763b47f7ce3ac18c2689471254f619433f13b72
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Mon Jul 13 16:55:16 2015 -0500
+
+    changed js source path
+
+commit f09838b0d565dbe4f70c86dcbe112c23e06da0ba
+Author: Chris <crlesage@gmail.com>
+Date:   Mon Jul 13 16:45:05 2015 -0500
+
+    fixed teamTable
+
+commit f6b4743820cd37b54517ca846cea7d32f4c8a839
+Author: Chris <crlesage@gmail.com>
+Date:   Mon Jul 13 16:44:14 2015 -0500
+
+    fixed playerTable
+
+commit 9eebc52e53f2f012dbbb9bd60287528592188db3
+Author: Chris <crlesage@gmail.com>
+Date:   Mon Jul 13 16:43:38 2015 -0500
+
+    fixed conferenceTable
+
+commit 136a08687a7b485b4194f15fd2e5ec65d4567a13
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Mon Jul 13 16:26:03 2015 -0500
+
+    fixed spelling error
+
+commit 072eece41d5a5463e16c025d3df00284a6863629
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Mon Jul 13 16:21:55 2015 -0500
+
+    removed random html garbage
+
+commit f95d8917a4133e6cf85ae6c9ef36de820f81c67c
+Author: David <dsipos05@gmail.com>
+Date:   Mon Jul 13 16:20:13 2015 -0500
+
+    modified player stats file
+
+commit 046372c122985e8ff2fb249e97f84e9596a907ac
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Mon Jul 13 16:17:41 2015 -0500
+
+    reorganized folder structure
+
+commit acdfc26213a236a45f9cd6b4a4de551386ded989
+Merge: 2c5d83f 747da21
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Mon Jul 13 16:16:25 2015 -0500
+
+    Merge branch 'dev' of github.com:cameronreese/no_punt_intended into dev
+
+commit 2c5d83f14e130255c952ac950181a8e9f4db73c1
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Mon Jul 13 16:16:15 2015 -0500
+
+    changed head index
+
+commit 747da21ebc7b6ee0a39e2e1bf002be4b598d04c9
+Author: Chris <crlesage@gmail.com>
+Date:   Mon Jul 13 16:07:28 2015 -0500
+
+    Updated dynamic teamTable
+
+commit e14c95d8097554424a0e9cfdbdb6972e215d26de
+Author: Chris <crlesage@gmail.com>
+Date:   Mon Jul 13 16:06:49 2015 -0500
+
+    Updated dynamic playerTable
+
+commit b57624b39833915ebd8c04f2d223cca4463bc7b5
+Author: Chris <crlesage@gmail.com>
+Date:   Mon Jul 13 16:05:57 2015 -0500
+
+    Updated dynamic confTable
+
+commit 2e11ab4812d414dfffaebc8feeabbc8cb4aad83b
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Mon Jul 13 16:01:30 2015 -0500
+
+    added splash index to head of site
+
+commit 7b97ecec70ea9d4dd8fcd385279e0727866404f5
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Mon Jul 13 15:45:48 2015 -0500
+
+    added dynamic population of the schedule list in teams profile page
+
+commit e58859350d447c3e01a759b69d70a236e1d54860
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Mon Jul 13 15:43:15 2015 -0500
+
+    added fake data
+
+commit 958e7f7e715172955447b7cdf34c3aefe6b1bbd8
+Author: Josh Waller <jrwall11@utexas.edu>
+Date:   Mon Jul 13 15:23:54 2015 -0500
+
+    Developing database skeleton
+
+commit e2983d2d27415cc379bcde19dd0c39ef8c277da4
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Mon Jul 13 12:44:22 2015 -0500
+
+    fixed player name and number showing up as link
+
+commit 3183b9e4f91ed46e5cdf5d4ae3601a002e6e158e
+Author: David <dsipos05@gmail.com>
+Date:   Mon Jul 13 11:23:37 2015 -0500
+
+    Full dictionary with all players and their corresponding picture links
+
+commit fa1e8aa11c0379cce1a0f03208f47e94b6450145
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Mon Jul 13 11:19:01 2015 -0500
+
+    bs test changes
+
+commit 6f8d5d6f4cef4024fe5fbd0004f63ce1c2e54b77
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Mon Jul 13 11:16:23 2015 -0500
+
+    reorganized
+
+commit ad255117e438f34576d3fce1f1165c19550c5d66
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Mon Jul 13 11:13:44 2015 -0500
+
+    fixed bug
+
+commit d02499c42aa6f9095a6089026813a4bf7b3b9c01
+Merge: 5716ace d07f2aa
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Mon Jul 13 11:10:43 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit 5716acea19b23f9c8023090729fabe486e0e1950
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Mon Jul 13 11:10:40 2015 -0500
+
+    fixed bug
+
+commit d07f2aa4d74641202755b35531c6a62fc0cfc41d
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Mon Jul 13 11:00:12 2015 -0500
+
+    fixed typo in teams API
+
+commit e6952bfcd904c6145592b828d099d3f977a3d7ee
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Mon Jul 13 10:51:33 2015 -0500
+
+    added API calls
+
+commit a3c7959411859f89e8c0e6a7491c3c13ba50de5f
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Mon Jul 13 10:46:08 2015 -0500
+
+    added API calls
+
+commit 7e5a556f39668e3cd9a43512c9883a91ec0ddcbe
+Merge: d6446b2 d04b711
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Mon Jul 13 10:41:52 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit d6446b2a8fbe0189aa0b7838af6840a4e98401fc
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Mon Jul 13 10:41:49 2015 -0500
+
+    added API calls
+
+commit d04b711ff8dab290d5d3dabec0a9171ac8404440
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Mon Jul 13 10:32:09 2015 -0500
+
+    added atributes to models for dynamic populations
+
+commit d26366922b7a6d8adb8e706ca2e8a4717d5c14b8
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Mon Jul 13 10:26:13 2015 -0500
+
+    additional changes
+
+commit 1cdd3617ba557bff648be9b5abb730391955d75b
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Mon Jul 13 10:15:55 2015 -0500
+
+    added API calles to nav bar
+
+commit 8e9e92ec71012932ef837e25c4a992b4b95f2d20
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Mon Jul 13 10:11:01 2015 -0500
+
+    removed conf attribute from player
+
+commit 4199b5abd54884560a0e304bc44ee391fee73598
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Mon Jul 13 09:59:03 2015 -0500
+
+    reassigned titles to members
+
+commit 4c6610bf69a0c846ab33b78d969f79997122cb0f
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Mon Jul 13 09:00:10 2015 -0500
+
+     yes
+
+commit 256518d5417e662f65e6a78f7050072342ea62f2
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Mon Jul 13 08:52:59 2015 -0500
+
+    added API url calls for teams and player profile page
+
+commit 4ab6df714b6663160c70f6fc8c02381c19248c85
+Author: David <dsipos05@gmail.com>
+Date:   Sun Jul 12 22:23:08 2015 -0500
+
+    Building dictionary with name and image link
+
+commit 0e6b349a3f574ba761ae83e31e0a423c78bea775
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Sun Jul 12 18:44:47 2015 -0500
+
+    fixed links
+
+commit d8a554fe1fca60f7b94c561f47949dc52092034d
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Sun Jul 12 18:29:32 2015 -0500
+
+    on the way
+
+commit fa534b0fd27a502d083d9f5b045ed707f2b4e744
+Merge: 443d3a9 8c89861
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Sun Jul 12 17:05:40 2015 -0500
+
+    Merge branch 'dev' of github.com:cameronreese/no_punt_intended into dev
+
+commit 443d3a915063dbc2bd1ab188f667eb59ea5c8341
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Sun Jul 12 17:05:32 2015 -0500
+
+    corrected conf_template api
+
+commit 8c898614de35853379e1728f3ae3b6e96cdcdac7
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Sun Jul 12 17:01:44 2015 -0500
+
+    fix bug
+
+commit 4774d9df73357b8afda2dd2dae8aa060e991ab76
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Sun Jul 12 16:52:15 2015 -0500
+
+    file structure
+
+commit b263930573829c5c3188d65e906631d42fffbd0f
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Sun Jul 12 16:48:59 2015 -0500
+
+    cleaned up file structure
+
+commit 4cd87bff6005c9e2003794e707abd3ebd25e32dc
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Sun Jul 12 16:44:19 2015 -0500
+
+    fixed links to proper format
+
+commit 0c41caa69b5a8d640815f16607c113c466a93b0d
+Merge: 123f560 271abfb
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Sun Jul 12 16:04:07 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit 123f560465a6e7f8fc90b7ab5e249f797916f113
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Sun Jul 12 16:04:03 2015 -0500
+
+    api stuff
+
+commit 271abfbb9c7166c666af0f659e2a85223370536d
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Sun Jul 12 15:54:06 2015 -0500
+
+    removed tables nav bar and combined with base
+
+commit 1fa5e7fb0621ae11a8aa60437cc24367812743a5
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Sun Jul 12 15:23:04 2015 -0500
+
+    made changes for src and img file path names
+
+commit 0c8ac2b62be85f25a44b905e3d207faef529688c
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Sun Jul 12 14:06:44 2015 -0500
+
+    took out punt
+
+commit f65de8d01f7e34fa0cb8c2611387188e315f5e18
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Sun Jul 12 14:05:35 2015 -0500
+
+    cleaned up stuff
+
+commit a3d4ed81978e3310553da9353a22652ec4ff5a02
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Sun Jul 12 13:46:16 2015 -0500
+
+    added dynamic links
+
+commit d3ab6ad9725b8bc6731979a1ccc12bf44fb693d8
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Sun Jul 12 13:41:59 2015 -0500
+
+    added routes and functions for about, and ncaa
+
+commit 3d3b009350c67da7bdc7b32a6ead464e0924bad5
+Merge: ea4d6bd eff0162
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Sun Jul 12 13:24:34 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit ea4d6bd352ad5961bc9748922fe583195928a9cc
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Sun Jul 12 13:24:25 2015 -0500
+
+    changing files to encorporate dynamic qualities
+
+commit eff0162fcf02e8160c85f1c3d66a8d3e2a209d08
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Sun Jul 12 12:44:00 2015 -0500
+
+    moved models.py
+
+commit b94dc1c1981ea1d60ebeb42ee0dff3bab86eae45
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Sun Jul 12 12:43:30 2015 -0500
+
+    moved models.py
+
+commit 62e1d01f1413e2e53ed4cdd954f2825d7fb4c73f
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Sun Jul 12 12:11:23 2015 -0500
+
+    put files in template folder
+
+commit f6436c01a74675ba789e15dd656d9621b21215d1
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Sun Jul 12 12:09:07 2015 -0500
+
+    added models.py file
+
+commit 50960506fb0869e6f0116b324d26efc589f85036
+Merge: 74246bd 7385a20
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Sun Jul 12 11:54:34 2015 -0500
+
+    Merge branch 'dev' of github.com:cameronreese/no_punt_intended into dev
+
+commit 74246bdbbebb807fae9a6a76ca78b4c811102862
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Sun Jul 12 11:54:19 2015 -0500
+
+    added index() function to generate dynamic splash page
+
+commit 7385a20fef8d4764cc379a4013ad078c7a429ca9
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Sun Jul 12 11:40:40 2015 -0500
+
+    added tables pages and new folders
+
+commit 8383ad46a5f1f53f36ceea9874b6c04a1e48251d
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Sun Jul 12 11:32:39 2015 -0500
+
+    added teams page
+
+commit e86ee67b83946bb23bd0da66885eb6b457eae8d2
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Sun Jul 12 11:29:46 2015 -0500
+
+    added about page
+
+commit bac3cfb3d8da712734c9b250d1a930197f1a1cde
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Sun Jul 12 11:17:06 2015 -0500
+
+    added dynamic block content to base.html
+
+commit a19031e93984a9253390d56a2b6b895e0ac5b63c
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Sun Jul 12 11:08:45 2015 -0500
+
+    added dynamic title to base.html
+
+commit fe34dd2085c3fc293069dace61aba5ee57376661
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Sun Jul 12 11:00:20 2015 -0500
+
+    created site2 folder, for use with phase 2, added base.html template page
+
+commit 6e817a64b9d3c3a90e073b5af930c77a7270b42c
+Merge: 5ff9f8f e127076
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 7 19:36:11 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit 5ff9f8f70fee553cbe9deeed2b26649ef3524334
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 7 19:36:07 2015 -0500
+
+    actual final phase 1 commit
+
+commit e12707630a3416689ee6efed6d93401e211ac375
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 7 19:27:48 2015 -0500
+
+    ignore
+
+commit eb16b3111d1b9f7303d5d93dec8568dd2893a790
+Merge: 4e7d66f 0568cac
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 7 19:18:46 2015 -0500
+
+    Merge branch 'dev' of github.com:cameronreese/no_punt_intended into dev
+
+commit 4e7d66f1bf8a6600039fb695612deaa9549e7e7c
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 7 19:18:31 2015 -0500
+
+    added makefile change
+
+commit 0568cacabf7a6f326fd645867aade1d5fe833f1f
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Tue Jul 7 19:16:04 2015 -0500
+
+    final phase 1 commit
 
 commit 98ad86b7e3229ee29eb83d2d950aed1a73bc7fc7
 Author: Cameron Reese <cameronreese@mac.com>
@@ -42,12 +3395,6 @@ Date:   Tue Jul 7 17:28:25 2015 -0500
 
     Added code to index.html to add icon to tabs, as well added images for icon.
 
-commit 175d14b1e91c8ab7c271812d0f7f364bb02dfc19
-Author: Cameron Reese <cameronreese@mac.com>
-Date:   Tue Jul 7 17:19:17 2015 -0500
-
-    added uml back to master
-
 commit 196446896c56beff81373573b6536b5d61e2185f
 Author: Josh Waller <jrwall11@utexas.edu>
 Date:   Tue Jul 7 17:17:51 2015 -0500
@@ -78,13 +3425,6 @@ Author: Josh Waller <jrwall11@utexas.edu>
 Date:   Tue Jul 7 16:38:02 2015 -0500
 
     Added Joshua.txt bio
-
-commit a88ee2823b252fc6933486759cc7d4068d913a4d
-Merge: ec9b99a 1e65074
-Author: Cameron Reese <cameronreese@mac.com>
-Date:   Tue Jul 7 16:29:59 2015 -0500
-
-    updating master
 
 commit 1e65074643f5c837e142e8252107500a99bf29a5
 Author: Cameron Reese <cameronreese@mac.com>
@@ -313,12 +3653,6 @@ Date:   Tue Jul 7 11:01:35 2015 -0500
 
     added apairy doc file
 
-commit ec9b99adedabf0e6ee6d5d11dceec9008b5ffba7
-Author: Cameron Reese <camreese@utexas.edu>
-Date:   Tue Jul 7 10:55:02 2015 -0500
-
-    Transferring blueprint from apiary.io
-
 commit f1e1fa7fedce60f1acab51d7cd02ac20685632bc
 Author: Cameron Reese <cameronreese@mac.com>
 Date:   Tue Jul 7 10:53:10 2015 -0500
@@ -331,65 +3665,17 @@ Date:   Tue Jul 7 10:18:06 2015 -0500
 
     fixed bug with secondary nav-bar behavior
 
-commit ab7d4b9f467b58da182f3b28066643607d8500ce
-Author: Cameron Reese <camreese@utexas.edu>
-Date:   Tue Jul 7 09:49:29 2015 -0500
-
-    Transferring blueprint from apiary.io
-
 commit 56115f9b678212de75d2417cde197b4bd2cddf5e
 Author: Nick Jordan <nickcjordan@utexas.edu>
 Date:   Tue Jul 7 09:32:00 2015 -0500
 
     added appropriate titles to each page for browser tab display
 
-commit 3f87f6eb42bfa5ad636caa1eaec04952782721b3
-Author: Cameron Reese <camreese@utexas.edu>
-Date:   Tue Jul 7 09:27:52 2015 -0500
-
-    Transferring blueprint from apiary.io
-
-commit 322ba0241553aac5c5003b74486a2d61b76d5974
-Author: Cameron Reese <camreese@utexas.edu>
-Date:   Tue Jul 7 09:24:41 2015 -0500
-
-    Transferring blueprint from apiary.io
-
 commit 711d05445b3aa656a8e592fa6fadc1d22029f814
 Author: Nick Jordan <nickcjordan@utexas.edu>
 Date:   Tue Jul 7 09:21:35 2015 -0500
 
     reorganized files into folders for easier access, added schedules to team's page
-
-commit 0f46ce5347975e9cf01c6d6dcb5cecfb1dee9eb1
-Author: Cameron Reese <camreese@utexas.edu>
-Date:   Tue Jul 7 09:12:30 2015 -0500
-
-    Transferring blueprint from apiary.io
-
-commit c9e2f060e9fab64136100d8db46930e444ef26ab
-Author: Cameron Reese <camreese@utexas.edu>
-Date:   Tue Jul 7 08:43:33 2015 -0500
-
-    Transferring blueprint from apiary.io
-
-commit f89293d539c972f74774e98dee1111d543e035fc
-Author: Cameron Reese <camreese@utexas.edu>
-Date:   Tue Jul 7 08:35:18 2015 -0500
-
-    Transferring blueprint from apiary.io
-
-commit f5cb41913fb1d8c1392558564aa7264ecd235ce7
-Author: Cameron Reese <camreese@utexas.edu>
-Date:   Tue Jul 7 08:34:23 2015 -0500
-
-    Transferring blueprint from apiary.io
-
-commit 4ae4e9a2ea8d29d3718927520e1be71d24dee6d0
-Author: Cameron Reese <camreese@utexas.edu>
-Date:   Tue Jul 7 08:19:49 2015 -0500
-
-    Transferring blueprint from apiary.io
 
 commit 0aaeae02dc77b15b51ca8d249673df96953fe56f
 Author: Cameron Reese <cameronreese@mac.com>
@@ -729,12 +4015,6 @@ Date:   Sun Jul 5 21:25:20 2015 -0500
 
     empty models.py file
 
-commit 3818561e2cbf02e7d74b29094892a9cca3fc6626
-Author: Josh Waller <joshwaller@wireless-10-147-177-249.public.utexas.edu>
-Date:   Sun Jul 5 21:11:08 2015 -0500
-
-    Implemented basic UML design
-
 commit c7812f4a58c3358c2349fc5a278351e05a6e912b
 Author: Nick Jordan <nickcjordan@utexas.edu>
 Date:   Sun Jul 5 20:59:04 2015 -0500
@@ -791,12 +4071,6 @@ Date:   Sun Jul 5 19:59:16 2015 -0500
 
     Switching same created file backend.py over to dev branch
 
-commit 9c0f734fae9da3a9b6e57a1c547426421d82af59
-Author: David <dsipos05@gmail.com>
-Date:   Sun Jul 5 19:40:46 2015 -0500
-
-    Created new backend.py file with new test features
-
 commit e7b77470e917832458208713e66e1c62471a334b
 Author: Cameron Reese <cameronreese@mac.com>
 Date:   Sun Jul 5 19:37:52 2015 -0500
@@ -820,6 +4094,12 @@ Author: Nick Jordan <nickcjordan@utexas.edu>
 Date:   Sun Jul 5 18:28:53 2015 -0500
 
     first draft of bootstrap files
+
+commit 3a085b20013cba316bd185d8a68adcbef63da7b8
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Sun Jul 5 18:21:39 2015 -0500
+
+    first draft of bootstrap material
 
 commit 35d1a5c04637f3a2d2c9831a407aca53a07db7d7
 Author: Cameron Reese <cameronreese@mac.com>
