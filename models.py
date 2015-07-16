@@ -133,7 +133,7 @@ def get_players(player_name):
     qryresult = players.query.get(player_name)
     result = ""
     _it = iter(qryresult)
-    result = "{\n\t\"id\": \"" + str(next(_it)) + "\",\n\t\"name\": \"" + next(_it) + "\",\n\t\"no\": \"" + next(_it) + "\",\n\t\"pos\": \"" + next(_it) + "\",\n\t\"team: \"" + next(_it) + "\",\n\t\"ht\": \"" + next(_it) + "\",\n\t\"wt\": \"" + next(_it) + "\",\n\t\"hometown\": \"" + next(_it) + "\",\n\t\"year\": \"" + next(_it) + "\",\n\t\"hs\": \"" + next(_it) + "\",\n\t\"photo\": \"" + next(_it) + "\"\n}"
+    result = "{\n\t\"id\": \"" + str(next(_it)) + "\",\n\t\"name\": \"" + next(_it) + "\",\n\t\"no\": \"" + next(_it) + "\",\n\t\"pos\": \"" + next(_it) + "\",\n\t\"team\" : \"" + next(_it) + "\",\n\t\"ht\": \"" + next(_it) + "\",\n\t\"wt\": \"" + next(_it) + "\",\n\t\"hometown\": \"" + next(_it) + "\",\n\t\"year\": \"" + next(_it) + "\",\n\t\"hs\": \"" + next(_it) + "\",\n\t\"photo\": \"" + next(_it) + "\"\n}"
     return result
 
 @punt.route('/punt/teams/<string:team_name>', methods=['GET'])
