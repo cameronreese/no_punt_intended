@@ -51,7 +51,6 @@ class players(db.Model):
         yield self.team
         yield self.ht
         yield self.wt
-        yield self.wt
         yield self.hometown
         yield self.year
         yield self.hs
