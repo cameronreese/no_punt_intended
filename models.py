@@ -7,7 +7,7 @@
 from flask import Flask
 from flask import render_template
 from flask.ext.sqlalchemy import SQLAlchemy
-
+# nothing to report
 
 punt = Flask(__name__)
 
