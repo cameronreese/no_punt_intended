@@ -1,3 +1,35 @@
+commit bbd07de09156cf6f007ff15df87ef20eb6a36be0
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Wed Jul 15 20:57:10 2015 -0500
+
+    push
+
+commit ce2aea084f148613c1a06d49a7d8427f772e9f66
+Merge: a0b0697 144b557
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Wed Jul 15 20:53:40 2015 -0500
+
+    final phase 2 merge
+
+commit 144b5571a544344cdbee66a28ff0cb8a13dcd62b
+Merge: 4947488 65ab8c2
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 20:51:51 2015 -0500
+
+    Merge branch 'dev' of https://github.com/cameronreese/no_punt_intended into dev
+
+commit 494748869ebb0ca465b0a222059681c1ef6c8843
+Author: Nick Jordan <nickcjordan@utexas.edu>
+Date:   Wed Jul 15 20:51:48 2015 -0500
+
+    unit test making
+
+commit 65ab8c2e71733ca3192cc48e7ec80becf3f529d3
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Wed Jul 15 20:50:58 2015 -0500
+
+    final
+
 commit c7eb76ca2e7b8110e6f5556cbce1300f009c1a3b
 Author: Cameron Reese <cameronreese@mac.com>
 Date:   Wed Jul 15 20:31:25 2015 -0500
@@ -3320,6 +3352,13 @@ Date:   Sun Jul 12 11:00:20 2015 -0500
 
     created site2 folder, for use with phase 2, added base.html template page
 
+commit a0b0697aff4835ffb43e51cef7c39f8ef3b4e6b3
+Merge: 81c42f0 6e817a6
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 7 19:40:28 2015 -0500
+
+    Merge branch 'dev'
+
 commit 6e817a64b9d3c3a90e073b5af930c77a7270b42c
 Merge: 5ff9f8f e127076
 Author: Nick Jordan <nickcjordan@utexas.edu>
@@ -3333,11 +3372,24 @@ Date:   Tue Jul 7 19:36:07 2015 -0500
 
     actual final phase 1 commit
 
+commit 81c42f0b7fdeb2f466c6ec33f20e74c145e039e6
+Merge: 861905a e127076
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 7 19:28:16 2015 -0500
+
+    Merge branch 'dev'
+
 commit e12707630a3416689ee6efed6d93401e211ac375
 Author: Cameron Reese <cameronreese@mac.com>
 Date:   Tue Jul 7 19:27:48 2015 -0500
 
     ignore
+
+commit 861905ab4894aefc209c5a0fb0808a91736ec31e
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 7 19:26:03 2015 -0500
+
+    Create a .gitignore
 
 commit eb16b3111d1b9f7303d5d93dec8568dd2893a790
 Merge: 4e7d66f 0568cac
@@ -3352,11 +3404,30 @@ Date:   Tue Jul 7 19:18:31 2015 -0500
 
     added makefile change
 
+commit 97c16bf87233b881a8c22555ad29706f0d07ace9
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 7 19:17:33 2015 -0500
+
+    changed makefile
+
 commit 0568cacabf7a6f326fd645867aade1d5fe833f1f
 Author: Nick Jordan <nickcjordan@utexas.edu>
 Date:   Tue Jul 7 19:16:04 2015 -0500
 
     final phase 1 commit
+
+commit d15c39b57383cc43287bec0017ee693bc11b8ea2
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 7 19:14:44 2015 -0500
+
+    push log
+
+commit 549b14b5a90b4fa963ea2ce31088317bfa57e7dd
+Merge: 175d14b 98ad86b
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 7 18:43:33 2015 -0500
+
+    Merge branch 'dev'
 
 commit 98ad86b7e3229ee29eb83d2d950aed1a73bc7fc7
 Author: Cameron Reese <cameronreese@mac.com>
@@ -3395,6 +3466,12 @@ Date:   Tue Jul 7 17:28:25 2015 -0500
 
     Added code to index.html to add icon to tabs, as well added images for icon.
 
+commit 175d14b1e91c8ab7c271812d0f7f364bb02dfc19
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 7 17:19:17 2015 -0500
+
+    added uml back to master
+
 commit 196446896c56beff81373573b6536b5d61e2185f
 Author: Josh Waller <jrwall11@utexas.edu>
 Date:   Tue Jul 7 17:17:51 2015 -0500
@@ -3425,6 +3502,13 @@ Author: Josh Waller <jrwall11@utexas.edu>
 Date:   Tue Jul 7 16:38:02 2015 -0500
 
     Added Joshua.txt bio
+
+commit a88ee2823b252fc6933486759cc7d4068d913a4d
+Merge: ec9b99a 1e65074
+Author: Cameron Reese <cameronreese@mac.com>
+Date:   Tue Jul 7 16:29:59 2015 -0500
+
+    updating master
 
 commit 1e65074643f5c837e142e8252107500a99bf29a5
 Author: Cameron Reese <cameronreese@mac.com>
@@ -3653,6 +3737,12 @@ Date:   Tue Jul 7 11:01:35 2015 -0500
 
     added apairy doc file
 
+commit ec9b99adedabf0e6ee6d5d11dceec9008b5ffba7
+Author: Cameron Reese <camreese@utexas.edu>
+Date:   Tue Jul 7 10:55:02 2015 -0500
+
+    Transferring blueprint from apiary.io
+
 commit f1e1fa7fedce60f1acab51d7cd02ac20685632bc
 Author: Cameron Reese <cameronreese@mac.com>
 Date:   Tue Jul 7 10:53:10 2015 -0500
@@ -3665,17 +3755,65 @@ Date:   Tue Jul 7 10:18:06 2015 -0500
 
     fixed bug with secondary nav-bar behavior
 
+commit ab7d4b9f467b58da182f3b28066643607d8500ce
+Author: Cameron Reese <camreese@utexas.edu>
+Date:   Tue Jul 7 09:49:29 2015 -0500
+
+    Transferring blueprint from apiary.io
+
 commit 56115f9b678212de75d2417cde197b4bd2cddf5e
 Author: Nick Jordan <nickcjordan@utexas.edu>
 Date:   Tue Jul 7 09:32:00 2015 -0500
 
     added appropriate titles to each page for browser tab display
 
+commit 3f87f6eb42bfa5ad636caa1eaec04952782721b3
+Author: Cameron Reese <camreese@utexas.edu>
+Date:   Tue Jul 7 09:27:52 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit 322ba0241553aac5c5003b74486a2d61b76d5974
+Author: Cameron Reese <camreese@utexas.edu>
+Date:   Tue Jul 7 09:24:41 2015 -0500
+
+    Transferring blueprint from apiary.io
+
 commit 711d05445b3aa656a8e592fa6fadc1d22029f814
 Author: Nick Jordan <nickcjordan@utexas.edu>
 Date:   Tue Jul 7 09:21:35 2015 -0500
 
     reorganized files into folders for easier access, added schedules to team's page
+
+commit 0f46ce5347975e9cf01c6d6dcb5cecfb1dee9eb1
+Author: Cameron Reese <camreese@utexas.edu>
+Date:   Tue Jul 7 09:12:30 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit c9e2f060e9fab64136100d8db46930e444ef26ab
+Author: Cameron Reese <camreese@utexas.edu>
+Date:   Tue Jul 7 08:43:33 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit f89293d539c972f74774e98dee1111d543e035fc
+Author: Cameron Reese <camreese@utexas.edu>
+Date:   Tue Jul 7 08:35:18 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit f5cb41913fb1d8c1392558564aa7264ecd235ce7
+Author: Cameron Reese <camreese@utexas.edu>
+Date:   Tue Jul 7 08:34:23 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit 4ae4e9a2ea8d29d3718927520e1be71d24dee6d0
+Author: Cameron Reese <camreese@utexas.edu>
+Date:   Tue Jul 7 08:19:49 2015 -0500
+
+    Transferring blueprint from apiary.io
 
 commit 0aaeae02dc77b15b51ca8d249673df96953fe56f
 Author: Cameron Reese <cameronreese@mac.com>
@@ -4015,6 +4153,12 @@ Date:   Sun Jul 5 21:25:20 2015 -0500
 
     empty models.py file
 
+commit 3818561e2cbf02e7d74b29094892a9cca3fc6626
+Author: Josh Waller <joshwaller@wireless-10-147-177-249.public.utexas.edu>
+Date:   Sun Jul 5 21:11:08 2015 -0500
+
+    Implemented basic UML design
+
 commit c7812f4a58c3358c2349fc5a278351e05a6e912b
 Author: Nick Jordan <nickcjordan@utexas.edu>
 Date:   Sun Jul 5 20:59:04 2015 -0500
@@ -4070,6 +4214,12 @@ Author: David <dsipos05@gmail.com>
 Date:   Sun Jul 5 19:59:16 2015 -0500
 
     Switching same created file backend.py over to dev branch
+
+commit 9c0f734fae9da3a9b6e57a1c547426421d82af59
+Author: David <dsipos05@gmail.com>
+Date:   Sun Jul 5 19:40:46 2015 -0500
+
+    Created new backend.py file with new test features
 
 commit e7b77470e917832458208713e66e1c62471a334b
 Author: Cameron Reese <cameronreese@mac.com>
