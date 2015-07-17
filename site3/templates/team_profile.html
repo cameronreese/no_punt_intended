@@ -1,0 +1,160 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+<!-- *************************************************************************************************************************
+                                                        Start school title
+******************************************************************************************************************************* -->
+            <div class="box-thin">
+                    <h2 class="team-title-text text-center">
+                        <strong>{{team}}</strong>
+                    </h2>
+            </div>
+<!-- *************************************************************************************************************************
+                                                        End School title
+******************************************************************************************************************************* -->
+<!-- *************************************************************************************************************************
+                                                        Start secondary Navigation Bar
+******************************************************************************************************************************* -->
+    <!-- Navigation -->
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+                <a class="navbar-brand" >Team Info</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <script> document.write('<a href="http://cfdb.me:5000/team_t/' + "{{team}}" + '#statistics"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>Statistics</a>
+                    </li>
+                    <li>
+                        <script> document.write('<a href="http://cfdb.me:5000/team_t/' + "{{team}}" + '#roster"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>Roster</a>
+                    </li>
+                    <li>
+                        <script> document.write('<a href="http://cfdb.me:5000/team_t/' + "{{team}}" + '#schedule"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>Schedule</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+<!-- *************************************************************************************************************************
+                                                        End Secondary Navigation Bar
+******************************************************************************************************************************* -->
+
+
+<!-- *************************************************************************************************************************
+                                                        Start stats Box
+******************************************************************************************************************************* -->
+    <div class="container">
+        <div class="box row">
+                <a name="statistics"></a> 
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">Team
+                        <strong>Stats</strong>
+                    </h2>
+                    <hr>
+                </div>
+                <div class="col-lg-12 text-center">
+                    <p><strong>Conference:</strong> <script> document.write('<a href="http://cfdb.me:5000/conf_t/' + "{{conf}}" + '"'); </script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>{{conf}}</a> </p>
+                    <p><strong>Location:</strong> {{location}}</p>
+                    <p><strong>Head Coach:</strong> {{coach}}</p>
+                    <hr>
+                </div>
+        </div>
+    </div>
+<!-- *************************************************************************************************************************
+                                                        End stats Box
+******************************************************************************************************************************* -->
+
+
+<!-- *************************************************************************************************************************
+                                                        Start roster box
+******************************************************************************************************************************* -->
+    <div class="container">
+        <div class="box row">
+                <a name="roster"></a> 
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">Team<strong> Roster</strong></h2>
+                    <hr>
+                </div>
+                <div class="col-lg-12 text-center">
+                    {% for player in playerList %}
+                        <div class="col-lg-3 col-md-4 col-sm-6 "> 
+                          <script> document.write('<a href="http://cfdb.me:5000/player_t/' + "{{player.id}}" + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​><strong>&nbsp;&nbsp;{{player.no}}</strong>&nbsp;{{player.name}}&nbsp;&nbsp;</a> 
+                        </div>
+                    {% endfor %}                  
+                </div>                
+            <hr>
+            <br>
+        </div>
+    </div>
+    <!-- /.container -->
+<!-- *************************************************************************************************************************
+                                                        End roster Box
+******************************************************************************************************************************* -->
+
+<!-- *************************************************************************************************************************
+                                                        Start schedule box
+******************************************************************************************************************************* -->
+    <div class="container">
+        <div class="box row">
+                <a name="schedule"></a> 
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">Team 2015
+                        <strong>Schedule</strong>
+                    </h2>
+                    <hr>
+                </div>
+          <table cellpadding="0" cellspacing="0" border="0"
+                 class="table table-hover table-bordered" id="utSchedule">
+              <thead>
+                  <tr>
+                      <th>Date</th>
+                      <th>Home Team</th>
+                      <th>Away Team</th>
+                      <th>Location</th>
+                      <th>Time</th>
+                  </tr>
+              </thead>
+              <tbody>
+                {% for game in gameList %}
+                  <tr>
+                    <td>{{ game.date }}</td>
+                    <td><script> document.write('<a href="http://cfdb.me:5000/team_t/' + "{{game.home_team}}" + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>{{game.home_team}}</a></td>
+                    <td><script> document.write('<a href="http://cfdb.me:5000/team_t/' + "{{game.away_team}}" + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>{{game.away_team}}</a></td>
+                    <td>{{game.location}}</td>
+                    <td>{{game.time}}</td>
+                  </tr>
+                  {% endfor %}
+              </tbody>
+          </table>
+                    <hr>
+          </div>
+        </div>
+    </div>
+        <!-- <div class="container">
+        <div class="box row">
+                <a name="schedule"></a> 
+        </div>
+    </div> -->
+    <!-- /.container -->
+<!-- *************************************************************************************************************************
+                                                        End schedule Box
+******************************************************************************************************************************* -->
+
+
+{% endblock %}

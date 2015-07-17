@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+<!-- *************************************************************************************************************************
+                                                        Start school title
+******************************************************************************************************************************* -->
+            <div class="box-thin">
+                    <h2 class="team-title-text text-center">
+                        <strong>{{player.team}}</strong>
+                    </h2>
+            </div>
+<!-- *************************************************************************************************************************
+                                                        End School title
+******************************************************************************************************************************* -->
+
+<!-- *************************************************************************************************************************
+                                                        Start secondary Navigation Bar
+******************************************************************************************************************************* -->
+    <!-- Navigation -->
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+                <a class="navbar-brand" >Team Info</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <script> document.write('<a href="http://cfdb.me:5000/team_t/' + "{{player.team}}" + '#statistics"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>Statistics</a>
+                    </li>
+                    <li>
+                        <script> document.write('<a href="http://cfdb.me:5000/team_t/' + "{{player.team}}" + '#roster"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>Roster</a>
+                    </li>
+                    <li>
+                        <script> document.write('<a href="http://cfdb.me:5000/team_t/' + "{{player.team}}" + '#schedule"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>Schedule</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+<!-- *************************************************************************************************************************
+                                                        End Secondary Navigation Bar
+******************************************************************************************************************************* -->
+
+<!-- *************************************************************************************************************************
+                                                        Start player stats Box
+******************************************************************************************************************************* -->
+    <div class="container">
+        <div class="box row">
+                <a name="statistics"></a> 
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">Player <strong>Profile</strong>
+                    </h2>
+                    <hr>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <img class="img-responsive img-rounded img-fix" src="{{player.photo}}" alt="Player Has No Photo" onError="this.src='http://playoffchallenge.fantasy.nfl.com/static/img/defaultHeadshot_1367279034.png';" />
+                </div>
+                <div class="col-lg-8 col-md-8 text-left">
+                    <h2 class="player-text"><strong>#{{player.no}} - {{player.name}}</strong></h2>
+                    <p><strong>Team:</strong> <script> document.write('<a href="http://cfdb.me:5000/team_t/' + "{{player.team}}" + '"'); </script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>{{player.team}}</a></p>
+                    <p><strong>Position:</strong> {{player.pos}}</p>
+                    <p><strong>Height:</strong> {{player.ht}}</p>
+                    <p><strong>Weight:</strong> {{player.wt}}</p>
+                    <p><strong>Class:</strong> {{player.year}}</p>  
+                    <p><strong>Hometown:</strong> {{player.hometown}}</p>
+                    <p><strong>High School:</strong> {{player.hs}}</p>
+                </div>
+        </div>
+    </div>
+
+
+<!-- *************************************************************************************************************************
+                                                        End stats Box
+******************************************************************************************************************************* -->
+
+
+{% endblock %}
