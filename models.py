@@ -3,11 +3,12 @@
 # -----------
 # imports
 # -----------
+import os
 
 from flask import Flask
 from flask import render_template
 from flask.ext.sqlalchemy import SQLAlchemy
-
+import subprocess
 
 punt = Flask(__name__)
 
@@ -289,10 +290,21 @@ def player_template(p_id):
 @punt.route('/copadb')
 def copaDB():
     """
-    : return: the page that we use the other project's API 
+    : return: renders the page that we use the other project's API
     """
     match_list = ['Chile-Uruguay', 'Bolivia-Peru', 'Argentina-Columbia', 'Brazil-Paraguay', 'Chile-Peru', 'Argentina-Paraguay', 'Peru-Paraguay', 'Chile-Argentina']
     return render_template('copaDB.html', matches=match_list)
+
+@punt.route('/')
+@punt.route('/unittest')
+def unittest():
+    """
+    :return: renders the page that displays the results of the unittests
+    """
+    proc = subprocess.Popen("python3 -m unittest -v tests.py", shell=True, stdout=subprocess.PIPE, )
+    output = proc.communicate()[0]
+    return render_template('test_result.html', result=output)
+
 
 if __name__ == '__main__':
     punt.run(debug=True, host='0.0.0.0')
