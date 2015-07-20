@@ -8,7 +8,7 @@ import os
 from flask import Flask
 from flask import render_template
 from flask.ext.sqlalchemy import SQLAlchemy
-from subprocess import Popen, PIPE, check_output
+from subprocess import Popen, PIPE, check_output, STDOUT
 
 punt = Flask(__name__)
 
@@ -302,9 +302,10 @@ def unittest():
     :return: renders the page that displays the results of the unittests
     """
 
-    Popen("python3 -m unittest -v tests.py", shell=True, stdout=PIPE, universal_newlines=True)
+    Popen("python3 -m unittest -v tests.py", shell=True, stdout=PIPE, stderr=STDOUT)
     with open('result.txt', 'r') as result_file:
         result_output = result_file.read()
+    print(result_output)
     # out = temp.communicate()
     return render_template('test_result.html', result=result_output)
 
