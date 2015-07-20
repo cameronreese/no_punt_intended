@@ -286,13 +286,13 @@ def player_template(p_id):
 # Template API calls for populating website using other team's project API
 # *********************************************************************************************************************
 
-@punt.route('/')
-@punt.route('/api2k15')
-def copaDB():
-    """
-    : return: renders the page that we use the other project's API
-    """
-    return render_template('api2k15.html', matches=)
+# @punt.route('/')
+# @punt.route('/api2k15')
+# def copaDB():
+#     """
+#     : return: renders the page that we use the other project's API
+#     """
+#     return render_template('api2k15.html', matches=)
 
 @punt.route('/')
 @punt.route('/unittest')
