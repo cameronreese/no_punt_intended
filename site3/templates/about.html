@@ -182,6 +182,13 @@
                 <h2 class="intro-text text-center">Unit <strong>Tests</strong></h2>
                 <hr>
                 <a type="button" class="btn btn-primary" href="/unittest"><strong>Run Our Unit Tests</strong></a>
+                <br>
+                    <h2 class="brand-before"> <small>Results of</small> </h2>
+                    <h1> <strong>Unit Tests</strong> <hr class="tagline-divider"> </h1>
+
+                    {% for res in result %}
+                        <p> {{res}} </p>
+                    {% endfor %}
             </div>
         </div>
     </div>
