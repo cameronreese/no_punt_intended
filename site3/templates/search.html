@@ -7,7 +7,7 @@
                                                         Start search box
 ******************************************************************************************************************************* -->
 
-	<div class="center"><div class="inner" style="padding-top: 27px;"><h2>CFDB Search</h2></div></div>
+ 	<div class="center"><div class="inner" style="padding-top: 27px;"><h2>CFDB Search</h2></div></div>
 
 	<div class="block" style="padding-top: 39px;">
 
@@ -15,6 +15,16 @@
 	<input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
 	</form>
 	<div id="tipue_search_content"></div>
+
+	<script>
+	$(document).ready(function() {
+	     $('#tipue_search_input').tipuesearch({
+	        'mode': 'live',
+	        'liveDescription': '.header',
+          	'liveContent': '.container'
+	     });
+	});
+	</script>
 
 
 

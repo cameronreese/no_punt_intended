@@ -10,7 +10,10 @@
                     <h2 class="brand-before"> <small>Results of</small> </h2>
                     <h1> <strong>Unit Tests</strong> <hr class="tagline-divider"> </h1>
 
-                        <p> {{result}} </p>
+                    {% for res in result %}
+                        <p> {{res}} </p>
+                    {% endfor %}
+
                 </div>
         </div>
     </div>
