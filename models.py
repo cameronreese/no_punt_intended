@@ -8,7 +8,7 @@ import os
 from flask import Flask
 from flask import render_template
 from flask.ext.sqlalchemy import SQLAlchemy
-from subprocess import Popen, PIPE
+from subprocess import Popen, PIPE, check_output
 
 punt = Flask(__name__)
 
