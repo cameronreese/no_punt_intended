@@ -3,6 +3,7 @@
 # -----------
 # imports
 # -----------
+import os
 
 from flask import Flask
 from flask import render_template
@@ -289,10 +290,20 @@ def player_template(p_id):
 @punt.route('/copadb')
 def copaDB():
     """
-    : return: the page that we use the other project's API 
+    : return: renders the page that we use the other project's API
     """
     match_list = ['Chile-Uruguay', 'Bolivia-Peru', 'Argentina-Columbia', 'Brazil-Paraguay', 'Chile-Peru', 'Argentina-Paraguay', 'Peru-Paraguay', 'Chile-Argentina']
     return render_template('copaDB.html', matches=match_list)
+
+@punt.route('/')
+@punt.route('/unittest')
+def unittest():
+    """
+    :return: renders the page that displays the results of the unittests
+    """
+    stream = os.popen("python3 -m unittest -v tests.py")
+
+    return render_template('test_result.html', result=stream.read())
 
 if __name__ == '__main__':
     punt.run(debug=True, host='0.0.0.0')
