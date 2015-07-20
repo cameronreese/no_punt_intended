@@ -301,9 +301,10 @@ def unittest():
     """
     :return: renders the page that displays the results of the unittests
     """
-    proc = subprocess.Popen("python3 -m unittest -v tests.py", shell=True, stdout=subprocess.PIPE, )
-    output = proc.communicate()[0]
-    return render_template('test_result.html', result=output)
+    subprocess.Popen("python3 -m unittest -v tests.py > result.txt", shell=True, stdout=subprocess.PIPE, )
+    with open('result.txt', 'r') as result_file:
+        result_output = result_file.read()
+    return render_template('test_result.html', result=result_output)
 
 
 if __name__ == '__main__':
