@@ -300,12 +300,11 @@ def unittest():
     """
     :return: renders the page that displays the results of the unittests
     """
-
-    Popen("python3 -m unittest -v tests.py", shell=True, stdout=PIPE, stderr=STDOUT)
+    w_out = open('result.txt', 'w')
+    Popen("python3 -m unittest -v tests.py", shell=True, stdout=w_out, stderr=STDOUT)
+    w_out.close()
     with open('result.txt', 'r') as result_file:
         result_output = result_file.read()
-    # print(result_output)
-    # out = temp.communicate()
     return render_template('test_result.html', result=result_output)
 
     # res = check_output(["tests.py"])
