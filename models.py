@@ -306,8 +306,8 @@ def unittest():
     #     result_output = result_file.read()
     # return render_template('test_result.html', result=result_output)
 
-        res = check_output(["unittest", "-v", "tests.py"])
-        return render_template('test_result.html', result=res)
+    res = check_output(["unittest", "-v", "tests.py"])
+    return render_template('test_result.html', result=res)
 
 
 if __name__ == '__main__':
