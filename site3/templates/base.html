@@ -69,6 +69,13 @@
     <img class="img-responsive img-med img-center img-hover" src="{{ url_for('static', filename='img/txt2.png') }}" alt="">
 <!-- ***************************************************************************************************** -->
 
+<!-- Search bar -->
+<form action="search.html">
+<input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
+</form>
+<div id="tipue_search_content"></div>
+
+
 <!-- *************************************************************************************************************************
                                                         Start Navigation Bar
 ******************************************************************************************************************************* -->
@@ -158,6 +165,7 @@
 
 
     <script type="text/javascript">
+    var tipuesearch_pages = ["http://cfdb.me/", "http://cfdb.me/about/", "http://cfdb.me/ncaa", "http://cfdb.me/conf_table", "http://cfdb.me/team_table", "http://cfdb.me/player_table"];
 
     $(document).ready(function() {
       $('#conferenceTable').DataTable( {
@@ -191,6 +199,16 @@
         "sPaginationType": "bootstrap"
       } );
     } );
+    </script>
+
+    <script>
+    $(document).ready(function() {
+        $('#tipue_search_input').tipuesearch({
+          'mode': 'live',
+          'liveDescription': '.header',
+          'liveContent': '.container'
+        });
+    });
     </script>
 
 
