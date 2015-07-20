@@ -8,7 +8,7 @@ import os
 from flask import Flask
 from flask import render_template
 from flask.ext.sqlalchemy import SQLAlchemy
-from subprocess import check_output
+from subprocess import Popen, PIPE
 
 punt = Flask(__name__)
 
@@ -306,7 +306,7 @@ def unittest():
     #     result_output = result_file.read()
     # return render_template('test_result.html', result=result_output)
 
-    res = check_output(["unittest", "-v", "tests.py"])
+    res = check_output(["tests.py"])
     return render_template('test_result.html', result=res)
 
 
