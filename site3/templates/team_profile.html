@@ -34,13 +34,13 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
                 <ul class="nav navbar-nav">
                     <li>
-                        <script> document.write('<a href="http://cfdb.me:5000/team_t/' + "{{team}}" + '#statistics"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>Statistics</a>
+                        <script> document.write('<a href="/team_t/' + "{{team}}" + '#statistics"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>Statistics</a>
                     </li>
                     <li>
-                        <script> document.write('<a href="http://cfdb.me:5000/team_t/' + "{{team}}" + '#roster"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>Roster</a>
+                        <script> document.write('<a href="/team_t/' + "{{team}}" + '#roster"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>Roster</a>
                     </li>
                     <li>
-                        <script> document.write('<a href="http://cfdb.me:5000/team_t/' + "{{team}}" + '#schedule"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>Schedule</a>
+                        <script> document.write('<a href="/team_t/' + "{{team}}" + '#schedule"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>Schedule</a>
                     </li>
                 </ul>
             </div>
@@ -67,7 +67,7 @@
                     <hr>
                 </div>
                 <div class="col-lg-12 text-center">
-                    <p><strong>Conference:</strong> <script> document.write('<a href="http://cfdb.me:5000/conf_t/' + "{{conf}}" + '"'); </script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>{{conf}}</a> </p>
+                    <p><strong>Conference:</strong> <script> document.write('<a href="/conf_t/' + "{{conf}}" + '"'); </script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>{{conf}}</a> </p>
                     <p><strong>Location:</strong> {{location}}</p>
                     <p><strong>Head Coach:</strong> {{coach}}</p>
                     <hr>
@@ -93,7 +93,7 @@
                 <div class="col-lg-12 text-center">
                     {% for player in playerList %}
                         <div class="col-lg-3 col-md-4 col-sm-6 "> 
-                          <script> document.write('<a href="http://cfdb.me:5000/player_t/' + "{{player.id}}" + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​><strong>&nbsp;&nbsp;{{player.no}}</strong>&nbsp;{{player.name}}&nbsp;&nbsp;</a> 
+                          <script> document.write('<a href="/player_t/' + "{{player.id}}" + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​><strong>&nbsp;&nbsp;{{player.no}}</strong>&nbsp;{{player.name}}&nbsp;&nbsp;</a> 
                         </div>
                     {% endfor %}                  
                 </div>                
@@ -134,8 +134,8 @@
                 {% for game in gameList %}
                   <tr>
                     <td>{{ game.date }}</td>
-                    <td><script> document.write('<a href="http://cfdb.me:5000/team_t/' + "{{game.home_team}}" + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>{{game.home_team}}</a></td>
-                    <td><script> document.write('<a href="http://cfdb.me:5000/team_t/' + "{{game.away_team}}" + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>{{game.away_team}}</a></td>
+                    <td><script> document.write('<a href="/team_t/' + "{{game.home_team}}" + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>{{game.home_team}}</a></td>
+                    <td><script> document.write('<a href="/team_t/' + "{{game.away_team}}" + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>{{game.away_team}}</a></td>
                     <td>{{game.location}}</td>
                     <td>{{game.time}}</td>
                   </tr>

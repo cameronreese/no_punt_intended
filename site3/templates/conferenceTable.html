@@ -24,9 +24,9 @@
               <tbody>
                   {% for conf in confList %}
                   <tr>
-                    <td><script> document.write('<a href="http://cfdb.me:5000/conf_t/' + "{{conf.name}}" + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>{{conf.name}}</a></td>
+                    <td><script> document.write('<a href="/conf_t/' + "{{conf.name}}" + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>{{conf.name}}</a></td>
                     <td>{{conf.founded}}</td>
-                    <td><script> document.write('<a href="http://cfdb.me:5000/team_t/' + "{{conf.champ}}" + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>{{conf.champ}}</a></td>
+                    <td><script> document.write('<a href="/team_t/' + "{{conf.champ}}" + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>{{conf.champ}}</a></td>
 
                     <!-- Check this button for teams -->
                     <td align = "middle">
@@ -44,7 +44,7 @@
                             <div class="modal-body">
                               {% for t in conf.teamset %}
                               <p class="text-center">
-                                <script> document.write('<a href="http://cfdb.me:5000/team_t/' + "{{t.name}}" + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>{{t.name}}</a></p>
+                                <script> document.write('<a href="/team_t/' + "{{t.name}}" + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>{{t.name}}</a></p>
                               {% endfor %}
                             </div>
                             <div class="modal-footer">

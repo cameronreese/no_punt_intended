@@ -27,14 +27,14 @@
                   {% for player in playerList %}
                     <tr>
                       <td>{{player.no}}</td>
-                      <td><script> document.write('<a href="http://cfdb.me:5000/player_t/' + "{{player.id}}" + '"'); </script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>{{player.name}}</a></td>
+                      <td><script> document.write('<a href="/player_t/' + "{{player.id}}" + '"'); </script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>{{player.name}}</a></td>
                       <td>{{player.pos}}</td>
                       <td>{{player.ht}}</td>
                       <td>{{player.wt}}</td>
                       <td>{{player.year}}</td>
                       <td>{{player.hs}}</td>
                       <td>{{player.hometown}}</td>
-                      <td><script> document.write('<a href="http://cfdb.me:5000/team_t/' + "{{player.team}}" + '"'); </script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>{{player.team}}</a></td>
+                      <td><script> document.write('<a href="/team_t/' + "{{player.team}}" + '"'); </script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>{{player.team}}</a></td>
                     </tr>
                     {% endfor %}
                 </tbody>
