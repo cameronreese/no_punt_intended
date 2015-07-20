@@ -301,7 +301,7 @@ def unittest():
     :return: renders the page that displays the results of the unittests
     """
     w_out = open('result.txt', 'r+')
-    Popen("python3 -m unittest -v tests.py", shell=True, stdout=w_out, stderr=STDOUT)
+    Popen("python3 -m unittest -v tests.py", shell=True, stdout=w_out, stderr=STDOUT, universal_newlines=True)
     with open('result.txt', 'r') as result_file:
         result_output = result_file.read()
         w_out.close()
