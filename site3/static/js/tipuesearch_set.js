@@ -9,7 +9,7 @@ http://www.tipue.com/search
 
 // List of pages for Live mode
 
-var tipuesearch_pages = ["http://foo.com", "http://foo.com/about", "http://foo.com/blog"];
+var tipue_search_pages = ["http://cfdb.me/", "http://cfdb.me/about/", "http://cfdb.me/ncaa", "http://cfdb.me/conf_table", "http://cfdb.me/team_table", "http://cfdb.me/player_table"];
 
 
 /*
@@ -31,11 +31,11 @@ var tipuesearch_replace = {'words': [
 
 // Weighting
 
-var tipuesearch_weight = {'weight': [
-     {'url': 'http://tipue.dev/search', 'score': 200},
-     {'url': 'http://tipue.dev/about', 'score': 100},
-     {'url': 'http://tipue.dev/tos', 'score': -1200}
-]};
+// var tipuesearch_weight = {'weight': [
+//      {'url': 'http://tipue.dev/search', 'score': 200},
+//      {'url': 'http://tipue.dev/about', 'score': 100},
+//      {'url': 'http://tipue.dev/tos', 'score': -1200}
+// ]};
 
 
 // Stemming
