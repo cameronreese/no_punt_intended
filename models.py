@@ -306,7 +306,7 @@ def unittest():
     #     result_output = result_file.read()
     # return render_template('test_result.html', result=result_output)
 
-        res = check_output(["-m", "unittest", "-v", "tests.py"])
+        res = check_output(["unittest", "-v", "tests.py"])
         return render_template('test_result.html', result=res)
 
 
