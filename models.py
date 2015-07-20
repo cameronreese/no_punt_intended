@@ -312,5 +312,14 @@ def unittest():
     # return render_template('test_result.html', result=res)
 
 
+@punt.route('/')
+@punt.route('/search')
+def copaDB():
+    """
+    : return: renders the page that we use the other project's API
+    """
+    return render_template('search.html')
+
+
 if __name__ == '__main__':
     punt.run(debug=True, host='0.0.0.0')
