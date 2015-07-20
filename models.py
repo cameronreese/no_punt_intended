@@ -292,7 +292,7 @@ def copaDB():
     : return: the page that we use the other project's API 
     """
     match_list = ['Chile-Uruguay', 'Bolivia-Peru', 'Argentina-Colomubia', 'Brazil-Paragua', 'Chile-Peru', 'Argentina-Paraguay', 'Peru-Paraguay', 'Chile-Argentina']
-    return render_template('codaDB.html', matches=match_list)
+    return render_template('copaDB.html', matches=match_list)
 
 if __name__ == '__main__':
     punt.run(debug=True, host='0.0.0.0')
