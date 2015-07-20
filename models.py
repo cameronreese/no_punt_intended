@@ -301,9 +301,8 @@ def unittest():
     """
     :return: renders the page that displays the results of the unittests
     """
-    return_code = subprocess.call("python3 -m unittest -v tests.py", shell=True)
-
-    return render_template('test_result.html', result=return_code)
+    return render_template('test_result.html', result=print(subprocess.Popen("python3 -m unittest -v tests.py", shell=True, stdout=subprocess.PIPE).stdout.read())
+)
 
 if __name__ == '__main__':
     punt.run(debug=True, host='0.0.0.0')
