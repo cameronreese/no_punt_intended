@@ -287,13 +287,12 @@ def player_template(p_id):
 # *********************************************************************************************************************
 
 @punt.route('/')
-@punt.route('/copadb')
+@punt.route('/api2k15')
 def copaDB():
     """
     : return: renders the page that we use the other project's API
     """
-    match_list = ['Chile-Uruguay', 'Bolivia-Peru', 'Argentina-Columbia', 'Brazil-Paraguay', 'Chile-Peru', 'Argentina-Paraguay', 'Peru-Paraguay', 'Chile-Argentina']
-    return render_template('copaDB.html', matches=match_list)
+    return render_template('api2k15.html', matches=)
 
 @punt.route('/')
 @punt.route('/unittest')
