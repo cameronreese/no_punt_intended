@@ -182,6 +182,10 @@
                 <h2 class="intro-text text-center">Unit <strong>Tests</strong></h2>
                 <hr>
                 <a type="button" class="btn btn-primary" href="/unittest"><strong>Run Our Unit Tests</strong></a>
+                <br>
+                    {% for res in result %}
+                        <p> {{res}} </p>
+                    {% endfor %}
             </div>
         </div>
     </div>

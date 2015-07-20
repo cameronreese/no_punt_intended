@@ -306,7 +306,7 @@ def unittest():
     with open('result.txt', 'r') as result_file:
         result_output = result_file.readlines()
     result_file.close()
-    return render_template('test_result.html', result=result_output)
+    return render_template('about.html', result=result_output)
 
     # res = check_output(["tests.py"])
     # return render_template('test_result.html', result=res)
