@@ -281,5 +281,18 @@ def player_template(p_id):
     p = players.query.get(p_id)
     return render_template('player_profile.html', player=p)
 
+# *********************************************************************************************************************
+# Template API calls for populating website using other team's project API
+# *********************************************************************************************************************
+
+@punt.route('/')
+@punt.route('/copadb')
+def copaDB():
+    """
+    : return: the page that we use the other project's API 
+    """
+    match_list = ['Chile-Uruguay', 'Bolivia-Peru', 'Argentina-Colomubia', 'Brazil-Paragua', 'Chile-Peru', 'Argentina-Paraguay', 'Peru-Paraguay', 'Chile-Argentina']
+    return render_template('codaDB.html', matches=match_list)
+
 if __name__ == '__main__':
     punt.run(debug=True, host='0.0.0.0')

@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- *************************************************************************************************************************
+                                                        Start team Box
+******************************************************************************************************************************* -->
+    <div class="container">
+        <div class="box row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <hr>
+                        <h3 class="intro-text text-center">the other <strong>football</strong> </h3>
+                    <hr>
+                    <p class="team-text text-center">In case you want to know a bit about the other type of football, you can check out all the following matches!</p>
+                    <hr>
+                        {% for match in matches %}
+                            <div class="col-lg-3 col-md-4 col-sm-6 text-center goodness">
+                            <script> document.write('<a href="http://copadb.me:8000/match/' + "{{match}}" + '"');</script>><h6 class="conf-text"> {{match}} </h6></a>
+                            </div>
+                        {% endfor %} 
+
+                </div>
+        </div>
+    </div>
+<!-- *************************************************************************************************************************
+                                                        End team Box
+******************************************************************************************************************************* -->
+
+{% endblock %}
