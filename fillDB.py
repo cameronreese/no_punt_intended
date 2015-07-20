@@ -100,7 +100,7 @@ if __name__ == '__main__':
 	with open("./backend/conf.json") as fjc:
 		conf_json = json.load(fjc)
 
-	with open("./backend/game.json") as fjg:
+	with open("./backend/newgames.json") as fjg:
 		games_json = json.load(fjg)
 	print('about to enter fill function')
 	fill()
