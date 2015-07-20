@@ -301,11 +301,17 @@ def unittest():
     """
     :return: renders the page that displays the results of the unittests
     """
-    temp = Popen("python3 -m unittest -v tests.py > result.txt", shell=True, stdout=PIPE, universal_newlines=True)
-    # with open('result.txt', 'r') as result_file:
-    #     result_output = result_file.read()
-    out = temp.communicate()
-    return render_template('test_result.html', result=out)
+    log_file = 'result.txt'
+    f = open(log_file, "w")
+    runner = unittest.TextTestRunner(f)
+    unittest.main(testRunner=runner)
+    f.close()
+
+    # temp = Popen("python3 -m unittest -v tests.py > result.txt", shell=True, stdout=PIPE, universal_newlines=True)
+    with open('result.txt', 'r') as result_file:
+        result_output = result_file.read()
+    # out = temp.communicate()
+    return render_template('test_result.html', result=result_output)
 
     # res = check_output(["tests.py"])
     # return render_template('test_result.html', result=res)
