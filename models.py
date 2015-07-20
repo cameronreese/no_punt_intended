@@ -301,13 +301,14 @@ def unittest():
     """
     :return: renders the page that displays the results of the unittests
     """
-    # subprocess.Popen("python3 -m unittest -v tests.py > result.txt", shell=True, stdout=subprocess.PIPE, )
+    temp = Popen("python3 -m unittest -v tests.py", shell=True, stdout=PIPE, universal_newlines=True)
     # with open('result.txt', 'r') as result_file:
     #     result_output = result_file.read()
-    # return render_template('test_result.html', result=result_output)
+    out = temp.communicate()
+    return render_template('test_result.html', result=out)
 
-    res = check_output(["tests.py"])
-    return render_template('test_result.html', result=res)
+    # res = check_output(["tests.py"])
+    # return render_template('test_result.html', result=res)
 
 
 if __name__ == '__main__':
