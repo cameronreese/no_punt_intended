@@ -302,9 +302,10 @@ def unittest():
     """
     w_out = open('result.txt', 'r+')
     Popen("python3 -m unittest -v tests.py", shell=True, stdout=w_out, stderr=STDOUT)
+    w_out.close()
     with open('result.txt', 'r') as result_file:
         result_output = result_file.readlines()
-    w_out.close()
+    result_file.close()
     return render_template('test_result.html', result=result_output)
 
     # res = check_output(["tests.py"])
