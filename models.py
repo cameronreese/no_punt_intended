@@ -8,7 +8,7 @@ import os
 from flask import Flask
 from flask import render_template
 from flask.ext.sqlalchemy import SQLAlchemy
-
+import subprocess
 
 punt = Flask(__name__)
 
@@ -301,9 +301,9 @@ def unittest():
     """
     :return: renders the page that displays the results of the unittests
     """
-    stream = os.popen("python3 -m unittest -v tests.py")
+    return_code = subprocess.call("python3 -m unittest -v tests.py")
 
-    return render_template('test_result.html', result=stream.read())
+    return render_template('test_result.html', result=return_code)
 
 if __name__ == '__main__':
     punt.run(debug=True, host='0.0.0.0')
