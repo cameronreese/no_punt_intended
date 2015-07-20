@@ -301,7 +301,7 @@ def unittest():
     """
     :return: renders the page that displays the results of the unittests
     """
-    return_code = subprocess.call("python3 -m unittest -v tests.py")
+    return_code = subprocess.call("python3 -m unittest -v tests.py", shell=True)
 
     return render_template('test_result.html', result=return_code)
 
