@@ -15,7 +15,7 @@ http://www.tipue.com/search
 // 							"/team_table", 
 // 							"/about"]
 
-var tipue_search_pages = ["http://cfdb.me:5000/", 
+var tipuesearch_pages = ["http://cfdb.me:5000/", 
 						"http://cfdb.me:5000/about/", 
 						"http://cfdb.me:5000/ncaa", 
 						"http://cfdb.me:5000/conf_table", 
