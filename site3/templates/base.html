@@ -56,6 +56,8 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <script type="text/javascript" src="localSearchBox.js"></script>
+
     <style>div.sample_attach, a.sample_attach {
       width: 100px;
       border: 1px solid #DFAD00;
@@ -96,6 +98,17 @@
 <!-- ********************************  "College Football Database" logo  ********************************* -->
     <img class="img-responsive img-med img-center img-hover" src="{{ url_for('static', filename='img/txt2.png') }}" alt="">
 <!-- ***************************************************************************************************** -->
+
+<!-- ******************************************  New Search bar ********************************************** -->
+    
+    <div class="sample_attach" id="src_parent">
+    Site Search
+    </div>
+    <form class="sample_attach" id="src_child">
+    <b>Enter search terms:</b><br>
+    <input style="margin-bottom: 1px; width: 170px;" type="text" name="terms"><br>
+    <input type="submit" value="Submit"></center>
+    </form>
 
 <!-- ******************************************  Search bar ********************************************** -->
     <form action="/search">
