@@ -70,16 +70,11 @@
     <img class="img-responsive img-med img-center img-hover" src="{{ url_for('static', filename='img/txt2.png') }}" alt="">
 <!-- ***************************************************************************************************** -->
 
-<!-- Search bar -->
-<form action="/search">
-<input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
-</form>
-
-<nav>
-  <ul class="pager">
-    <li class="previous"><a href="javascript:history.back()"><span aria-hidden="true">&larr;</span> Back</a></li>
-  </ul>
-</nav>
+<!-- ******************************************  Search bar ********************************************** -->
+    <form action="/search">
+    <input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
+    </form>
+<!-- ***************************************************************************************************** -->
 
 <!-- *************************************************************************************************************************
                                                         Start Navigation Bar
@@ -101,6 +96,11 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
+                    <nav>
+                        <ul class="pager">
+                            <li class="previous"><a href="javascript:history.back()"><span aria-hidden="true">&larr;</span> Back</a></li>
+                        </ul>
+                    </nav>
                     <li>
                         <a href="/index">|Home|</a>
                     </li>
