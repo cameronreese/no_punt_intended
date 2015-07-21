@@ -187,32 +187,6 @@ hr {
     margin: 0 auto 0;
 }
 
-div.sample_attach, a.sample_attach {
-      width: 100px;
-      border: 1px solid #DFAD00;
-      background: #FFFFEE;
-      padding: 0px 5px;
-      font-weight: 900;
-      color: #00009C;
-      text-align: center;
-    }
-
-    a.sample_attach {
-      display: block;
-      border-bottom: none;
-      text-decoration: none;
-    }
-
-    form.sample_attach {
-      position: absolute;
-      visibility: hidden;
-      border: 1px solid #DFAD00;
-      background: #FFFFEE;
-      color: #00009C;
-      padding: 0px 5px 2px 5px;
-      text-align: center;
-    }
-
 footer {
     background: #fff;
     background: rgba(255,255,255,0.9);
