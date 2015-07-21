@@ -8,7 +8,7 @@ import os
 from flask import Flask
 from flask import render_template
 from flask.ext.sqlalchemy import SQLAlchemy
-import subprocess
+from subprocess import Popen, PIPE, check_output, STDOUT
 
 punt = Flask(__name__)
 
@@ -29,31 +29,31 @@ class players(db.Model):
     hs = db.Column(db.String(256))
     photo = db.Column(db.String(256))
 
-    def __init__(self, id, name, no, pos, team, ht, wt, hometown, year, hs, photo):
-        self.id = id
-        self.name = name
-        self.no = no
-        self.pos = pos
-        self.team = team
-        self.ht = ht
-        self.wt = wt
-        self.hometown = hometown
-        self.year = year
-        self.hs = hs
-        self.photo = photo
+    # def __init__(self, id, name, no, pos, team, ht, wt, hometown, year, hs, photo):
+    #     self.id = id
+    #     self.name = name
+    #     self.no = no
+    #     self.pos = pos
+    #     self.team = team
+    #     self.ht = ht
+    #     self.wt = wt
+    #     self.hometown = hometown
+    #     self.year = year
+    #     self.hs = hs
+    #     self.photo = photo
 
-    def __iter__(self):
-        yield self.id
-        yield self.name
-        yield self.no
-        yield self.pos
-        yield self.team
-        yield self.ht
-        yield self.wt
-        yield self.hometown
-        yield self.year
-        yield self.hs
-        yield self.photo
+    # def __iter__(self):
+    #     yield self.id
+    #     yield self.name
+    #     yield self.no
+    #     yield self.pos
+    #     yield self.team
+    #     yield self.ht
+    #     yield self.wt
+    #     yield self.hometown
+    #     yield self.year
+    #     yield self.hs
+    #     yield self.photo
 
 
 schedule = db.Table('schedule',db.Column('teams_name',db.String(256),db.ForeignKey('teams.name')),db.Column('game_id',db.Integer,db.ForeignKey('games.id')))
@@ -66,20 +66,20 @@ class teams(db.Model):
     head_coach = db.Column(db.String(256))
     confname = db.Column(db.String(256),db.ForeignKey('conf.name'))
 
-    def __init__(self, name, location, roster, head_coach, confname):
-        self.name = name
-        self.location = location
-        self.roster = roster
-        self.schedule = schedule
-        self.head_coach = head_coach
-        self.confname = confname
-
-    def __iter__(self):
-        yield self.name
-        yield self.location
-        yield list([p.name for p in self.roster])
-        yield self.head_coach
-        yield self.confname
+    # def __init__(self, name, location, roster, head_coach, confname):
+    #     self.name = name
+    #     self.location = location
+    #     self.roster = roster
+    #     self.schedule = schedule
+    #     self.head_coach = head_coach
+    #     self.confname = confname
+    #
+    # def __iter__(self):
+    #     yield self.name
+    #     yield self.location
+    #     yield list([p.name for p in self.roster])
+    #     yield self.head_coach
+    #     yield self.confname
 
 # conference model
 class conf(db.Model):
@@ -90,21 +90,21 @@ class conf(db.Model):
     num_teams = db.Column(db.String(256))
     comm = db.Column(db.String(256))
 
-    def __init__(self, name, founded, champ, teamset, num_teams, comm):
-        self.name = name
-        self.founded = founded
-        self.champ = champ
-        self.teamset = teamset
-        self.num_teams = num_teams
-        self.comm = comm
-
-    def __iter__(self):
-        yield self.name
-        yield self.founded
-        yield self.champ
-        yield list([t.name for t in self.teamset])
-        yield self.num_teams
-        yield self.comm
+    # def __init__(self, name, founded, champ, teamset, num_teams, comm):
+    #     self.name = name
+    #     self.founded = founded
+    #     self.champ = champ
+    #     self.teamset = teamset
+    #     self.num_teams = num_teams
+    #     self.comm = comm
+    #
+    # def __iter__(self):
+    #     yield self.name
+    #     yield self.founded
+    #     yield self.champ
+    #     yield list([t.name for t in self.teamset])
+    #     yield self.num_teams
+    #     yield self.comm
 
 
 # games model
@@ -287,13 +287,12 @@ def player_template(p_id):
 # *********************************************************************************************************************
 
 @punt.route('/')
-@punt.route('/copadb')
-def copaDB():
+@punt.route('/api2k15')
+def api2k15():
     """
     : return: renders the page that we use the other project's API
     """
-    match_list = ['Chile-Uruguay', 'Bolivia-Peru', 'Argentina-Columbia', 'Brazil-Paraguay', 'Chile-Peru', 'Argentina-Paraguay', 'Peru-Paraguay', 'Chile-Argentina']
-    return render_template('copaDB.html', matches=match_list)
+    return render_template('api2k15.html')
 
 @punt.route('/')
 @punt.route('/unittest')
@@ -301,10 +300,25 @@ def unittest():
     """
     :return: renders the page that displays the results of the unittests
     """
-    subprocess.Popen("python3 -m unittest -v tests.py > result.txt", shell=True, stdout=subprocess.PIPE, )
+    w_out = open('result.txt', 'r+')
+    Popen("python3 -m unittest -v tests.py", shell=True, stdout=w_out, stderr=STDOUT)
+    w_out.close()
     with open('result.txt', 'r') as result_file:
-        result_output = result_file.read()
+        result_output = result_file.readlines()
+    result_file.close()
     return render_template('test_result.html', result=result_output)
+
+    # res = check_output(["tests.py"])
+    # return render_template('test_result.html', result=res)
+
+
+@punt.route('/')
+@punt.route('/search')
+def copaDB():
+    """
+    : return: renders the page that we use for the search results
+    """
+    return render_template('search.html')
 
 
 if __name__ == '__main__':

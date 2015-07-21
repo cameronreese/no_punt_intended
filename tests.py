@@ -3,16 +3,10 @@
 # -----------
 # imports
 # -----------
-from io     import StringIO
 from unittest import main, TestCase
-import urllib
 from urllib.request import urlopen
 import json
-import requests
 
-from flask import Flask, Response
-from flask import jsonify
-from flask import abort
 
 # -----------
 # TestModels
