@@ -303,19 +303,24 @@ def api2k15():
     response = requests.get('http://api2k15.me/resources/player/' + false1_id)
     false1_data = response.json()
 
-    while false1_data['team_name'] is player_id['team_name']:
+    f1 = false1_data['team_name']
+    p = player_id['team_name']
+
+    while f1 == p:
         false1_id = str(randint(1, 446))
         response = requests.get('http://api2k15.me/resources/player/' + false1_id)
         false1_data = response.json()
+        f1 = false1_data['team_name']
 
     false2_id = str(randint(1, 446))
     response = requests.get('http://api2k15.me/resources/player/' + false2_id)
     false2_data = response.json()
-
-    while false2_data['team_name'] is player_id['team_name']:
+    f2 = false2_data['team_name']
+    while f2 == p:
         false2_id = str(randint(1, 446))
         response = requests.get('http://api2k15.me/resources/player/' + false2_id)
         false2_data = response.json()
+        f2 = false2_data['team_name']
 
     return render_template('api2k15.html', photo=player_data['picture'], player_team=player_data['team_name'], false1=false1_data['team_name'], false2=false2_data['team_name'])
 
