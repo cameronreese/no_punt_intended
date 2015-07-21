@@ -172,16 +172,18 @@
 
     
     <script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+
     <script src="{{ url_for('static', filename='js/jquery_dataTables.js') }}"> </script>
+    <script type="text/javascript">
+    var jQuery_datatables = $.noConflict(true);
+    </script>
 
     <!-- Load jQuery 2.1.3 (for Tipue plugin) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
-  <!--   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>  
     <script type="text/javascript">
     var jQuery_2_1_3 = $.noConflict(true);
     </script>
- -->
+
 
     <!-- Bootstrap Core JavaScript -->
     <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
@@ -195,9 +197,8 @@
 
 
     <script type="text/javascript">
-
     $(document).ready(function() {
-      $('#conferenceTable').DataTable( {
+      jQuery_datatables('#conferenceTable').DataTable( {
         "responsive" : true,
         "iDisplayLength": 11,
         "sDom": "<'row'<'col-xs-6'T><'col-xs-6'f>r>t<'row'<'col-xs-6'i><'col-xs-6'p>>",
@@ -208,7 +209,7 @@
 
     <script type="text/javascript">
         $(document).ready(function() {
-          $('#teamTable').DataTable( {
+          jQuery_datatables('#teamTable').DataTable( {
             // "bServerSide": true,
             "responsive": true,
             "iDisplayLength": 50,
@@ -220,7 +221,7 @@
 
     <script type="text/javascript">
     $(document).ready(function() {
-      $('#playerTable').DataTable( {
+      jQuery_datatables('#playerTable').DataTable( {
         // "serverSide": true,
         "responsive" : true,
         "iDisplayLength": 50,
@@ -232,7 +233,7 @@
 
     <script type="text/javascript">
     $(document).ready(function() {
-        $('#tipue_search_input').tipuesearch({
+        jQuery_2_1_3('#tipue_search_input').tipuesearch({
           'mode': 'live',
           'liveDescription': '.header',
           'liveContent': '.container'
