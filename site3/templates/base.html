@@ -97,25 +97,25 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="/index">Home</a>
+                        <a href="/index">|Home|</a>
                     </li>
                     <li>
-                        <a href="/ncaa">NCAA FBS</a>
+                        <a href="/ncaa">|All FBS|</a>
                     </li>
                     <li>
-                        <a href="/conf_table">Conferences Table</a>
+                        <a href="/conf_table">|Conferences|</a>
                     </li>
                     <li>
-                        <a href="/team_table">Teams Table</a>
+                        <a href="/team_table">|Teams|</a>
                     </li>
                     <li>
-                        <a href="/player_table">Players Table</a>
+                        <a href="/player_table">|Players|</a>
                     </li>
                     <li>
-                        <a href="/about">About</a>
+                        <a href="/about">|About|</a>
                     </li>
                     <li>
-                        <a href="/api2k15">NBA Game</a>
+                        <a href="/api2k15">|NBA Game|</a>
                     </li>
                 </ul>
             </div>
@@ -147,15 +147,15 @@
 ******************************************************************************************************************************* -->
 
     <!-- jQuery -->
-
-    
     <script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery_dataTables.js') }}"> </script>
 
+    <!-- Load jQuery 2.1.3 (for Tipue plugin) -->
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script type="text/javascript">
+    var jQuery_2_1_3 = $.noConflict(true);
+    </script>
 
-     <script src="{{ url_for('static', filename='js/jquery_dataTables.js') }}"> </script>
-<!-- 
-     <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
- -->
 
 
     <!-- Bootstrap Core JavaScript -->
@@ -207,7 +207,7 @@
 
     <script type="text/javascript">
     $(document).ready(function() {
-        $('#tipue_search_input').tipuesearch({
+        jQuery_2_1_3('#tipue_search_input').tipuesearch({
           'mode': 'live',
           'liveDescription': '.header',
           'liveContent': '.container'
