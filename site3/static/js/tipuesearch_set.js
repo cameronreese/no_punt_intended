@@ -8,9 +8,16 @@ http://www.tipue.com/search
 
 
 // List of pages for Live mode
+// "/index", 
+// 							"/ncaa", 
+// 							"/conf_table", 
+// 							"/player_table", 
+// 							"/team_table", 
+// 							"/about"]
 
 //var tipue_search_pages = ["http://cfdb.me/", "http://cfdb.me/about/", "http://cfdb.me/ncaa", "http://cfdb.me/conf_table", "http://cfdb.me/team_table", "http://cfdb.me/player_table"];
-var tipue_search_pages = ["http://104.130.229.7:5000/index", "http://104.130.229.7:5000/ncaa", "http://104.130.229.7:5000/conf_table", "http://104.130.229.7:5000/player_table", "http://104.130.229.7:5000/team_table", "http://104.130.229.7:5000/about"];
+var tipue_search_pages = ["http://espn.go.com/"];
+					
 
 /*
 Stop words
