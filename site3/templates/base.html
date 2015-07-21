@@ -172,6 +172,9 @@
 
     
     <script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+    <script type="text/javascript">
+    var jQuery_1_11_1 = $.noConflict(true);
+    </script>
 
     <script src="{{ url_for('static', filename='js/jquery_dataTables.js') }}"> </script>
     <script type="text/javascript">
@@ -208,7 +211,7 @@
     </script>
 
     <script type="text/javascript">
-        $(document).ready(function() {
+        jQuery_1_11_1(document).ready(function() {
           jQuery_datatables('#teamTable').DataTable( {
             // "bServerSide": true,
             "responsive": true,
@@ -220,7 +223,7 @@
     </script>
 
     <script type="text/javascript">
-    $(document).ready(function() {
+    jQuery_1_11_1(document).ready(function() {
       jQuery_datatables('#playerTable').DataTable( {
         // "serverSide": true,
         "responsive" : true,
@@ -232,7 +235,7 @@
     </script>
 
     <script type="text/javascript">
-    $(document).ready(function() {
+    jQuery_1_11_1(document).ready(function() {
         jQuery_2_1_3('#tipue_search_input').tipuesearch({
           'mode': 'live',
           'liveDescription': '.header',
