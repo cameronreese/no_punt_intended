@@ -15,8 +15,13 @@ http://www.tipue.com/search
 // 							"/team_table", 
 // 							"/about"]
 
-//var tipue_search_pages = ["http://cfdb.me/", "http://cfdb.me/about/", "http://cfdb.me/ncaa", "http://cfdb.me/conf_table", "http://cfdb.me/team_table", "http://cfdb.me/player_table"];
-var tipue_search_pages = ["http://espn.go.com/"];
+var tipue_search_pages = ["http://cfdb.me:5000/", 
+						"http://cfdb.me:5000/about/", 
+						"http://cfdb.me:5000/ncaa", 
+						"http://cfdb.me:5000/conf_table", 
+						"http://cfdb.me:5000/team_table", 
+						"http://cfdb.me:5000/player_table"];
+
 					
 
 /*
@@ -38,11 +43,11 @@ var tipuesearch_replace = {'words': [
 
 // Weighting
 
-// var tipuesearch_weight = {'weight': [
-//      {'url': 'http://tipue.dev/search', 'score': 200},
-//      {'url': 'http://tipue.dev/about', 'score': 100},
-//      {'url': 'http://tipue.dev/tos', 'score': -1200}
-// ]};
+var tipuesearch_weight = {'weight': [
+     {'url': 'http://tipue.dev/search', 'score': 200},
+     {'url': 'http://tipue.dev/about', 'score': 100},
+     {'url': 'http://tipue.dev/tos', 'score': -1200}
+]};
 
 
 // Stemming
