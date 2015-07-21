@@ -5,7 +5,7 @@
 # -----------
 import json
 import os
-import urllib
+import requests
 from urllib.request import urlopen
 
 from flask import Flask, Request
@@ -295,8 +295,8 @@ def api2k15():
     """
     : return: renders the page that we use the other project's API
     """
-    data = json.load(urllib.urlopen('http://api2k15.me/resources/player/1'))
-
+    response = requests.get('http://api2k15.me/resources/player/1')
+    data = response.json()
     return render_template('api2k15.html', photo=data['picture'])
 
 
