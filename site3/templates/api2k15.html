@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- *************************************************************************************************************************
+                                                        Start NBA Box
+******************************************************************************************************************************* -->
+    <div class="container">
+        <div class="box row">
+                <a name="statistics"></a> 
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">NBA QUIZ
+                    </h2>
+                    <hr>
+                    <h4 class="intro-text text-center">Guess which team the player is on</h4>
+                    <hr>
+                </div>
+                <div class="col-lg-12 text-center">
+                    <img class="img-responsive img-rounded img-fix" src="{{photo}}" alt="Player Has No Photo" onError="this.src='http://playoffchallenge.fantasy.nfl.com/static/img/defaultHeadshot_1367279034.png';" />
+                    <br>
+                </div>
+                    <br>
+
+                <div class="col-lg-12 text-center">
+                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#{{player_team}}">{{player_team}}</button>
+                      <!-- Modal -->
+                      <div id="{{player_team}}" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+                          <!-- Modal content-->
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                              <p class="text-center">
+                                <h1>COOOOORRRECT!!!!!</h1></p>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#{{false1}}">{{false1}}</button>
+                      <!-- Modal -->
+                      <div id="{{false1}}" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+                          <!-- Modal content-->
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                              <p class="text-center">
+                                <h1>WRONG!!!!!</h1></p>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#{{false2}}">{{false2}}</button>
+                      <!-- Modal -->
+                      <div id="{{false2}}" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+                          <!-- Modal content-->
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                              <p class="text-center">
+                                <h1>WRONG!!!!!</h1></p>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                <hr>
+                <div class="col-lg-12 text-center">
+                  <a name="replay"></a>
+                  <a type="button" class="btn btn-primary" href="/api2k15"><strong>Play Again!</strong></a>
+                  <br>
+                </div>
+                <br>
+                </div>
+
+        </div>
+    </div>
+<!-- *************************************************************************************************************************
+                                                        End NBA Box
+******************************************************************************************************************************* -->
+
+{% endblock %}

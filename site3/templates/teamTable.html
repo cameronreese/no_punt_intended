@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+<!-- *************************************************************************************************************************
+                                                        Start table box
+******************************************************************************************************************************* -->
+       <div class="container">
+         <div class="box">
+          <h1>Team Table</h1>
+          <div class="table-responsive">
+            <table cellpadding="0" cellspacing="0" border="0" width="100%"
+                 class="table table-striped table-bordered" id="teamTable">
+              <thead>
+                  <tr>
+                      <th>Name</th>
+                      <th>Location</th>
+                      <th>Roster</th>
+                      <th>Schedule</th>
+                      <th>Head Coach</th>
+                      <th>Conference</th>
+                  </tr>
+              </thead>
+              <tbody>
+                {% for team in teamList %}
+                <tr>
+                  <td><script> document.write('<a href="/team_t/' + "{{team.name}}" + '"'); </script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>{{team.name}}</a></td>
+                  <td>{{team.location}}</td>
+                  <td><script> document.write('<a href="/team_t/' + "{{team.name}}" + "#roster" + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>Roster</a></td>
+                  <td><script> document.write('<a href="/team_t/' + "{{team.name}}" + "#schedule" + '"');</script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>Schedule</a></td>
+                  <td>{{team.head_coach}}</td>
+                  <td><script> document.write('<a href="/conf_t/' + "{{team.confname}}" + '"'); </script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​>{{team.confname}}</a></td>
+                </tr>  
+                {% endfor %}                       
+              </tbody>
+              <tfoot>
+                  <tr>
+                    <th>Name</th>
+                    <th>Location</th>
+                    <th>Roster</th>
+                    <th>Schedule</th>
+                    <th>Head Coach</th>
+                    <th>Conference</th>
+                  </tr>
+              </tfoot>
+          </table>
+       </div>
+     </div>
+    </div>
+<!-- *************************************************************************************************************************
+                                                        End table box
+******************************************************************************************************************************* -->
+
+{% endblock %}

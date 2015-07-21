@@ -1,0 +1,40 @@
+--Website critiques--
+Everyone can add critiques or just bullet point ideas to this, to give a rounded view of the critiques. It can be anything like website layout, functionality, api calls, links, etc.
+
+
+--------- Our Website: -------------
+(http://cfdb.me)
+
+1) What did we do well?
+	>
+
+2) What did we learn?
+	>
+
+3) What can we do better?
+	>
+
+4) What puzzles us?
+	>
+
+5) Additional thoughts/critiques.
+	>
+
+
+--------- Other group Website: ----------
+(http://crossfit.social)
+
+1) What did they do well?
+	>
+
+2) What did we learn from their website?
+	> 
+
+3) What can they do better?
+	>
+
+4) What puzzles us about their website?
+	>
+
+5) Additional thoughts/critiques.
+	>
