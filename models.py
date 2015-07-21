@@ -4,8 +4,9 @@
 # imports
 # -----------
 import os
+from urllib.request import urlopen
 
-from flask import Flask
+from flask import Flask, Request
 from flask import render_template
 from flask.ext.sqlalchemy import SQLAlchemy
 from subprocess import Popen, PIPE, check_output, STDOUT
@@ -292,7 +293,13 @@ def api2k15():
     """
     : return: renders the page that we use the other project's API
     """
-    return render_template('api2k15.html')
+    request = Request('http://api2k15.me/resources/player/1')
+
+    response_body = urlopen(request).read()
+
+    return render_template('api2k15.html', photo=response_body['picture'])
+
+
 
 @punt.route('/')
 @punt.route('/unittest')
