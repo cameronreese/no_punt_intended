@@ -7,7 +7,7 @@ import json
 import os
 import requests
 from urllib.request import urlopen
-
+from random import randint
 from flask import Flask, Request
 from flask import render_template
 from flask.ext.sqlalchemy import SQLAlchemy
@@ -295,9 +295,29 @@ def api2k15():
     """
     : return: renders the page that we use the other project's API
     """
-    response = requests.get('http://api2k15.me/resources/player/1')
-    data = response.json()
-    return render_template('api2k15.html', photo=data['picture'])
+    player_id = str(randint(1, 446))
+    response = requests.get('http://api2k15.me/resources/player/' + player_id)
+    player_data = response.json()
+
+    false1_id = str(randint(1, 446))
+    response = requests.get('http://api2k15.me/resources/player/' + false1_id)
+    false1_data = response.json()
+
+    while false1_data['team_name'] == player_id['team_name']:
+        false1_id = str(randint(1, 446))
+        response = requests.get('http://api2k15.me/resources/player/' + false1_id)
+        false1_data = response.json()
+
+    false2_id = str(randint(1, 446))
+    response = requests.get('http://api2k15.me/resources/player/' + false2_id)
+    false2_data = response.json()
+
+    while false2_data['team_name'] == player_id['team_name']:
+        false2_id = str(randint(1, 446))
+        response = requests.get('http://api2k15.me/resources/player/' + false2_id)
+        false2_data = response.json()
+
+    return render_template('api2k15.html', photo=player_data['picture'], player_team=player_data['team_name'], false1=false1_data['team_name'], false2=false2_data['team_name'])
 
 
 
