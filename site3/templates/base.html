@@ -181,10 +181,12 @@
     <script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
 
 
-     <script src="{{ url_for('static', filename='js/jquery_dataTables.js') }}"> </script>
-<!-- 
-     <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
- -->
+    <script src="{{ url_for('static', filename='js/jquery_dataTables.js') }}"> </script>
+
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script type="text/javascript">
+    var jQuery_2_1_3 = $.noConflict(true);
+    </script>
 
 
     <!-- Bootstrap Core JavaScript -->
@@ -236,7 +238,7 @@
 
     <script type="text/javascript">
     $(document).ready(function() {
-        $('#tipue_search_input').tipuesearch({
+        jQuery_2_1_3('#tipue_search_input').tipuesearch({
           'mode': 'live',
           'liveDescription': '.header',
           'liveContent': '.container'
