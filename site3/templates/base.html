@@ -75,19 +75,6 @@
 <input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
 </form>
 
-<div class="buttonSet row">
-    <div class="col-xs-6 text-left">
-        <?php $back = sizeof($navigation->path)-2;
-          if (isset($navigation->path[$back])) {
-            echo tep_draw_button(IMAGE_BUTTON_BACK, 'glyphicon glyphicon-chevron-left', tep_href_link($navigation->path[$back]['page'], tep_array_to_string($navigation->path[$back]['get'], array('action')), $navigation->path[$back]['mode']));}?>&nbsp;
-        </div>
-        <div class="col-xs-6 text-center"><?php echo tep_draw_button(IMAGE_BUTTON_REVIEWS . (($reviews['count'] > 0) ? ' (' . $reviews['count'] . ')' : ''), 'glyphicon glyphicon-comment', tep_href_link(FILENAME_PRODUCT_REVIEWS, tep_get_all_get_params())); ?>
-        </div>
-        <div class="col-xs-6 text-right"><?php echo tep_draw_hidden_field('products_id', $product_info['products_id']) . tep_draw_button(IMAGE_BUTTON_IN_CART, 'glyphicon glyphicon-shopping-cart', null, 'primary', null, 'btn-success'); ?>
-        </div>
-  </div>
-
-
 
 <!-- *************************************************************************************************************************
                                                         Start Navigation Bar
