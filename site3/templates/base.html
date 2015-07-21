@@ -172,8 +172,14 @@
 
     
     <script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+    <script type="text/javascript">
+    var jQuery_1_11_1 = $.noConflict(true);
+    </script>
+
     <script src="{{ url_for('static', filename='js/jquery_dataTables.js') }}"> </script>
-    
+    <script type="text/javascript">
+    var jquery_dataTables = $.noConflict(true);
+    </script>
  
     <!-- Load jQuery 2.1.3 (for Tipue plugin) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>  
