@@ -3,6 +3,7 @@
 # -----------
 # imports
 # -----------
+import json
 import os
 from urllib.request import urlopen
 
@@ -289,15 +290,13 @@ def player_template(p_id):
 
 @punt.route('/')
 @punt.route('/api2k15')
-def api2k15():
+def api2k15(urllib2=None):
     """
     : return: renders the page that we use the other project's API
     """
-    request = Request('http://api2k15.me/resources/player/1')
+    data = json.load(urllib2.urlopen('http://api2k15.me/resources/player/1'))
 
-    response_body = urlopen(request).read()
-
-    return render_template('api2k15.html', photo=response_body['picture'])
+    return render_template('api2k15.html', photo=data['picture'])
 
 
 
