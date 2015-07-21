@@ -14,15 +14,27 @@
 #&nbsp;-----------</tt></p>
 <p>
 <table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="json.html">json</a><br>
+</td><td width="25%" valign=top><a href="os.html">os</a><br>
+</td><td width="25%" valign=top><a href="requests.html">requests</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
 <tr bgcolor="#eeaa77">
 <td colspan=3 valign=bottom>&nbsp;<br>
 <font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
     
 <tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
 <td width="100%"><dl><dt><a name="-about"><strong>about</strong></a>()</dt><dd><tt>:return:&nbsp;about&nbsp;page</tt></dd></dl>
+ <dl><dt><a name="-api2k15"><strong>api2k15</strong></a>()</dt><dd><tt>:&nbsp;return:&nbsp;renders&nbsp;the&nbsp;page&nbsp;that&nbsp;we&nbsp;use&nbsp;the&nbsp;other&nbsp;project's&nbsp;API</tt></dd></dl>
  <dl><dt><a name="-conf_table"><strong>conf_table</strong></a>()</dt><dd><tt>:return:&nbsp;Conference&nbsp;table&nbsp;page</tt></dd></dl>
  <dl><dt><a name="-conf_template"><strong>conf_template</strong></a>(c_name)</dt><dd><tt>:param&nbsp;c_name:&nbsp;the&nbsp;conference's&nbsp;name<br>
 :return:&nbsp;the&nbsp;conference&nbsp;profile&nbsp;page&nbsp;populated&nbsp;with&nbsp;content&nbsp;specific&nbsp;for&nbsp;that&nbsp;conference</tt></dd></dl>
+ <dl><dt><a name="-copaDB"><strong>copaDB</strong></a>()</dt><dd><tt>:&nbsp;return:&nbsp;renders&nbsp;the&nbsp;page&nbsp;that&nbsp;we&nbsp;use&nbsp;for&nbsp;the&nbsp;search&nbsp;results</tt></dd></dl>
  <dl><dt><a name="-get_conf"><strong>get_conf</strong></a>(conf_name)</dt><dd><tt>GET&nbsp;method<br>
 takes&nbsp;in&nbsp;a&nbsp;conference's&nbsp;nickname&nbsp;as&nbsp;an&nbsp;argument&nbsp;from&nbsp;an&nbsp;http&nbsp;URL<br>
 and&nbsp;returns&nbsp;json&nbsp;object&nbsp;of&nbsp;the&nbsp;conference's&nbsp;attributes<br>
@@ -43,6 +55,7 @@ to&nbsp;retrieve&nbsp;info&nbsp;for&nbsp;all&nbsp;teams&nbsp;use&nbsp;'teams'&nb
  <dl><dt><a name="-team_table"><strong>team_table</strong></a>()</dt><dd><tt>:return:&nbsp;Team&nbsp;table&nbsp;page</tt></dd></dl>
  <dl><dt><a name="-team_template"><strong>team_template</strong></a>(t_name)</dt><dd><tt>:param&nbsp;t_name:&nbsp;the&nbsp;team's&nbsp;name<br>
 :return:&nbsp;the&nbsp;team&nbsp;profile&nbsp;page&nbsp;populated&nbsp;with&nbsp;content&nbsp;specific&nbsp;for&nbsp;that&nbsp;team</tt></dd></dl>
+ <dl><dt><a name="-unittest"><strong>unittest</strong></a>()</dt><dd><tt>:return:&nbsp;renders&nbsp;the&nbsp;page&nbsp;that&nbsp;displays&nbsp;the&nbsp;results&nbsp;of&nbsp;the&nbsp;unittests</tt></dd></dl>
 </td></tr></table><p>
 <table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
 <tr bgcolor="#55aa55">
@@ -50,6 +63,7 @@ to&nbsp;retrieve&nbsp;info&nbsp;for&nbsp;all&nbsp;teams&nbsp;use&nbsp;'teams'&nb
 <font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
     
 <tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
-<td width="100%"><strong>db</strong> = &lt;SQLAlchemy engine='mysql+pymysql://root:beard@localhost/cfdb_flask'&gt;<br>
+<td width="100%"><strong>PIPE</strong> = -1<br>
+<strong>STDOUT</strong> = -2<br>
 <strong>punt</strong> = &lt;Flask 'models'&gt;</td></tr></table>
 </body></html>
