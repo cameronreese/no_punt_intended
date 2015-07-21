@@ -75,9 +75,7 @@
 <input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
 </form>
 
-<div class="col-xs-6">
-        <?php echo tep_draw_button(IMAGE_BUTTON_BACK, 'glyphicon glyphicon-chevron-left', 'javascript:history.go(-1)'); ?>
-    </div>
+
 
 
 <!-- *************************************************************************************************************************
@@ -151,15 +149,15 @@
 ******************************************************************************************************************************* -->
 
     <!-- jQuery -->
+
+    
     <script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/jquery_dataTables.js') }}"> </script>
 
-    <!-- Load jQuery 2.1.3 (for Tipue plugin) -->
-    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
-    <script type="text/javascript">
-    var jQuery_2_1_3 = $.noConflict(true);
-    </script>
 
+     <script src="{{ url_for('static', filename='js/jquery_dataTables.js') }}"> </script>
+<!-- 
+     <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+ -->
 
 
     <!-- Bootstrap Core JavaScript -->
@@ -211,7 +209,7 @@
 
     <script type="text/javascript">
     $(document).ready(function() {
-        jQuery_2_1_3('#tipue_search_input').tipuesearch({
+        $('#tipue_search_input').tipuesearch({
           'mode': 'live',
           'liveDescription': '.header',
           'liveContent': '.container'
