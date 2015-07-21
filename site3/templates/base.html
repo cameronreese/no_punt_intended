@@ -4,7 +4,7 @@
 <head>
 
 <!-- *************************************** Start - Page Favicon Icon ******************************************* -->
-		<!-- ***** Favicon Links ****** -->
+        <!-- ***** Favicon Links ****** -->
     <link rel="apple-touch-icon" sizes="57x57" href="/img/beard/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/img/beard/apple-touch-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/img/beard/apple-touch-icon-72x72.png">
@@ -19,13 +19,13 @@
     <link rel="icon" type="image/png" href="/img/beard/favicon-96x96.png" sizes="96x96">
     <link rel="icon" type="image/png" href="/img/beard/favicon-16x16.png" sizes="16x16">
     <link rel="manifest" href="/img/beard/manifest.json">
-		<!--  ***** Favicon MetaData ******-->    
-		<meta name="msapplication-TileColor" content="#da532c">
+        <!--  ***** Favicon MetaData ******-->    
+        <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-TileImage" content="/img/beard/mstile-144x144.png">
     <meta name="theme-color" content="#ffffff">
 <!-- ***************************************  End - Page Favicon Icon Links ******************************************-->  
 
-		<!-- *****  Website MetaData ***** -->
+        <!-- *****  Website MetaData ***** -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -56,6 +56,35 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <script type="text/javascript" src="localSearchBox.js"></script>
+
+    <style>div.sample_attach, a.sample_attach {
+      width: 100px;
+      border: 1px solid #DFAD00;
+      background: #FFFFEE;
+      padding: 0px 5px;
+      font-weight: 900;
+      color: #00009C;
+      text-align: center;
+    }
+
+    a.sample_attach {
+      display: block;
+      border-bottom: none;
+      text-decoration: none;
+    }
+
+    form.sample_attach {
+      position: absolute;
+      visibility: hidden;
+      border: 1px solid #DFAD00;
+      background: #FFFFEE;
+      color: #00009C;
+      padding: 0px 5px 2px 5px;
+      text-align: center;
+    }</style>
+
+
     {% if title %}
     <title>{{title}}</title>
     {% else %}
@@ -69,6 +98,17 @@
 <!-- ********************************  "College Football Database" logo  ********************************* -->
     <img class="img-responsive img-med img-center img-hover" src="{{ url_for('static', filename='img/txt2.png') }}" alt="">
 <!-- ***************************************************************************************************** -->
+
+<!-- ******************************************  New Search bar ********************************************** -->
+    
+    <div class="sample_attach" id="src_parent">
+    Site Search
+    </div>
+    <form class="sample_attach" id="src_child">
+    <b>Enter search terms:</b><br>
+    <input style="margin-bottom: 1px; width: 170px;" type="text" name="terms"><br>
+    <input type="submit" value="Submit"></center>
+    </form>
 
 <!-- ******************************************  Search bar ********************************************** -->
     <form action="/search">
@@ -181,10 +221,12 @@
     <script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
 
 
-     <script src="{{ url_for('static', filename='js/jquery_dataTables.js') }}"> </script>
-<!-- 
-     <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
- -->
+    <script src="{{ url_for('static', filename='js/jquery_dataTables.js') }}"> </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript">
+    var jQuery_2_1_3 = $.noConflict(true);
+    </script>
 
 
     <!-- Bootstrap Core JavaScript -->
@@ -236,7 +278,7 @@
 
     <script type="text/javascript">
     $(document).ready(function() {
-        $('#tipue_search_input').tipuesearch({
+        jQuery_2_1_3('#tipue_search_input').tipuesearch({
           'mode': 'live',
           'liveDescription': '.header',
           'liveContent': '.container'
