@@ -22,10 +22,11 @@ This resource does not have any attributes at the root level. Further URL agurgm
 
 Resources related to the players in the API
 
-## Players [/players/{player_name}]
+## Players [/players/{player_id}]
 
 A Player object has the following attributes:
 
++ id
 + name
 + no [number]
 + pos [position]
@@ -33,22 +34,29 @@ A Player object has the following attributes:
 + ht [height]
 + wt [weight]
 + hometown
++ year
++ hs [high school attended]
++ photo [url, if available]
 
 + Parameters
-    + player_name: Nick Jordan (required, string) - name of the player in the form of a string, spaces substituted with "%20"
+    + player_id: 10205 (required, string) - integer id of the player in the form of a string
 
 ### View a Player's Meta Data [GET]
 
 + Response 200 (:5000/punt/players/Nick%20Jordan)
 
         {
-            'name': 'Nick Jordan',
-            'no': '#28',
-            'pos': 'PK',
-            'team': 'Texas Longhorns',
-            'ht': '6-1',
-            'wt': '193',
-            'hometown': 'Coppell, TX',
+            "id": "10205",
+            "name": "Nick Jordan",
+            "no": "28",
+            "pos": "PK",
+            "team" : "Texas",
+            "ht": "6-1",
+            "wt": "175",
+            "hometown": "Coppell, TX",
+            "year": "SO",
+            "hs": "Coppell",
+            "photo": "http://sports.cbsimg.net/images/collegefootball/players/60x80/1996833.jpg"
         }
 
 
@@ -68,49 +76,48 @@ A Team object has the following attributes:
 + conference
 
 + Parameters
-    + team_name: Texas Longhorns (required, string) - name of the team in the form of a string, spaces substituted with "%20"
+    + team_name: Texas (required, string) - name of the team in the form of a string, spaces substituted with "%20"
 
-### View a Teams's Meta Data [GET]
+### View a Team's Meta Data [GET]
 
-+ Response 200 (:5000/punt/teams/Texas%20Longhorns)
++ Response 200 (:5000/punt/teams/Texas)
 
         {
-            'name': 'Texas Longhorns',
+            'name': 'Texas',
             'location': 'Austin, TX',
-            'roster': (), # tuple of player links
-            'schedule': [], # a list of scheduled games
-            'head_coach': 'Strong',
-            'conf': 'Big 12'
+            'roster': ["Eddie Aboussie", "Brandon Allen", "Alex Anderson", "David Ash", "Kyle Ashby", "Andrew Beck", "Mitchell Becker", "Roderick Bernard", "Caleb Bluiett", "Dillon Boldt", "John Bonney", "Cody Boswell", "Nate Boyer", "Paul Boyette Jr", "Malcolm Brown", "Malcom Brown", "Donald Catalon", "Matt Center", "Demarco Cobbs", "Adrian Colbert", "Timothy Cole", "Bryce Cottrell", "Dominic Cruciani", "Terrell Cuney", "Greg Daniels", "Michael Davidson", "Antwuan Davis", "Deoundrei Davis", "Gaston Davis", "Shiro Davis", "Alex De La Torre", "Hunter DeGroot", "Quandre Diggs", "Taylor Doyle", "Bryson Echols", "Steve Edmond", "Dominic Espinosa", "Kennedy Estelle", "Sheroid Evans", "Sedrick Flowers", "Poona Ford", "Armanti Foreman", "DOnta Foreman", "Edwin Freeman", "Dererick Giles", "Chris Giron", "Trey Gonzales", "Garrett Graf", "Garrett Gray", "Johnathan Gray", "Jimmy Greenwood", "Trenton Hafley", "Dakota Haines", "Dylan Haines", "Jason Hall", "Cameron Hampton", "John Harris", "Desmond Harrison", "Jerrod Heard", "Jordan Hicks", "Jak Holbrook", "Trey Holtz", "Devin Huffines", "Connor Huffman", "Camrhon Hughes", "Naashon Hughes", "Erik Huhn", "Marcus Hutchins", "Desmond Jackson", "Tevin Jackson", "Darius James", "Peter Jinkens", "Lorenzo Joe", "Daje Johnson", "Marcus Johnson", "Nick Jordan", "Nick Kreider", "Tyler Lee", "Dorian Leonard", "Frank Lopez", "Tyler Marriott", "MJ McFarland", "Jake McMillon", "Alex Mercado", "Logan Mills", "Chris Nelson", "Alex Norman", "Jake Oliver", "Miles Onyegbule", "Clark Orren", "Kent Perkins", "Ben Pruitt", "Jake Raulerson", "Cedric Reed", "Hassan Ridgeway", "Curtis Riser", "Derick Roberson", "Ryan Roberts", "Jermaine Roberts Jr", "Daniel Rodriguez", "Elijah Rodriguez", "Nick Rose", "William Russ", "Dalton Santos", "Jaxon Shipley", "Matthew Sims", "Jordan Strickland", "Geoff Swaim", "Tyrone Swoopes", "Ty Templin", "Chris Terry", "David Thomann", "Duke Thomas", "Mykkele Thompson", "Johnny Tseng", "Josh Turner", "Kevin Vaccaro", "Logan Vinklarek", "Jacorey Warrick", "Michael Welsh", "Blake Whiteley", "Michael Wilson"], # list of player names
+            'head_coach': 'Charlie Strong',
+            'confname': 'Big 12'
         }
 
 
 ## Group Conference
 
-Resources related to the football teams in the API
+Resources related to the football conferences in the API
 
 ## Conference [/conf/{conf_name}]
 
 A Conference object has the following attributes:
 
 + name
-+ nickname
 + founded
-+ current conf champion [team]
-+ teams
-+ number of teams
++ champ [team]
++ teamset
++ num_teams
++ comm [commissioner]
 
 + Parameters
-    + conf_name: ACC (required, string) - Nickname of the conference in the form of a string, spaces substituted with "%20"
+    + conf_name: ACC (required, string) - Name of the conference in the form of a string, spaces substituted with "%20"
 
 ### View a Conference's Meta Data [GET]
 
 + Response 200 (:5000/punt/conf/ACC)
 
         {
-            'name': 'Atlantic Coast Conference',
-            'nickname': 'ACC',
+            'name': 'ACC',
             'founded': '1953', 
-            'conf_champ': 'N/A', 
-            'teams': [], # link to a list of teams that are in the conference
+            'champ': 'Florida State', 
+            'teamset': ["Boston College", "Clemson", "Duke", "Florida State", "Georgia Tech", "Louisville", "Miami", "North Carolina", "North Carolina State", "Pittsburgh", "Syracuse", "Virginia", "Virginia Tech", "Wake Forest"], # list of the team names that are in the conference
             'num_teams': '15'
+            'comm': 'John Swofford (since 1997)'
         }
